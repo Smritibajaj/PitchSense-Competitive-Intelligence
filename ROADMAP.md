@@ -56,5 +56,6 @@ All checked against primary sources; changes logged in the Phase 1 master header
 ## Open synthesis items
 
 - The three gap hypotheses remain testable, not verified absences; validate each against its named partial counterexamples before using in positioning work.
-- Phase 3 CRO positioning exists (`phase3/`). Revisit its hero direction when deal risks, commitments, or real-call scoring ship (Narrative v1 status).
-- Reconcile Phase 2 Table F (batches 1–3) with Narrative v1 and review its PROVISIONAL label.
+- Phase 3 CRO positioning is complete (`phase3/`; all-50 check and claim check added Oct 19, 2026). Revisit its hero direction when deal risks, commitments, or real-call scoring ship (Narrative v1 status), or if a coaching-led vendor (Hyperbound) adds source evidence and a CRO frame.
+- Before public use of the Phase 3 page: confirm "Admins see adoption, never scores" and "company-owned data" with the product owner (Narrative-stated, not on the status list).
+- ~~Reconcile Phase 2 Table F (batches 1–3) with Narrative v1 and review its PROVISIONAL label.~~ Done Oct 19, 2026: PitchSense column now gives Appendix status; reconciliation notes added; the "approved-content governance" nuance is Not in Narrative.

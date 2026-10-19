@@ -181,7 +181,7 @@ lines.append(f"**Full table: `phase2c/table_E_cro_messaging.csv` ({len(E)} rows 
 lines.append("")
 lines.append("---")
 lines.append("")
-lines.append("## Table F — PitchSense Messaging Comparison (PROVISIONAL — pending Product Narrative v1)")
+lines.append("## Table F — PitchSense Messaging Comparison (reconciled with Product Narrative v1, Oct 19, 2026)")
 lines.append("")
 lines.append("All interpretations are analyst views, not capability or market-absence claims. Vendor statements are the vendors' own claims, preserved verbatim.")
 lines.append("")
@@ -217,7 +217,7 @@ if i >= 0:
         strategic = cite_urls_field(strategic)
         lines.append(strategic.rstrip())
         lines.append("")
-        lines.append("**Research date:** October 19, 2026. All quotes verified against the cited page. Client-side content labeled per convention. Table F remains PROVISIONAL pending the official Product Narrative v1. Deliverable CSVs: phase2c/table_A–F + cta_occurrence_audit.csv (in Project files).")
+        lines.append("**Research date:** October 19, 2026. All quotes verified against the cited page. Client-side content labeled per convention. Table F was reconciled with Product Narrative v1 (Sep 30, 2026) on Oct 19, 2026. Deliverable CSVs: phase2c/table_A–F + cta_occurrence_audit.csv (in Project files).")
     else:
         lines.append("## Final Strategic Analysis")
         lines.append("")

@@ -2,12 +2,15 @@
 
 **Date:** October 19, 2026. **Type:** Synthesis of existing research. No new competitor discovery or website capture.
 
+**Update (Oct 19, 2026, later the same day):** Phase 3 completed. Section 6 tests every finding against all 50 companies and the Oct 19 Phase 1 score changes. Section 7 claim-checks this report's draft copy against Narrative v1. Phase 2 Table F (batches 1–3) is now reconciled with Narrative v1. One finding was weakened (calls plus readiness is not unique across the 50; see Hyperbound), and two copy lines were rescoped to Built items.
+
 **Inputs:**
 - Phase 1 master report (`phase1/pitchsense_competitor_research_master.md`, 50 companies, frozen rubric).
 - Phase 2 detailed website analysis of 10 competitors: batch 1 (Sybill, Aida, Gong), batch 2 (Attention, Backstory, Outreach) and batch 3 (Salesloft + Clari, Showpad, Mindtickle, Allego). Each batch has a report plus `table_A`–`table_F` CSVs in `phase2/batches/batch01…03_*/`.
+- Phase 2 light-format capture of the other 40 companies (batches 4–11; `phase2/phase2_website_messaging_all50.csv`) and the cross-batch synthesis (`phase2/synthesis.md`). Used in section 6 to test this report's findings.
 - **PitchSense AI — Product Narrative v1** (dated Sep 30, 2026; `source/PitchSense_Product_Narrative_v1.pdf`, with a text version in `source/PitchSense_Product_Narrative_v1_text.md`. The two copies in Downloads contain identical text). It is the source of truth for PitchSense capability status (Appendix, "What's built, in build and planned").
 
-**Scope note: which "Top 10".** This report uses the **10 companies with detailed Phase 2 website analysis**. They differ from the Phase 1 top-10 capability list in two places: Backstory and Salesloft + Clari are in (both are on the CRO five list), and Traq.ai and Avoma are out. Batches 4–11 used a lighter one-table format and are not used here.
+**Scope note: which "Top 10".** This report uses the **10 companies with detailed Phase 2 website analysis**. They differ from the Phase 1 top-10 capability list in two places: Backstory and Salesloft + Clari are in (both are on the CRO five list), and Traq.ai and Avoma are out. Batches 4–11 used a lighter one-table format. They are not used in Tables A–E, but section 6 tests every finding and recommendation against them.
 
 **How to read this report.**
 - **[Finding]** = verified from the Phase 1 or Phase 2 evidence, with the source named.
@@ -110,10 +113,10 @@ Capability scores are Phase 1 documented scores (0–2) from the master report, 
 | AI agents / AI teammate | **Crowded** | 10/10 at hero or section level |
 | Conversation intelligence | **Crowded** | 9/10 score ≥1, 8 score 2 |
 | Shared memory / connected context | **Contested** | Phase 1 SM 2: Gong, Aida, Sybill, Backstory. Showpad's "holds what no other system has: the content, coaching signals, and deal-stage context" is the closest claim to PitchSense's frame (Table F, batch 3) |
-| Source-backed ("receipts") answers | **Less emphasised** | Present as demo or FAQ detail (Attention "FOUND SUPPORTING CALL EVIDENCE"; Backstory "Defensible enough to share with leadership"; Showpad "verified answers out"). None of the 10 make it the hero promise (Table F, batches 1–3) |
+| Source-backed ("receipts") answers | **Less emphasised** | Present as demo or FAQ detail (Attention "FOUND SUPPORTING CALL EVIDENCE"; Backstory "Defensible enough to share with leadership"; Showpad "verified answers out"). None of the 10 make it the hero promise (Table F, batches 1–3). Holds across all 50 (section 6) |
 | Content intelligence × conversation/deal intelligence | **Less emphasised combination** | CI-led vendors score Content 0–1; enablement suites score Content 2 but Deal 1. No vendor scores 2 on both (Phase 1, Table B). Matches gap hypothesis 1 |
-| AI roleplay / practice × deal intelligence | **Less emphasised combination** | Roleplay is featured by enablement suites (Mindtickle hero CTA "Try AI Role Play", Allego, Showpad). It was unfeatured on all six CI-led homepages in batches 1–2 (Table F) |
-| Rep-fair visibility ("not surveillance") | **Not observed** in the inspected messaging | No equivalent found in Phase 2 tables. PitchSense Narrative: "Admins see adoption, never scores" |
+| AI roleplay / practice × deal intelligence | **Less emphasised among the 10; contested across the 50** | Roleplay is featured by enablement suites (Mindtickle hero CTA "Try AI Role Play", Allego, Showpad). It was unfeatured on all six CI-led homepages in batches 1–2 (Table F). Across the 50, Hyperbound's hero pairs practice with real calls and deals, and it now scores CI 2 / DI 1 / ChI 2 (section 6) |
+| Rep-fair visibility ("not surveillance") | **Not observed** in the inspected messaging, or in any of the 50 homepage captures (section 6) | No equivalent found in Phase 2 tables. PitchSense Narrative: "Admins see adoption, never scores" |
 
 **[Finding, with caveat]** "Less emphasised" means not foregrounded on the inspected pages. It does not mean the capability is missing. Phase 1 gap hypotheses stay testable, not proven gaps.
 
@@ -150,7 +153,7 @@ Capability scores are Phase 1 documented scores (0–2) from the master report, 
 
 | Direction | Headline (from the Narrative headline bank) | Supporting line (Built items only, unless gated) | Claim-safety |
 |---|---|---|---|
-| **A — Intelligence you can check** (recommended for launch) | "Intelligence you can check." | "PitchSense understands every sales call and remembers it. Every point links to the moment it came from, and every rep can practise the hard moments before they cost a deal." | Safe now. Uses summaries with transcript links, briefs, Content Library sources, roleplays and readiness, all Built |
+| **A — Intelligence you can check** (recommended for launch) | "Intelligence you can check." | "PitchSense understands every sales call and remembers it. Every summary links to the moment it came from, and every rep can practise the hard moments before they cost a deal." | Safe now. Uses summaries with transcript links, briefs, Content Library sources, roleplays and readiness, all Built |
 | **B — Deal story from what buyers said** (CRO pain-led) | "The real story of every deal, from what was actually said." | Requires deal pages, deal risks and commitments | **Gate:** In build. Use once shipped, or in proposals with a date |
 | **C — The full promise** | "Know every deal. Coach every rep. Forget nothing." | Requires memory layers 2–3 and real-call scoring | **Gate:** In build / Planned. This is the long-term brand line; hold it as the hero until "coach every rep" means real calls, not only practice |
 
@@ -164,7 +167,7 @@ The order below starts from the Narrative's suggested order and the competitor n
 
 1. **Receipts on every point**: summaries with transcript links, and Content Library answers with sources. Built, and less emphasised by competitors.
 2. **Pre-call brief in Slack**: Built, concrete, and easy to demo.
-3. **Readiness per rep and scenario, plus AI roleplay**: Built. This is the CRO's "team that's ready" half. It is a combination the CI-led competitors do not foreground.
+3. **Readiness per rep and scenario, plus AI roleplay**: Built. This is the CRO's "team that's ready" half. It is a combination the CI-led competitors do not foreground. Across the 50 it is not unique (Hyperbound, section 6), so present it with receipts and the CRO frame, not as a new combination.
 4. **Content Library with AI search and sources**: Built, and it connects to practice ("practice built from your own documents").
 
 Keep in-build or planned items (deal risks, commitments, CRM, content creation, email and Slack tracking) **off the public page** until they ship, per the Narrative rule.
@@ -176,7 +179,7 @@ The Narrative says practice is "the proof point, not the headline" and should co
 **[Recommendation, which partly departs from the Narrative]** Keep coaching out of the H1, but move it up to the second content block for the CRO page. Reasons:
 - (a) Coaching and readiness make up most of what is **Built** today.
 - (b) Ramp and consistency are CRO pains six of ten competitors back with numbers.
-- (c) The CI-led competitors don't feature roleplay, so pairing "calls you can check" with "a team that's ready" is the less-emphasised combination (Table C).
+- (c) The CI-led competitors don't feature roleplay, so pairing "calls you can check" with "a team that's ready" is the less-emphasised combination among the 10 (Table C). Across the 50, Hyperbound's hero already pairs practice with real calls. The distinctive part is the receipts and the CRO-facing readiness view, not the pairing alone (section 6).
 
 Frame it as **readiness the CRO can see**, not as a training tool. Avoid "coaching from real calls" until real-call scoring ships.
 
@@ -217,6 +220,71 @@ Competitors lead with quantified outcomes (Table A). PitchSense should publish *
 
 ---
 
+## 6. Check against all 50 companies and the Oct 19 Phase 1 updates
+
+Tables A–E above use the 10 full-format competitors. This section tests each finding and recommendation against the other 40 (Phase 2 batches 4–11, homepage captures in `phase2/phase2_website_messaging_all50.csv`; theme counts from `phase2/synthesis.md`) and against the Phase 1 score changes of Oct 19, 2026. Light-format rows are homepage-only, so absence there is weaker evidence than in the 10 full-format analyses.
+
+### Table F — All-50 check
+
+| # | Phase 3 finding or recommendation | Evidence from the other 40 and Phase 1 | Result | Effect on this report |
+|---|---|---|---|---|
+| 1 | Source-backed answers are less emphasised; lead with "intelligence you can check" (rec 2, Direction A) | **[Finding]** No hero among the 40 makes source-cited or traceable answers its promise. The nearest wording is Fathom ("a shared source of truth across every customer conversation", a memory claim) and Quantified ("one audit trail", a compliance claim). | **Holds** | None |
+| 2 | Memory is the mechanism, not today's hero (rec 4) | **[Finding]** No H1 among the 50 leads with memory. Memory wording appears in the hero or positioning of five notetakers (Noota, Fathom, Otter.ai, Circleback, tl;dv) and as platform language at Level AI and Aligned ("Aligned Brain™") (synthesis C1, C6). | **Holds, strengthened.** The word is commoditising faster than the capability | None |
+| 3 | Calls plus readiness is the less-emphasised combination (rec 3; 5.4; 5.5; Table C) | **[Finding]** Practice leads the hero of 7 of the 40: Second Nature, Hyperbound, Quantified, PitchMonster, Wonderway, SalesHood, Yoodli. Hyperbound's hero reads "Practice with realistic AI buyers, uncover what works in real calls, and get guidance during conversations and across deals", and Phase 1 now scores it CI 2 / DI 1 / ChI 2. It is the fourth vendor with CI 2 and ChI 2 (after Gong, Mindtickle and Allego) and the only one whose hero states the pairing. PitchMonster ("practice real conversations, analyze live calls"; role-plays "from your product docs, real calls, transcripts") is the nearest match to PitchSense's Built "practice built from your own documents". | **Weakened.** The pairing is not unique across the 50 | Rec 3, 5.4, 5.5 and Table C amended: claim readiness *with receipts*, for the CRO. The pairing alone is not the differentiator |
+| 4 | Content intelligence × conversation/deal intelligence is less emphasised (Table C) | **[Finding]** No vendor among the 50 scores 2 on both Content and Deal (Phase 1 Table B). Content-led and conversation-led vendors still message separately; Accent and Showpad come closest in copy (synthesis C6). | **Holds** | None |
+| 5 | A CRO-addressed page is less crowded than a generic revenue-team page | **[Finding]** Explicit senior revenue-leader targeting appears on 3 of the 40: Humantic AI (H2 "Should A CRO Consider Humantic AI?"), Traq.ai ("VPs of Sales and Directors of Revenue Operations") and Jiminny ("Revenue Leaders"). Generic "revenue teams" and "sales teams" ICPs dominate (synthesis C4). | **Holds** | None. Jiminny ("so Revenue Leaders can see what's winning deals and coach what's not") is the nearest CRO-facing coaching message to watch |
+| 6 | Lead pain: "Deals slip on things your team already knew" (5.1) | **[Finding]** Adjacent deal-slip pains: Aligned ("Stop losing deals between meetings") and Consensus ("Deals move without a rep in the room."). Neither frames it as forgotten team knowledge. 20 of the 40 state no explicit pain (synthesis C3). | **Holds.** Adjacent, different angle | None |
+| 7 | Rep-fair visibility is not observed (Table C; Table E row 8) | **[Finding]** No surveillance, rep-privacy or fairness wording in any of the 50 captures (hero, section headings, positioning, pain point or verification notes). | **Holds** (homepage scope) | None |
+| 8 | Secondary CTA "Try a roleplay" (5.7) | **[Finding]** Hyperbound uses the identical wording (already corrected in 5.7). | **Already corrected** | Prefer "Try a roleplay on your own deck" |
+
+**[Finding] Phase 1 updates of Oct 19, 2026 that touch this report.**
+- Hyperbound rose from 4 to 6 (CI 1 → 2, DI 0 → 1) and is now a top-10 challenger (row 3).
+- Wonderway's Verity documents scoring of every real call (CI 0 → 1), and Quantified's Field AI (real-visit analysis) is in beta, scheduled for Q4 2026. Coaching-led vendors are moving onto real calls, which narrows the window for PitchSense's Planned "Scoring real calls on your skills".
+- None of the 10 full-format competitors changed score, so Tables A–E stand.
+
+**[Finding] Phase 2 Table F reconciliation.** Table F (batches 1–3) was reconciled with Narrative v1 on Oct 19, 2026. Its statuses match this report's section 0 and Table D. It also adds one point this report did not make: the "approved-content governance" nuance in Table F batches 2–3 is **Not in Narrative** (the Appendix lists "One home for approved content" but no approval or compliance workflow), so it is not used as a differentiator here.
+
+## 7. Claim check of this report's copy
+
+**[Finding]** Every PitchSense claim in this report's draft copy (sections 5.2, 5.7, Table E and the positioning statement), mapped to the Narrative Appendix ("What's built, in build and planned"). "Public" means the landing page; "proposal" means dated proposal or roadmap material.
+
+| Claim (where) | Appendix item | Status | Allowed here? | Fix |
+|---|---|---|---|---|
+| "Intelligence you can check." (Direction A headline) | Built 3, 9, 14, 18 (summaries with transcript links; Content Library with sources; scores with evidence; agent answers with sources) | Built, when scoped | Public: yes | None. Narrative headline bank |
+| "PitchSense understands every sales call and remembers it." (Direction A) | Built 1–3 (calendar sync, transcripts, summaries); memory layer 1 | Built for the supported sources | Public: yes | Name the sources in the integrations section (Meet, Teams, Fireflies, Fathom, Granola). Meeting bot is In build; desktop recorder is Planned |
+| "Every point links to the moment it came from." (Direction A, as first drafted) | Built 3 for summaries. Receipts in the pre-call brief belong to "Connecting the dots (the pricing example)", which the Narrative flags | Built only for summaries | Public: only scoped | **Fixed in 5.2:** "Every summary links to the moment it came from." |
+| "Every rep can practise the hard moments before they cost a deal." (Direction A) | Built 10, 11 | Built | Public: yes | None |
+| "The real story of every deal, from what was actually said." (Direction B) | In build 2, 3, 9 | In build | Proposal with a date | Already gated |
+| "Know every deal. Coach every rep. Forget nothing." (Direction C) | In build 1; Planned "Scoring real calls on your skills" | In build / Planned | Proposal, or brand line once shipped | Already gated |
+| "Every call is understood and remembered" (positioning statement) | Built 1–3 | Built | Public: yes | None |
+| "every answer links to its source" (positioning statement, as first drafted) | Built 9, 18; Planned "Agent answers about calls, deals and accounts" | Mixed | Not as written | **Fixed:** "every summary and Content Library answer links to its source" |
+| "every rep can prove they're ready before it costs a deal" (positioning statement) | Built 14, 15 | Built | Public: yes | None |
+| "helps your people get better, on your own content" (positioning statement) | Built 10, 16, 17 | Built | Public: yes | None |
+| Summary → exact transcript moment; Content Library answer → source document (Table E row 3) | Built 3, 9 | Built | Public: yes | None |
+| Readiness per rep and scenario; roleplays from your own content; drills with before/after (Table E row 4) | Built 10, 11, 15, 17 | Built | Public: yes | None |
+| Deals: auto accounts, Home only (Table E row 5) | Built 7, 8 | Built | Public: yes | None |
+| "Ask anything about practice, team skills and content; every answer cites its source" (Table E row 6) | Built 18 | Built, scoped | Public: yes | Keep the scope words. Never show call or deal questions until Planned items ship |
+| "Admins see adoption, never scores." (Table E row 8) | Not in the status list. Stated as current in the Appendix roles section ("Org Admins see adoption, never a rep's scores") | Narrative-stated, not status-listed | Public: after product-owner confirmation | Confirm with the product owner |
+| Integrations: Meet, Teams, Fireflies, Fathom, Granola, Slack (Table E row 10) | Built 2, 4, 5 | Built | Public: yes | None. CRM, Gmail/Outlook, meeting bot and desktop recorder stay off |
+| "Company-owned data" (Table E row 11) | Not in the status list. Narrative body: "one memory your company owns" | Narrative-stated, not status-listed | Public: after product-owner confirmation | Confirm with the product owner |
+| "Try a roleplay" / "Try a roleplay on your own deck" (5.7) | Built 10, 11 | Built | Public: yes | None |
+
+**Flagged-list check** (the Narrative's "Main-flow claims that rest on in-build or planned items"):
+- The CRM use cases: not used (Table E row 10 excludes CRM).
+- "Checks the score on the next real call": used only in the gated roadmap swap-ins.
+- The board-meeting question to the agent: not used.
+- The security doc suggested from the Content Library: not used. Table E row 11 is a security section, not that claim.
+- Everything about creating one-pagers, decks and proposals: gated (roadmap swap-ins; Table D hypothesis 5).
+- Connecting the dots (the pricing example): was implied by Direction A's "Every point links…"; fixed above.
+- Everything about email and Slack tracking: not used. Slack appears only as Built summary and brief delivery.
+
+**Voice and outcomes.**
+- None of the Narrative's "Words to avoid everywhere" appear in the draft copy.
+- Competitors are contrasted by category ("call recorders") in the positioning statement, not by name.
+- The draft copy contains no ROI figures, metrics or customer results. Section 5.6 lists the measurements to collect first.
+
+---
+
 ## Strategic recommendation (one page)
 
 **How should PitchSense position itself for a CRO, based on the competitive evidence?**
@@ -227,7 +295,7 @@ Competitors lead with quantified outcomes (Table A). PitchSense should publish *
 
 **2. Lead with trust: "intelligence you can check."** Source-traceable intelligence appears across competitors only as demo or FAQ detail, never as the promise (Phase 2 Table F, all three batches). It answers a CRO's recurring need for answers that are "defensible enough to share with leadership" (Backstory's phrase, echoed by Salesloft and Showpad). And it is **Built** today in PitchSense's call summaries, Content Library and practice scores. It is the rare angle that is CRO-relevant, less emphasised and already true.
 
-**3. Pair it with readiness the CRO can see.** The CI-led competitors (Gong, Sybill, Aida, Attention, Backstory, Salesloft) don't feature practice. The enablement suites (Showpad, Mindtickle, Allego) feature practice but score lower on deal intelligence. PitchSense's Built feature set (calls with receipts, Content Library and AI roleplay with readiness in one product) sits in the less-emphasised combination. The Narrative's CRO promise already names it: "…and a team that's ready." For the CRO page, raise readiness higher than the Narrative's "practice as proof point" guidance.
+**3. Pair it with readiness the CRO can see.** The CI-led competitors (Gong, Sybill, Aida, Attention, Backstory, Salesloft) don't feature practice. The enablement suites (Showpad, Mindtickle, Allego) feature practice but score lower on deal intelligence. PitchSense's Built feature set (calls with receipts, Content Library and AI roleplay with readiness in one product) sits in the less-emphasised combination. The Narrative's CRO promise already names it: "…and a team that's ready." For the CRO page, raise readiness higher than the Narrative's "practice as proof point" guidance. **Update after the all-50 check (section 6):** the combination is not unique across the 50. Hyperbound's hero pairs practice with real calls and deals, and it now scores CI 2 / DI 1 / ChI 2. The recommendation stands because Hyperbound addresses revenue teams and enablement rather than the CRO, and does not lead with source evidence. PitchSense should claim readiness *with receipts*, for the CRO, rather than readiness alone.
 
 **4. Treat shared memory as the mechanism and long-term brand, not today's hero claim.** Memory is the Narrative's "strongest advantage," but the word is contested: Gong, Aida, Sybill and Backstory have all been scored SM 2, and Showpad makes a near-identical content + coaching + deal claim. PitchSense's own memory layers 2–3 are In build. Explain memory below the fold as *why* the receipts and readiness work together. Promote "Know every deal. Coach every rep. Forget nothing." to the hero once deal risks, commitments and real-call scoring ship.
 
@@ -235,13 +303,14 @@ Competitors lead with quantified outcomes (Table A). PitchSense should publish *
 
 **6. Earn proof before outcome claims.** Competitors lead with quantified ramp, time and forecast results. PitchSense should publish none until measured. Built features can produce the first credible ones: drill before/after scores, readiness rates, and ramp change.
 
-**Positioning statement (draft, for testing):** *For CROs who keep losing deals to things their team already knew, PitchSense AI is the sales intelligence that shows its receipts. Every call is understood and remembered, every answer links to its source, and every rep can prove they're ready before it costs a deal. Unlike call recorders that only remember, PitchSense also helps your people get better, on your own content.*
+**Positioning statement (draft, for testing):** *For CROs who keep losing deals to things their team already knew, PitchSense AI is the sales intelligence that shows its receipts. Every call is understood and remembered, every summary and Content Library answer links to its source, and every rep can prove they're ready before it costs a deal. Unlike call recorders that only remember, PitchSense also helps your people get better, on your own content.*
 
 **What would change this recommendation:**
 - PitchSense ships deal risks, commitments and deal pages. The lead shifts to Direction B.
 - Real-call scoring ships. "Coaching from real calls" becomes claimable and strongly differentiating.
 - A competitor moves "source-backed answers" into its hero.
 - Customer evidence shows CROs value readiness less than deal visibility.
+- A coaching-led vendor adds source evidence and a CRO frame to the practice-plus-real-calls pairing. Hyperbound is the one to watch (section 6).
 
 ---
 
@@ -251,4 +320,6 @@ Competitors lead with quantified outcomes (Table A). PitchSense should publish *
 - Phase 1 scores reflect documented capability under the frozen rubric. Website emphasis (this report's "less emphasised") is a separate, weaker signal.
 - All competitor metrics are vendor claims, not independently verified.
 - The PitchSense capability status is as of Sep 30, 2026 (Narrative v1). Re-check before any public use.
-- Phase 2 Table F in batches 1–3 is still marked PROVISIONAL. It was written before Narrative v1 was located, and it can now be reconciled with the Narrative.
+- Phase 2 Table F (batches 1–3) was reconciled with Narrative v1 on Oct 19, 2026. Its statuses match this report's.
+- Section 6 relies on light-format homepage captures for 40 companies (one row each). That is weaker evidence than the 10 full-format analyses.
+- Two Table E items ("Admins see adoption, never scores"; company-owned data) are stated in the Narrative but are not on its status list. Confirm them with the product owner before public use (section 7).

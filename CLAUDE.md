@@ -31,5 +31,5 @@ A PostToolUse hook (`tools/hooks/after_edit.py`) runs the matching gates wheneve
 
 ## Current state (Oct 19, 2026)
 
-- Phases 1–3 are complete for all 50 companies. Open items are in `ROADMAP.md`: the 10-item verification backlog and the triggered checks from Phase 2.
-- Phase 2 Table F (batches 1–3) is still PROVISIONAL: it predates Narrative v1 and has not been reconciled with it.
+- Phases 1–3 are complete for all 50 companies. Open items are in `ROADMAP.md`: the verification backlog (8 of 10 open) and the triggered-checks watch list.
+- Phase 2 Table F (batches 1–3) was reconciled with Narrative v1, and Phase 3 was extended to all 50 companies with a claim check (both Oct 19, 2026).

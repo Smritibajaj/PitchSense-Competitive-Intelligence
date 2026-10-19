@@ -152,7 +152,7 @@ w('**Method rules (all batches).** Heading levels verified against HTML tags. Na
 w('**Change log.**')
 w('- Oct 19, 2026: batches 1–3 (full format) and 4–5 (light format).')
 w('- Oct 19, 2026: batches 6–11 (light format, 30 companies) completed the 50-company scope, and this master report was consolidated.')
-w('- Product Narrative v1 (Sep 30, 2026) was located after batches 1–3. Table F below is still marked PROVISIONAL until it is reconciled against that document; Phase 3 (`phase3/pitchsense_phase3_cro_positioning.md`) already uses it.\n')
+w('- Product Narrative v1 (Sep 30, 2026) was located after batches 1–3. Table F was reconciled against it on Oct 19, 2026: its PitchSense column gives Appendix status, and each interpretation ends with a reconciliation note. Phase 3 (`phase3/pitchsense_phase3_cro_positioning.md`) uses it.\n')
 w('---\n')
 
 # Coverage
@@ -209,8 +209,8 @@ w(table(['Company', 'CRO pain point', 'Exact supporting claim', 'Location on pag
         [[esc(r['Company']), esc(r['CRO Pain Point']), esc(r['Exact Supporting Claim']), esc(r['Location on Page']), esc(r['Promised Business Outcome']),
           link(r['Evidence URL']) if r['Evidence URL'].startswith('http') else esc(r['Evidence URL'])] for r in fullE]) + '\n')
 
-w('### Table F — PitchSense narrative comparison (PROVISIONAL)\n')
-w('Batches 1–3 were written before PitchSense Product Narrative v1 was located, using the positioning in the research brief. They are reproduced per batch and remain PROVISIONAL until reconciled with Narrative v1. The last column is analyst interpretation, not a capability claim.\n')
+w('### Table F — PitchSense narrative comparison (reconciled with Narrative v1)\n')
+w('Batches 1–3 were written before PitchSense Product Narrative v1 was located, using the positioning in the research brief. On Oct 19, 2026 they were reconciled with Narrative v1: the PitchSense column now gives Appendix status (Built / In build / Planned), and each interpretation ends with a reconciliation note. The last column is analyst interpretation, not a capability claim.\n')
 for b, hdr, rows in fullF:
     comp = [h for h in hdr[1:-2]]
     w(f'**Batch {b}** ({", ".join(h.replace(" Evidence", "") for h in comp)})\n')
