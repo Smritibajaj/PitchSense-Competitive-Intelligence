@@ -1,16 +1,8 @@
 # Research Roadmap — Maintenance and Expansion
 
-This Project is the ongoing home of the PitchSense competitive-intelligence research. The master report (`reports/pitchsense_competitor_research_master.md`) is the source of truth; update it (not just the batch files) whenever new evidence lands.
+This repository is the ongoing home of the PitchSense competitive-intelligence research. Phase 1 changes go into `phase1/pitchsense_competitor_research_master.md` and its batch file together (see the `evidence-update` skill).
 
-## Frozen rules (do not change without noting a rubric revision)
-
-- Five scoring dimensions, 0-2 each, max 10: Call Intelligence, Deal Intelligence, Content Intelligence, Coaching Intelligence, Shared Memory.
-- Shared memory functional test: 1 = retained context in limited scope reused in workflows; 2 = persistent cross-source context used across capabilities. A chatbot, CRM sync, or AI search alone is insufficient; the word "memory" is not required.
-- Only documented product evidence; 1 means documented partial capability; uncertain depth/availability is flagged separately, and unverified points are shown as provisional totals (e.g., "2 (+1 unverified)").
-- Entity resolution before fetching; dedupe operating companies (Clari+Salesloft; Seismic+Highspot; Showpad+Bigtincan+Brainshark; People.ai→Backstory; ZoomInfo Chorus is a product).
-- Programmatic verification gates after every report change: identical company sets across Tables A/B/C, distinct-company count, scores 0-2, totals = sum of components, every Table B row carries evidence URLs, Table A rows have consistent column counts (12 cells).
-- Announced vs GA capabilities separated (e.g., Noota Sales Agent "Coming soon"; Mindtickle ElevateOS; Agentforce Long-Horizon Runtime).
-- Research dates and per-company "Daily users" fields preserved; inferred values labeled.
+Research rules (rubric, entity resolution, evidence and claim rules, gates) live in `RESEARCH_RULES.md`. This file tracks what is still to do.
 
 ## Verification backlog (unresolved flags from the 50-company research)
 
@@ -27,6 +19,16 @@ Priority items to verify against release notes / product docs:
 9. Noota: Sales Agent GA status (currently "Coming soon").
 10. Microsoft Copilot for Sales: release-note coverage beyond Microsoft Learn docs (marketing page unfetchable).
 
+## Triggered checks raised by Phase 2 batches 6–11 (Oct 19, 2026 homepage captures — verify before changing Master Report)
+
+- PathFactory: homepage banner states acquisition by Kaltura.
+- Fathom: site-wide banner "FATHOM IS NOW PART OF SUPERHUMAN".
+- Wonderway: page references "Verity by BTS" (possible rebrand; relationship not stated); AI Coach still labeled beta.
+- Microsoft Copilot for Sales: H1 now "Sales solution in Microsoft Copilot" (adoption page; marketing page still bot-blocked).
+- Hyperbound: "AI-Powered Roleplay Platform" framing replaced by Practice / Perform / Kota Activate.
+- Regie.ai: product now "RegieGO" ("agentic sales workspace").
+- Wording drift vs. Master Report quotes: Circleback "Company Brain" (now title-only), Quantified ("one audit trail"), PitchMonster ("300K+ reps" vs 30,000+), HubSpot Breeze, Humantic AI ("Miia, Pi & Signals").
+
 ## Expansion candidates (next batch, when growing beyond 50)
 
 - Companies identified during identity resolution but not scored: monitor for re-entry (BoostUp and SetSail were defunct as of Oct 19, 2026 — verify before any re-add).
@@ -37,9 +39,11 @@ Priority items to verify against release notes / product docs:
 
 - Quarterly: re-verify the top 10 and the shared-memory/CRO shortlists; update scores only with new documented evidence; log changes in the master report header.
 - Triggered: M&A watch (consolidation is an active theme — Clari/Salesloft, Seismic/Highspot, Showpad/Bigtincan), major product launches by shortlist vendors, defunct/rebrand checks.
-- Process: every update runs the programmatic verification gates and a reviewer pass on changed rows before the report is re-shared under the same file name.
+- Process: every update runs the gates (the edit hook does this automatically) and a reviewer pass on changed rows, then `/export-claude-project` refreshes claude.ai.
+- Quarterly also: re-capture Phase 2 messaging for the top 10 (`phase2-batch` skill).
 
 ## Open synthesis items
 
 - The three gap hypotheses remain testable, not verified absences; validate each against its named partial counterexamples before using in positioning work.
-- No PitchSense positioning recommendation exists yet (per the original brief); the evidence base is now complete for that next step.
+- Phase 3 CRO positioning exists (`phase3/`). Revisit its hero direction when deal risks, commitments, or real-call scoring ship (Narrative v1 status).
+- Reconcile Phase 2 Table F (batches 1–3) with Narrative v1 and review its PROVISIONAL label.

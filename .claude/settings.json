@@ -1,0 +1,37 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -I tools/verify_phase1.py:*)",
+      "Bash(python3 -I tools/gen_phase2_master.py:*)",
+      "Bash(python3 -I tools/build_claude_project.py:*)",
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "WebSearch",
+      "WebFetch"
+    ],
+    "deny": [
+      "Edit(source/**)",
+      "Write(source/**)",
+      "Edit(phase2/pitchsense_phase2_messaging_master.md)",
+      "Write(phase2/pitchsense_phase2_messaging_master.md)",
+      "Edit(phase2/phase2_website_messaging_all50.csv)",
+      "Write(phase2/phase2_website_messaging_all50.csv)",
+      "Edit(exports/**)",
+      "Write(exports/**)"
+    ]
+  },
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 -I \"$CLAUDE_PROJECT_DIR\"/tools/hooks/after_edit.py"
+          }
+        ]
+      }
+    ]
+  }
+}

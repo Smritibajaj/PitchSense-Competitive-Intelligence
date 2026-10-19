@@ -1,0 +1,5 @@
+# Generated claude.ai upload set — rebuild with tools/build_claude_project.py
+exports/
+__pycache__/
+.DS_Store
+.claude/settings.local.json

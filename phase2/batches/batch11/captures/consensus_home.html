@@ -1,0 +1,1006 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Consensus: Interactive Product Demo Software With AI</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="/hs/hsstatic/jquery-libs/static-1.1/jquery/jquery-1.7.1.js"></script>
+<script>hsjQuery = window['jQuery'];</script>
+    <meta property="og:description" content="">
+    <meta property="og:title" content="Consensus: Interactive Product Demo Software With AI">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:title" content="Consensus: Interactive Product Demo Software With AI">
+
+    
+
+    
+    <style>
+a.cta_button{-moz-box-sizing:content-box !important;-webkit-box-sizing:content-box !important;box-sizing:content-box !important;vertical-align:middle}.hs-breadcrumb-menu{list-style-type:none;margin:0px 0px 0px 0px;padding:0px 0px 0px 0px}.hs-breadcrumb-menu-item{float:left;padding:10px 0px 10px 10px}.hs-breadcrumb-menu-divider:before{content:'›';padding-left:10px}.hs-featured-image-link{border:0}.hs-featured-image{float:right;margin:0 0 20px 20px;max-width:50%}@media (max-width: 568px){.hs-featured-image{float:none;margin:0;width:100%;max-width:100%}}.hs-screen-reader-text{clip:rect(1px, 1px, 1px, 1px);height:1px;overflow:hidden;position:absolute !important;width:1px}
+</style>
+
+<link rel="stylesheet" href="https://goconsensus.com/hubfs/hub_generated/template_assets/1/196796942425/1791967672299/template_modal-demo.min.css">
+<link rel="stylesheet" href="https://goconsensus.com/hubfs/hub_generated/module_assets/1/224334395140/1791951534620/module_cn-header.min.css">
+<link rel="stylesheet" href="https://goconsensus.com/hubfs/hub_generated/module_assets/1/224336622996/1791958816161/module_cn-footer.min.css">
+    
+
+    
+<!--  Added by GoogleAnalytics4 integration -->
+<script data-cookieconsent="ignore">
+var _hsp = window._hsp = window._hsp || [];
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+
+var useGoogleConsentModeV2 = true;
+var waitForUpdateMillis = 1000;
+
+
+if (!window._hsGoogleConsentRunOnce) {
+  window._hsGoogleConsentRunOnce = true;
+
+  gtag('consent', 'default', {
+    'ad_storage': 'denied',
+    'analytics_storage': 'denied',
+    'ad_user_data': 'denied',
+    'ad_personalization': 'denied',
+    'wait_for_update': waitForUpdateMillis
+  });
+
+  if (useGoogleConsentModeV2) {
+    _hsp.push(['useGoogleConsentModeV2'])
+  } else {
+    _hsp.push(['addPrivacyConsentListener', function(consent){
+      var hasAnalyticsConsent = consent && (consent.allowed || (consent.categories && consent.categories.analytics));
+      var hasAdsConsent = consent && (consent.allowed || (consent.categories && consent.categories.advertisement));
+
+      gtag('consent', 'update', {
+        'ad_storage': hasAdsConsent ? 'granted' : 'denied',
+        'analytics_storage': hasAnalyticsConsent ? 'granted' : 'denied',
+        'ad_user_data': hasAdsConsent ? 'granted' : 'denied',
+        'ad_personalization': hasAdsConsent ? 'granted' : 'denied'
+      });
+    }]);
+  }
+}
+
+gtag('js', new Date());
+gtag('set', 'developer_id.dZTQ1Zm', true);
+gtag('config', 'G-9DQ0VHWF9L');
+</script>
+<script data-cookieconsent="ignore" async src="https://www.googletagmanager.com/gtag/js?id=G-9DQ0VHWF9L"></script>
+
+<!-- /Added by GoogleAnalytics4 integration -->
+
+<!--  Added by GoogleTagManager integration -->
+<script data-cookieconsent="ignore">
+var _hsp = window._hsp = window._hsp || [];
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+
+var useGoogleConsentModeV2 = true;
+var waitForUpdateMillis = 1000;
+
+if (useGoogleConsentModeV2) {
+
+  gtag('set','developer_id.dZTQ1Zm',true);
+
+  gtag('consent', 'default', {
+  'ad_storage': 'denied',
+  'analytics_storage': 'denied',
+  'ad_user_data': 'denied',
+  'ad_personalization': 'denied',
+  'wait_for_update': waitForUpdateMillis
+  });
+}
+
+var hsLoadGtm = function loadGtm() {
+    if(window._hsGtmLoadOnce) {
+      return;
+    }
+
+    if (useGoogleConsentModeV2) {
+      _hsp.push(['useGoogleConsentModeV2'])
+    }
+
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WGMHGLZ');
+
+    window._hsGtmLoadOnce = true;
+};
+
+_hsp.push(['addPrivacyConsentListener', function(consent){
+  if(consent.allowed || (consent.categories && consent.categories.analytics)){
+    hsLoadGtm();
+  }
+}]);
+
+</script>
+
+<!-- /Added by GoogleTagManager integration -->
+
+    <link rel="canonical" href="https://goconsensus.com">
+
+<script data-api-url="https://api-consensus.liftpilot.ai/api/v1" src="https://cdn.liftpilot.ai/dist/lptracker.js"></script>
+<script>LPTracker.personalize();</script>
+<meta property="og:url" content="https://goconsensus.com">
+<meta name="twitter:card" content="summary">
+<meta http-equiv="content-language" content="en">
+
+
+
+
+
+
+<link rel="stylesheet" href="https://goconsensus.com/hubfs/hub_generated/template_assets/1/224336622948/1792384041316/template_consensus-homepage.min.css">
+
+<meta name="generator" content="HubSpot"></head>
+<body>
+<!--  Added by GoogleTagManager integration -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WGMHGLZ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<!-- /Added by GoogleTagManager integration -->
+
+
+
+
+
+
+<div class="cn-header">
+  <header class="cn-header__bar">
+    <div class="cn-header__in">
+      <div class="cn-header__left">
+        <a class="cn-logo" href="/" aria-label="Consensus home">
+          <span class="cn-logo__full"><svg width="137" height="40" viewbox="0 0 137 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><g><g><g><path d="M43.8503 23.0341C43.4008 23.401 42.8479 23.5845 42.1904 23.5845C41.5956 23.5845 41.0772 23.433 40.6351 23.1289C40.1918 22.826 39.8507 22.4011 39.6105 21.8581C39.3704 21.3138 39.2497 20.682 39.2497 19.9604C39.2497 19.2388 39.3704 18.6293 39.6105 18.0911C39.8507 17.5542 40.1893 17.1392 40.6252 16.8486C41.0611 16.558 41.5771 16.4127 42.1719 16.4127C42.8418 16.4127 43.3984 16.5962 43.8417 16.9631C44.2838 17.3301 44.5695 17.8104 44.6951 18.4051H46.3267C46.2257 17.7217 45.9819 17.122 45.5965 16.6023C45.211 16.0839 44.7209 15.6825 44.1262 15.398C43.5314 15.1135 42.8676 14.9707 42.1337 14.9707C41.236 14.9707 40.4356 15.1862 39.7337 15.616C39.0318 16.0457 38.4788 16.6344 38.0737 17.3806C37.6686 18.1268 37.4666 18.9864 37.4666 19.9604C37.4666 20.9345 37.6686 21.8039 38.0737 22.5686C38.4788 23.3345 39.0318 23.9342 39.7337 24.3714C40.4356 24.8073 41.2422 25.0265 42.1522 25.0265C42.8726 25.0265 43.524 24.8837 44.1065 24.5992C44.6877 24.3147 45.1778 23.9133 45.5768 23.3949C45.9758 22.8764 46.2319 22.2755 46.3452 21.5921H44.7135C44.5867 22.1868 44.2986 22.6671 43.8503 23.0341Z" fill="#1F242B" /><path d="M54.8406 15.616C54.1067 15.1863 53.2533 14.9708 52.2793 14.9708C51.3052 14.9708 50.4543 15.1863 49.7278 15.616C49 16.0458 48.4311 16.6344 48.0198 17.3807C47.6085 18.1269 47.4028 18.9864 47.4028 19.9605C47.4028 20.9345 47.6048 21.8039 48.0099 22.5686C48.4151 23.3346 48.984 23.9343 49.7179 24.3715C50.4518 24.8074 51.3052 25.0266 52.2793 25.0266C53.2533 25.0266 54.1042 24.8086 54.8308 24.3715C55.5586 23.9355 56.1275 23.3346 56.5388 22.5686C56.9501 21.8039 57.1557 20.9345 57.1557 19.9605C57.1557 18.9864 56.9538 18.1269 56.5486 17.3807C56.1435 16.6344 55.5746 16.0458 54.8406 15.616ZM54.9736 21.8396C54.72 22.3839 54.3628 22.81 53.9011 23.1203C53.4393 23.4306 52.8987 23.5846 52.2793 23.5846C51.6599 23.5846 51.1193 23.4294 50.6575 23.1203C50.1957 22.81 49.8349 22.3839 49.5763 21.8396C49.3165 21.2954 49.1872 20.6636 49.1872 19.942C49.1872 18.867 49.4753 18.0099 50.0504 17.3708C50.6255 16.7317 51.3692 16.4128 52.2793 16.4128C53.1893 16.4128 53.9454 16.7317 54.5081 17.3708C55.0709 18.0099 55.3529 18.867 55.3529 19.942C55.3529 20.6624 55.2261 21.2954 54.9736 21.8396Z" fill="#1F242B" /><path d="M64.2032 14.9708C63.3424 14.9708 62.5777 15.1789 61.9078 15.5963C61.3438 15.9473 60.9017 16.4078 60.5803 16.9743V15.1604H58.9302V24.8369H60.6567V19.6009C60.6567 18.9815 60.786 18.4348 61.0458 17.9594C61.3044 17.4853 61.6689 17.1147 62.1369 16.8499C62.6048 16.5839 63.1355 16.4509 63.7303 16.4509C64.4138 16.4509 64.9322 16.6283 65.2856 16.9817C65.639 17.3363 65.8164 17.8609 65.8164 18.5567V24.8369H67.5613V18.1392C67.5613 17.191 67.2571 16.4251 66.65 15.8438C66.0429 15.2626 65.2265 14.9708 64.202 14.9708H64.2032Z" fill="#1F242B" /><path d="M74.3168 19.3735L72.7615 18.956C72.2049 18.8045 71.8059 18.6174 71.5658 18.3969C71.3257 18.1753 71.205 17.9068 71.205 17.5904C71.205 17.1852 71.3687 16.8761 71.6988 16.6606C72.0276 16.4451 72.4893 16.338 73.0841 16.338C73.7171 16.338 74.2195 16.4673 74.5926 16.7271C74.9657 16.987 75.196 17.3564 75.2847 17.8366H76.9348C76.8461 16.9389 76.4632 16.237 75.7871 15.7309C75.1098 15.2248 74.2281 14.9724 73.1408 14.9724C72.0534 14.9724 71.1705 15.2186 70.5326 15.7124C69.8935 16.2062 69.5746 16.8761 69.5746 17.7234C69.5746 18.4068 69.8048 18.9856 70.2666 19.4597C70.7284 19.9338 71.4266 20.2847 72.3625 20.5125L73.9178 20.9115C74.5126 21.063 74.914 21.2526 75.1221 21.4804C75.3315 21.7082 75.4349 21.9742 75.4349 22.2772C75.4349 22.7205 75.2551 23.0616 74.8943 23.3017C74.5335 23.5418 74.0249 23.6625 73.3673 23.6625C72.6211 23.6625 72.0263 23.5073 71.5842 23.1983C71.1409 22.8879 70.8823 22.4422 70.806 21.8609H69.1559C69.2569 22.8609 69.6706 23.6379 70.3984 24.1945C71.1249 24.7511 72.1027 25.0294 73.3292 25.0294C74.5557 25.0294 75.4263 24.7893 76.09 24.309C76.7538 23.8287 77.0862 23.1515 77.0862 22.2784C77.0862 21.5826 76.8523 20.9817 76.3843 20.4756C75.9164 19.9695 75.2268 19.6025 74.3168 19.3747V19.3735Z" fill="#1F242B" /><path d="M85.31 15.5594C84.6328 15.1678 83.8397 14.9708 82.9297 14.9708C81.968 14.9708 81.1244 15.1789 80.3967 15.5963C79.6689 16.0138 79.1037 16.5987 78.6985 17.3511C78.2934 18.1035 78.0914 18.9729 78.0914 19.9593C78.0914 20.9456 78.2934 21.8187 78.6985 22.5773C79.1037 23.3358 79.6689 23.9343 80.3967 24.3702C81.1244 24.8061 81.9618 25.0253 82.91 25.0253C83.9345 25.0253 84.8162 24.7667 85.5563 24.2471C86.2964 23.7286 86.8247 23.0267 87.1412 22.1413H85.4911C85.2891 22.6093 84.9665 22.9701 84.5232 23.2225C84.0798 23.4762 83.5614 23.6018 82.9679 23.6018C82.0061 23.6018 81.2476 23.2767 80.691 22.6253C80.2316 22.0884 79.9657 21.3877 79.8856 20.5294H87.3702C87.3961 20.3779 87.4108 20.2425 87.4182 20.1218C87.4244 20.0024 87.4281 19.8718 87.4281 19.7327C87.4281 18.7722 87.2446 17.9336 86.8776 17.2193C86.5107 16.5051 85.9885 15.951 85.3125 15.5594H85.31ZM80.6897 17.3523C81.2463 16.7132 81.9864 16.3943 82.91 16.3943C83.8336 16.3943 84.485 16.6849 84.9776 17.2674C85.3691 17.7292 85.6031 18.3572 85.6832 19.1453H79.9127C80.0198 18.4224 80.2784 17.824 80.6897 17.3523Z" fill="#1F242B" /><path d="M94.4925 14.9708C93.6318 14.9708 92.8671 15.1789 92.1972 15.5963C91.6332 15.9473 91.1911 16.4078 90.8697 16.9743V15.1604H89.2196V24.8369H90.946V19.6009C90.946 18.9815 91.0753 18.4348 91.3352 17.9594C91.5938 17.4853 91.9583 17.1147 92.4262 16.8499C92.8941 16.5839 93.4249 16.4509 94.0197 16.4509C94.7031 16.4509 95.2215 16.6283 95.5749 16.9817C95.9284 17.3363 96.1057 17.8609 96.1057 18.5567V24.8369H97.8506V18.1392C97.8506 17.191 97.5465 16.4251 96.9394 15.8438C96.3323 15.2626 95.5158 14.9708 94.4913 14.9708H94.4925Z" fill="#1F242B" /><path d="M104.606 19.3735L103.051 18.956C102.494 18.8045 102.095 18.6174 101.855 18.3969C101.615 18.1753 101.494 17.9068 101.494 17.5904C101.494 17.1852 101.658 16.8761 101.988 16.6606C102.317 16.4451 102.779 16.338 103.373 16.338C104.006 16.338 104.509 16.4673 104.882 16.7271C105.255 16.987 105.485 17.3564 105.574 17.8366H107.224C107.135 16.9389 106.752 16.237 106.076 15.7309C105.399 15.2248 104.517 14.9724 103.43 14.9724C102.343 14.9724 101.46 15.2186 100.822 15.7124C100.183 16.2062 99.8638 16.8761 99.8638 17.7234C99.8638 18.4068 100.094 18.9856 100.556 19.4597C101.018 19.9338 101.716 20.2847 102.652 20.5125L104.207 20.9115C104.802 21.063 105.203 21.2526 105.411 21.4804C105.621 21.7082 105.724 21.9742 105.724 22.2772C105.724 22.7205 105.544 23.0616 105.184 23.3017C104.823 23.5418 104.314 23.6625 103.657 23.6625C102.91 23.6625 102.316 23.5073 101.874 23.1983C101.43 22.8879 101.172 22.4422 101.095 21.8609H99.4452C99.5461 22.8609 99.9599 23.6379 100.688 24.1945C101.414 24.7511 102.392 25.0294 103.618 25.0294C104.845 25.0294 105.716 24.7893 106.379 24.309C107.043 23.8287 107.376 23.1515 107.376 22.2784C107.376 21.5826 107.142 20.9817 106.674 20.4756C106.206 19.9695 105.516 19.6025 104.606 19.3747V19.3735Z" fill="#1F242B" /><path d="M115.667 20.3976C115.667 21.0047 115.538 21.549 115.278 22.0292C115.018 22.5095 114.667 22.8826 114.225 23.1486C113.782 23.4146 113.27 23.5476 112.688 23.5476C112.055 23.5476 111.565 23.3702 111.218 23.0168C110.87 22.6634 110.696 22.1376 110.696 21.4418V15.1616H108.969V21.8593C108.969 22.4787 109.105 23.0291 109.377 23.5094C109.649 23.9909 110.032 24.3628 110.525 24.6287C111.019 24.8947 111.581 25.0277 112.213 25.0277C113.048 25.0277 113.794 24.8184 114.452 24.4022C115.012 24.0463 115.448 23.5783 115.761 23.002V24.8393H117.411V15.1628H115.666V20.3988L115.667 20.3976Z" fill="#1F242B" /><path d="M126.347 20.4728C125.879 19.9666 125.189 19.5997 124.279 19.3719L122.724 18.9544C122.167 18.803 121.768 18.6158 121.528 18.3954C121.288 18.1737 121.167 17.9052 121.167 17.5888C121.167 17.1836 121.331 16.8745 121.661 16.659C121.99 16.4435 122.452 16.3364 123.047 16.3364C123.68 16.3364 124.182 16.4657 124.555 16.7255C124.928 16.9854 125.158 17.3548 125.247 17.8351H126.897C126.809 16.9373 126.426 16.2354 125.75 15.7293C125.072 15.2232 124.191 14.9708 123.103 14.9708C122.016 14.9708 121.133 15.217 120.495 15.7108C119.856 16.2047 119.537 16.8745 119.537 17.7218C119.537 18.4052 119.767 18.984 120.229 19.4581C120.691 19.9322 121.389 20.2831 122.325 20.5109L123.88 20.9099C124.475 21.0614 124.876 21.251 125.085 21.4788C125.294 21.7067 125.397 21.9726 125.397 22.2756C125.397 22.7189 125.218 23.06 124.857 23.3001C124.496 23.5402 123.987 23.6609 123.33 23.6609C122.584 23.6609 121.989 23.5058 121.547 23.1967C121.103 22.8864 120.845 22.4406 120.768 21.8593H119.118C119.219 22.8593 119.633 23.6363 120.361 24.1929C121.087 24.7495 122.065 25.0278 123.292 25.0278C124.518 25.0278 125.389 24.7877 126.052 24.3074C126.716 23.8272 127.049 23.1499 127.049 22.2768C127.049 21.581 126.815 20.9801 126.347 20.474V20.4728Z" fill="#1F242B" /></g><g><path d="M7.63678 6.5714C7.46346 6.67088 7.4627 6.92064 7.63542 7.02116L23.7495 16.3998C23.8298 16.4465 23.9289 16.4468 24.0094 16.4006L33.8687 10.7421C34.042 10.6426 34.0428 10.3928 33.87 10.2923L17.756 0.913691C17.6757 0.866969 17.5766 0.866669 17.496 0.912903L7.63678 6.5714Z" stroke="url(#cnh-logo-paint0_linear_1200_51632-cn_header)" stroke-width="1.2987" stroke-miterlimit="10" stroke-linejoin="round" /><path d="M1.07357 29.7466C0.992977 29.7003 0.943298 29.6144 0.943298 29.5215L0.943297 10.5778C0.943297 10.4849 0.992977 10.399 1.07356 10.3527L10.9437 4.67734C11.1169 4.57778 11.3329 4.70277 11.3329 4.90252L11.3329 35.1968C11.3329 35.3965 11.1169 35.5215 10.9437 35.422L1.07357 29.7466Z" stroke="url(#cnh-logo-paint1_linear_1200_51632-cn_header)" stroke-width="1.2987" stroke-miterlimit="10" stroke-linejoin="round" /><path d="M0.943453 10.5757C0.943452 10.4827 0.99313 10.3968 1.07372 10.3505L17.4959 0.907335C17.5765 0.860995 17.6757 0.861256 17.756 0.908018L27.5961 6.63532C27.7687 6.7358 27.768 6.9854 27.5949 7.08497L1.33289 22.1863C1.15973 22.2859 0.943676 22.1609 0.943672 21.9611L0.943453 10.5757Z" stroke="url(#cnh-logo-paint2_linear_1200_51632-cn_header)" stroke-width="1.2987" stroke-miterlimit="10" stroke-linejoin="round" /><path d="M0.943453 29.5238C0.943452 29.6168 0.99313 29.7027 1.07372 29.749L17.4959 39.1922C17.5765 39.2385 17.6757 39.2382 17.756 39.1915L27.5961 33.4642C27.7687 33.3637 27.768 33.1141 27.5949 33.0145L1.33289 17.9132C1.15973 17.8136 0.943676 17.9386 0.943672 18.1384L0.943453 29.5238Z" stroke="url(#cnh-logo-paint3_linear_1200_51632-cn_header)" stroke-width="1.2987" stroke-miterlimit="10" stroke-linejoin="round" /><path d="M7.63678 33.5281C7.46346 33.4286 7.4627 33.1788 7.63542 33.0783L23.7495 23.6997C23.8298 23.653 23.9289 23.6527 24.0094 23.6989L33.8687 29.3574C34.042 29.4569 34.0428 29.7067 33.87 29.8072L17.756 39.1858C17.6757 39.2325 17.5766 39.2328 17.496 39.1866L7.63678 33.5281Z" stroke="url(#cnh-logo-paint4_linear_1200_51632-cn_header)" stroke-width="1.2987" stroke-miterlimit="10" stroke-linejoin="round" /></g><g><path d="M131.534 20.4413C132.759 20.5656 133.715 21.5998 133.715 22.8573C133.715 24.1985 132.627 25.2859 131.286 25.286L131.038 25.2733C129.813 25.1491 128.857 24.1148 128.857 22.8573C128.857 21.516 129.945 20.4286 131.286 20.4286L131.534 20.4413ZM131.286 20.8173C130.159 20.8173 129.246 21.7306 129.246 22.8573C129.246 23.9839 130.159 24.8973 131.286 24.8973C132.412 24.8973 133.326 23.9839 133.326 22.8573C133.326 21.7307 132.413 20.8173 131.286 20.8173ZM131.378 21.5565C131.566 21.5565 131.726 21.5893 131.856 21.6561C131.987 21.7227 132.087 21.8162 132.154 21.9374C132.213 22.0423 132.246 22.1621 132.254 22.2958L132.255 22.3544C132.255 22.5126 132.221 22.6519 132.152 22.7704C132.084 22.8883 131.984 22.9797 131.852 23.0438C131.846 23.0467 131.84 23.049 131.834 23.0516L132.34 23.9764L132.362 24.0184H131.811L131.339 23.1376H130.94V24.0184H130.448V21.5565H131.378ZM130.94 22.7196H131.313C131.419 22.7196 131.503 22.7042 131.567 22.6766L131.612 22.6532C131.653 22.6275 131.685 22.5953 131.707 22.5565L131.727 22.5135C131.745 22.4684 131.754 22.4155 131.754 22.3544C131.754 22.2728 131.738 22.2044 131.707 22.1493C131.676 22.0942 131.63 22.0523 131.566 22.0233C131.502 21.9936 131.418 21.9774 131.311 21.9774H130.94V22.7196Z" fill="#1F242B" /></g></g></g><defs><lineargradient id="cnh-logo-paint0_linear_1200_51632-cn_header" x1="23.3607" y1="16.9854" x2="23.3607" y2="0.905901" gradientunits="userSpaceOnUse"><stop stop-color="#FD4B05" /><stop offset="0.802925" stop-color="#E1006D" /></lineargradient><lineargradient id="cnh-logo-paint1_linear_1200_51632-cn_header" x1="11.3329" y1="4.45355" x2="11.3329" y2="35.6458" gradientunits="userSpaceOnUse"><stop offset="0.1" stop-color="#FA4211" /><stop offset="1" stop-color="#EA184B" /></lineargradient><lineargradient id="cnh-logo-paint2_linear_1200_51632-cn_header" x1="14.4639" y1="0.905893" x2="14.4639" y2="22.4101" gradientunits="userSpaceOnUse"><stop offset="0.100985" stop-color="#FD4B05" /><stop offset="0.798117" stop-color="#E1006D" /></lineargradient><lineargradient id="cnh-logo-paint3_linear_1200_51632-cn_header" x1="9.2848" y1="39.3116" x2="9.2848" y2="17.6894" gradientunits="userSpaceOnUse"><stop offset="0.0961768" stop-color="#E1006D" /><stop offset="0.798117" stop-color="#FD4B05" /></lineargradient><lineargradient id="cnh-logo-paint4_linear_1200_51632-cn_header" x1="19.942" y1="23.5791" x2="19.942" y2="39.1959" gradientunits="userSpaceOnUse"><stop offset="0.2" stop-color="#FD4B05" /><stop offset="1" stop-color="#E1006D" /></lineargradient></defs></svg></span>
+          <span class="cn-logo__mark"><svg width="35" height="40" viewbox="0 0 34.8052 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><g><path d="M7.6367 6.57139C7.46338 6.67087 7.46262 6.92063 7.63534 7.02116L23.7494 16.3998C23.8297 16.4465 23.9288 16.4468 24.0094 16.4006L33.8686 10.7421C34.0419 10.6426 34.0427 10.3928 33.87 10.2923L17.7559 0.913681C17.6756 0.86696 17.5765 0.86666 17.4959 0.912894L7.6367 6.57139Z" stroke="url(#cnh-symbol-paint0_linear_0_343-cn_header)" stroke-width="1.2987" stroke-miterlimit="10" stroke-linejoin="round" /><path d="M1.07349 29.7467C0.992899 29.7003 0.943219 29.6145 0.943219 29.5215L0.943219 10.5779C0.943219 10.4849 0.992898 10.399 1.07349 10.3527L10.9436 4.67738C11.1168 4.57781 11.3328 4.7028 11.3328 4.90255L11.3328 35.1968C11.3328 35.3966 11.1168 35.5216 10.9436 35.422L1.07349 29.7467Z" stroke="url(#cnh-symbol-paint1_linear_0_343-cn_header)" stroke-width="1.2987" stroke-miterlimit="10" stroke-linejoin="round" /><path d="M0.943375 10.5757C0.943373 10.4827 0.993051 10.3968 1.07364 10.3505L17.4958 0.907342C17.5764 0.861002 17.6756 0.861263 17.7559 0.908025L27.596 6.63533C27.7686 6.73581 27.768 6.98541 27.5948 7.08498L1.33281 22.1863C1.15965 22.2859 0.943597 22.1609 0.943593 21.9611L0.943375 10.5757Z" stroke="url(#cnh-symbol-paint2_linear_0_343-cn_header)" stroke-width="1.2987" stroke-miterlimit="10" stroke-linejoin="round" /><path d="M0.943375 29.5238C0.943373 29.6168 0.993051 29.7027 1.07364 29.749L17.4958 39.1922C17.5764 39.2385 17.6756 39.2382 17.7559 39.1915L27.596 33.4642C27.7686 33.3637 27.768 33.1141 27.5948 33.0145L1.33281 17.9132C1.15965 17.8136 0.943597 17.9386 0.943593 18.1384L0.943375 29.5238Z" stroke="url(#cnh-symbol-paint3_linear_0_343-cn_header)" stroke-width="1.2987" stroke-miterlimit="10" stroke-linejoin="round" /><path d="M7.6367 33.5281C7.46338 33.4286 7.46262 33.1789 7.63534 33.0783L23.7494 23.6997C23.8297 23.653 23.9288 23.6527 24.0094 23.6989L33.8686 29.3574C34.0419 29.4569 34.0427 29.7067 33.87 29.8072L17.7559 39.1858C17.6756 39.2325 17.5765 39.2328 17.4959 39.1866L7.6367 33.5281Z" stroke="url(#cnh-symbol-paint4_linear_0_343-cn_header)" stroke-width="1.2987" stroke-miterlimit="10" stroke-linejoin="round" /></g><defs><lineargradient id="cnh-symbol-paint0_linear_0_343-cn_header" x1="23.3606" y1="16.9854" x2="23.3606" y2="0.905891" gradientunits="userSpaceOnUse"><stop stop-color="#FD4B05" /><stop offset="0.802925" stop-color="#E1006D" /></lineargradient><lineargradient id="cnh-symbol-paint1_linear_0_343-cn_header" x1="11.3328" y1="4.45358" x2="11.3328" y2="35.6458" gradientunits="userSpaceOnUse"><stop offset="0.1" stop-color="#FA4211" /><stop offset="1" stop-color="#EA184B" /></lineargradient><lineargradient id="cnh-symbol-paint2_linear_0_343-cn_header" x1="14.4638" y1="0.9059" x2="14.4638" y2="22.4101" gradientunits="userSpaceOnUse"><stop offset="0.100985" stop-color="#FD4B05" /><stop offset="0.798117" stop-color="#E1006D" /></lineargradient><lineargradient id="cnh-symbol-paint3_linear_0_343-cn_header" x1="9.28472" y1="39.3116" x2="9.28472" y2="17.6894" gradientunits="userSpaceOnUse"><stop offset="0.0961768" stop-color="#E1006D" /><stop offset="0.798117" stop-color="#FD4B05" /></lineargradient><lineargradient id="cnh-symbol-paint4_linear_0_343-cn_header" x1="19.942" y1="23.5792" x2="19.942" y2="39.196" gradientunits="userSpaceOnUse"><stop offset="0.2" stop-color="#FD4B05" /><stop offset="1" stop-color="#E1006D" /></lineargradient></defs></svg></span>
+        </a>
+
+        <nav class="cn-nav cn-only-desk" aria-label="Main">
+          <div class="cn-nav__item" data-menu>
+            <button class="cn-nav__link" type="button" aria-haspopup="true" aria-expanded="false">Platform<svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><g opacity="0.5"><path d="M13 5.5L8 10.5L3 5.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /></g></svg></button>
+            <div class="cn-menu cn-menu--mega" hidden>
+              <div class="cn-mega__col">
+                <a class="cn-mega__item" href="https://goconsensus.com/ai-agents">
+                  <span class="cn-mega__icon"><svg width="45" height="45" viewbox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><g><path d="M23.0469 44.0005H21.9727V37.3608C22.1391 37.4238 22.317 37.4604 22.501 37.4604C22.6915 37.4604 22.8754 37.4213 23.0469 37.354V44.0005ZM19.9209 34.2368L17.4648 43.4067L16.9453 43.2671L16.4258 43.1284L19.1875 32.8188L19.9209 34.2368ZM28.5938 43.1284L28.0742 43.2671L27.5557 43.4067L27.3418 42.6079L27.8604 42.4683L28.3799 42.3296L28.5938 43.1284ZM18.2354 30.9771L12.2256 41.3892L11.7598 41.1196L11.2939 40.8511L17.6494 29.8433L18.2354 30.9771ZM33.7256 40.8511L33.2598 41.1196L32.7949 41.3892L26.7734 30.9604L27.3604 29.8267L33.7256 40.8511ZM27.9521 40.7319L27.4326 40.8706L26.9131 41.0103L26.4854 39.4126L27.0049 39.2739L27.5234 39.1343L27.9521 40.7319ZM8.27148 37.4985L7.68652 38.0835L7.30664 37.7036L6.92676 37.3228L7.51172 36.7388L8.27148 37.4985ZM38.0928 37.3228L37.7129 37.7036L37.332 38.0835L27.9443 28.6958L28.2012 28.2007L28.708 27.938L38.0928 37.3228ZM27.0957 37.5366L26.5762 37.6763L26.0576 37.8149L25.6289 36.2173L26.1484 36.0786L26.668 35.939L27.0957 37.5366ZM10.6104 35.1597L9.44043 36.3296L9.06055 35.9487L8.68066 35.5688L9.85059 34.3999L10.6104 35.1597ZM26.2393 34.3423L25.7207 34.481L25.2012 34.6206L25.0918 34.2134L25.8252 32.7954L26.2393 34.3423ZM12.9492 32.8208L11.7803 33.9907L11.0195 33.23L12.1895 32.061L12.9492 32.8208ZM15.1709 27.3579L4.16113 33.7153L3.89258 33.2505L3.62402 32.7847L14.0361 26.771L15.1709 27.3579ZM41.3994 32.7847L41.1299 33.2505L40.8613 33.7153L29.8408 27.3521L30.9756 26.7651L41.3994 32.7847ZM15.2881 30.4819L14.1191 31.6519L13.3584 30.8911L14.5283 29.7222L15.2881 30.4819ZM16.7998 28.2007L17.0615 28.7075L16.458 29.313L15.6973 28.5522L16.3047 27.9448L16.7998 28.2007ZM12.1943 25.8188L1.88086 28.5835L1.74219 28.0649L1.60352 27.5454L10.7783 25.0864L12.1943 25.8188ZM43.415 27.5454L43.2754 28.0649L43.1367 28.5835L42.3379 28.3696L42.4766 27.8501L42.6162 27.3315L43.415 27.5454ZM41.0186 26.9028L40.8789 27.4224L40.7402 27.9419L39.1426 27.5132L39.2822 26.9946L39.4209 26.4751L41.0186 26.9028ZM37.8232 26.0474L37.6846 26.5669L37.5449 27.0854L35.9482 26.6577L36.0869 26.1382L36.2266 25.6196L37.8232 26.0474ZM34.6289 25.1909L34.4893 25.7104L34.3506 26.23L32.8105 25.8169L34.2285 25.0835L34.6289 25.1909ZM44.0088 21.9634V23.0376H37.3584C37.4235 22.8687 37.4609 22.6877 37.4609 22.5005C37.4609 22.3133 37.4235 22.1323 37.3584 21.9634H44.0088ZM7.64355 21.9634C7.5785 22.1323 7.54102 22.3133 7.54102 22.5005C7.54102 22.6877 7.5785 22.8687 7.64355 23.0376H1.00977V21.9634H7.64355ZM43.2754 16.936L43.415 17.4556L34.2285 19.9165L32.8105 19.1831L43.1367 16.4165L43.2754 16.936ZM12.1953 19.1802L10.7783 19.9136L10.3887 19.8091L10.5283 19.2905L10.667 18.771L12.1953 19.1802ZM9.06934 18.3433L8.93066 18.8618L8.79199 19.3813L7.19434 18.9536L7.33301 18.4341L7.47266 17.9146L9.06934 18.3433ZM5.875 17.4868L5.73535 18.0063L5.59668 18.5249L3.99902 18.0972L4.13867 17.5776L4.27734 17.0591L5.875 17.4868ZM41.1299 11.7505L41.3994 12.2163L30.9756 18.2339L29.8398 17.647L40.8613 11.2847L41.1299 11.7505ZM15.1709 17.6411L14.0371 18.228L3.62402 12.2163L4.16113 11.2847L15.1709 17.6411ZM2.67969 16.6304L2.54102 17.1499L2.40137 17.6694L1.60352 17.4556L1.88086 16.4165L2.67969 16.6304ZM29.3213 16.4487L28.708 17.061L28.2012 16.7993L27.9453 16.3042L28.5615 15.689L29.3213 16.4487ZM17.0615 16.2925L16.7998 16.7993L16.3037 17.0552L6.92676 7.67822L7.68652 6.91846L17.0615 16.2925ZM31.6602 14.1099L30.4912 15.2798L29.7305 14.519L30.9004 13.3501L31.6602 14.1099ZM33.2598 3.88135L33.7256 4.1499L27.3604 15.1733L26.7734 14.0386L32.7949 3.61279L33.2598 3.88135ZM18.2354 14.022L17.6484 15.1567L11.2939 4.1499L12.2256 3.61279L18.2354 14.022ZM33.999 11.771L32.8301 12.9409L32.4502 12.561L32.0703 12.1802L33.2393 11.0112L33.999 11.771ZM28.0742 1.73291L28.5938 1.87158L25.8242 12.2036L25.0918 10.7866L27.5557 1.59424L28.0742 1.73291ZM19.9209 10.7632L19.1875 12.1812L18.7803 10.6577L19.2998 10.519L19.8184 10.3804L19.9209 10.7632ZM36.3379 9.43213L35.1689 10.6021L34.4092 9.84229L35.5781 8.67236L36.3379 9.43213ZM19.3906 8.78271L18.8711 8.92139L18.3525 9.06104L17.9238 7.46338L18.4434 7.32373L18.9629 7.18506L19.3906 8.78271ZM37.7129 7.29834L38.0928 7.67822L37.5078 8.26318L36.748 7.50342L37.332 6.91846L37.7129 7.29834ZM23.0469 7.646C22.8755 7.57879 22.6914 7.54053 22.501 7.54053C22.3175 7.54053 22.1389 7.57377 21.9727 7.63623V1.00049H23.0469V7.646ZM18.5342 5.5874L18.0156 5.72705L17.4961 5.86572L17.0684 4.26807L17.5869 4.12939L18.1064 3.98975L18.5342 5.5874ZM17.6787 2.39209L17.1592 2.53174L16.6406 2.67041L16.4258 1.87158L17.4648 1.59424L17.6787 2.39209Z" fill="#1F242B" /><g filter="url(#cnh-demo-intelligence-filter0_n_0_15-cn_header-1)"><path d="M22.5002 9.63452L26.8851 18.1151L35.3656 22.4999L26.8851 26.8848L22.5002 35.3654L18.1153 26.8848L9.63477 22.4999L18.1153 18.1151L22.5002 9.63452Z" fill="url(#cnh-demo-intelligence-paint0_linear_0_15-cn_header-1)" /></g></g><defs><filter id="cnh-demo-intelligence-filter0_n_0_15-cn_header-1" x="9.63477" y="9.63452" width="25.7309" height="25.7309" filterunits="userSpaceOnUse" color-interpolation-filters="sRGB"><feflood flood-opacity="0" result="BackgroundImageFix" /><feblend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" /><feturbulence type="fractalNoise" baseFrequency="8.3269548416137695 8.3269548416137695" stitchTiles="stitch" numOctaves="3" result="noise" seed="3716" /><fecolormatrix in="noise" type="luminanceToAlpha" result="alphaNoise" /><fecomponenttransfer in="alphaNoise" result="coloredNoise1"><fefunca type="discrete" tableValues="0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 " /></fecomponenttransfer><fecomposite operator="in" in2="shape" in="coloredNoise1" result="noise1Clipped" /><feflood flood-color="rgba(253, 249, 247, 0.7)" result="color1Flood" /><fecomposite operator="in" in2="noise1Clipped" in="color1Flood" result="color1" /><femerge result="effect1_noise_0_15"><femergenode in="shape" /><femergenode in="color1" /></femerge></filter><lineargradient id="cnh-demo-intelligence-paint0_linear_0_15-cn_header-1" x1="22.5002" y1="9.63452" x2="22.5002" y2="35.3654" gradientunits="userSpaceOnUse"><stop stop-color="#FD4B05" /><stop offset="1" stop-color="#E1006D" /></lineargradient></defs></svg></span>
+                  <span class="cn-mega__text"><b>AI Agents</b><span>Powerful agents across the GTM stack</span></span>
+                </a>
+                <a class="cn-mega__item" href="https://goconsensus.com/live-demo-software">
+                  <span class="cn-mega__icon"><svg width="45" height="45" viewbox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><g clip-path="url(#cnh-selling-clip0_0_60-cn_header-2)"><g filter="url(#cnh-selling-filter0_n_0_60-cn_header-2)"><path d="M22.5 37.5C30.7843 37.5 37.5 30.7843 37.5 22.5C37.5 14.2157 30.7843 7.5 22.5 7.5C14.2157 7.5 7.5 14.2157 7.5 22.5C7.5 30.7843 14.2157 37.5 22.5 37.5Z" fill="url(#cnh-selling-paint0_linear_0_60-cn_header-2)" /></g><path d="M22.4999 39.5957C31.9415 39.5957 39.5955 31.9418 39.5955 22.5001C39.5955 13.0585 31.9415 5.40454 22.4999 5.40454C13.0582 5.40454 5.4043 13.0585 5.4043 22.5001C5.4043 31.9418 13.0582 39.5957 22.4999 39.5957Z" stroke="#1F242B" stroke-miterlimit="10" stroke-dasharray="2 1.5" /><path d="M22.5 44C34.3741 44 44 34.3741 44 22.5C44 10.6259 34.3741 1 22.5 1C10.6259 1 1 10.6259 1 22.5C1 34.3741 10.6259 44 22.5 44Z" stroke="#1F242B" stroke-miterlimit="10" stroke-dasharray="5 6" /><g><path d="M22.5 36.25V8.75" stroke="#1F242B" stroke-miterlimit="10" /><path d="M29.3737 34.4077L15.623 10.5923" stroke="#1F242B" stroke-miterlimit="10" /><path d="M34.4091 29.3747L10.5938 15.625" stroke="#1F242B" stroke-miterlimit="10" /><path d="M36.25 22.5H8.75" stroke="#1F242B" stroke-miterlimit="10" /><path d="M34.4091 15.625L10.5938 29.3747" stroke="#1F242B" stroke-miterlimit="10" /><path d="M29.3737 10.5923L15.623 34.4077" stroke="#1F242B" stroke-miterlimit="10" /></g></g><defs><filter id="cnh-selling-filter0_n_0_60-cn_header-2" x="7.5" y="7.5" width="30" height="30" filterunits="userSpaceOnUse" color-interpolation-filters="sRGB"><feflood flood-opacity="0" result="BackgroundImageFix" /><feblend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" /><feturbulence type="fractalNoise" baseFrequency="4.7309355735778809 4.7309355735778809" stitchTiles="stitch" numOctaves="3" result="noise" seed="3716" /><fecolormatrix in="noise" type="luminanceToAlpha" result="alphaNoise" /><fecomponenttransfer in="alphaNoise" result="coloredNoise1"><fefunca type="discrete" tableValues="0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 " /></fecomponenttransfer><fecomposite operator="in" in2="shape" in="coloredNoise1" result="noise1Clipped" /><feflood flood-color="rgba(253, 249, 247, 0.7)" result="color1Flood" /><fecomposite operator="in" in2="noise1Clipped" in="color1Flood" result="color1" /><femerge result="effect1_noise_0_60"><femergenode in="shape" /><femergenode in="color1" /></femerge></filter><lineargradient id="cnh-selling-paint0_linear_0_60-cn_header-2" x1="37.5" y1="22.5" x2="7.5" y2="22.5" gradientunits="userSpaceOnUse"><stop stop-color="#E1006D" /><stop offset="1" stop-color="#FD4B05" /></lineargradient><clippath id="cnh-selling-clip0_0_60-cn_header-2"><rect width="45" height="45" fill="white" /></clippath></defs></svg></span>
+                  <span class="cn-mega__text"><b>Live Demo Platform</b><span>Deliver live demos with confidence</span></span>
+                </a>
+                <a class="cn-mega__item" href="https://goconsensus.com/overview/demolytics">
+                  <span class="cn-mega__icon"><svg width="45" height="45" viewbox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><g clip-path="url(#cnh-goal-clip0_0_48-cn_header-3)"><g filter="url(#cnh-goal-filter0_n_0_48-cn_header-3)"><path d="M22.4922 37.3554C30.6967 37.3554 37.3477 30.7044 37.3477 22.5C37.3477 14.2955 30.6967 7.64453 22.4922 7.64453C14.2878 7.64453 7.63681 14.2955 7.63681 22.5C7.63681 30.7044 14.2878 37.3554 22.4922 37.3554Z" fill="url(#cnh-goal-paint0_linear_0_48-cn_header-3)" /></g><g><path d="M22.4974 28.0363C19.4397 28.0363 16.9609 25.5575 16.9609 22.4998C16.9609 19.4421 19.4397 16.9634 22.4974 16.9634C25.5551 16.9634 28.0339 19.4421 28.0339 22.4998C28.0339 25.5575 25.5551 28.0363 22.4974 28.0363Z" stroke="#1F242B" stroke-miterlimit="10" /></g><path d="M27.201 26.9566C28.4316 26.9566 29.4293 25.959 29.4293 24.7283C29.4293 23.4976 28.4316 22.5 27.201 22.5C25.9703 22.5 24.9727 23.4976 24.9727 24.7283C24.9727 25.959 25.9703 26.9566 27.201 26.9566Z" fill="white" stroke="#1F242B" stroke-width="0.990361" /><path d="M22.501 0.494385C28.8845 0.494413 34.6319 3.21392 38.6514 7.55591C38.3417 7.69775 38.0693 7.90724 37.8555 8.16724C34.0217 4.06177 28.5614 1.49441 22.501 1.49438C10.9007 1.49439 1.49628 10.8985 1.49609 22.4993C1.49609 34.1002 10.9001 43.5041 22.501 43.5042C34.1013 43.5041 43.5059 34.1001 43.5059 22.4993C43.5058 18.5172 42.3973 14.7942 40.4727 11.6213C40.7852 11.484 41.0596 11.2777 41.2773 11.0208C43.3247 14.3627 44.5058 18.2929 44.5059 22.4993C44.5059 34.6524 34.6536 44.5041 22.501 44.5042C10.3478 44.5041 0.496092 34.6524 0.496094 22.4993C0.496279 10.3462 10.3485 0.494387 22.501 0.494385Z" fill="#1F242B" /><path d="M12.4725 43.3609C13.7031 43.3609 14.7008 42.3633 14.7008 41.1326C14.7008 39.9019 13.7031 38.9043 12.4725 38.9043C11.2418 38.9043 10.2441 39.9019 10.2441 41.1326C10.2441 42.3633 11.2418 43.3609 12.4725 43.3609Z" fill="#1F242B" stroke="#1F242B" stroke-width="0.990361" /><path d="M10.2444 22.4999C10.2444 29.2686 15.7315 34.7556 22.5001 34.7556C29.2688 34.7556 34.7559 29.2686 34.7559 22.5C34.7559 15.7313 29.2688 10.2443 22.5001 10.2443C15.7315 10.2443 10.2444 15.7313 10.2444 22.4999Z" stroke="#1F242B" stroke-miterlimit="10" stroke-dasharray="2.39 2.39" /><path d="M39.576 11.8101C40.8066 11.8101 41.8043 10.8125 41.8043 9.58183C41.8043 8.35117 40.8066 7.35352 39.576 7.35352C38.3453 7.35352 37.3477 8.35117 37.3477 9.58183C37.3477 10.8125 38.3453 11.8101 39.576 11.8101Z" fill="white" stroke="#1F242B" /><path d="M13.8025 16.2667C15.0332 16.2667 16.0308 15.269 16.0308 14.0384C16.0308 12.8077 15.0332 11.8101 13.8025 11.8101C12.5719 11.8101 11.5742 12.8077 11.5742 14.0384C11.5742 15.269 12.5719 16.2667 13.8025 16.2667Z" fill="#1F242B" stroke="#1F242B" stroke-width="0.990361" /></g><defs><filter id="cnh-goal-filter0_n_0_48-cn_header-3" x="7.63681" y="7.64453" width="29.7108" height="29.7108" filterunits="userSpaceOnUse" color-interpolation-filters="sRGB"><feflood flood-opacity="0" result="BackgroundImageFix" /><feblend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" /><feturbulence type="fractalNoise" baseFrequency="4.7120842933654785 4.7120842933654785" stitchTiles="stitch" numOctaves="3" result="noise" seed="3716" /><fecolormatrix in="noise" type="luminanceToAlpha" result="alphaNoise" /><fecomponenttransfer in="alphaNoise" result="coloredNoise1"><fefunca type="discrete" tableValues="0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 " /></fecomponenttransfer><fecomposite operator="in" in2="shape" in="coloredNoise1" result="noise1Clipped" /><feflood flood-color="#FDF9F7" result="color1Flood" /><fecomposite operator="in" in2="noise1Clipped" in="color1Flood" result="color1" /><femerge result="effect1_noise_0_48"><femergenode in="shape" /><femergenode in="color1" /></femerge></filter><lineargradient id="cnh-goal-paint0_linear_0_48-cn_header-3" x1="37.3477" y1="22.5" x2="7.63681" y2="22.5" gradientunits="userSpaceOnUse"><stop stop-color="#FD4B05" /><stop offset="1" stop-color="#E1006D" /></lineargradient><clippath id="cnh-goal-clip0_0_48-cn_header-3"><rect width="45" height="45" fill="white" /></clippath></defs></svg></span>
+                  <span class="cn-mega__text"><b>Demo Intelligence</b><span>Tantalizingly good stakeholder insights</span></span>
+                </a></div><div class="cn-mega__col">
+                <a class="cn-mega__item" href="https://goconsensus.com/interactive-product-tours">
+                  <span class="cn-mega__icon"><svg width="45" height="45" viewbox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><g><g filter="url(#cnh-demo-mix-filter0_n_0_41-cn_header-4)"><path d="M25.9402 19.0601H6.31055V38.6897H25.9402V19.0601Z" fill="url(#cnh-demo-mix-paint0_linear_0_41-cn_header-4)" /></g><path d="M15.252 15.3761V1.99683H43.0038V29.7487L29.2429 29.7487" stroke="black" stroke-miterlimit="10" stroke-dasharray="2 2" /><g><path d="M16.1253 42.4999H2.5V15.25H16.1253" stroke="#1F242B" stroke-miterlimit="10" /><path d="M16.1247 15.2501L29.75 15.2501L29.75 42.5L16.1247 42.5" stroke="#1F242B" stroke-miterlimit="10" /></g><path d="M21.3168 28.529C21.5831 28.6827 21.5831 29.0671 21.3168 29.2209L13.8284 33.5443C13.5621 33.6981 13.2292 33.5059 13.2292 33.1984L13.2292 24.5515C13.2292 24.244 13.5621 24.0518 13.8284 24.2056L21.3168 28.529Z" fill="#1F242B" /></g><defs><filter id="cnh-demo-mix-filter0_n_0_41-cn_header-4" x="6.31055" y="19.0601" width="19.6296" height="19.6296" filterunits="userSpaceOnUse" color-interpolation-filters="sRGB"><feflood flood-opacity="0" result="BackgroundImageFix" /><feblend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" /><feturbulence type="fractalNoise" baseFrequency="5.5620455741882324 5.5620455741882324" stitchTiles="stitch" numOctaves="3" result="noise" seed="3716" /><fecolormatrix in="noise" type="luminanceToAlpha" result="alphaNoise" /><fecomponenttransfer in="alphaNoise" result="coloredNoise1"><fefunca type="discrete" tableValues="0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 " /></fecomponenttransfer><fecomposite operator="in" in2="shape" in="coloredNoise1" result="noise1Clipped" /><feflood flood-color="rgba(253, 249, 247, 0.7)" result="color1Flood" /><fecomposite operator="in" in2="noise1Clipped" in="color1Flood" result="color1" /><femerge result="effect1_noise_0_41"><femergenode in="shape" /><femergenode in="color1" /></femerge></filter><lineargradient id="cnh-demo-mix-paint0_linear_0_41-cn_header-4" x1="16.1254" y1="19.0601" x2="16.1254" y2="38.6897" gradientunits="userSpaceOnUse"><stop stop-color="#E1006D" /><stop offset="1" stop-color="#FD4B05" /></lineargradient></defs></svg></span>
+                  <span class="cn-mega__text"><b>Interactive Product Demos</b><span>Create on-demand product demos</span></span>
+                </a>
+                <a class="cn-mega__item" href="https://goconsensus.com/ecosystem">
+                  <span class="cn-mega__icon"><svg width="45" height="45" viewbox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><g><g><path d="M2.5 8.68579L42.5 8.68579" stroke="#1F242B" stroke-miterlimit="10" /><path d="M30.6597 4.29541H21.8789V13.0762H30.6597V4.29541Z" fill="#1F242B" /><path d="M40.8218 31.9246H32.041V40.7053H40.8218V31.9246Z" fill="#1F242B" /><g><path d="M42.2656 22.4359H41.5984L3.3131 22.4359L2.77136 22.4365" stroke="#1F242B" stroke-miterlimit="10" stroke-linecap="square" stroke-dasharray="2 3.5" /></g><path d="M2.51953 36.8206L42.4683 36.8206" stroke="#1F242B" stroke-miterlimit="10" /><g filter="url(#cnh-setting-filter1_n_1200_51632-cn_header-5)"><path d="M15.8491 18.0056H7.06836V26.7864H15.8491V18.0056Z" fill="url(#cnh-setting-paint0_linear_1200_51632-cn_header-5)" /></g></g></g><defs><filter id="cnh-setting-filter1_n_1200_51632-cn_header-5" x="7.06836" y="18.0056" width="8.78076" height="8.78076" filterunits="userSpaceOnUse" color-interpolation-filters="sRGB"><feflood flood-opacity="0" result="BackgroundImageFix" /><feblend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" /><feturbulence type="fractalNoise" baseFrequency="5.4606537818908691 5.4606537818908691" stitchTiles="stitch" numOctaves="3" result="noise" seed="3716" /><fecolormatrix in="noise" type="luminanceToAlpha" result="alphaNoise" /><fecomponenttransfer in="alphaNoise" result="coloredNoise1"><fefunca type="discrete" tableValues="0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 " /></fecomponenttransfer><fecomposite operator="in" in2="shape" in="coloredNoise1" result="noise1Clipped" /><feflood flood-color="rgba(253, 249, 247, 0.7)" result="color1Flood" /><fecomposite operator="in" in2="noise1Clipped" in="color1Flood" result="color1" /><femerge result="effect1_noise_1200_51632"><femergenode in="shape" /><femergenode in="color1" /></femerge></filter><lineargradient id="cnh-setting-paint0_linear_1200_51632-cn_header-5" x1="11.4587" y1="18.0056" x2="11.4587" y2="26.7864" gradientunits="userSpaceOnUse"><stop stop-color="#E1006D" /><stop offset="1" stop-color="#FD4B05" /></lineargradient></defs></svg></span>
+                  <span class="cn-mega__text"><b>Consensus Integrations</b><span>Integrations and Partners to help you scale and win</span></span>
+                </a>
+                <a class="cn-mega__item" href="https://goconsensus.com/on-demand-video-demos">
+                  <span class="cn-mega__icon"><svg width="45" height="45" viewbox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><g><g><path d="M22.4899 2.08936L32.339 7.77573V19.1485L22.4899 24.8349L12.6408 19.1485V7.77573L22.4899 2.08936Z" fill="url(#cnh-integration-paint0_linear_1200_51632-cn_header-6)" /><g><path d="M34.2148 21.3079L34.4648 20.8752V20.8743L36.9277 22.2961V22.2971L36.6777 22.7297L39.1396 24.1516L39.3887 23.718L41.8516 25.1389V25.1399L41.6016 25.5725L42.583 26.1389V27.2727H43.083V30.1155H42.583V32.9583H43.083V35.802H42.583V36.9338L41.6016 37.5012L41.8516 37.9338L39.3896 39.3557L39.1396 38.9231L36.6777 40.344L36.9268 40.7766L34.4639 42.1985L34.2148 41.7659L33.2334 42.3323L32.2529 41.7659L32.0029 42.1985L29.541 40.7766L29.791 40.344L27.3281 38.9231L27.0771 39.3557L24.6152 37.9338H24.6162L24.8662 37.5012L23.8848 36.9338V35.802H23.3848V32.9583H23.8848V30.1155H23.3848V27.2727H23.8848V26.1389L24.8662 25.5725L24.6162 25.1399L24.6152 25.1389L27.0781 23.718L27.3281 24.1516L29.791 22.7297L29.541 22.2971L29.54 22.2961L32.0029 20.8752L32.2529 21.3079L33.2334 20.7405L34.2148 21.3079Z" stroke="#1F242B" stroke-dasharray="3 3" /><path d="M21.126 26.1389V36.9338L11.7764 42.3323L2.42773 36.9338V26.1389L11.7764 20.7405L21.126 26.1389Z" fill="#1F242B" stroke="#1F242B" /></g></g></g><defs><lineargradient id="cnh-integration-paint0_linear_1200_51632-cn_header-6" x1="22.4899" y1="2.08936" x2="22.4899" y2="24.8349" gradientunits="userSpaceOnUse"><stop stop-color="#FD4B05" /><stop offset="1" stop-color="#E1006D" /></lineargradient></defs></svg></span>
+                  <span class="cn-mega__text"><b>On-Demand Video Demos</b><span>Easily shareable and always available</span></span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="cn-nav__item" data-menu>
+            <button class="cn-nav__link" type="button" aria-haspopup="true" aria-expanded="false">Solutions<svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><g opacity="0.5"><path d="M13 5.5L8 10.5L3 5.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /></g></svg></button>
+            <div class="cn-menu cn-menu--sheet cn-menu--solutions" hidden>
+              <div class="cn-sheet__grid">
+                <a class="cn-sheet__item" href="https://goconsensus.com/solutions/presales-sales"><b>Presales</b><span>SEs demo the real product — the repetitive first demos come off the calendar</span></a>
+                <a class="cn-sheet__item" href="https://goconsensus.com/solutions/sales"><b>Sales</b><span>Reps demo with or without presales, and see who's engaging before the forecast call</span></a>
+                <a class="cn-sheet__item" href="https://goconsensus.com/solutions/channel"><b>Channel</b><span>Every partner shows the product the way you would</span></a>
+                <a class="cn-sheet__item" href="https://goconsensus.com/solutions/marketing"><b>Marketing</b><span>The product becomes your best-converting asset — sales gets a warm buyer with context</span></a>
+                <a class="cn-sheet__item" href="https://goconsensus.com/solutions/customer-success"><b>Customer success</b><span>Onboarding, adoption, and expansion demos customers run on their own time</span></a>
+              </div>
+              <div class="cn-sheet__foot"><a class="cn-sheet__cta" href="#demoModal">Watch a demo →</a></div>
+            </div>
+          </div>
+
+          <div class="cn-nav__item" data-menu>
+            <button class="cn-nav__link" type="button" aria-haspopup="true" aria-expanded="false">Resources<svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><g opacity="0.5"><path d="M13 5.5L8 10.5L3 5.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /></g></svg></button>
+            <div class="cn-menu cn-menu--sheet cn-menu--resources" hidden>
+              <div class="cn-sheet__list">
+                <a class="cn-sheet__item cn-sheet__item--res" href="https://goconsensus.com/blog"><b>Blog</b><span>Mastering the modern buyer experience</span></a>
+                <a class="cn-sheet__item cn-sheet__item--res" href="https://goconsensus.com/research"><b>Research &amp; guides</b><span>Data and insights to help you scale</span></a>
+                <a class="cn-sheet__item cn-sheet__item--res" href="https://goconsensus.com/customer-story"><b>Case studies</b><span>Real customers, real numbers</span></a>
+                <a class="cn-sheet__item cn-sheet__item--res" href="https://goconsensus.com/demofest"><b>Events</b><span>Talks and events for every revenue team</span></a>
+                <a class="cn-sheet__item cn-sheet__item--res" href="https://goconsensus.com/webinar"><b>Webinars</b><span>Practical sessions on scaling your demo motion</span></a>
+              </div>
+              <a class="cn-sheet__card" href="https://goconsensus.com/demoiq-assessment">
+                <span class="cn-sheet__card-icon"><svg width="45" height="45" viewbox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><g><g filter="url(#cnh-multi-goal-filter0_n_0_4-cn_header-card)"><path d="M22.5 7.5C30.7843 7.5 37.5 14.2157 37.5 22.5C37.5 30.7843 30.7843 37.5 22.5 37.5C14.2157 37.5 7.5 30.7843 7.5 22.5C7.5 14.2157 14.2157 7.5 22.5 7.5ZM22.5 17.3994C19.6827 17.3994 17.3985 19.6827 17.3984 22.5C17.3984 25.3173 19.6827 27.6016 22.5 27.6016C25.3171 27.6014 27.6006 25.3172 27.6006 22.5C27.6005 19.6829 25.3171 17.3996 22.5 17.3994Z" fill="url(#cnh-multi-goal-paint0_linear_0_4-cn_header-card)" /></g><path d="M29.9658 13.346C27.9309 11.6843 25.3317 10.6877 22.4998 10.6877C15.976 10.6877 10.6875 15.9763 10.6875 22.5C10.6875 29.0237 15.976 34.3123 22.4998 34.3123C25.3317 34.3123 27.9309 33.3157 29.9658 31.654" stroke="#1F242B" stroke-miterlimit="10" /><path d="M42.5 22.5C42.5 33.5457 33.5457 42.5 22.5 42.5C11.4543 42.5 2.5 33.5457 2.5 22.5C2.5 11.4543 11.4543 2.5 22.5 2.5C33.5457 2.5 42.5 11.4543 42.5 22.5Z" stroke="#1F242B" stroke-miterlimit="10" /><g><path d="M40.4922 22.5445L22.4998 22.5447" stroke="#1F242B" /><path d="M30.9785 31.0193L22.5286 22.5694L30.9785 14.1194" stroke="#1F242B" /></g></g><defs><filter id="cnh-multi-goal-filter0_n_0_4-cn_header-card" x="7.5" y="7.5" width="30" height="30" filterunits="userSpaceOnUse" color-interpolation-filters="sRGB"><feflood flood-opacity="0" result="BackgroundImageFix" /><feblend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" /><feturbulence type="fractalNoise" baseFrequency="8.3269548416137695 8.3269548416137695" stitchTiles="stitch" numOctaves="3" result="noise" seed="3716" /><fecolormatrix in="noise" type="luminanceToAlpha" result="alphaNoise" /><fecomponenttransfer in="alphaNoise" result="coloredNoise1"><fefunca type="discrete" tableValues="0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 " /></fecomponenttransfer><fecomposite operator="in" in2="shape" in="coloredNoise1" result="noise1Clipped" /><feflood flood-color="rgba(253, 249, 247, 0.7)" result="color1Flood" /><fecomposite operator="in" in2="noise1Clipped" in="color1Flood" result="color1" /><femerge result="effect1_noise_0_4"><femergenode in="shape" /><femergenode in="color1" /></femerge></filter><lineargradient id="cnh-multi-goal-paint0_linear_0_4-cn_header-card" x1="22.5" y1="7.5" x2="22.5" y2="37.5" gradientunits="userSpaceOnUse"><stop stop-color="#FD4B05" /><stop offset="1" stop-color="#E1006D" /></lineargradient></defs></svg></span>
+                <b>The DemoIQ assessment</b><span>Grade your demo content, and get the playbook to make it elite.</span><em>Take the assessment →</em>
+              </a>
+            </div>
+          </div>
+
+          <div class="cn-nav__item" data-menu>
+            <button class="cn-nav__link" type="button" aria-haspopup="true" aria-expanded="false">Company<svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><g opacity="0.5"><path d="M13 5.5L8 10.5L3 5.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /></g></svg></button>
+            <div class="cn-menu cn-menu--sheet cn-menu--company" hidden>
+              <div class="cn-sheet__grid">
+                <a class="cn-sheet__item" href="https://goconsensus.com/about"><b>About</b><span>Who we are and why we're building</span></a>
+                <a class="cn-sheet__item" href="https://goconsensus.com/careers"><b>Careers</b><span>Come work with us!</span></a>
+                <a class="cn-sheet__item" href="https://support.goconsensus.com/"><b>Customer Support</b><span>Search our Knowledgebase and contact Support</span></a>
+                <a class="cn-sheet__item" href="https://goconsensus.com/press-release"><b>Press Releases</b><span>What's new at Consensus?</span></a>
+              </div>
+            </div>
+          </div>
+
+          <a class="cn-nav__link" href="https://goconsensus.com/pricing">Pricing</a>
+        </nav>
+      </div>
+
+      <div class="cn-header__actions">
+        <a class="cn-btn cn-btn--ghost cn-only-desk" href="https://app.goconsensus.com/">Login</a>
+        <a class="cn-btn cn-btn--primary cn-only-desk" data-lp-element="global-primary-cta" href="https://goconsensus.com/talk-to-sales">Book a meeting</a>
+        <button class="cn-burger cn-only-mobile" type="button" aria-label="Menu" aria-expanded="false" aria-controls="cn-drawer-cn_header">
+          <svg class="cn-burger__open" width="40" height="40" viewbox="0 0 40 40" fill="none" aria-hidden="true" focusable="false"><path d="M12 14h16M12 20h16M12 26h16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" /></svg>
+          <svg class="cn-burger__close" width="40" height="40" viewbox="0 0 40 40" fill="none" aria-hidden="true" focusable="false"><path d="M14 14L26 26M26 14L14 26" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" /></svg>
+        </button>
+      </div>
+
+      
+      <nav class="cn-drawer cn-only-mobile" id="cn-drawer-cn_header" hidden aria-label="Main">
+        <div class="cn-drawer__links">
+          <div class="cn-drawer__group">
+            <button class="cn-drawer__link" type="button" aria-expanded="false">Platform<svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><g opacity="0.5"><path d="M13 5.5L8 10.5L3 5.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /></g></svg></button>
+            <div class="cn-drawer__sub" hidden><a href="https://goconsensus.com/ai-agents">AI Agents</a><a href="https://goconsensus.com/live-demo-software">Live Demo Platform</a><a href="https://goconsensus.com/overview/demolytics">Demo Intelligence</a><a href="https://goconsensus.com/interactive-product-tours">Interactive Product Demos</a><a href="https://goconsensus.com/ecosystem">Consensus Integrations</a><a href="https://goconsensus.com/on-demand-video-demos">On-Demand Video Demos</a>
+            </div>
+          </div>
+          <div class="cn-drawer__group">
+            <button class="cn-drawer__link" type="button" aria-expanded="false">Solutions<svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><g opacity="0.5"><path d="M13 5.5L8 10.5L3 5.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /></g></svg></button>
+            <div class="cn-drawer__sub" hidden><a href="https://goconsensus.com/solutions/presales-sales">Presales</a><a href="https://goconsensus.com/solutions/sales">Sales</a><a href="https://goconsensus.com/solutions/channel">Channel</a><a href="https://goconsensus.com/solutions/marketing">Marketing</a><a href="https://goconsensus.com/solutions/customer-success">Customer success</a><a class="cn-drawer__cta" href="#demoModal">Watch a demo →</a>
+            </div>
+          </div>
+          <div class="cn-drawer__group">
+            <button class="cn-drawer__link" type="button" aria-expanded="false">Resources<svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><g opacity="0.5"><path d="M13 5.5L8 10.5L3 5.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /></g></svg></button>
+            <div class="cn-drawer__sub" hidden><a href="https://goconsensus.com/blog">Blog</a><a href="https://goconsensus.com/research">Research &amp; guides</a><a href="https://goconsensus.com/customer-story">Case studies</a><a href="https://goconsensus.com/demofest">Events</a><a href="https://goconsensus.com/webinar">Webinars</a><a href="https://goconsensus.com/demoiq-assessment">The DemoIQ assessment</a>
+            </div>
+          </div>
+          <div class="cn-drawer__group">
+            <button class="cn-drawer__link" type="button" aria-expanded="false">Company<svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><g opacity="0.5"><path d="M13 5.5L8 10.5L3 5.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /></g></svg></button>
+            <div class="cn-drawer__sub" hidden><a href="https://goconsensus.com/about">About</a><a href="https://goconsensus.com/careers">Careers</a><a href="https://support.goconsensus.com/">Customer Support</a><a href="https://goconsensus.com/press-release">Press Releases</a>
+            </div>
+          </div>
+          <a class="cn-drawer__link" href="https://goconsensus.com/pricing">Pricing</a>
+        </div>
+        <div class="cn-drawer__actions">
+          <a class="cn-btn cn-btn--primary cn-btn--lg" data-lp-element="global-primary-cta" href="https://goconsensus.com/talk-to-sales">Book a meeting</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+</div>
+
+<main class="content" id="content">
+
+  <!-- Hero (Figma 1506:17526): copy left, animated figure right (js/hero-figure.js), customer logo band. The background is
+       four layers at their natural size (consensus-homepage.css): grain, the faint "checkers" hatch, and two orange isometric outlines -->
+  <section class="hero" id="hero" aria-labelledby="hero-title">
+    <div class="hero__art" aria-hidden="true"><span class="hero__dust"></span><span class="hero__checkers"></span><span class="hero__outline"></span><span class="hero__outline hero__outline--dashed"></span></div>
+    <div class="container hero__grid">
+      <div class="hero__copy">
+        <div class="rating">
+          <img src="https://goconsensus.com/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/hero/g2-stars-v2.svg" alt="Rated 4.7 out of 5" width="60" height="12">
+          <span class="rating__text"><span class="rating__score">4.7 on G2</span><span class="rating__dot" aria-hidden="true"></span><span class="rating__count">1854 reviews</span></span>
+        </div>
+        <h1 class="h1 hero__h1" id="hero-title" data-lp-element-copy="homepage-h1" data-lp-replace>Unleash <span class="cond">your demo, unlock</span> revenue.</h1>
+        <p class="hero__sub" data-lp-element-copy="homepage-h2">One demo platform for every way your buyers want to see your product, and every way your teams want to show it - agentic, self-guided, and live.</p>
+        <div class="btn-row">
+          <a class="btn btn--primary" href="https://goconsensus.com/talk-to-sales" data-lp-element="global-primary-cta">Book a meeting</a>
+        </div>
+      </div>
+
+      <!-- Animated figure: three product vignettes and the buyer (js/hero-figure.js); Figma (1506:17985) draws the agent and tour
+           cards 218px wide and the live-data card 211px -->
+      <div class="fig" id="hero-figure" aria-hidden="true">
+        <svg class="fig__svg">
+          <path class="fig__line" data-h2line d="" fill="none" /><path class="fig__line" data-h2line d="" fill="none" /><path class="fig__line" data-h2line d="" fill="none" />
+          <circle class="fig__dot" data-h2dot r="3.5" fill="#fd4b05" cx="0" cy="0" /><circle class="fig__dot" data-h2dot r="3.5" fill="#fd4b05" cx="0" cy="0" /><circle class="fig__dot" data-h2dot r="3.5" fill="#fd4b05" cx="0" cy="0" />
+        </svg>
+        <div class="fig__node" data-h2node="agent">
+          <span class="fig__head"><span><span class="fig__mark" data-h2mark></span><span class="fig__label">AI demo agents</span></span><span class="fig__meta">10:42 pm</span></span>
+          <span class="fig__chat">
+            <span class="fig__q" data-lp-element-copy="homepage-inter-agent-question">Does it support SSO with Okta?</span>
+            <span class="fig__a"><span class="fig__bot"><span></span></span><span class="fig__bubble"><span class="fig__ghost" data-lp-element-copy="homepage-inter-agent-answer">Yes. Okta, Azure AD and any SAML 2.0 IdP.</span><span data-h2type>Yes. Okta, Azure AD and any SAML 2.0 IdP.</span></span></span>
+          </span>
+        </div>
+        <div class="fig__node" data-h2node="tour">
+          <span class="fig__head"><span><span class="fig__mark" data-h2mark></span><span class="fig__label" data-lp-element-copy="homepage-inter-demo-title">Self-guided tours</span></span><span class="fig__meta">Step <span data-h2hotn>1</span>/8</span></span>
+          <span class="fig__screen">
+            <span class="fig__side"><span></span><span></span><span></span><span></span></span>
+            <span class="fig__main"><span class="fig__title"></span><span class="fig__cards"><span></span><span></span><span></span></span><span class="fig__row"></span></span>
+            <span class="fig__hot" data-h2hot>1</span>
+          </span>
+          <span class="fig__segs"><span data-h2seg></span><span data-h2seg></span><span data-h2seg></span><span data-h2seg></span><span data-h2seg></span><span data-h2seg></span><span data-h2seg></span><span data-h2seg></span></span>
+        </div>
+        <div class="fig__node" data-h2node="live">
+          <span class="fig__head"><span><span class="fig__mark" data-h2mark></span><span class="fig__label">Live data demos</span></span><span class="fig__live"><span class="fig__pulse" data-h2pulse></span>Live</span></span>
+          <span class="fig__stats"><span><span class="fig__statk">Pipeline</span><b class="fig__statv" data-h2num>$1.28M</b></span><span><span class="fig__statk">Win rate</span><b class="fig__statv" data-h2num2>29%</b></span></span>
+          <span class="fig__sparkwrap"><svg class="fig__spark" viewbox="0 0 172 40" width="100%" height="40" preserveaspectratio="none"><defs><lineargradient id="h2sp" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fd4b05" stop-opacity="0.18" /><stop offset="1" stop-color="#fd4b05" stop-opacity="0" /></lineargradient></defs><path data-h2area d="" fill="url(#h2sp)" /><path data-h2spark d="" fill="none" stroke="#fd4b05" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" /></svg><span class="fig__sparkdot" data-h2sparkdot></span></span>
+          <span class="fig__foot"><span data-lp-element-copy="homepage-inter-demo-label">Buyer's company connected</span><b>Their records</b></span>
+        </div>
+        <div class="fig__buyer" data-h2buyer>
+          
+          <span><span class="fig__ring" data-h2ring></span><span class="fig__avatar" data-h2avatar><img src="https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/hero/buyer-avatar-v3.jpg?width=116&amp;height=116&amp;name=buyer-avatar-v3.jpg" alt="" width="116" height="116" srcset="https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/hero/buyer-avatar-v3.jpg?width=58&amp;height=58&amp;name=buyer-avatar-v3.jpg 58w, https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/hero/buyer-avatar-v3.jpg?width=116&amp;height=116&amp;name=buyer-avatar-v3.jpg 116w, https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/hero/buyer-avatar-v3.jpg?width=174&amp;height=174&amp;name=buyer-avatar-v3.jpg 174w, https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/hero/buyer-avatar-v3.jpg?width=232&amp;height=232&amp;name=buyer-avatar-v3.jpg 232w, https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/hero/buyer-avatar-v3.jpg?width=290&amp;height=290&amp;name=buyer-avatar-v3.jpg 290w, https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/hero/buyer-avatar-v3.jpg?width=348&amp;height=348&amp;name=buyer-avatar-v3.jpg 348w" sizes="(max-width: 116px) 100vw, 116px"></span></span>
+          <span class="fig__caption" data-lp-element-copy="homepage-inter-buyer">Your buyer</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__logos" aria-label="Trusted by">
+      <div class="hero__logos-set">
+        
+        <img src="https://goconsensus.com/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/customer-logos/logo_hubspot-v2.svg" alt="HubSpot" height="32" data-lp-element="homepage-logos[0]" data-lp-element-missing="hide" data-lp-field-image="logo" data-lp-field-alt="title"><img src="https://goconsensus.com/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/customer-logos/logo_atlassian-v2.svg" alt="Atlassian" height="32" data-lp-element="homepage-logos[1]" data-lp-element-missing="hide" data-lp-field-image="logo" data-lp-field-alt="title"><img src="https://goconsensus.com/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/customer-logos/logo_oracle-v2.svg" alt="Oracle" height="32" data-lp-element="homepage-logos[2]" data-lp-element-missing="hide" data-lp-field-image="logo" data-lp-field-alt="title"><img src="https://goconsensus.com/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/customer-logos/logo_sap-v2.svg" alt="SAP" height="32" data-lp-element="homepage-logos[3]" data-lp-element-missing="hide" data-lp-field-image="logo" data-lp-field-alt="title"><img src="https://goconsensus.com/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/customer-logos/logo_autodesk-v2.svg" alt="Autodesk" height="32" data-lp-element="homepage-logos[4]" data-lp-element-missing="hide" data-lp-field-image="logo" data-lp-field-alt="title"><img src="https://goconsensus.com/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/customer-logos/logo_lucid-v2.svg" alt="Lucid" height="32" data-lp-element="homepage-logos[5]" data-lp-element-missing="hide" data-lp-field-image="logo" data-lp-field-alt="title">
+      </div>
+    </div>
+  </section>
+
+  <!-- Platform (Figma 1506:18068; open states 1506:19121 / 1594:14891 / 1594:15087; hover 1726:17216): a 20px-inset magenta
+       card, three pillar tiles, and a product sheet that opens below the tiles (js/platform.js from data/platform.js) -->
+  <section class="plat" id="platform" aria-labelledby="platform-title" data-open="">
+    <div class="plat__card">
+      <span class="plat__lines" aria-hidden="true"></span>
+      <span class="plat__glow" aria-hidden="true"></span>
+      <div class="plat__in">
+        <p class="eyebrow eyebrow--dot plat__eyebrow">Platform</p>
+        <h2 class="h2 plat__h" id="platform-title"><span class="cond">Every way your buyers</span> want<br> to see your product</h2>
+        <div class="plat__tiles" id="pillars"></div>
+        <div id="platform-panel"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Customers see the impact (Figma 1506:18759): a 20px-inset charcoal card; the coloured outline art runs across the white
+       section and, registered to the same spot, across the card's texture (below the card's content) -->
+  <section class="imp" id="impact" aria-labelledby="impact-title">
+    <span class="imp__lines" aria-hidden="true"></span>
+    <div class="imp__card">
+      <span class="imp__lines imp__lines--card" aria-hidden="true"></span>
+      <div class="imp__in">
+        <h2 class="h2 imp__h" id="impact-title"><span class="cond">Customers see</span><br> the impact</h2>
+        <div class="imp__row">
+          <div class="imp__video">
+            
+            <img src="https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/impact/video-poster.jpg?width=1618&amp;height=908&amp;name=video-poster.jpg" alt="Becky Payne, VP of GTM Effectiveness at Sage" width="1618" height="908" loading="lazy" data-lp-element="homepage-video-testimonial" srcset="https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/impact/video-poster.jpg?width=809&amp;height=454&amp;name=video-poster.jpg 809w, https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/impact/video-poster.jpg?width=1618&amp;height=908&amp;name=video-poster.jpg 1618w, https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/impact/video-poster.jpg?width=2427&amp;height=1362&amp;name=video-poster.jpg 2427w, https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/impact/video-poster.jpg?width=3236&amp;height=1816&amp;name=video-poster.jpg 3236w, https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/impact/video-poster.jpg?width=4045&amp;height=2270&amp;name=video-poster.jpg 4045w, https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/impact/video-poster.jpg?width=4854&amp;height=2724&amp;name=video-poster.jpg 4854w" sizes="(max-width: 1618px) 100vw, 1618px">
+            <a class="btn btn--pill imp__play" href="#videoModal" data-video="https://goconsensus.com/hubfs/MASTER_Sage_Becky%20Testimonial%20(1).mp4"><img src="https://goconsensus.com/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/impact/icon-play.svg" alt="" width="14" height="14">Watch Video</a>
+          </div>
+          <div class="imp__panel">
+            <dl class="imp__stats">
+              
+              <div class="imp__stat"><dt><img src="https://goconsensus.com/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/impact/icon-stat-plus.svg" alt="" width="19" height="34"><span>59%</span></dt><dd>Average<br> deal value</dd></div>
+            </dl>
+            <figure class="imp__quote">
+              <blockquote>“(Consensus) allows buyers and prospects to engage on their terms.”</blockquote>
+              <figcaption class="imp__author"><img src="https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/impact/avatar-payne.png?width=100&amp;height=100&amp;name=avatar-payne.png" alt="" width="100" height="100" srcset="https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/impact/avatar-payne.png?width=50&amp;height=50&amp;name=avatar-payne.png 50w, https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/impact/avatar-payne.png?width=100&amp;height=100&amp;name=avatar-payne.png 100w, https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/impact/avatar-payne.png?width=150&amp;height=150&amp;name=avatar-payne.png 150w, https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/impact/avatar-payne.png?width=200&amp;height=200&amp;name=avatar-payne.png 200w, https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/impact/avatar-payne.png?width=250&amp;height=250&amp;name=avatar-payne.png 250w, https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/impact/avatar-payne.png?width=300&amp;height=300&amp;name=avatar-payne.png 300w" sizes="(max-width: 100px) 100vw, 100px"><span><b>Becky Payne</b><span>VP of GTM Effectiveness, Sage</span></span></figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Complete demo experience (Figma 1506:18463): three feature cards (the fourth went for V1, PM 2026-10-09); "Show more" opens the detail drawer (js/seat.js) -->
+  <section class="seat" id="seat" aria-labelledby="seat-title">
+    <div class="container seat__in">
+      <!-- js/stack.js writes the heading's height (data-stack-head) for the cards and plays each card's panel video while it is in the viewport -->
+      <div class="seat__head" data-stack-head>
+        <p class="eyebrow eyebrow--dot">Complete demo experience</p>
+        <h2 class="h2 seat__h2" id="seat-title" data-lp-element-copy="homepage-demo-title" data-lp-replace><span class="cond">One demo motion, from the first</span> website visit to the live call</h2>
+      </div>
+      <div class="seat__cards" id="features"></div>
+      <span class="seat__cue" id="seat-cue" aria-hidden="true">Why this matters →</span>
+    </div>
+    <div class="scrim" id="scrim"></div>
+    <div class="drawers" id="drawers"></div>   
+  </section>
+
+  <!-- Demo intelligence (Figma 1506:18267): copy and stat left, pinned under the header beside the stage timeline right,
+       a fixed box with faded edges whose list runs up 1:1 with the scroll past a fixed line, the stages lighting and
+       dimming gradually as they pass it (js/record.js); red dust behind the right half, faded by the content's white
+       wash, held in place with the copy (.rec__bg) -->
+  <section class="rec" id="record" aria-labelledby="record-title">
+    <div class="rec__bg" aria-hidden="true"><span class="rec__dust"></span></div>
+    <div class="container rec__in">
+      <div class="rec__intro">
+        <div class="rec__copy">
+          <p class="eyebrow eyebrow--dot">Demo intelligence</p>
+          <h2 class="h2 rec__h" id="record-title" data-lp-element-copy="homepage-demo-intelligence-title" data-lp-replace><span class="cond">Every interaction,</span><br> one stream<br> of intelligence.</h2>
+          <p class="rec__p" data-lp-element-copy="homepage-demo-intelligence-subtitle">Deals move without a rep in the room. Every agent conversation, interactive demo, and live session creates Demo Intelligence, so you know who's involved, what they care about, and how to close when you do get the right people in a meeting.</p>
+          <a class="btn btn--secondary rec__btn" href="#demoModal" data-lp-element="global-secondary-cta"><span>Watch it in action</span><i class="btn__arrow" aria-hidden="true"></i></a>   
+        </div>
+      </div>
+      
+      <div class="rec__timeline"><div class="rec__list"><div class="rec__items" id="timeline"></div>
+        <p class="rec__stat"><b>2x</b><span>Win rate roughly doubled when three or more stakeholders engaged with demo content (measured across 24 customer ROI studies).</span></p>
+      </div></div>
+    </div>
+  </section>
+
+  <!-- the three sections after the timeline, in one block: where the timeline pins (css: .rec-after, in the Demo
+       intelligence rules) it waits under the timeline's box and holds still with it while the timeline runs -->
+  <div class="rec-after">
+
+  <!-- Testimonials (Figma 1506:18818; card states 1712:15554 / 1712:15553): heading, intro + G2 badges, three quote cards; one card
+       is active (orange) — the first by default, then the one the pointer or focus is on, or the last one tapped (js/proof.js) -->
+  <section class="proof" id="testimonials" aria-labelledby="proof-title">
+    <div class="container proof__in">
+      <p class="eyebrow eyebrow--dot">Testimonials</p>
+      <h2 class="h2 proof__h" id="proof-title" data-lp-element-copy="homepage-testimonial-title" data-lp-replace><span class="cond">Results from</span> revenue<br> teams like yours</h2>
+      <div class="proof__intro">
+        <p class="proof__lede" data-lp-element-copy="homepage-testimonial-subtitle">More than half of the world’s top 30 software companies leverage Consensus to close deals 30% faster, double their win rates, and increase deal sizes by 1.5X.</p>
+        <div class="proof__badges">
+          
+          
+          <img src="https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/g2/badge-leader.png?width=432&amp;height=498&amp;name=badge-leader.png" alt="G2 Leader, Enterprise, Summer 2026" width="432" height="498" loading="lazy" srcset="https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/g2/badge-leader.png?width=216&amp;height=249&amp;name=badge-leader.png 216w, https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/g2/badge-leader.png?width=432&amp;height=498&amp;name=badge-leader.png 432w, https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/g2/badge-leader.png?width=648&amp;height=747&amp;name=badge-leader.png 648w, https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/g2/badge-leader.png?width=864&amp;height=996&amp;name=badge-leader.png 864w, https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/g2/badge-leader.png?width=1080&amp;height=1245&amp;name=badge-leader.png 1080w, https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/g2/badge-leader.png?width=1296&amp;height=1494&amp;name=badge-leader.png 1296w" sizes="(max-width: 432px) 100vw, 432px">
+          
+          
+          <img src="https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/g2/badge-momentum-leader.png?width=432&amp;height=498&amp;name=badge-momentum-leader.png" alt="G2 Momentum Leader, Summer 2026" width="432" height="498" loading="lazy" srcset="https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/g2/badge-momentum-leader.png?width=216&amp;height=249&amp;name=badge-momentum-leader.png 216w, https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/g2/badge-momentum-leader.png?width=432&amp;height=498&amp;name=badge-momentum-leader.png 432w, https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/g2/badge-momentum-leader.png?width=648&amp;height=747&amp;name=badge-momentum-leader.png 648w, https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/g2/badge-momentum-leader.png?width=864&amp;height=996&amp;name=badge-momentum-leader.png 864w, https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/g2/badge-momentum-leader.png?width=1080&amp;height=1245&amp;name=badge-momentum-leader.png 1080w, https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/g2/badge-momentum-leader.png?width=1296&amp;height=1494&amp;name=badge-momentum-leader.png 1296w" sizes="(max-width: 432px) 100vw, 432px">
+          
+          
+          <img src="https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/g2/badge-best-relationship.png?width=432&amp;height=498&amp;name=badge-best-relationship.png" alt="G2 Best Relationship, Enterprise, Summer 2026" width="432" height="498" loading="lazy" srcset="https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/g2/badge-best-relationship.png?width=216&amp;height=249&amp;name=badge-best-relationship.png 216w, https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/g2/badge-best-relationship.png?width=432&amp;height=498&amp;name=badge-best-relationship.png 432w, https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/g2/badge-best-relationship.png?width=648&amp;height=747&amp;name=badge-best-relationship.png 648w, https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/g2/badge-best-relationship.png?width=864&amp;height=996&amp;name=badge-best-relationship.png 864w, https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/g2/badge-best-relationship.png?width=1080&amp;height=1245&amp;name=badge-best-relationship.png 1080w, https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/g2/badge-best-relationship.png?width=1296&amp;height=1494&amp;name=badge-best-relationship.png 1296w" sizes="(max-width: 432px) 100vw, 432px">
+          
+          
+          <img src="https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/g2/badge-most-likely-to-recommend.png?width=432&amp;height=498&amp;name=badge-most-likely-to-recommend.png" alt="G2 Users Most Likely To Recommend, Winter 2026" width="432" height="498" loading="lazy" srcset="https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/g2/badge-most-likely-to-recommend.png?width=216&amp;height=249&amp;name=badge-most-likely-to-recommend.png 216w, https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/g2/badge-most-likely-to-recommend.png?width=432&amp;height=498&amp;name=badge-most-likely-to-recommend.png 432w, https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/g2/badge-most-likely-to-recommend.png?width=648&amp;height=747&amp;name=badge-most-likely-to-recommend.png 648w, https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/g2/badge-most-likely-to-recommend.png?width=864&amp;height=996&amp;name=badge-most-likely-to-recommend.png 864w, https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/g2/badge-most-likely-to-recommend.png?width=1080&amp;height=1245&amp;name=badge-most-likely-to-recommend.png 1080w, https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/g2/badge-most-likely-to-recommend.png?width=1296&amp;height=1494&amp;name=badge-most-likely-to-recommend.png 1296w" sizes="(max-width: 432px) 100vw, 432px">
+          
+          
+          <img src="https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/g2/badge-fastest-implementation.png?width=432&amp;height=498&amp;name=badge-fastest-implementation.png" alt="G2 Fastest Implementation, Enterprise, Summer 2026" width="432" height="498" loading="lazy" srcset="https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/g2/badge-fastest-implementation.png?width=216&amp;height=249&amp;name=badge-fastest-implementation.png 216w, https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/g2/badge-fastest-implementation.png?width=432&amp;height=498&amp;name=badge-fastest-implementation.png 432w, https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/g2/badge-fastest-implementation.png?width=648&amp;height=747&amp;name=badge-fastest-implementation.png 648w, https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/g2/badge-fastest-implementation.png?width=864&amp;height=996&amp;name=badge-fastest-implementation.png 864w, https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/g2/badge-fastest-implementation.png?width=1080&amp;height=1245&amp;name=badge-fastest-implementation.png 1080w, https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/g2/badge-fastest-implementation.png?width=1296&amp;height=1494&amp;name=badge-fastest-implementation.png 1296w" sizes="(max-width: 432px) 100vw, 432px">
+          
+          
+          <img src="https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/g2/badge-most-implementable.png?width=432&amp;height=498&amp;name=badge-most-implementable.png" alt="G2 Most Implementable, Enterprise, Winter 2026" width="432" height="498" loading="lazy" srcset="https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/g2/badge-most-implementable.png?width=216&amp;height=249&amp;name=badge-most-implementable.png 216w, https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/g2/badge-most-implementable.png?width=432&amp;height=498&amp;name=badge-most-implementable.png 432w, https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/g2/badge-most-implementable.png?width=648&amp;height=747&amp;name=badge-most-implementable.png 648w, https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/g2/badge-most-implementable.png?width=864&amp;height=996&amp;name=badge-most-implementable.png 864w, https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/g2/badge-most-implementable.png?width=1080&amp;height=1245&amp;name=badge-most-implementable.png 1080w, https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/g2/badge-most-implementable.png?width=1296&amp;height=1494&amp;name=badge-most-implementable.png 1296w" sizes="(max-width: 432px) 100vw, 432px">
+          
+        </div>
+      </div>
+      <div class="proof__cards" id="proof-cards">
+        
+        
+        <figure class="proof-card is-active" data-proof-card data-lp-element="homepage-quotes[0]" data-lp-element-missing="hide">
+          <img class="proof-card__logo" src="https://goconsensus.com/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/customer-logos/logo_coupa.svg" alt="Coupa" height="32" data-lp-field-image="logo" data-lp-field-alt="title">
+          <p class="proof-card__stat"><span class="proof-card__icon" aria-hidden="true"></span><span class="proof-card__figure"><span data-lp-field="stat">38%</span><span class="proof-card__sub" data-lp-field="caption" data-lp-replace>larger<br> deals</span></span></p>
+          <blockquote class="proof-card__quote" data-lp-field="quote">“We tell our buyers we value their time by giving them options for demo. Watching a video demo is for their benefit, because it tells us what problems they want to solve.”</blockquote>
+          <figcaption class="proof-card__author">
+            <img src="https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/proof/avatar-karki-v2.jpg?width=100&amp;height=100&amp;name=avatar-karki-v2.jpg" alt="" width="100" height="100" loading="lazy" data-lp-field-image="authorPhoto" data-lp-field-empty="hide" srcset="https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/proof/avatar-karki-v2.jpg?width=50&amp;height=50&amp;name=avatar-karki-v2.jpg 50w, https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/proof/avatar-karki-v2.jpg?width=100&amp;height=100&amp;name=avatar-karki-v2.jpg 100w, https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/proof/avatar-karki-v2.jpg?width=150&amp;height=150&amp;name=avatar-karki-v2.jpg 150w, https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/proof/avatar-karki-v2.jpg?width=200&amp;height=200&amp;name=avatar-karki-v2.jpg 200w, https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/proof/avatar-karki-v2.jpg?width=250&amp;height=250&amp;name=avatar-karki-v2.jpg 250w, https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/proof/avatar-karki-v2.jpg?width=300&amp;height=300&amp;name=avatar-karki-v2.jpg 300w" sizes="(max-width: 100px) 100vw, 100px">
+            <span><b data-lp-field="authorName">Tom Karki</b><span data-lp-field="authorRole">Sr. Director, Digital Solutions Consulting</span></span>
+          </figcaption>
+        </figure>
+        
+        <figure class="proof-card" data-proof-card data-lp-element="homepage-quotes[1]" data-lp-element-missing="hide">
+          <img class="proof-card__logo" src="https://goconsensus.com/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/customer-logos/logo_salesforce.svg" alt="Salesforce" height="32" data-lp-field-image="logo" data-lp-field-alt="title">
+          <p class="proof-card__stat"><span class="proof-card__icon" aria-hidden="true"></span><span class="proof-card__figure"><span data-lp-field="stat">2x</span><span class="proof-card__sub" data-lp-field="caption" data-lp-replace>close<br> rates</span></span></p>
+          <blockquote class="proof-card__quote" data-lp-field="quote">“Consensus Live is the only solution in the space that lets us have our software do what it’s supposed to do and give us what we needed for demos.”</blockquote>
+          <figcaption class="proof-card__author">
+            <img src="https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/proof/avatar-ochodnikcy.jpg?width=100&amp;height=100&amp;name=avatar-ochodnikcy.jpg" alt="" width="100" height="100" loading="lazy" data-lp-field-image="authorPhoto" data-lp-field-empty="hide" srcset="https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/proof/avatar-ochodnikcy.jpg?width=50&amp;height=50&amp;name=avatar-ochodnikcy.jpg 50w, https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/proof/avatar-ochodnikcy.jpg?width=100&amp;height=100&amp;name=avatar-ochodnikcy.jpg 100w, https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/proof/avatar-ochodnikcy.jpg?width=150&amp;height=150&amp;name=avatar-ochodnikcy.jpg 150w, https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/proof/avatar-ochodnikcy.jpg?width=200&amp;height=200&amp;name=avatar-ochodnikcy.jpg 200w, https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/proof/avatar-ochodnikcy.jpg?width=250&amp;height=250&amp;name=avatar-ochodnikcy.jpg 250w, https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/proof/avatar-ochodnikcy.jpg?width=300&amp;height=300&amp;name=avatar-ochodnikcy.jpg 300w" sizes="(max-width: 100px) 100vw, 100px">
+            <span><b data-lp-field="authorName">Amelia Ochodnikcy</b><span data-lp-field="authorRole">Distinguished, Strategic Solution Engineer</span></span>
+          </figcaption>
+        </figure>
+        
+        <figure class="proof-card" data-proof-card data-lp-element="homepage-quotes[2]" data-lp-element-missing="hide">
+          <img class="proof-card__logo" src="https://goconsensus.com/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/customer-logos/logo_sap.svg" alt="SAP" height="32" data-lp-field-image="logo" data-lp-field-alt="title">
+          <p class="proof-card__stat"><span class="proof-card__icon" aria-hidden="true"></span><span class="proof-card__figure"><span data-lp-field="stat">92%</span><span class="proof-card__sub" data-lp-field="caption" data-lp-replace>decrease in live demo prep time</span></span></p>
+          <blockquote class="proof-card__quote" data-lp-field="quote">“It empowers our sales teams to create tailored, customer-specific experiences to showcase SAP’s value in context of our customer’s industry”.</blockquote>
+          <figcaption class="proof-card__author">
+            <img src="https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/proof/avatar-bechtold.jpg?width=100&amp;height=100&amp;name=avatar-bechtold.jpg" alt="" width="100" height="100" loading="lazy" data-lp-field-image="authorPhoto" data-lp-field-empty="hide" srcset="https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/proof/avatar-bechtold.jpg?width=50&amp;height=50&amp;name=avatar-bechtold.jpg 50w, https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/proof/avatar-bechtold.jpg?width=100&amp;height=100&amp;name=avatar-bechtold.jpg 100w, https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/proof/avatar-bechtold.jpg?width=150&amp;height=150&amp;name=avatar-bechtold.jpg 150w, https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/proof/avatar-bechtold.jpg?width=200&amp;height=200&amp;name=avatar-bechtold.jpg 200w, https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/proof/avatar-bechtold.jpg?width=250&amp;height=250&amp;name=avatar-bechtold.jpg 250w, https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/proof/avatar-bechtold.jpg?width=300&amp;height=300&amp;name=avatar-bechtold.jpg 300w" sizes="(max-width: 100px) 100vw, 100px">
+            <span><b data-lp-field="authorName">Andre Bechtold</b><span data-lp-field="authorRole">President, Industries and Solutions</span></span>
+          </figcaption>
+        </figure>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Integrated & enterprise hardened (Figma 1506:18954): heading and two cards on the left, a photo bleeding off the right edge -->
+  <section class="stack" id="stack" aria-labelledby="stack-title">
+    <div class="container stack__in">
+      <div class="stack__main">
+        <h2 class="h2 stack__h" id="stack-title"><span class="cond">Integrated and</span> enterprise hardened</h2>
+        
+        <article class="stack-card">
+          <img class="stack-card__icon" src="https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/stack/icon-integrations-v2.png?width=120&amp;height=120&amp;name=icon-integrations-v2.png" alt="" width="120" height="120" srcset="https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/stack/icon-integrations-v2.png?width=60&amp;height=60&amp;name=icon-integrations-v2.png 60w, https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/stack/icon-integrations-v2.png?width=120&amp;height=120&amp;name=icon-integrations-v2.png 120w, https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/stack/icon-integrations-v2.png?width=180&amp;height=180&amp;name=icon-integrations-v2.png 180w, https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/stack/icon-integrations-v2.png?width=240&amp;height=240&amp;name=icon-integrations-v2.png 240w, https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/stack/icon-integrations-v2.png?width=300&amp;height=300&amp;name=icon-integrations-v2.png 300w, https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/stack/icon-integrations-v2.png?width=360&amp;height=360&amp;name=icon-integrations-v2.png 360w" sizes="(max-width: 120px) 100vw, 120px">
+          <h3 class="stack-card__title">Works with your stack.<br> Signal lands where reps look.</h3>
+          
+          <ul class="stack-card__chips" aria-label="Integrations">
+            <li data-lp-element="homepage-integrations[0]" data-lp-element-missing="hide"><img class="stack-card__logo" src="https://goconsensus.com/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/stack/logo-salesforce.svg" alt="Salesforce" width="40" height="28" data-lp-field-image="logo" data-lp-field-alt="title"><img class="stack-card__logo stack-card__logo--color" src="https://goconsensus.com/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/stack/logo-salesforce-color.svg" alt="" aria-hidden="true" width="40" height="28" data-lp-field-image="logo"></li>
+            <li data-lp-element="homepage-integrations[1]" data-lp-element-missing="hide"><img class="stack-card__logo" src="https://goconsensus.com/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/stack/logo-hubspot.svg" alt="HubSpot" width="71" height="20" data-lp-field-image="logo" data-lp-field-alt="title"><img class="stack-card__logo stack-card__logo--color" src="https://goconsensus.com/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/stack/logo-hubspot-color.svg" alt="" aria-hidden="true" width="71" height="20" data-lp-field-image="logo"></li>
+            <li data-lp-element="homepage-integrations[2]" data-lp-element-missing="hide" class="stack-card__chip--slack"><img class="stack-card__logo" src="https://goconsensus.com/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/stack/logo-slack.svg" alt="Slack" width="95" height="40" data-lp-field-image="logo" data-lp-field-alt="title"><img class="stack-card__logo stack-card__logo--color" src="https://goconsensus.com/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/stack/logo-slack-color.svg" alt="" aria-hidden="true" width="95" height="40" data-lp-field-image="logo"></li>
+            <li data-lp-element="homepage-integrations[3]" data-lp-element-missing="hide"><img class="stack-card__logo" src="https://goconsensus.com/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/stack/logo-gong.svg" alt="Gong" width="69" height="24" data-lp-field-image="logo" data-lp-field-alt="title"><img class="stack-card__logo stack-card__logo--color" src="https://goconsensus.com/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/stack/logo-gong-color.svg" alt="" aria-hidden="true" width="69" height="24" data-lp-field-image="logo"></li>
+            <li class="stack-card__chiprow"><span>MCP +API</span><a class="stack-card__more" href="https://goconsensus.com/ecosystem"><span>+ More</span></a></li>
+          </ul>
+        </article>
+        <article class="stack-card">
+          <img class="stack-card__icon" src="https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/stack/icon-security-v2.png?width=120&amp;height=120&amp;name=icon-security-v2.png" alt="" width="120" height="120" srcset="https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/stack/icon-security-v2.png?width=60&amp;height=60&amp;name=icon-security-v2.png 60w, https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/stack/icon-security-v2.png?width=120&amp;height=120&amp;name=icon-security-v2.png 120w, https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/stack/icon-security-v2.png?width=180&amp;height=180&amp;name=icon-security-v2.png 180w, https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/stack/icon-security-v2.png?width=240&amp;height=240&amp;name=icon-security-v2.png 240w, https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/stack/icon-security-v2.png?width=300&amp;height=300&amp;name=icon-security-v2.png 300w, https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/stack/icon-security-v2.png?width=360&amp;height=360&amp;name=icon-security-v2.png 360w" sizes="(max-width: 120px) 100vw, 120px">
+          <h3 class="stack-card__title">Passes your security review.<br> Backend access never needed.</h3>
+          <ul class="stack-card__chips stack-card__chips--tags" aria-label="Security">
+            <li>SOC 2 Type II</li><li>GDPR &amp; CCPA</li><li>SSO / SAML</li><li>Role-Based Access Controls (RBAC)</li>
+          </ul>
+        </article>
+      </div>
+      
+      <div class="stack__photo" aria-hidden="true"><img src="https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/stack/photo-v2.jpg?width=1258&amp;height=1906&amp;name=photo-v2.jpg" alt="" width="1258" height="1906" loading="lazy" srcset="https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/stack/photo-v2.jpg?width=629&amp;height=953&amp;name=photo-v2.jpg 629w, https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/stack/photo-v2.jpg?width=1258&amp;height=1906&amp;name=photo-v2.jpg 1258w, https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/stack/photo-v2.jpg?width=1887&amp;height=2859&amp;name=photo-v2.jpg 1887w, https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/stack/photo-v2.jpg?width=2516&amp;height=3812&amp;name=photo-v2.jpg 2516w, https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/stack/photo-v2.jpg?width=3145&amp;height=4765&amp;name=photo-v2.jpg 3145w, https://goconsensus.com/hs-fs/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/stack/photo-v2.jpg?width=3774&amp;height=5718&amp;name=photo-v2.jpg 3774w" sizes="(max-width: 1258px) 100vw, 1258px"></div>
+    </div>
+  </section>
+
+  <!-- Closing CTA (Figma 1506:19054): full-bleed brand art (one raster of Figma's 1679×684 background frame), centred copy -->
+  <section class="cta" aria-labelledby="cta-title">
+    <span class="cta__bg" aria-hidden="true"></span>
+    <div class="cta__body">
+      <h2 class="h1 cta__h" id="cta-title" data-lp-element-copy="global-footer-cta-title" data-lp-replace><span class="cond">Turn every</span> demo<br> into pipeline</h2>
+      <p class="cta__p" data-lp-element-copy="global-footer-cta-subtitle">See how Consensus helps your team demo every way buyers want, then reveals who's involved, what they care about, and which deals are ready to move.</p>
+      <div class="btn-row">
+        <a class="btn btn--ink" href="https://goconsensus.com/talk-to-sales" data-lp-element="global-primary-cta">Book a meeting</a>
+        <a class="btn btn--outline-ink" href="#demoModal" data-lp-element="global-secondary-cta"><img src="https://goconsensus.com/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/cta/icon-play-ink.svg" alt="" width="16" height="16"><span>Watch a 4-minute overview</span></a>   
+      </div>
+    </div>
+  </section>
+
+  </div>
+
+</main>
+
+
+
+
+
+
+
+  
+  
+    
+    
+    
+      
+    
+  
+    
+    
+    
+      
+    
+  
+    
+    
+    
+      
+    
+  
+    
+    
+    
+      
+    
+  
+    
+    
+    
+      
+    
+  
+    
+    
+    
+      
+    
+  
+    
+    
+    
+      
+    
+  
+  
+
+  
+  
+    
+    
+    
+      
+    
+  
+    
+    
+    
+      
+    
+  
+    
+    
+    
+      
+    
+  
+    
+    
+    
+      
+    
+  
+    
+    
+    
+      
+    
+  
+  
+
+  
+  
+    
+    
+    
+      
+    
+  
+    
+    
+    
+      
+    
+  
+    
+    
+    
+      
+    
+  
+    
+    
+    
+      
+      
+      
+      
+    
+  
+    
+    
+    
+      
+    
+  
+    
+    
+    
+      
+    
+  
+    
+    
+    
+      
+    
+  
+    
+    
+    
+      
+    
+  
+    
+    
+    
+      
+    
+  
+  
+<footer class="cn-footer">
+  
+  <div class="cn-footer__dots" aria-hidden="true"><svg width="273.818" height="1486.34" viewbox="0 0 273.818 1486.34" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><defs><pattern id="cnf-dots-tile" patternunits="userSpaceOnUse" width="12.534" height="15.281"><rect width="4.178" height="0.836" fill="#FC6839" /></pattern></defs><path d="M262.24 1485.27L3.70573 1330.82C1.39015 1329.43 0.000802457 1327 0.000802457 1324.22L0 155.224C0 152.445 1.50513 149.898 3.8207 148.624L262.355 1.00609C267.449 -1.88838 273.817 1.81654 273.817 7.60549L273.818 1478.67C273.818 1484.57 267.334 1488.28 262.24 1485.27Z" fill="url(#cnf-dots-tile)" /></svg></div>
+  <div class="cn-footer__mark" aria-hidden="true"><svg width="390" height="114.146" viewbox="0 0 390 114.146" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><g opacity="0.05"><g><path fill-rule="evenodd" clip-rule="evenodd" d="M49.0031 0.982513C49.7072 0.577983 50.555 0.529327 51.2929 0.836207L51.6018 0.98948L79.6832 17.3339C79.7379 17.3658 79.7876 17.4037 79.8388 17.4384L97.5859 27.7681C99.3107 28.7722 99.303 31.2682 97.572 32.2618L69.4372 48.4088L69.126 48.5597C68.387 48.8617 67.542 48.8097 66.8408 48.4018L50.2456 38.741L34.1937 47.9745V66.4532L50.2479 75.6844L66.8408 66.0282C67.5419 65.6204 68.387 65.5684 69.126 65.8703L69.4372 66.0212L97.572 82.1683C99.303 83.1618 99.3107 85.6578 97.5859 86.6619L79.8388 96.9893C79.7873 97.0243 79.7382 97.064 79.6832 97.0961L51.6018 113.441L51.2929 113.594C50.555 113.901 49.7072 113.852 49.0031 113.448L20.8706 97.2865C20.8146 97.2544 20.7628 97.2149 20.7104 97.1797L2.14117 86.5017C1.5164 86.1424 1.07769 85.5435 0.912669 84.8598C0.900111 84.8086 0.89192 84.7564 0.882479 84.7042C0.876037 84.6679 0.868807 84.6318 0.863901 84.5951L0.861578 84.5742C0.847528 84.4652 0.838355 84.3537 0.838355 84.2421V30.1856C0.838401 30.0736 0.847395 29.9629 0.861578 29.8535L0.863901 29.8349C0.868913 29.7975 0.875867 29.7605 0.882479 29.7235C0.89196 29.6713 0.900073 29.6191 0.912669 29.5679C1.07812 28.8854 1.51733 28.2895 2.14117 27.9306L20.6825 17.2666C20.7431 17.2248 20.8051 17.1834 20.8706 17.1458L49.0031 0.982513ZM34.1937 89.3164V100.438C34.1937 100.508 34.1828 100.578 34.1775 100.647L50.292 109.899L76.144 94.8504L50.2595 79.9667L34.1937 89.3164ZM24.4005 95.0153L30.4873 98.5174V91.4738L24.4005 95.0153ZM4.72823 64.9181C4.669 64.9522 4.6049 64.9752 4.54477 65.004V83.5988L20.7057 92.8927C20.7551 92.8594 20.8041 92.8235 20.8567 92.7929L30.4873 87.1868V68.599L14.4053 59.3515L4.72823 64.9181ZM53.952 77.8163L79.6693 92.6047C79.724 92.6362 79.7736 92.6749 79.8249 92.7093L94.0583 84.4256L68.1483 69.5558L53.952 77.8163ZM34.1937 85.0294L46.5531 77.8348L34.1937 70.7286V85.0294ZM18.1233 57.2127L30.4873 64.3236V50.1041L18.1233 57.2127ZM4.54477 60.7472L10.6873 57.2127L4.54477 53.6828V60.7472ZM4.54477 30.8266V49.4213C4.60556 49.4504 4.66836 49.4775 4.72823 49.5119L14.4053 55.0762L30.4873 45.8287V27.2409L20.8567 21.6372C20.8031 21.606 20.7536 21.569 20.7034 21.535L4.54477 30.8266ZM79.6693 21.8253L53.952 36.6114L68.1483 44.8742L94.0583 30.0045L79.8249 21.7208C79.7736 21.7551 79.724 21.7938 79.6693 21.8253ZM34.1937 43.6991L46.5531 36.5905L34.1937 29.3983V43.6991ZM34.1775 13.7831C34.1827 13.8512 34.1937 13.9197 34.1937 13.9898V25.1113L50.2572 34.461L76.144 19.5773L50.292 4.53101L34.1775 13.7831ZM24.3982 19.4101L30.4873 22.9539V15.9103L24.3982 19.4101Z" fill="white" /><path fill-rule="evenodd" clip-rule="evenodd" d="M374.91 61.5159C375.445 61.516 375.901 61.609 376.273 61.7993C376.646 61.9893 376.931 62.2573 377.123 62.6028C377.291 62.902 377.385 63.2455 377.406 63.6269L377.411 63.7918C377.411 64.243 377.314 64.6405 377.118 64.9785C376.924 65.3147 376.638 65.5759 376.264 65.7588C376.247 65.7669 376.227 65.7745 376.21 65.782L377.652 68.4225L377.717 68.5433H376.143L374.796 66.0282H373.66V68.5433H372.253V61.5159H374.91ZM373.66 64.8345H374.726C375.027 64.8344 375.268 64.7924 375.451 64.7138L375.576 64.6464C375.694 64.573 375.785 64.4786 375.848 64.3677L375.906 64.247C375.955 64.1184 375.98 63.9659 375.98 63.7918C375.98 63.5597 375.933 63.3659 375.846 63.2089C375.759 63.0521 375.627 62.9316 375.446 62.8489C375.264 62.764 375.02 62.7166 374.717 62.7166H373.66V64.8345Z" fill="white" /><path fill-rule="evenodd" clip-rule="evenodd" d="M374.645 58.2972C378.472 58.2972 381.574 61.3997 381.575 65.227C381.574 69.054 378.472 72.1568 374.645 72.1568C370.818 72.1565 367.716 69.0538 367.715 65.227C367.715 61.3999 370.818 58.2975 374.645 58.2972ZM374.645 59.4073C371.43 59.4076 368.825 62.0123 368.825 65.227C368.826 68.4414 371.43 71.0487 374.645 71.049C377.86 71.049 380.466 68.4416 380.467 65.227C380.467 62.0121 377.86 59.4073 374.645 59.4073Z" fill="white" /><path d="M208.72 42.7261C211.822 42.7262 214.338 43.4467 216.27 44.8905C218.199 46.3348 219.294 48.3389 219.547 50.9006H214.837C214.584 49.5303 213.928 48.4745 212.863 47.733C211.798 46.9915 210.364 46.6229 208.558 46.6229C206.861 46.6229 205.543 46.9281 204.605 47.5426C203.663 48.1575 203.195 49.0409 203.195 50.197C203.195 51.0998 203.539 51.866 204.224 52.4984C204.909 53.1274 206.05 53.6616 207.638 54.0938L212.076 55.2852V55.2898C214.672 55.9398 216.639 56.9859 217.975 58.4296C219.31 59.8739 219.979 61.5904 219.979 63.5758C219.979 66.0667 219.03 67.9997 217.136 69.37C215.242 70.7405 212.757 71.4252 209.257 71.4252C205.757 71.4252 202.967 70.6307 200.894 69.0426C198.817 67.4544 197.636 65.2375 197.348 62.3845H202.058C202.276 64.0426 203.013 65.3147 204.278 66.2C205.539 67.082 207.236 67.5237 209.366 67.5238C211.242 67.5238 212.693 67.18 213.722 66.495C214.752 65.8097 215.267 64.8362 215.267 63.5712C215.267 62.7068 214.97 61.9477 214.373 61.2976C213.779 60.6477 212.633 60.1065 210.936 59.6743L206.498 58.5364C203.827 57.8863 201.836 56.884 200.518 55.5313C199.2 54.1784 198.542 52.5258 198.542 50.5755C198.542 48.1582 199.454 46.2461 201.277 44.8371C203.097 43.4283 205.618 42.7261 208.72 42.7261Z" fill="white" /><path d="M295.154 42.7261C298.257 42.7262 300.772 43.4467 302.704 44.8905C304.633 46.3348 305.728 48.3389 305.981 50.9006H301.271C301.018 49.5303 300.362 48.4745 299.297 47.733C298.233 46.9915 296.798 46.6229 294.992 46.6229C293.295 46.6229 291.977 46.9281 291.039 47.5426C290.098 48.1575 289.63 49.0409 289.63 50.197C289.63 51.0998 289.973 51.866 290.658 52.4984C291.344 53.1274 292.484 53.6616 294.072 54.0938L298.51 55.2852V55.2898C301.106 55.9398 303.074 56.9859 304.409 58.4296C305.744 59.8739 306.413 61.5904 306.413 63.5758C306.413 66.0667 305.464 67.9997 303.57 69.37C301.676 70.7405 299.191 71.4252 295.691 71.4252C292.191 71.4252 289.401 70.6308 287.328 69.0426C285.252 67.4544 284.07 65.2375 283.782 62.3845H288.492C288.71 64.0426 289.447 65.3147 290.712 66.2C291.973 67.082 293.671 67.5237 295.8 67.5238C297.676 67.5238 299.127 67.1799 300.157 66.495C301.186 65.8097 301.701 64.8362 301.701 63.5712C301.701 62.7068 301.404 61.9477 300.807 61.2976C300.213 60.6477 299.067 60.1065 297.37 59.6743L292.932 58.5364C290.262 57.8863 288.27 56.8841 286.952 55.5313C285.634 54.1784 284.976 52.5258 284.976 50.5755C284.976 48.1582 285.888 46.2461 287.711 44.8371C289.532 43.4283 292.052 42.7261 295.154 42.7261Z" fill="white" /><path d="M315.888 61.1885C315.888 63.1735 316.385 64.6738 317.379 65.6822C318.37 66.6902 319.767 67.1962 321.573 67.1963C323.232 67.1963 324.695 66.8174 325.96 66.0584C327.221 65.2994 328.221 64.2332 328.963 62.8629C329.704 61.4924 330.075 59.939 330.075 58.2066L330.07 58.2113V43.2695H335.049V70.8818H330.342V65.6404C329.45 67.2849 328.204 68.6192 326.606 69.6347C324.729 70.8225 322.599 71.4206 320.217 71.4206C318.415 71.4205 316.809 71.0413 315.4 70.2827C313.995 69.5236 312.9 68.4612 312.124 67.0872C311.347 65.7171 310.963 64.1467 310.962 62.3798V43.2649H315.888V61.1885Z" fill="white" /><path d="M351.294 42.7215C354.397 42.7215 356.913 43.4416 358.846 44.8858C360.775 46.3301 361.868 48.3342 362.121 50.896H357.413C357.16 49.5255 356.502 48.4698 355.437 47.7284C354.373 46.9873 352.939 46.6184 351.134 46.6183C349.436 46.6183 348.117 46.9253 347.179 47.5403C346.238 48.1552 345.769 49.0366 345.769 50.1923C345.769 51.0954 346.115 51.8612 346.8 52.4937C347.486 53.1227 348.624 53.657 350.212 54.0892L354.65 55.2805C357.247 55.9306 359.215 56.9783 360.551 58.4226C361.886 59.8669 362.553 61.5857 362.553 63.5712C362.552 66.0622 361.604 67.995 359.71 69.3654C357.816 70.7355 355.332 71.4205 351.833 71.4206C348.333 71.4206 345.541 70.6263 343.468 69.0379C341.392 67.4498 340.212 65.2326 339.924 62.3798H344.631C344.849 64.0378 345.587 65.31 346.851 66.1954C348.113 67.0774 349.812 67.5191 351.942 67.5191C353.818 67.519 355.269 67.1754 356.299 66.4903C357.328 65.8051 357.841 64.8315 357.841 63.5665C357.841 62.7022 357.546 61.943 356.949 61.293C356.355 60.6429 355.209 60.1019 353.512 59.6697L349.074 58.5318C346.403 57.8817 344.409 56.8796 343.092 55.5267C341.774 54.1738 341.118 52.521 341.118 50.5709C341.118 48.1536 342.027 46.2414 343.851 44.8324C345.671 43.4234 348.191 42.7215 351.294 42.7215Z" fill="white" /><path d="M120.235 42.7215C122.33 42.7215 124.223 43.1291 125.92 43.9407C127.618 44.7524 129.017 45.8983 130.117 47.3777C131.217 48.8605 131.912 50.5716 132.2 52.5216H127.544C127.185 50.8246 126.371 49.4535 125.11 48.4065C123.845 47.3594 122.256 46.8367 120.345 46.8366C118.647 46.8366 117.174 47.252 115.93 48.0814C114.686 48.9106 113.719 50.0936 113.034 51.6252C112.349 53.1607 112.005 54.9006 112.005 56.9596C112.005 59.0185 112.349 60.8221 113.034 62.3752C113.719 63.9248 114.693 65.1382 115.958 66.0026C117.219 66.8706 118.701 67.3031 120.398 67.3031C122.274 67.3029 123.851 66.7778 125.133 65.7309C126.412 64.6837 127.235 63.3131 127.597 61.6158H132.253C131.93 63.5661 131.2 65.2826 130.061 66.762C128.923 68.2412 127.523 69.3851 125.865 70.1967C124.203 71.0084 122.344 71.4182 120.289 71.4183C117.692 71.4183 115.39 70.7905 113.387 69.5465C111.384 68.299 109.806 66.5883 108.649 64.4026C107.493 62.2204 106.917 59.739 106.917 56.9596C106.917 54.1802 107.493 51.7272 108.649 49.5978C109.806 47.4685 111.384 45.7894 113.387 44.563C115.39 43.3367 117.674 42.7215 120.235 42.7215Z" fill="white" /><path fill-rule="evenodd" clip-rule="evenodd" d="M149.188 42.7215C151.967 42.7216 154.402 43.3368 156.496 44.563C158.59 45.7894 160.214 47.4684 161.371 49.5978C162.527 51.7271 163.103 54.1803 163.103 56.9596C163.103 59.7389 162.516 62.2205 161.343 64.4026C160.169 66.5883 158.545 68.3048 156.468 69.5488C154.395 70.796 151.967 71.4182 149.188 71.4183C146.408 71.4183 143.971 70.7928 141.877 69.5488C139.783 68.3013 138.159 66.5883 137.003 64.4026C135.847 62.2206 135.272 59.7388 135.272 56.9596C135.273 54.1803 135.859 51.7271 137.033 49.5978C138.206 47.469 139.829 45.7893 141.905 44.563C143.978 43.3366 146.408 42.7215 149.188 42.7215ZM149.188 46.8366C146.591 46.8366 144.468 47.7464 142.827 49.57C141.186 51.3938 140.363 53.8407 140.363 56.9085C140.363 58.9669 140.732 60.769 141.473 62.3218C142.211 63.875 143.242 65.0916 144.559 65.9771C145.877 66.8591 147.42 67.3031 149.188 67.3031C150.955 67.303 152.499 66.8625 153.816 65.9771C155.133 65.0916 156.151 63.8746 156.875 62.3218C157.595 60.7689 157.959 58.9637 157.959 56.9085C157.959 53.8409 157.154 51.3937 155.549 49.57C153.943 47.7463 151.784 46.8368 149.188 46.8366Z" fill="white" /><path fill-rule="evenodd" clip-rule="evenodd" d="M236.653 42.7215C239.25 42.7215 241.513 43.2833 243.446 44.4005H243.453C245.382 45.5179 246.871 47.1001 247.919 49.138C248.966 51.1759 249.491 53.5687 249.491 56.3093C249.491 56.7064 249.48 57.0808 249.463 57.4217C249.442 57.7655 249.4 58.1515 249.326 58.5829H227.968C228.196 61.0321 228.954 63.033 230.264 64.5651C231.853 66.424 234.018 67.3518 236.762 67.3519C238.456 67.3519 239.935 66.9933 241.2 66.2697C242.465 65.5493 243.387 64.5187 243.964 63.1834H248.671C247.768 65.71 246.261 67.7141 244.149 69.1935C242.038 70.6764 239.521 71.4136 236.597 71.4136C233.892 71.4136 231.503 70.7879 229.426 69.5442C227.349 68.3003 225.735 66.5926 224.579 64.4281C223.423 62.2636 222.847 59.7718 222.847 56.9572C222.847 54.1425 223.423 51.6613 224.579 49.5142C225.735 47.3671 227.349 45.6986 229.426 44.5073C231.503 43.3162 233.909 42.7215 236.653 42.7215ZM236.597 46.7832C233.962 46.7832 231.85 47.6933 230.262 49.5165C229.088 50.8624 228.35 52.5722 228.044 54.6349H244.512C244.283 52.3861 243.616 50.5928 242.498 49.275C241.093 47.6129 239.233 46.7832 236.597 46.7832Z" fill="white" /><path d="M183.212 42.7215C186.135 42.7217 188.465 43.5549 190.197 45.2133C191.929 46.8717 192.796 49.0572 192.796 51.7622V70.8772H187.817V52.9536C187.817 50.9685 187.311 49.4718 186.303 48.4599C185.294 47.4514 183.815 46.9458 181.865 46.9457C180.168 46.9457 178.653 47.3248 177.318 48.0837C175.983 48.8391 174.942 49.8964 174.204 51.249C173.462 52.6051 173.094 54.166 173.094 55.9331V70.8772H168.168V43.2626H172.875V48.439C173.792 46.8228 175.054 45.5087 176.663 44.5073C178.574 43.3164 180.756 42.7218 183.212 42.7215Z" fill="white" /><path d="M269.646 42.7215C272.57 42.7215 274.899 43.5547 276.632 45.2133C278.364 46.8717 279.232 49.0568 279.233 51.7622V70.8772H274.254V52.9536C274.253 50.9685 273.746 49.4718 272.737 48.4599C271.729 47.4517 270.249 46.9457 268.299 46.9457C266.602 46.9459 265.087 47.3248 263.752 48.0837C262.417 48.839 261.378 49.8968 260.64 51.249C259.899 52.6051 259.528 54.166 259.528 55.9331V70.8772H254.602V43.2626H259.312V48.439C260.229 46.8226 261.49 45.5088 263.1 44.5073C265.01 43.3166 267.191 42.722 269.646 42.7215Z" fill="white" /></g></g></svg></div>
+
+  <div class="cn-footer__in">
+    <div class="cn-footer__row">
+      <div class="cn-footer__brand">
+        <a class="cn-footer__logo" href="/" aria-label="Consensus home"><svg width="164" height="48" viewbox="0 0 164 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><g><g><g><path d="M52.6204 27.6409C52.081 28.0813 51.4176 28.3014 50.6285 28.3014C49.9147 28.3014 49.2926 28.1197 48.7621 27.7547C48.2301 27.3912 47.8208 26.8814 47.5327 26.2297C47.2445 25.5765 47.0997 24.8185 47.0997 23.9525C47.0997 23.0866 47.2445 22.3551 47.5327 21.7094C47.8208 21.0651 48.2272 20.5671 48.7503 20.2184C49.2734 19.8696 49.8926 19.6953 50.6063 19.6953C51.4102 19.6953 52.0781 19.9154 52.6101 20.3558C53.1406 20.7961 53.4834 21.3725 53.6341 22.0862H55.5921C55.4709 21.2661 55.1783 20.5464 54.7158 19.9228C54.2533 19.3007 53.6651 18.819 52.9514 18.4776C52.2377 18.1363 51.4412 17.9649 50.5605 17.9649C49.4832 17.9649 48.5227 18.2235 47.6804 18.7392C46.8381 19.2549 46.1746 19.9612 45.6885 20.8567C45.2023 21.7522 44.96 22.7837 44.96 23.9525C44.96 25.1214 45.2023 26.1647 45.6885 27.0823C46.1746 28.0015 46.8381 28.7211 47.6804 29.2457C48.5227 29.7688 49.4906 30.0318 50.5826 30.0318C51.4471 30.0318 52.2288 29.8604 52.9278 29.5191C53.6252 29.1777 54.2134 28.696 54.6922 28.0739C55.1709 27.4517 55.4783 26.7306 55.6142 25.9105H53.6563C53.5041 26.6242 53.1583 27.2005 52.6204 27.6409Z" fill="white" /><path d="M65.8087 18.7392C64.9279 18.2235 63.9039 17.9649 62.735 17.9649C61.5662 17.9649 60.5451 18.2235 59.6732 18.7392C58.7999 19.2549 58.1172 19.9613 57.6236 20.8568C57.1301 21.7523 56.8833 22.7837 56.8833 23.9526C56.8833 25.1214 57.1256 26.1647 57.6118 27.0824C58.098 28.0015 58.7807 28.7211 59.6614 29.2457C60.5421 29.7688 61.5662 30.0319 62.735 30.0319C63.9039 30.0319 64.925 29.7703 65.7968 29.2457C66.6702 28.7226 67.3529 28.0015 67.8464 27.0824C68.34 26.1647 68.5868 25.1214 68.5868 23.9526C68.5868 22.7837 68.3444 21.7523 67.8582 20.8568C67.3721 19.9613 66.6894 19.2549 65.8087 18.7392ZM65.9683 26.2075C65.6638 26.8607 65.2353 27.372 64.6812 27.7444C64.127 28.1167 63.4783 28.3015 62.735 28.3015C61.9917 28.3015 61.343 28.1153 60.7889 27.7444C60.2347 27.372 59.8018 26.8607 59.4915 26.2075C59.1797 25.5544 59.0245 24.7963 59.0245 23.9304C59.0245 22.6404 59.3703 21.6119 60.0604 20.8449C60.7505 20.078 61.643 19.6953 62.735 19.6953C63.8271 19.6953 64.7344 20.078 65.4097 20.8449C66.085 21.6119 66.4234 22.6404 66.4234 23.9304C66.4234 24.7949 66.2712 25.5544 65.9683 26.2075Z" fill="white" /><path d="M77.0439 17.9649C76.0109 17.9649 75.0933 18.2146 74.2894 18.7156C73.6126 19.1367 73.0821 19.6894 72.6964 20.3691V18.1925H70.7163V29.8043H72.7881V23.5211C72.7881 22.7778 72.9432 22.1217 73.255 21.5513C73.5653 20.9824 74.0027 20.5376 74.5643 20.2199C75.1258 19.9007 75.7627 19.7411 76.4764 19.7411C77.2965 19.7411 77.9187 19.9539 78.3428 20.378C78.7669 20.8036 78.9797 21.4331 78.9797 22.268V29.8043H81.0736V21.767C81.0736 20.6292 80.7086 19.7101 79.9801 19.0126C79.2515 18.3151 78.2718 17.9649 77.0424 17.9649H77.0439Z" fill="white" /><path d="M89.1804 23.2481L87.314 22.7472C86.6461 22.5654 86.1673 22.3408 85.8792 22.0763C85.591 21.8103 85.4462 21.4882 85.4462 21.1084C85.4462 20.6223 85.6427 20.2513 86.0388 19.9928C86.4333 19.7342 86.9875 19.6056 87.7012 19.6056C88.4607 19.6056 89.0636 19.7608 89.5114 20.0725C89.9591 20.3843 90.2355 20.8277 90.3419 21.404H92.322C92.2156 20.3267 91.756 19.4844 90.9448 18.8771C90.132 18.2697 89.074 17.9668 87.7692 17.9668C86.4644 17.9668 85.4048 18.2624 84.6394 18.8549C83.8725 19.4475 83.4897 20.2513 83.4897 21.268C83.4897 22.0881 83.7661 22.7827 84.3202 23.3516C84.8743 23.9205 85.7122 24.3416 86.8353 24.615L88.7016 25.0938C89.4153 25.2756 89.8971 25.5031 90.1468 25.7765C90.398 26.0499 90.5221 26.3691 90.5221 26.7326C90.5221 27.2646 90.3064 27.6739 89.8734 27.962C89.4405 28.2502 88.8302 28.395 88.0411 28.395C87.1456 28.395 86.4318 28.2088 85.9013 27.8379C85.3694 27.4655 85.059 26.9306 84.9674 26.2331H82.9873C83.1085 27.433 83.605 28.3654 84.4783 29.0334C85.3502 29.7013 86.5235 30.0353 87.9953 30.0353C89.4671 30.0353 90.5118 29.7471 91.3083 29.1708C92.1048 28.5945 92.5037 27.7818 92.5037 26.7341C92.5037 25.8992 92.223 25.178 91.6614 24.5707C91.0999 23.9634 90.2724 23.523 89.1804 23.2496V23.2481Z" fill="white" /><path d="M102.372 18.6712C101.56 18.2013 100.608 17.9649 99.5159 17.9649C98.3618 17.9649 97.3496 18.2146 96.4762 18.7156C95.6029 19.2165 94.9246 19.9184 94.4385 20.8213C93.9523 21.7242 93.71 22.7674 93.71 23.9511C93.71 25.1347 93.9523 26.1824 94.4385 27.0927C94.9246 28.003 95.6029 28.7211 96.4762 29.2442C97.3496 29.7673 98.3544 30.0304 99.4922 30.0304C100.722 30.0304 101.78 29.7201 102.668 29.0965C103.556 28.4744 104.19 27.6321 104.57 26.5696H102.59C102.347 27.1311 101.96 27.5641 101.428 27.867C100.896 28.1714 100.274 28.3221 99.5617 28.3221C98.4076 28.3221 97.4973 27.932 96.8294 27.1503C96.2782 26.506 95.959 25.6652 95.863 24.6353H104.844C104.876 24.4535 104.893 24.291 104.902 24.1461C104.91 24.0028 104.914 23.8462 104.914 23.6792C104.914 22.5266 104.694 21.5203 104.253 20.6632C103.813 19.8061 103.187 19.1411 102.375 18.6712H102.372ZM96.8279 20.8228C97.4958 20.0558 98.384 19.6731 99.4922 19.6731C100.601 19.6731 101.382 20.0219 101.973 20.7208C102.443 21.275 102.724 22.0286 102.82 22.9743H95.8955C96.024 22.1069 96.3344 21.3887 96.8279 20.8228Z" fill="white" /><path d="M113.391 17.9649C112.358 17.9649 111.44 18.2146 110.637 18.7156C109.96 19.1367 109.429 19.6894 109.044 20.3691V18.1925H107.063V29.8043H109.135V23.5211C109.135 22.7778 109.29 22.1217 109.602 21.5513C109.912 20.9824 110.35 20.5376 110.911 20.2199C111.473 19.9007 112.11 19.7411 112.824 19.7411C113.644 19.7411 114.266 19.9539 114.69 20.378C115.114 20.8036 115.327 21.4331 115.327 22.268V29.8043H117.421V21.767C117.421 20.6292 117.056 19.7101 116.327 19.0126C115.599 18.3151 114.619 17.9649 113.39 17.9649H113.391Z" fill="white" /><path d="M125.528 23.2481L123.661 22.7472C122.993 22.5654 122.515 22.3408 122.226 22.0763C121.938 21.8103 121.793 21.4882 121.793 21.1084C121.793 20.6223 121.99 20.2513 122.386 19.9928C122.78 19.7342 123.335 19.6056 124.048 19.6056C124.808 19.6056 125.411 19.7608 125.859 20.0725C126.306 20.3843 126.583 20.8277 126.689 21.404H128.669C128.563 20.3267 128.103 19.4844 127.292 18.8771C126.479 18.2697 125.421 17.9668 124.116 17.9668C122.812 17.9668 121.752 18.2624 120.987 18.8549C120.22 19.4475 119.837 20.2513 119.837 21.268C119.837 22.0881 120.113 22.7827 120.667 23.3516C121.222 23.9205 122.059 24.3416 123.182 24.615L125.049 25.0938C125.763 25.2756 126.244 25.5031 126.494 25.7765C126.745 26.0499 126.869 26.3691 126.869 26.7326C126.869 27.2646 126.654 27.6739 126.221 27.962C125.788 28.2502 125.177 28.395 124.388 28.395C123.493 28.395 122.779 28.2088 122.249 27.8379C121.717 27.4655 121.406 26.9306 121.315 26.2331H119.334C119.456 27.433 119.952 28.3654 120.825 29.0334C121.697 29.7013 122.871 30.0353 124.342 30.0353C125.814 30.0353 126.859 29.7471 127.655 29.1708C128.452 28.5945 128.851 27.7818 128.851 26.7341C128.851 25.8992 128.57 25.178 128.009 24.5707C127.447 23.9634 126.62 23.523 125.528 23.2496V23.2481Z" fill="white" /><path d="M138.8 24.4771C138.8 25.2056 138.645 25.8587 138.333 26.435C138.022 27.0113 137.601 27.4591 137.07 27.7783C136.538 28.0975 135.923 28.257 135.226 28.257C134.466 28.257 133.878 28.0443 133.461 27.6202C133.043 27.1961 132.835 26.5651 132.835 25.7302V18.1938H130.763V26.2311C130.763 26.9744 130.926 27.6349 131.252 28.2112C131.579 28.789 132.038 29.2353 132.63 29.5545C133.222 29.8737 133.897 30.0333 134.655 30.0333C135.657 30.0333 136.553 29.782 137.342 29.2826C138.014 28.8555 138.537 28.294 138.913 27.6024V29.8072H140.893V18.1953H138.799V24.4785L138.8 24.4771Z" fill="white" /><path d="M151.616 24.5673C151.055 23.96 150.227 23.5196 149.135 23.2462L147.269 22.7453C146.601 22.5635 146.122 22.3389 145.834 22.0744C145.546 21.8084 145.401 21.4863 145.401 21.1065C145.401 20.6203 145.597 20.2494 145.993 19.9908C146.388 19.7322 146.942 19.6037 147.656 19.6037C148.415 19.6037 149.018 19.7588 149.466 20.0706C149.914 20.3824 150.19 20.8257 150.296 21.402H152.277C152.17 20.3248 151.711 19.4825 150.899 18.8752C150.087 18.2678 149.029 17.9649 147.724 17.9649C146.419 17.9649 145.359 18.2604 144.594 18.853C143.827 19.4456 143.444 20.2494 143.444 21.2661C143.444 22.0862 143.721 22.7807 144.275 23.3497C144.829 23.9186 145.667 24.3397 146.79 24.6131L148.656 25.0919C149.37 25.2736 149.852 25.5012 150.101 25.7746C150.353 26.048 150.477 26.3671 150.477 26.7307C150.477 27.2626 150.261 27.672 149.828 27.9601C149.395 28.2483 148.785 28.3931 147.996 28.3931C147.1 28.3931 146.386 28.2069 145.856 27.836C145.324 27.4636 145.014 26.9287 144.922 26.2312H142.942C143.063 27.4311 143.56 28.3635 144.433 29.0314C145.305 29.6994 146.478 30.0333 147.95 30.0333C149.422 30.0333 150.466 29.7452 151.263 29.1689C152.059 28.5926 152.458 27.7798 152.458 26.7321C152.458 25.8972 152.178 25.1761 151.616 24.5688V24.5673Z" fill="white" /></g><g><path d="M9.16402 7.88567C8.95603 8.00504 8.95512 8.30476 9.16238 8.42539L28.4993 19.6797C28.5956 19.7358 28.7145 19.7362 28.8112 19.6807L40.6423 12.8905C40.8503 12.7711 40.8512 12.4714 40.6439 12.3508L21.307 1.09642C21.2107 1.04035 21.0918 1.03999 20.9951 1.09547L9.16402 7.88567Z" stroke="url(#cnf-logo-paint0_linear_58_453)" stroke-width="1.55844" stroke-miterlimit="10" stroke-linejoin="round" /><path d="M1.28816 35.696C1.19145 35.6404 1.13184 35.5373 1.13184 35.4258L1.13183 12.6934C1.13183 12.5819 1.19145 12.4788 1.28816 12.4232L13.1323 5.61284C13.3401 5.49336 13.5994 5.64335 13.5994 5.88305L13.5994 42.2362C13.5994 42.4759 13.3401 42.6259 13.1323 42.5064L1.28816 35.696Z" stroke="url(#cnf-logo-paint1_linear_58_453)" stroke-width="1.55844" stroke-miterlimit="10" stroke-linejoin="round" /><path d="M1.13212 12.6908C1.13212 12.5793 1.19173 12.4762 1.28844 12.4206L20.995 1.0888C21.0917 1.0332 21.2108 1.03351 21.3072 1.08962L33.1153 7.96239C33.3224 8.08296 33.3216 8.38249 33.1138 8.50197L1.59944 26.6236C1.39165 26.743 1.13239 26.5931 1.13238 26.3534L1.13212 12.6908Z" stroke="url(#cnf-logo-paint2_linear_58_453)" stroke-width="1.55844" stroke-miterlimit="10" stroke-linejoin="round" /><path d="M1.13212 35.4286C1.13212 35.5401 1.19173 35.6432 1.28844 35.6988L20.995 47.0306C21.0917 47.0862 21.2108 47.0859 21.3072 47.0298L33.1153 40.157C33.3224 40.0364 33.3216 39.7369 33.1138 39.6174L1.59944 21.4958C1.39165 21.3764 1.13239 21.5263 1.13238 21.766L1.13212 35.4286Z" stroke="url(#cnf-logo-paint3_linear_58_453)" stroke-width="1.55844" stroke-miterlimit="10" stroke-linejoin="round" /><path d="M9.16402 40.2337C8.95603 40.1143 8.95512 39.8146 9.16238 39.694L28.4993 28.4397C28.5956 28.3836 28.7145 28.3832 28.8112 28.4387L40.6423 35.2289C40.8503 35.3483 40.8512 35.648 40.6439 35.7686L21.307 47.023C21.2107 47.079 21.0918 47.0794 20.9951 47.0239L9.16402 40.2337Z" stroke="url(#cnf-logo-paint4_linear_58_453)" stroke-width="1.55844" stroke-miterlimit="10" stroke-linejoin="round" /></g><g><path d="M157.542 24.5143C159.152 24.5143 160.456 25.8189 160.457 27.4283C160.457 29.0379 159.152 30.3424 157.542 30.3424C155.933 30.3423 154.628 29.0378 154.628 27.4283C154.629 25.819 155.933 24.5144 157.542 24.5143ZM157.542 24.9811C156.191 24.9812 155.095 26.0765 155.095 27.4283C155.095 28.7803 156.191 29.8765 157.542 29.8766C158.894 29.8766 159.991 28.7803 159.991 27.4283C159.991 26.0765 158.894 24.9811 157.542 24.9811ZM157.654 25.8678C157.879 25.8678 158.071 25.9069 158.227 25.9869C158.384 26.0668 158.504 26.1795 158.584 26.3248C158.656 26.4507 158.695 26.595 158.704 26.7555L158.706 26.8248C158.706 27.0147 158.665 27.1816 158.583 27.3239C158.501 27.4654 158.381 27.575 158.223 27.652C158.216 27.6554 158.208 27.6586 158.201 27.6617L158.807 28.7721L158.834 28.8229H158.172L157.606 27.7653H157.128V28.8229H156.537V25.8678H157.654ZM157.128 27.2633H157.577C157.703 27.2633 157.805 27.2457 157.881 27.2125L157.934 27.1842C157.984 27.1532 158.022 27.1138 158.048 27.067L158.073 27.0162C158.094 26.9621 158.104 26.8982 158.104 26.8248C158.104 26.7271 158.084 26.6458 158.047 26.5797C158.011 26.5137 157.956 26.4631 157.879 26.4283C157.803 26.3926 157.7 26.3727 157.573 26.3727H157.128V27.2633Z" fill="white" /></g></g></g><defs><lineargradient id="cnf-logo-paint0_linear_58_453" x1="28.0327" y1="20.3825" x2="28.0327" y2="1.08707" gradientunits="userSpaceOnUse"><stop stop-color="#FD4B05" /><stop offset="0.802925" stop-color="#E1006D" /></lineargradient><lineargradient id="cnf-logo-paint1_linear_58_453" x1="13.5994" y1="5.34428" x2="13.5994" y2="42.7749" gradientunits="userSpaceOnUse"><stop offset="0.1" stop-color="#FA4211" /><stop offset="1" stop-color="#EA184B" /></lineargradient><lineargradient id="cnf-logo-paint2_linear_58_453" x1="17.3566" y1="1.08707" x2="17.3566" y2="26.8921" gradientunits="userSpaceOnUse"><stop offset="0.100985" stop-color="#FD4B05" /><stop offset="0.798117" stop-color="#E1006D" /></lineargradient><lineargradient id="cnf-logo-paint3_linear_58_453" x1="11.1417" y1="47.174" x2="11.1417" y2="21.2273" gradientunits="userSpaceOnUse"><stop offset="0.0961768" stop-color="#E1006D" /><stop offset="0.798117" stop-color="#FD4B05" /></lineargradient><lineargradient id="cnf-logo-paint4_linear_58_453" x1="23.9303" y1="28.295" x2="23.9303" y2="47.0351" gradientunits="userSpaceOnUse"><stop offset="0.2" stop-color="#FD4B05" /><stop offset="1" stop-color="#E1006D" /></lineargradient></defs></svg></a>
+      </div>
+      <div class="cn-footer__cols">
+        
+        <div class="cn-footer__col cn-is-open">
+          <h3 class="cn-footer__h"><button type="button" aria-expanded="true">Platform<svg width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><g><path d="M2 4.5L6 8.5L10 4.5" stroke="white" stroke-opacity="0.7" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" /></g></svg></button></h3>
+          <ul class="cn-footer__links"><li><a href="https://goconsensus.com/product-experience-platform">Interactive Demo Platform</a></li><li><a href="https://goconsensus.com/interactive-product-tours">Interactive Product Tours</a></li><li><a href="https://goconsensus.com/on-demand-video-demos">On-Demand Video Demos</a></li><li><a href="https://goconsensus.com/overview/demolytics">Demolytics</a></li><li><a href="https://goconsensus.com/ecosystem">Integrations</a></li><li><a href="https://goconsensus.com/solutions/">Solutions</a></li><li><a href="https://goconsensus.com/demo-automation-roi-calculator/">ROI Calculator</a></li>
+          </ul>
+        </div>
+        
+        <div class="cn-footer__col">
+          <h3 class="cn-footer__h"><button type="button" aria-expanded="false">Resources<svg width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><g><path d="M2 4.5L6 8.5L10 4.5" stroke="white" stroke-opacity="0.7" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" /></g></svg></button></h3>
+          <ul class="cn-footer__links"><li><a href="https://goconsensus.com/resource-center/">Resource Center</a></li><li><a href="https://goconsensus.com/customer-story">Customers</a></li><li><a href="https://goconsensus.com/blog">Blog</a></li><li><a href="https://goconsensus.com/webinar">Webinars</a></li><li><a href="https://goconsensus.com/demofest">Demofest</a></li>
+          </ul>
+        </div>
+        
+        <div class="cn-footer__col">
+          <h3 class="cn-footer__h"><button type="button" aria-expanded="false">Company<svg width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><g><path d="M2 4.5L6 8.5L10 4.5" stroke="white" stroke-opacity="0.7" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" /></g></svg></button></h3>
+          <ul class="cn-footer__links"><li><a href="https://goconsensus.com/about">About</a></li><li><a href="https://support.goconsensus.com/">Consensus Support</a></li><li><a href="https://goconsensus.com/careers">Careers</a></li>
+          </ul>
+        </div>
+        
+        <div class="cn-footer__col">
+          <h3 class="cn-footer__h"><button type="button" aria-expanded="false">Comparison<svg width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><g><path d="M2 4.5L6 8.5L10 4.5" stroke="white" stroke-opacity="0.7" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" /></g></svg></button></h3>
+          <ul class="cn-footer__links"><li><a href="https://goconsensus.com/comparison-consensus-walnut/">Walnut</a></li><li><a href="https://goconsensus.com/comparison-consensus-reprise/">Reprise</a></li><li><a href="https://goconsensus.com/comparison-consensus-navattic/">Navattic</a></li><li><a href="https://goconsensus.com/comparison-consensus-demostack/">Demostack</a></li><li><a href="https://goconsensus.com/comparison-consensus-storylane/">Storylane</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="cn-footer__bottom">
+      <p class="cn-footer__copy">© 2026 Consensus Sales, LLC. All rights reserved.</p>
+      <nav class="cn-footer__legal" aria-label="Legal">
+        <a href="https://goconsensus.com/privacy-policy/">Privacy Policy</a>
+        <a href="https://goconsensus.com/terms-of-service/">Terms of Service</a>
+        <a href="https://goconsensus.com/consensus-security-center/">Security Center</a>
+        <a href="https://goconsensus.com/cookie-policy-eu/">Cookie Policy</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<div id="demoModal">
+  <div class="modal-content">
+    <span class="close-modal">×</span>
+    <iframe id="demoIframe" src="" width="100%" height="650px" frameborder="0" allowfullscreen style="border-radius: 16px; overflow: hidden;"></iframe>
+  </div>
+</div>
+
+<div id="demoModalNew">
+  <div class="modal-content">
+    <span class="close-modal">×</span>
+    <iframe id="demoIframeNew" src="" width="100%" height="650px" frameborder="0" allowfullscreen style="border-radius: 16px; overflow: hidden;"></iframe>
+  </div>
+</div>
+
+<!-- our video lightbox (js/video.js): opened by the impact card's "Watch Video" and Demo intelligence's "Watch it in action"; it plays video_url.
+     Its id is deliberately not #demoModal, the client site's product-demo iframe modal (their footer script owns that one) -->
+<div class="vmodal" id="videoModal" role="dialog" aria-modal="true" aria-label="Video" aria-hidden="true" data-video="https://goconsensus.com/hubfs/MASTER_Sage_Becky%20Testimonial%20(1).mp4" hidden>
+  <div class="vmodal__box">
+    <button class="vmodal__close" type="button" aria-label="Close video"><img src="https://goconsensus.com/hubfs/raw_assets/public/Consensus%20Theme%20Aug%202025/images/drawer/icon-close-10.svg" alt="" width="12" height="12"></button>
+    <video class="vmodal__video" controls playsinline preload="none"></video>
+  </div>
+</div>
+
+<script>
+  // data/*.js and the renderers reference images (and any card WebM) as "assets/…"; js/data.js swaps them for Design Manager URLs.
+  window.DEMO_URL = "https://goconsensus.com/talk-to-sales";
+  
+  window.ASSET_URLS = {
+    "assets/platform/card-icon-engage-v2.png": "//5932154.fs1.hubspotusercontent-na1.net/hubfs/5932154/raw_assets/public/Consensus%20Theme%20Aug%202025/images/platform/card-icon-engage-v2.png",
+    "assets/platform/card-icon-explore-v2.png": "//5932154.fs1.hubspotusercontent-na1.net/hubfs/5932154/raw_assets/public/Consensus%20Theme%20Aug%202025/images/platform/card-icon-explore-v2.png",
+    "assets/platform/card-icon-experience-v2.png": "//5932154.fs1.hubspotusercontent-na1.net/hubfs/5932154/raw_assets/public/Consensus%20Theme%20Aug%202025/images/platform/card-icon-experience-v2.png",
+    "assets/platform/sheet/photo-agent-final.jpg": "//5932154.fs1.hubspotusercontent-na1.net/hubfs/5932154/raw_assets/public/Consensus%20Theme%20Aug%202025/images/platform/sheet/photo-agent-final.jpg",
+    "assets/platform/sheet/photo-buyer-final.jpg": "//5932154.fs1.hubspotusercontent-na1.net/hubfs/5932154/raw_assets/public/Consensus%20Theme%20Aug%202025/images/platform/sheet/photo-buyer-final.jpg",
+    "assets/platform/sheet/photo-seller-final.jpg": "//5932154.fs1.hubspotusercontent-na1.net/hubfs/5932154/raw_assets/public/Consensus%20Theme%20Aug%202025/images/platform/sheet/photo-seller-final.jpg",
+    "assets/platform/sheet/photo-v2.jpg": "//5932154.fs1.hubspotusercontent-na1.net/hubfs/5932154/raw_assets/public/Consensus%20Theme%20Aug%202025/images/platform/sheet/photo-v2.jpg",
+    "assets/platform/sheet/photo-buyer.jpg": "//5932154.fs1.hubspotusercontent-na1.net/hubfs/5932154/raw_assets/public/Consensus%20Theme%20Aug%202025/images/platform/sheet/photo-buyer.jpg",
+    "assets/platform/sheet/photo-seller.jpg": "//5932154.fs1.hubspotusercontent-na1.net/hubfs/5932154/raw_assets/public/Consensus%20Theme%20Aug%202025/images/platform/sheet/photo-seller.jpg",
+    "assets/platform/sheet/icon-waveform.svg": "//5932154.fs1.hubspotusercontent-na1.net/hubfs/5932154/raw_assets/public/Consensus%20Theme%20Aug%202025/images/platform/sheet/icon-waveform.svg",
+    "assets/platform/sheet/icon-overlap-shapes.svg": "//5932154.fs1.hubspotusercontent-na1.net/hubfs/5932154/raw_assets/public/Consensus%20Theme%20Aug%202025/images/platform/sheet/icon-overlap-shapes.svg",
+    "assets/platform/sheet/icon-audio-chat.svg": "//5932154.fs1.hubspotusercontent-na1.net/hubfs/5932154/raw_assets/public/Consensus%20Theme%20Aug%202025/images/platform/sheet/icon-audio-chat.svg",
+    "assets/platform/sheet/icon-close-16.svg": "//5932154.fs1.hubspotusercontent-na1.net/hubfs/5932154/raw_assets/public/Consensus%20Theme%20Aug%202025/images/platform/sheet/icon-close-16.svg",
+    "assets/explorer/panel-engage-v6.jpg": "//5932154.fs1.hubspotusercontent-na1.net/hubfs/5932154/raw_assets/public/Consensus%20Theme%20Aug%202025/images/explorer/panel-engage-v6.jpg",
+    "assets/explorer/panel-explore-v4.jpg": "//5932154.fs1.hubspotusercontent-na1.net/hubfs/5932154/raw_assets/public/Consensus%20Theme%20Aug%202025/images/explorer/panel-explore-v4.jpg",
+    "assets/explorer/panel-experience-v5.jpg": "//5932154.fs1.hubspotusercontent-na1.net/hubfs/5932154/raw_assets/public/Consensus%20Theme%20Aug%202025/images/explorer/panel-experience-v5.jpg",
+    "assets/explorer/icon-arrow-right.svg": "//5932154.fs1.hubspotusercontent-na1.net/hubfs/5932154/raw_assets/public/Consensus%20Theme%20Aug%202025/images/explorer/icon-arrow-right.svg",
+    "assets/intel/icon-discovery-agent.svg": "//5932154.fs1.hubspotusercontent-na1.net/hubfs/5932154/raw_assets/public/Consensus%20Theme%20Aug%202025/images/intel/icon-discovery-agent.svg",
+    "assets/intel/icon-interactive-demo.svg": "//5932154.fs1.hubspotusercontent-na1.net/hubfs/5932154/raw_assets/public/Consensus%20Theme%20Aug%202025/images/intel/icon-interactive-demo.svg",
+    "assets/intel/icon-live-demo.svg": "//5932154.fs1.hubspotusercontent-na1.net/hubfs/5932154/raw_assets/public/Consensus%20Theme%20Aug%202025/images/intel/icon-live-demo.svg",
+    "assets/intel/icon-sold.svg": "//5932154.fs1.hubspotusercontent-na1.net/hubfs/5932154/raw_assets/public/Consensus%20Theme%20Aug%202025/images/intel/icon-sold.svg",
+    "assets/drawer/icon-close-10.svg": "//5932154.fs1.hubspotusercontent-na1.net/hubfs/5932154/raw_assets/public/Consensus%20Theme%20Aug%202025/images/drawer/icon-close-10.svg",
+    "assets/drawer/icon-arrow-orange.svg": "//5932154.fs1.hubspotusercontent-na1.net/hubfs/5932154/raw_assets/public/Consensus%20Theme%20Aug%202025/images/drawer/icon-arrow-orange.svg",
+    "assets/drawer/icon-paper-star.svg": "//5932154.fs1.hubspotusercontent-na1.net/hubfs/5932154/raw_assets/public/Consensus%20Theme%20Aug%202025/images/drawer/icon-paper-star.svg"
+    ,
+    "assets/video/engage.webm": "https://5932154.fs1.hubspotusercontent-na1.net/hubfs/5932154/consensus-lp/explorer/engage.webm", "assets/video/engage.mp4": "https://5932154.fs1.hubspotusercontent-na1.net/hubfs/5932154/consensus-lp/explorer/engage.mp4",
+    "assets/video/explore.webm": "https://5932154.fs1.hubspotusercontent-na1.net/hubfs/5932154/consensus-lp/explorer/explore.webm", "assets/video/explore.mp4": "https://5932154.fs1.hubspotusercontent-na1.net/hubfs/5932154/consensus-lp/explorer/explore.mp4",
+    "assets/video/experience.webm": "https://5932154.fs1.hubspotusercontent-na1.net/hubfs/5932154/consensus-lp/explorer/experience.webm", "assets/video/experience.mp4": "https://5932154.fs1.hubspotusercontent-na1.net/hubfs/5932154/consensus-lp/explorer/experience.mp4"
+  };
+</script>
+<script src="https://goconsensus.com/hubfs/hub_generated/template_assets/1/224336622976/1792002265753/template_features.min.js"></script>
+<script src="https://goconsensus.com/hubfs/hub_generated/template_assets/1/224336622978/1791957754229/template_platform.min.js"></script>
+<script src="https://goconsensus.com/hubfs/hub_generated/template_assets/1/224334395060/1791951508645/template_timeline.min.js"></script>
+<script src="https://goconsensus.com/hubfs/hub_generated/template_assets/1/224334395136/1791951530040/template_state.min.js"></script>
+<script src="https://goconsensus.com/hubfs/hub_generated/template_assets/1/224336622982/1791951514704/template_data.min.js"></script>
+<script src="https://goconsensus.com/hubfs/hub_generated/template_assets/1/224333263884/1791951520293/template_hero-figure.min.js"></script>
+<script src="https://goconsensus.com/hubfs/hub_generated/template_assets/1/224336622986/1791951522063/template_platform.min.js"></script>
+<script src="https://goconsensus.com/hubfs/hub_generated/template_assets/1/224333263891/1791951527077/template_record.min.js"></script>
+<script src="https://goconsensus.com/hubfs/hub_generated/template_assets/1/224333263893/1792384039335/template_seat.min.js"></script>
+<script src="https://goconsensus.com/hubfs/hub_generated/template_assets/1/224336622988/1791951529215/template_stack.min.js"></script>
+<script src="https://goconsensus.com/hubfs/hub_generated/template_assets/1/224333263888/1791951524209/template_proof.min.js"></script>
+<script src="https://goconsensus.com/hubfs/hub_generated/template_assets/1/224336622990/1791951535038/template_video.min.js"></script>
+<script src="https://goconsensus.com/hubfs/hub_generated/template_assets/1/224334395064/1791951519812/template_lp-main.min.js"></script>
+
+<!-- HubSpot performance collection script -->
+<script defer src="/hs/hsstatic/content-cwv-embed/static-1.1293/embed.js"></script>
+<script>
+var hsVars = hsVars || {}; hsVars['language'] = 'en';
+</script>
+
+<script src="/hs/hsstatic/cos-i18n/static-1.53/bundles/project.js"></script>
+<script src="https://goconsensus.com/hubfs/hub_generated/module_assets/1/224334395140/1791951534620/module_cn-header.min.js"></script>
+<script src="https://goconsensus.com/hubfs/hub_generated/module_assets/1/224336622996/1791958816161/module_cn-footer.min.js"></script>
+
+<!-- Start of HubSpot Analytics Code -->
+<script type="text/javascript">
+var _hsq = _hsq || [];
+_hsq.push(["setContentType", "standard-page"]);
+_hsq.push(["setCanonicalUrl", "https:\/\/goconsensus.com"]);
+_hsq.push(["setPageId", "224328882052"]);
+_hsq.push(["setContentMetadata", {
+    "contentPageId": 224328882052,
+    "legacyPageId": "224328882052",
+    "contentFolderId": null,
+    "contentGroupId": null,
+    "abTestId": null,
+    "languageVariantId": 224328882052,
+    "languageCode": "en",
+    
+    
+}]);
+</script>
+
+<script type="text/javascript" id="hs-script-loader" async defer src="/hs/scriptloader/5932154.js"></script>
+<!-- End of HubSpot Analytics Code -->
+
+
+<script type="text/javascript">
+var hsVars = {
+    render_id: "66a62dec-634c-4974-8e97-1955eda8f87c",
+    ticks: 1791989488176,
+    page_id: 224328882052,
+    
+    content_group_id: 0,
+    portal_id: 5932154,
+    app_hs_base_url: "https://app.hubspot.com",
+    cp_hs_base_url: "https://cp.hubspot.com",
+    language: "en",
+    analytics_page_type: "standard-page",
+    scp_content_type: "",
+    
+    analytics_page_id: "224328882052",
+    category_id: 1,
+    folder_id: 0,
+    is_hubspot_user: false
+}
+</script>
+
+
+<script defer src="/hs/hsstatic/HubspotToolsMenu/static-1.640/js/index.js"></script>
+
+<script>
+
+document.addEventListener("DOMContentLoaded", () => {
+    /* -----------------------------------------
+      1. GET UTM VALUES (COOKIE + URL)
+    ------------------------------------------ */
+    function getCookie(name) {
+      const value = `; ${document.cookie}`;
+      const parts = value.split(`; ${name}=`);
+      if (parts.length === 2) return parts.pop().split(";").shift();
+      return null;
+    }
+
+    function collectUTMs() {
+      const lookup = {
+        utm_campaign: ["utm_campaign","utmcampaign","_utm_campaign"],
+        utm_source:   ["utm_source","utmsource","_utm_source"],
+        utm_medium:   ["utm_medium","utmmedium","_utm_medium"],
+        utm_term:     ["utm_term","utmterm","_utm_term"],
+        utm_content:  ["utm_content","utmcontent","_utm_content"],
+        gclid:        ["gclid","_gclid"]
+      };
+
+      const urlParams = new URLSearchParams(window.location.search);
+      let result = {};
+
+      for (const [key, variants] of Object.entries(lookup)) {
+        for (const v of variants) {
+          const val = urlParams.get(v) || getCookie(v);
+          if (val) {
+            result[key] = val;
+            break;
+          }
+        }
+      }
+      return result;
+    }
+
+    /* -----------------------------------------
+      2. BUILD IFRAME URL (WITH UTMS)
+    ------------------------------------------ */
+    function appendUTMs(url) {
+      try {
+        const finalUrl = new URL(url);
+        const utms = collectUTMs();
+
+        Object.entries(utms).forEach(([k, v]) => {
+          finalUrl.searchParams.append(k, v);
+        });
+
+        return finalUrl.toString();
+      } catch (err) {
+        console.error("❌ Failed to construct iframe URL:", err);
+        return url;
+      }
+    }
+
+
+    /* -----------------------------------------
+      3. REUSABLE MODAL + IFRAME HANDLER
+    ------------------------------------------ */
+    /**
+     * Initializes the click, open, and close logic for a specific modal.
+     * @param {string} modalId - The ID of the modal element (e.g., "demoModal").
+     * @param {string} iframeId - The ID of the iframe element (e.g., "demoIframe").
+     * @param {string} baseSrc - The base URL for the iframe's content.
+     */
+    function initializeModal(modalId, iframeId, baseSrc) {
+        const modal = document.getElementById(modalId);
+        const iframe = document.getElementById(iframeId);
+
+        if (!modal || !iframe) {
+            console.warn(`Modal or Iframe not found for IDs: ${modalId} / ${iframeId}`);
+            return;
+        }
+
+        iframe.addEventListener("error", (e) => {
+            console.error(`❌ Iframe (${iframeId}) failed to load:`, e);
+        });
+
+        // Modal open triggers: targets [href="#modalId"] and [data-modal="modalId"]
+        document.querySelectorAll(`[href="#${modalId}"], [data-modal="${modalId}"]`).forEach(el => {
+            el.addEventListener("click", e => {
+                e.preventDefault();
+                // 1. Set iframe source with UTMS
+                iframe.src = appendUTMs(baseSrc);
+                // 2. Open modal
+                modal.classList.add("activemodal");
+            });
+        });
+
+        // Close button: targets any element with class ".close-modal" inside the modal
+        const closeBtn = modal.querySelector(".close-modal");
+        if (closeBtn) {
+            closeBtn.addEventListener("click", () => {
+                modal.classList.remove("activemodal");
+                // Optional: Clear iframe src to stop video/audio playback when closed
+                iframe.src = '';
+            });
+        }
+
+        // Click outside modal
+        modal.addEventListener("click", e => {
+            if (e.target === modal) {
+                modal.classList.remove("activemodal");
+                // Optional: Clear iframe src to stop video/audio playback when closed
+                iframe.src = '';
+            }
+        });
+    }
+
+
+    /* -----------------------------------------
+      4. CALL THE FUNCTION FOR EACH MODAL
+    ------------------------------------------ */
+
+    // Original Modal
+    initializeModal(
+        "demoModal", 
+        "demoIframe", 
+        "https://play.goconsensus.com/s2a1eb371?hideCookieBanner=true"
+    );
+
+    // New Modal for Testing (demoModalNew)
+    initializeModal(
+        "demoModalNew", 
+        "demoIframeNew", 
+        "https://client.getpeel.ai/talkables/consensus-platform-overview-2853/iframe?anon=true"
+    );
+
+});
+</script>
+
+
+
+</body></html>

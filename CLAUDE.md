@@ -1,73 +1,35 @@
-# Claude Project Instructions
+# PitchSense Competitive Intelligence
 
-This repository contains the ongoing PitchSense competitive-intelligence research. Follow these instructions whenever researching competitors or editing research files.
+Ongoing competitive-intelligence research for PitchSense AI: 50 competitors, three phases. **`RESEARCH_RULES.md` governs every research and writing task here.** It holds the rubric, entity resolution, evidence rules, PitchSense claim rules and the verification gates. Read it before researching, scoring or writing.
 
-## Source of truth
+## Sources of truth
 
-The consolidated master report, [`reports/pitchsense_competitor_research_master.md`](reports/pitchsense_competitor_research_master.md), is the source of truth. When new evidence is added, update the master report as well as any relevant batch files; do not update batch files alone.
+| What | File | Edited how |
+|---|---|---|
+| PitchSense capabilities and status | `source/PitchSense_Product_Narrative_v1.pdf` (text: `…_text.md`) | Read-only |
+| Phase 1 scores and synthesis | `phase1/pitchsense_competitor_research_master.md` | By hand, together with the matching `phase1/batches/` file |
+| Phase 2 website messaging | `phase2/batches/*/` CSVs + `phase2/synthesis.md` | By hand; the master and `all50.csv` are **generated** |
+| Phase 3 CRO positioning | `phase3/pitchsense_phase3_cro_positioning.md` | By hand; recommendations stay labelled as recommendations |
+| Backlog, triggered checks, cadence | `ROADMAP.md` | By hand |
 
-## Frozen research rubric
+`exports/` is generated output for claude.ai. Regenerate it; never edit it.
 
-Do not change the rubric without explicitly noting a rubric revision.
+## Commands
 
-- Score five dimensions from 0 to 2 each, for a maximum total of 10: Call Intelligence, Deal Intelligence, Content Intelligence, Coaching Intelligence, and Shared Memory.
-- Apply the Shared Memory functional test:
-  - **1:** retained context in a limited scope is reused in workflows.
-  - **2:** persistent context across sources is used across capabilities.
-  - A chatbot, CRM sync, or AI search alone is insufficient. The product does not need to use the word “memory.”
-- Use documented product evidence only. A score of 1 represents a documented partial capability. Flag uncertain depth or availability separately; show unverified points as provisional (for example, `2 (+1 unverified)`).
-- Resolve company identities before fetching evidence and deduplicate operating companies:
-  - Clari + Salesloft
-  - Seismic + Highspot
-  - Showpad + Bigtincan + Brainshark
-  - People.ai → Backstory
-  - ZoomInfo Chorus is a product, not a separate operating company.
-- Separate announced capabilities from generally available (GA) capabilities. Examples requiring this distinction include Noota Sales Agent (“Coming soon”), Mindtickle ElevateOS, and Agentforce Long-Horizon Runtime.
-- Preserve research dates and each company’s “Daily users” field. Label inferred values as inferred.
+- `python3 -I tools/verify_phase1.py`: runs the six Phase 1 gates (exits non-zero on failure).
+- `python3 -I tools/gen_phase2_master.py`: regenerates `phase2/pitchsense_phase2_messaging_master.md` and `phase2/phase2_website_messaging_all50.csv`, then runs nine gates.
+- `python3 -I tools/build_claude_project.py [--full]`: runs every gate, then builds `exports/claude-project/` and its zip.
 
-## Required verification after report changes
+A PostToolUse hook (`tools/hooks/after_edit.py`) runs the matching gates whenever the Phase 1 master, a Phase 2 batch file or the synthesis is edited. A failing gate is reported back to Claude for fixing before the work continues.
 
-Run the available programmatic verification gates after every report change, and check that:
+## Workflows
 
-1. Tables A, B, and C contain identical company sets.
-2. The distinct-company count is correct.
-3. Every dimension score is between 0 and 2.
-4. Each total equals the sum of its component scores.
-5. Every Table B row includes evidence URLs.
-6. Every Table A row has a consistent 12-cell column count.
+- **Capability evidence, scoring, new companies, M&A news**: the `evidence-update` skill.
+- **Website-messaging capture**: the `phase2-batch` skill, which dispatches `website-messaging-researcher` agents, one per batch.
+- **Any PitchSense copy, positioning or comparison**: the `claim-check` skill.
+- **Refreshing the claude.ai Project**: `/export-claude-project`.
 
-Review changed rows after running the gates. Do not re-share the report until both checks are complete.
+## Current state (Oct 19, 2026)
 
-## Verification backlog
-
-These are unresolved flags from the 50-company research. Prioritize release notes and product documentation when verifying them; update the master report with any findings.
-
-1. **Salesforce Agentforce:** Verify whether the documented “retain context” Long-Horizon Runtime is reused across sales-agent workflows. Shared Memory remains at 1 pending verification.
-2. **Wonderway:** Verify the call-capture and analysis mechanism behind “Real sales coaching on EVERY. SINGLE. CALL.” AI Coach is in beta.
-3. **Aviso:** Verify whether “conversational intelligence” and “Coaching & Enablement” capability-list mentions are documented products.
-4. **HubSpot Breeze:** Verify the Data agent workflow for “insights from your CRM, calls, and documents.” Call Intelligence remains at 1, with the additional point unverified.
-5. **Showpad:** Verify Genie’s connection to recorded conversations, merged-stack (Bigtincan/Brainshark) integration, and GA status.
-6. **Backstory (formerly People.ai):** Verify whether call-content analysis is transcript-level or metadata-only.
-7. **Mindtickle:** Verify ElevateOS availability and clarify the “decade of rep behavior data” claim.
-8. **Gong:** Verify the GA status of newer agent features, including Gong Enable.
-9. **Noota:** Verify Sales Agent GA status; it is currently described as “Coming soon.”
-10. **Microsoft Copilot for Sales:** Check release-note coverage beyond Microsoft Learn documentation; the marketing page was unfetchable.
-
-## Expansion candidates
-
-When expanding beyond 50 companies:
-
-- Recheck companies found during identity resolution but not scored. BoostUp and SetSail were reported defunct as of October 19, 2026; verify their current status before re-adding them.
-- Watch adjacent categories: AI SDR/agent startups, buyer-intelligence layers (Humantic-class), digital sales rooms (Aligned-class), and in-person field-sales conversation intelligence (Siro-class).
-- Include newly funded conversation-intelligence or enablement startups when they compete for the same buying job.
-
-## Maintenance cadence
-
-- **Quarterly:** Re-verify the top 10 and the Shared Memory/CRO shortlists. Change scores only when new documented evidence supports the change, and log changes in the master report header.
-- **Triggered:** Check M&A and consolidation (including Clari/Salesloft, Seismic/Highspot, and Showpad/Bigtincan), major product launches by shortlist vendors, and defunct or rebrand status.
-- For every update, run the programmatic verification gates and have a reviewer check changed rows before sharing the report under the same file name.
-
-## Open synthesis items
-
-- Treat the three gap hypotheses as testable, not as verified absences. Validate each against its named partial counterexamples before using it in positioning work.
-- The research does not yet contain a PitchSense positioning recommendation. The evidence base is ready for that next step; do not present a recommendation as an existing research conclusion.
+- Phases 1–3 are complete for all 50 companies. Open items are in `ROADMAP.md`: the 10-item verification backlog and the triggered checks from Phase 2.
+- Phase 2 Table F (batches 1–3) is still PROVISIONAL: it predates Narrative v1 and has not been reconciled with it.
