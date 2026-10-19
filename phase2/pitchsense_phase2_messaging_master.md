@@ -54,12 +54,12 @@ Phase 1 columns (#, primary category, capability total out of 10, priority) are 
 | 29 | Accent Technologies | Sales Enablement & Content Intelligence | 5 | P4 | 11 | Light | [accent-technologies.com](https://accent-technologies.com/) |
 | 30 | Quantified | AI Sales Coaching & Roleplay | 4 | P3 | 9 | Light | [quantified.ai](https://www.quantified.ai/) |
 | 31 | PitchMonster | AI Sales Coaching & Roleplay | 5 | P3 | 9 | Light | [pitchmonster.io](https://www.pitchmonster.io/) |
-| 32 | Wonderway | AI Sales Coaching & Roleplay | 1 | P3 | 9 | Light | [wonderway.io](https://www.wonderway.io/) |
+| 32 | Wonderway | AI Sales Coaching & Roleplay | 2 | P3 | 9 | Light | [wonderway.io](https://www.wonderway.io/) |
 | 33 | Yoodli | AI Sales Coaching & Roleplay | 2 | P4 | 11 | Light | [yoodli.ai](https://yoodli.ai/) |
-| 34 | Hyperbound | AI Sales Coaching & Roleplay | 4 | P2 | 6 | Light | [hyperbound.ai](https://www.hyperbound.ai/) |
+| 34 | Hyperbound | AI Sales Coaching & Roleplay | 6 | P2 | 6 | Light | [hyperbound.ai](https://www.hyperbound.ai/) |
 | 35 | Siro | Conversation Intelligence (field sales) | 5 | P2 | 7 | Light | [siro.ai](https://www.siro.ai/) |
 | 36 | Reprise | Sales Enablement & Content Intelligence | 1 | P4 | 11 | Light | [reprise.com](https://www.reprise.com/) |
-| 37 | Regie.ai | AI Sales Agents & Shared Memory | 1 | P3 | 9 | Light | [regie.ai](https://regie.ai/) |
+| 37 | Regie.ai | AI Sales Agents & Shared Memory | 2 | P3 | 9 | Light | [regie.ai](https://regie.ai/) |
 | 38 | Rox | AI Sales Agents & Shared Memory | 2 | P3 | 8 | Light | [rox.com](https://www.rox.com/) |
 | 39 | Humantic AI | Deal Intelligence & RevOps | 2 | P3 | 8 | Light | [humantic.ai](https://www.humantic.ai/) |
 | 40 | Aviso | Deal Intelligence & RevOps | 4 | P2 | 6 | Light | [aviso.com](https://www.aviso.com/) |
@@ -69,7 +69,7 @@ Phase 1 columns (#, primary category, capability total out of 10, priority) are 
 | 44 | Uniphore | AI Sales Agents & Shared Memory | 2 | P4 | 10 | Light | [uniphore.com](https://www.uniphore.com/) |
 | 45 | Level AI | Conversation Intelligence (contact center) | 4 | P4 | 10 | Light | [thelevel.ai](https://thelevel.ai/) |
 | 46 | Salesforce (Agentforce) | AI Sales Agents & Shared Memory | 0** (+1 unverified) | P3 | 7 | Light | [salesforce.com/agentforce](https://www.salesforce.com/agentforce/) |
-| 47 | HubSpot (Breeze) | AI Sales Agents & Shared Memory | 2** (+1 unverified) | P2 | 6 | Light | [hubspot.com/products/sales/ai-prospecting-agent](https://www.hubspot.com/products/sales/ai-prospecting-agent) |
+| 47 | HubSpot (Breeze) | AI Sales Agents & Shared Memory | 3 | P2 | 6 | Light | [hubspot.com/products/sales/ai-prospecting-agent](https://www.hubspot.com/products/sales/ai-prospecting-agent) |
 | 48 | Zoom (Revenue Accelerator) | Conversation Intelligence | 6 | P2 | 6 | Light | [zoom.com/en/products/conversation-intelligence](https://www.zoom.com/en/products/conversation-intelligence/) |
 | 49 | Microsoft (Copilot for Sales) | Conversation Intelligence | 4 | P2 | 7 | Light | [adoption.microsoft.com/en-us/copilot-for-sales](https://adoption.microsoft.com/en-us/copilot-for-sales/) |
 | 50 | Aligned | Deal Intelligence & RevOps | 3 | P3 | 8 | Light | [alignedup.com](https://alignedup.com/) |

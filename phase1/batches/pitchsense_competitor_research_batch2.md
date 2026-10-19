@@ -108,14 +108,14 @@
 - **Sources:** [balto.ai](https://www.balto.ai/) · [agent assist](https://www.balto.ai/real-time-agent-assist-for-contact-centers/)
 
 ### 23. Circleback
-- **Category:** Conversation Intelligence / meeting automation ("Company Brain")
+- **Category:** Conversation Intelligence / meeting automation ("Company Brain" in the page title only as of October 19, 2026)
 - **ICP:** Not specified — no team, industry, or size profile ([circleback.ai](https://circleback.ai/)).
 - **Documented audiences:** a Founder & CEO testimonial only. Likely economic buyer (analyst inference): team leads / founders.
 - **Daily users:** professionals in meetings (broad).
 - **Pain points:** note-taking distraction; fear of dropping commitments; finding information from past conversations ([circleback.ai](https://circleback.ai/)).
 - **Capabilities:** AI notetaker; automatic action items; automations across apps (Slack, Notion, Linear, HubSpot, Salesforce, Attio, etc.); "Ask questions and get answers drawn from every conversation you've had"; searchable transcripts; HubSpot automation — "Automatically update contacts and deals after meetings"; API/CLI/MCP to "give AI agents conversation context" ([circleback.ai](https://circleback.ai/)).
 - **Deal intelligence:** concrete contact/deal updates in HubSpot documented → **DI 1**.
-- **Shared memory evidence:** "Company Brain" — "captures and organizes context from your conversations" with conversation-wide retrieval and agent access via API/MCP → **SM 1** (retained conversation context; no sales-org sources or broader cross-capability reuse documented).
+- **Shared memory evidence:** "captures and organizes context from your conversations" (the "Company Brain" label is no longer in the page body as of October 19, 2026; meeting context is reused in CRM automations and passed to agents via CLI/MCP, [CLI](https://circleback.ai/integrations/cli)) with conversation-wide retrieval and agent access via API/MCP → **SM 1** (retained conversation context; no sales-org sources or broader cross-capability reuse documented).
 - **Source:** [circleback.ai](https://circleback.ai/)
 
 ---
@@ -173,7 +173,7 @@ Batch 1 rows (1–14) are unchanged from the batch 1 report; batch 2 additions f
 | ZoomInfo (Chorus) | 2 | 1 | 0 | 1 | 1 | **5** | Call capture/analysis; deal momentum + win/loss; conversations reused for coaching ([product](https://www.zoominfo.com/products/chorus)) |
 | tl;dv | 2 | 1 | 0 | 1 | 1 | **5** | Deal-property updates: "pain points, competitors, decision criteria… on the deal" ([HubSpot integration](https://tldv.io/hubspot/)); Coaching Hub with playbooks ([coaching](https://tldv.io/features/coaching/)) |
 | Balto | 2 | 0 | 1 | 1 | 1 | **5** | KB-grounded answers ([agent assist](https://www.balto.ai/real-time-agent-assist-for-contact-centers/)); top-performer responses scaled to agents |
-| Circleback | 2 | 1 | 0 | 0 | 1 | **4** | "Company Brain"; HubSpot contact/deal updates ([site](https://circleback.ai/)) |
+| Circleback | 2 | 1 | 0 | 0 | 1 | **4** | "captures and organizes context from your conversations"; "Automatically update contacts and deals after meetings"; meeting context to agents via CLI/MCP ([site](https://circleback.ai/), [HubSpot](https://circleback.ai/integrations/hubspot)) |
 | Noota | 2 | 0 | 0 | 0 | 1 | **3** | Briefs from calendar+inbox+conversations ([site](https://www.noota.io/)); CRM update content unspecified; sales agent announced "Coming soon" ([sales page](https://www.noota.io/use-case/sales-team)) |
 | Second Nature | 0 | 1 | 0 | 2 | 0 | **3** | Roleplay simulations; Deal Coach on live deals ([site](https://www.secondnature.ai/)) |
 | Observe.AI | 2 | 0 | 0 | 1 | 0 | **3** | Interaction evaluation + coaching; contact-center scope ([site](https://www.observe.ai/)) |
@@ -197,7 +197,7 @@ Batch 1 rows (1–14) are unchanged from the batch 1 report; batch 2 additions f
 | Backstory (ex-People.ai) | P2 | CRO-first answers on activity memory ([backstory.ai](https://www.backstory.ai/)) | Transcript analysis vs. metadata |
 | Attention | P2 | Commitments-based memory + content generation ([agents](https://www.attention.com/product/agents-directory)) | Scale; approved-content grounding |
 | ZoomInfo (Chorus) | P3 | Enterprise CI channel inside ZoomInfo ([product](https://www.zoominfo.com/products/chorus)) | Whether Chorus gains ZoomInfo Copilot AI features; cross-product context |
-| Circleback | P3 | "Company Brain" memory positioning ([circleback.ai](https://circleback.ai/)) | Whether Company Brain expands beyond conversations; sales workflows |
+| Circleback | P3 | Conversation context reused in automations and agents ([circleback.ai](https://circleback.ai/)); "Company Brain" now title-only | Whether deal updates go beyond activity logging; sales workflows |
 | Fireflies.ai | P3 | "Perfect memory" + MCP; cross-functional reach ([fireflies.ai](https://fireflies.ai/)) | Whether sales-specific memory/workflows emerge |
 | tl;dv | P3 | Sales coaching hub documented ([coaching](https://tldv.io/features/coaching/)) | Whether sales becomes the primary ICP |
 | Noota | P3 | Sales Agent announced "Coming soon" ([sales page](https://www.noota.io/use-case/sales-team)) | Ship date and depth of deal scoring / CRM writes / live coaching |

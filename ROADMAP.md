@@ -9,25 +9,36 @@ Research rules (rubric, entity resolution, evidence and claim rules, gates) live
 Priority items to verify against release notes / product docs:
 
 1. Salesforce Agentforce: whether the documented "retain context" Long-Horizon Runtime is reused across sales-agent workflows; SM held at 1 pending this.
-2. Wonderway: the call-capture/analysis mechanism behind "Real sales coaching on EVERY. SINGLE. CALL."; AI Coach is in beta.
+2. ~~Wonderway: the call-capture/analysis mechanism behind "Real sales coaching on EVERY. SINGLE. CALL."; AI Coach is in beta.~~ **Resolved Oct 19, 2026:** the AI Coach is now Verity (BTS) and documents scoring of every call through dialer/video/CI integrations, plus transcription; CI 0 (unverified) → 1, SM stays 0.
 3. Aviso: whether "conversational intelligence" and "Coaching & Enablement" (capability-list mentions) become documented products.
-4. HubSpot Breeze: the Data agent "insights from your CRM, calls, and documents" workflow (CoI held at 1 unverified).
+4. ~~HubSpot Breeze: the Data agent "insights from your CRM, calls, and documents" workflow (CoI held at 1 unverified).~~ **Resolved Oct 19, 2026:** the smart-properties knowledge-base article lists files and documents as a data source; CoI 1 confirmed, total 3.
 5. Showpad: Genie's connection to recorded conversations; merged-stack (Bigtincan/Brainshark) integration and GA status.
 6. Backstory (ex-People.ai): whether call-content analysis is transcript-level or metadata-only.
 7. Mindtickle: ElevateOS availability; clarify "decade of rep behavior data".
 8. Gong: newer agent features GA status (Gong Enable).
 9. Noota: Sales Agent GA status (currently "Coming soon").
-10. Microsoft Copilot for Sales: release-note coverage beyond Microsoft Learn docs (marketing page unfetchable).
+10. Microsoft Copilot for Sales: release-note coverage beyond Microsoft Learn docs (marketing page unfetchable). Oct 19, 2026: docs now title it "Sales agent"; the What's new page has no feature entries and points to the M365 roadmap; rename date still unverified. Still open. Also review whether GA confirm-before-save CRM field writes justify DI 2.
 
-## Triggered checks raised by Phase 2 batches 6–11 (Oct 19, 2026 homepage captures — verify before changing Master Report)
+## Triggered checks raised by Phase 2 batches 6–11 — resolved Oct 19, 2026
 
-- PathFactory: homepage banner states acquisition by Kaltura.
-- Fathom: site-wide banner "FATHOM IS NOW PART OF SUPERHUMAN".
-- Wonderway: page references "Verity by BTS" (possible rebrand; relationship not stated); AI Coach still labeled beta.
-- Microsoft Copilot for Sales: H1 now "Sales solution in Microsoft Copilot" (adoption page; marketing page still bot-blocked).
-- Hyperbound: "AI-Powered Roleplay Platform" framing replaced by Practice / Perform / Kota Activate.
-- Regie.ai: product now "RegieGO" ("agentic sales workspace").
-- Wording drift vs. Master Report quotes: Circleback "Company Brain" (now title-only), Quantified ("one audit trail"), PitchMonster ("300K+ reps" vs 30,000+), HubSpot Breeze, Humantic AI ("Miia, Pi & Signals").
+All checked against primary sources; changes logged in the Phase 1 master header. No shortlist position changed.
+
+- PathFactory: acquired by Kaltura April 1, 2026 (Kaltura 10-Q). Brand live; scores unchanged.
+- Fathom: acquired by Superhuman (formerly Grammarly), announced Sep 14, 2026; product unchanged; scores unchanged.
+- Wonderway: BTS-owned since June 2024; AI Coach renamed Verity. CI 0* → 1 (see backlog item 2).
+- Microsoft Copilot for Sales: docs now titled "Sales agent"; evidence re-verified; scores unchanged.
+- Hyperbound: Perform/Kota Activate (GA) document native recording and deal risks. CI 1 → 2, DI 0 → 1, total 6.
+- Regie.ai: RegieGO is the product; dialer records calls with transcript recaps. CI 0 → 1, total 2.
+- Wording drift: quotes refreshed for Circleback, Quantified, PitchMonster, HubSpot Breeze, Humantic AI; scores unchanged except HubSpot CoI confirmed.
+
+## Triggered checks to watch (opened Oct 19, 2026)
+
+- Quantified Field AI: beta, release scheduled Q4 2026; at GA it would document real-visit analysis (CI 0 → 1 candidate).
+- Hyperbound private-preview agents (Deal Strategist, Live Call Coaching, Agentic Enablement): at GA, re-check DI (structured CRM writes) and CoI (live battlecards); SM 2 candidate from Kota.
+- Fathom: whether it stays standalone or folds into Superhuman.
+- PathFactory: Kaltura/eSelf integration GA.
+- Wonderway: brand direction under BTS (Wonderway vs. Verity); Phase 2 homepage may need re-capture under Verity.
+- Circleback DI 1: HubSpot integration describes activity logging on deals; review whether this exceeds CRM sync.
 
 ## Expansion candidates (next batch, when growing beyond 50)
 
