@@ -5,7 +5,7 @@ from urllib.parse import urlparse
 
 BASE = os.path.dirname(os.path.abspath(__file__))
 WS = os.path.dirname(BASE)
-REPORT = os.path.join(WS, 'pitchesense_phase2c_messaging_salesloft_showpad_mindtickle_allego.md')
+REPORT = os.path.join(BASE, 'pitchsense_phase2c_messaging_salesloft_showpad_mindtickle_allego.md')
 
 def read_csv(name):
     with open(os.path.join(BASE, name), encoding='utf-8') as f:

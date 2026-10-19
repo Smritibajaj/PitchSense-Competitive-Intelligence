@@ -55,6 +55,6 @@ Run the gates after every change to a report, and review the changed rows before
   - Each total equals the sum of its components.
   - Every Table B row has an evidence URL.
   - Every Table A row has 12 cells.
-- **Phase 2:** nine gates, including the company set matching Phase 1, the 16-column rows, and source URLs on every row.
+- **Phase 2:** twelve gates, including the company set matching Phase 1, the 16-column rows, source URLs on every row, full-format Tables A–F for all 50 companies, verbatim Positioning, and ICP and Pain Point labelled as analyst summaries in all 50 rows.
 
 In Claude Code they are scripts (see `CLAUDE.md`). In claude.ai, check them with the analysis tool or by hand, and report each result.

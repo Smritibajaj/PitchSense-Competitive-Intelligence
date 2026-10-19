@@ -40,6 +40,18 @@ All checked against primary sources; changes logged in the Phase 1 master header
 - Wonderway: brand direction under BTS (Wonderway vs. Verity); Phase 2 homepage may need re-capture under Verity.
 - Circleback DI 1: HubSpot integration describes activity logging on deals; review whether this exceeds CRM sync.
 
+## Triggered checks raised by the Phase 2 full-format upgrade (batches 4–11, opened Oct 19, 2026)
+
+Observations from the captured pages, not score changes. Verify against primary sources before touching the Phase 1 master.
+
+- Momentum: homepage banner "Momentum is now part of Salesforce!" links to a Salesforce news story about a definitive agreement to acquire it. Re-check entity resolution (RESEARCH_RULES §2) and close date.
+- Observe.AI: navigation names a platform layer "Shared memory and connective tissue"; FAQ says its agents "share the same data, context". Review SM evidence in docs.
+- Hyperbound: "Calls, roleplays, email, CRM, and Slack — connected through your buyers, deals, and reps" (screen-reader-only text). Adds to the existing SM 2 watch item.
+- Salesforce (Agentforce): FAQ describes Sales Coach role-play tailored to specific deals; check whether it is GA and in scope for CoI.
+- Wonderway: the AI coach is marketed as "Verity by BTS"; its sales-intelligence page carries an old template (lorem ipsum, /old-home link).
+- Microsoft (Copilot for Sales): the linked /sales-solution/ page returns "Page not found"; still no usable CRO page.
+- Data quality notes for anyone quoting metrics: conflicting figures on Quantified (80%/48 hours vs. 100%/five days), Consensus (30% vs. 68% faster) and Jiminny (37% vs. 62%).
+
 ## Expansion candidates (next batch, when growing beyond 50)
 
 - Companies identified during identity resolution but not scored: monitor for re-entry (BoostUp and SetSail were defunct as of Oct 19, 2026 — verify before any re-add).
@@ -57,5 +69,6 @@ All checked against primary sources; changes logged in the Phase 1 master header
 
 - The three gap hypotheses remain testable, not verified absences; validate each against its named partial counterexamples before using in positioning work.
 - Phase 3 CRO positioning is complete (`phase3/`; all-50 check and claim check added Oct 19, 2026). Revisit its hero direction when deal risks, commitments, or real-call scoring ship (Narrative v1 status), or if a coaching-led vendor (Hyperbound) adds source evidence and a CRO frame.
+- Review Phase 3 Direction A (source-backed answers) against the counterexamples in Phase 2 synthesis C7: Noota, Balto, Siro, Humantic AI, Quantified and Hyperbound now make source- or evidence-link claims, in addition to Backstory and Attention.
 - Before public use of the Phase 3 page: confirm "Admins see adoption, never scores" and "company-owned data" with the product owner (Narrative-stated, not on the status list).
 - ~~Reconcile Phase 2 Table F (batches 1–3) with Narrative v1 and review its PROVISIONAL label.~~ Done Oct 19, 2026: PitchSense column now gives Appendix status; reconciliation notes added; the "approved-content governance" nuance is Not in Narrative.

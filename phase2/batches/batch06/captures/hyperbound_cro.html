@@ -1,0 +1,4765 @@
+<!DOCTYPE html>
+<html lang="en" class="dk-page">
+  <head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="robots" content="index, follow">
+<meta name="title" content="Kota Activate - AI-Powered Sales Onboarding &amp; Enablement">
+<title>Kota Activate - AI-Powered Sales Onboarding &amp; Enablement</title>
+<link rel="canonical" href="https://www.hyperbound.ai/product/kota-activate">
+<meta name="google-site-verification" content="yRTgLc1p3OWzDivio306YX9W1QuAR_yt9YwtMLhezbg">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.hyperbound.ai/product/kota-activate">
+<meta property="og:title" content="Kota Activate - AI-Powered Sales Onboarding &amp; Enablement">
+
+<meta property="og:image" content="/assets/new-OG-image.png">
+
+<!-- X (Twitter) -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://www.hyperbound.ai/product/kota-activate">
+<meta property="twitter:title" content="Kota Activate - AI-Powered Sales Onboarding &amp; Enablement">
+
+<meta property="twitter:image" content="/assets/new-OG-image.png">
+
+<!-- Source Serif 4 from Google; Geist self-hosted from /fonts/.
+
+     Self-hosting Source Serif 4 is a `TODOs.md` item.
+
+     The weight list must stay the UNION of what the pages ask for: each
+     page's own Google Fonts <link> is dropped as redundant with this one, which
+     it is not unless this is a superset. 700 is needed by `.rae-title` on
+     `revenue-activation-era` and `private-preview/agentic-enablement`. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,300;1,8..60,400;1,8..60,500&display=swap" rel="stylesheet">
+
+
+
+<!-- Base stylesheets: normalize, the `w-*` framework layer, the site's rules -->
+
+      <link href="/css/normalize.css" rel="stylesheet" type="text/css">
+      <link href="/css/base.css" rel="stylesheet" type="text/css">
+      <link href="/css/hyperbound.css" rel="stylesheet" type="text/css">
+    
+
+<!-- The closing CTA band's rules (generated: tools/css/extract-cta-css.js),
+     right after `hyperbound.css` and before any page CSS, so a page can still
+     override the band. Only on pages that pass `cta`: `.btn-demo` / `.btn-try`
+     are also the homepage's hero pair, whose `:hover` declares only `color`,
+     so the band's `background-color` would tint it. -->
+
+
+<!-- Brand tokens. Must stay after the base stylesheets (it overrides their
+     `:root`) and before the layout's `head` slot (pages override it). -->
+<style>/*
+ * Brand tokens.
+ *
+ * `HeadMeta.astro` inlines this file verbatim (`?raw` + `<style is:inline>`)
+ * immediately AFTER the three base stylesheets and BEFORE the layout's
+ * `head` slot. That position is load-bearing: nine of these names also appear
+ * in `hyperbound.css`'s own `:root`, and only `--green` disagrees (`#87c210`
+ * upstream, `#bcfa00` here), so this file has to win over that one while every
+ * page-level block still wins over it.
+ *
+ * `--green-background` and `--blue-background` are deliberately NOT declared
+ * here. `pricing` and both private-preview pages read them without declaring
+ * them, so they resolve from `hyperbound.css` today; declaring them here would
+ * silently repaint those three pages.
+ */
+
+:root {
+  /* `power-up.astro` keeps its own art-derived `--green: #8cc63f` page-local. */
+  --green: #bcfa00;
+  --green-light: #d7ff87;
+  --green-shadow: #ccff66;
+
+  --text-dark: #181d27;
+  --text-body: #535862;
+  --text-nav: #2e3035;
+
+  --card-bg: #f2f2f2;
+  --white: #fff;
+
+  --step-practice: #7dd3fc;
+  --step-perform: #fb923c;
+  --step-activate: #86efac;
+  --step-repeat: #d7ff87;
+
+  /* `--main-accent` is the button fill, `--green` the state marker. */
+  --main-accent: #d7ff87;
+  --accent-ring: #ccff66;
+  --accent-nav-hover: #f5ffe6;
+  --accent-band-floor: rgba(171, 255, 0, 0.26);
+
+  /* The closing-CTA sparkle, nothing else. */
+  --accent-deep: #6b8a00;
+
+  --stroke: #f1f1f1;
+  /* Spelled `#111` rather than `#111111`, byte-identical to the value in
+   * `hyperbound.css`. */
+  --dark-background: #111;
+
+  /* The dark pages' palette (src/styles/shared/dark.css), named for the
+   * homepage, which set it first. */
+  --home-ink: #e9e9e4;
+  --home-body: #bebeb8;
+  --home-muted: #a7a7a0;
+  --home-paper: #202020;
+  --home-line: #50504c;
+  --home-grid-line: #383835;
+  --home-button: #deded5;
+  --home-focus: #e2e2d8;
+  --home-button-line: #8d8d85;
+  --home-button-hover: #353531;
+  --home-link-line: #85857e;
+
+  --text-feature-row: #2e3035;
+
+  /* UI furniture only — never a heading. */
+  --support-700: #344054;
+  --support-500: #697586;
+  --support-400: #98a2b3;
+  --support-300: #71717a;
+  --support-100: #eef2f6;
+
+  /* `--red` is declared upstream but referenced by nothing, so it is not
+   * carried here. */
+  --blue: #2e90fa;
+  --orange: #ef6820;
+  --cyan-blue: #15b79e;
+
+  /* Ask for "Geist Sans" before "Geist": `Geist Sans` is HeadMeta's
+   * self-hosted variable file, while bare `Geist` is `hyperbound.css`'s static
+   * cuts, whose letterforms visibly differ. */
+  --font-display: 'Source Serif 4', serif;
+  --font-body: 'Geist Sans', 'Geist', sans-serif;
+  --font-mono: 'Geist Mono', monospace;
+
+  /* HeadMeta loads Source Serif 4 roman at 300-700 but italic only to 500, so
+   * an italic weight above 500 is synthesised. */
+  --font-weight-display: 400;
+  --font-weight-heading: 500;
+  --font-weight-body: 400;
+  --font-weight-button: 600;
+  --font-weight-mono-label: 600;
+
+  /* Always em, never px. */
+  --tracking-display: -0.03em;
+  --tracking-hero: -0.035em;
+  --tracking-section-opener: -0.03em;
+  --tracking-cta-title: -0.045em;
+  --tracking-mono-label: 0.06em;
+
+  /* Desktop (>=992px) reference values. The shipped scale is declared on bare
+   * elements with its own 991px and 767px steps, which these do not replace. */
+  --font-size-h1: 5rem;
+  --font-size-h2: 4.5rem;
+  --font-size-h3: 3rem;
+  --font-size-h4: 2rem;
+  --font-size-h5: 1.5rem;
+  --font-size-h6: 1.25rem;
+  --font-size-body: 1.25rem;
+
+  --leading-h1: 1.1;
+  --leading-h2: 1;
+  --leading-h3: 1.2;
+  --leading-h4: 1.3;
+  --leading-h5: 1.4;
+  --leading-h6: 1.4;
+  --leading-body: 1.5;
+
+  --radius-button: 6.3px;
+  --radius-button-cta: 8.4px;
+
+  --shadow-button: 0 1.4px 2.8px rgba(68, 102, 0, 0.4), 0 0 0 1.4px #ccff66;
+  --shadow-button-hover:
+    inset 0 1.05px 4px rgba(0, 0, 0, 0.2), 0 1.4px 2.8px rgba(68, 102, 0, 0),
+    0 0 0 1.4px rgba(204, 255, 102, 0.53);
+  --shadow-button-inner: inset 0 1.05px 0 0 rgba(255, 255, 255, 0.2);
+  --shadow-button-secondary:
+    0 1.4px 2.8px rgba(0, 0, 0, 0.12), 0 0 0 1.4px rgba(0, 0, 0, 0.08);
+
+  /* TODO: these two duplicate a concept the pages already ship under another
+   * name — `--text-body: #535862` and `--card-bg: #f2f2f2`. Both spellings are
+   * kept until one is picked deliberately. */
+  --subtext: #5d6168;
+  --background-card: #f8f8f9;
+}
+
+/*
+ * Deliberately page-local, not tokenised: `power-up.astro`'s art-derived
+ * palette; the homepage's fluid-type engine (`--font-from`, `--font-to`,
+ * `--vw-from`, `--vw-to`, `--coefficient`, `--base`), which is a mechanism
+ * rather than brand values; and `--green-background` and `--blue-background`
+ * (see the header).
+ *
+ * Banned inks: #09090b, #090909, #000 — the legacy stylesheets' ramp, not this palette.
+ */
+</style>
+
+<!-- The custom-element layer, one file per element, every file on every page.
+     After the tokens, before any page CSS — see the note at the top. -->
+<style>/*
+ * The element is the list's own box, so it is `display: block`.
+ *
+ * No variant borrows anything: every property the
+ * base, class or utility rules would set on their parts is declared here.
+ * Lengths that scale with the text are `rem`, so the accordion follows the
+ * reader's browser font size. Hairlines do not scale on the pages this look
+ * comes from, so they stay `px`. `line-height` is unitless where it is a
+ * ratio. (The light content pages' divided list, `legacy-faq`, is gone while
+ * those pages are in the dark look; it comes back with them.)
+ *
+ * Each question is a heading wrapping a native button. Both are reset to plain
+ * boxes, so they look exactly like the text they wrap on any page. The cards
+ * keep the hand-built pages' focus ring (below). A button only holds phrasing
+ * content, so its parts are spans;
+ * `unicode-bidi: isolate` is what the browser gives a `div` or a heading, and
+ * keeps them computing like one.
+ */
+hb-accordion {
+  display: block;
+}
+
+.hb-accordion__heading {
+  all: unset;
+  display: block;
+}
+
+hb-accordion[variant='cards'] .hb-accordion__question-text,
+hb-accordion[variant='cards'] .hb-accordion__card-icon {
+  unicode-bidi: isolate;
+}
+
+/* Every card-stack rule carries its variant's attribute: `cards` and `dark`
+   share the markup, and neither look may reach the other's pages. */
+hb-accordion[variant='cards'] {
+  width: 53rem;
+  max-width: 53rem;
+  margin: 0 auto;
+}
+
+hb-accordion[variant='cards'] .hb-accordion__card {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+hb-accordion[variant='cards'] .hb-accordion__card.is-first {
+  border-top: none;
+}
+
+hb-accordion[variant='cards'] .hb-accordion__question {
+  all: unset;
+  box-sizing: border-box;
+  unicode-bidi: isolate;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 1.5rem;
+  padding: 1.25rem 0;
+  cursor: pointer;
+  color: var(--text-dark);
+  font-family: 'Geist Sans', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+/* `StyleOverrides`' `*[tabindex]:focus-visible` ring, declared here because
+   a native button carries no `tabindex` for that rule to match. */
+hb-accordion[variant='cards'] .hb-accordion__question:focus-visible {
+  outline: 0.125rem solid #4d65ff;
+  outline-offset: 0.125rem;
+}
+
+hb-accordion[variant='cards'] .hb-accordion__card-icon {
+  display: flex;
+  flex-shrink: 0;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  transition: transform 0.3s ease;
+}
+
+hb-accordion[variant='cards']
+  .hb-accordion__card.is-open
+  .hb-accordion__card-icon {
+  transform: rotate(-180deg);
+}
+
+hb-accordion[variant='cards'] .hb-accordion__card-content {
+  overflow: hidden;
+  height: 0;
+  transition: height 0.35s ease;
+}
+
+/* The open answer's resting height, with or without the script. */
+hb-accordion[variant='cards']
+  .hb-accordion__card.is-open
+  .hb-accordion__card-content {
+  height: auto;
+}
+
+hb-accordion[variant='cards'] .hb-accordion__card-content p {
+  max-width: 48rem;
+  padding-bottom: 1.25rem;
+  color: var(--text-body);
+  font-family: 'Geist Sans', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+@media screen and (max-width: 991px) {
+  hb-accordion[variant='cards'] {
+    width: 100%;
+  }
+}
+
+@media (max-width: 479px) {
+  hb-accordion[variant='cards'] .hb-accordion__question {
+    gap: 0.75rem;
+    padding: 0.5rem 0;
+    font-size: 0.8125rem;
+  }
+
+  hb-accordion[variant='cards'] .hb-accordion__card-icon {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  hb-accordion[variant='cards'] .hb-accordion__card-content p {
+    padding-bottom: 0.5rem;
+    font-size: 0.6875rem;
+    line-height: 1.5;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  hb-accordion[variant='cards'] .hb-accordion__card-icon,
+  hb-accordion[variant='cards'] .hb-accordion__card-content {
+    transition: none;
+  }
+}
+
+/* `dark`: the card stack on a dark page. Ruled rows, small mono questions in
+   capitals, tracked like the page's other mono labels, and a plus that turns
+   to a cross when its answer opens. Its colours are the dark --home-* tokens
+   (src/styles/tokens.css). */
+hb-accordion[variant='dark'] {
+  --hb-accordion-line: var(--home-line);
+  --hb-accordion-ink: var(--home-ink);
+  --hb-accordion-focus: var(--home-focus);
+  --hb-accordion-body: var(--home-body);
+
+  border-bottom: 1px solid var(--hb-accordion-line);
+}
+
+hb-accordion[variant='dark'] .hb-accordion__card + .hb-accordion__card {
+  border-top: 1px solid var(--hb-accordion-line);
+}
+
+hb-accordion[variant='dark'] .hb-accordion__question {
+  all: unset;
+  box-sizing: border-box;
+  unicode-bidi: isolate;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 25px;
+  padding: 21px 0;
+  cursor: pointer;
+  color: var(--hb-accordion-ink);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* A plural acronym in a question keeps its case (KeepCase) wherever the dark
+   list is, the homepage included, which does not load dark.css. */
+hb-accordion[variant='dark'] .dk-keep-case {
+  text-transform: none;
+}
+
+hb-accordion[variant='dark'] .hb-accordion__question:focus-visible {
+  outline: 2px solid var(--hb-accordion-focus);
+  outline-offset: 5px;
+}
+
+hb-accordion[variant='dark'] .hb-accordion__question-text,
+hb-accordion[variant='dark'] .hb-accordion__card-icon {
+  unicode-bidi: isolate;
+}
+
+/* A CMS question can hold a word longer than a phone's line (a URL); it
+   breaks rather than widen the list and the section around it. */
+hb-accordion[variant='dark'] .hb-accordion__question-text {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+hb-accordion[variant='dark'] .hb-accordion__card-icon {
+  flex-shrink: 0;
+  font-size: 21px;
+  font-weight: 300;
+  transition: transform 0.2s;
+}
+
+hb-accordion[variant='dark']
+  .hb-accordion__card.is-open
+  .hb-accordion__card-icon {
+  transform: rotate(45deg);
+}
+
+/* A closed answer is hidden as well as collapsed, so a link in it is not a
+   Tab stop; it hides once the closing transition has run, and shows at once
+   on opening. The clip reaches 4px left of the text (padding the margin takes
+   back), so the focus ring of a link that starts a line is not cut off. */
+hb-accordion[variant='dark'] .hb-accordion__card-content {
+  overflow: hidden;
+  height: 0;
+  margin-left: -4px;
+  padding-left: 4px;
+  visibility: hidden;
+  transition:
+    height 0.35s ease,
+    visibility 0s linear 0.35s;
+}
+
+/* Opening changes only the delay, so the reduced-motion rule's
+   `transition: none` (below) holds for an open answer too. */
+hb-accordion[variant='dark']
+  .hb-accordion__card.is-open
+  .hb-accordion__card-content {
+  height: auto;
+  visibility: visible;
+  transition-delay: 0s;
+}
+
+/* With the script blocked (the element never upgrades) every answer reads. */
+hb-accordion[variant='dark']:not(:defined) .hb-accordion__card-content {
+  height: auto;
+  visibility: visible;
+}
+
+hb-accordion[variant='dark'] .hb-accordion__card-content p {
+  margin: 0;
+  padding: 0 32px 23px 0;
+  color: var(--hb-accordion-body);
+  font-family: var(--font-body);
+  font-size: 13px;
+  line-height: 1.75;
+}
+
+/* A link in an answer gets an invisible hit area at least 24px tall, and a
+   focus ring 3px out, which fits inside the answer's clipped box even on its
+   first line. It never wraps: split across lines, it gives the hit area no
+   box to size from. */
+hb-accordion[variant='dark'] .hb-accordion__card-content a {
+  position: relative;
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  white-space: nowrap;
+}
+
+hb-accordion[variant='dark'] .hb-accordion__card-content a::after {
+  content: '';
+  position: absolute;
+  inset: -6px -2px;
+}
+
+hb-accordion[variant='dark'] .hb-accordion__card-content a:focus-visible {
+  outline: 2px solid var(--hb-accordion-focus);
+  outline-offset: 1px;
+}
+
+/* Phones: the answers are running text, so 16px; the questions 14px. */
+@media (max-width: 520px) {
+  hb-accordion[variant='dark'] .hb-accordion__question {
+    gap: 16px;
+    padding-block: 19px;
+    font-size: 14px;
+  }
+
+  hb-accordion[variant='dark'] .hb-accordion__card-content p {
+    padding-right: 20px;
+    font-size: 16px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  hb-accordion[variant='dark'] .hb-accordion__card-icon,
+  hb-accordion[variant='dark'] .hb-accordion__card-content {
+    transition: none;
+  }
+}
+
+hb-case-toc {
+  position: sticky;
+  /* Clears the sticky nav (80px) with the family's breathing room. */
+  top: 104px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.hb-case-toc__title {
+  margin: 0 0 4px;
+  color: var(--home-body);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.13em;
+  line-height: 1.6;
+  text-transform: uppercase;
+}
+
+.hb-case-toc__nav .hb-case-toc__title {
+  margin-bottom: 12px;
+}
+
+.hb-case-toc__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  /* One continuous rail; the current link's own bar sits on top of it. */
+  border-left: 1px solid var(--home-line);
+}
+
+/* The base stylesheet spaces and indents every <li>. */
+.hb-case-toc__list li {
+  margin: 0;
+  padding: 0;
+}
+
+.hb-case-toc__link {
+  display: block;
+  margin-left: -1px;
+  padding: 7px 14px;
+  border-left: 1px solid transparent;
+  color: var(--home-muted);
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 1.35;
+  text-decoration: none;
+  transition:
+    color 0.15s,
+    border-color 0.15s;
+}
+
+.hb-case-toc__link--sub {
+  padding: 5px 14px 5px 28px;
+  font-size: 13px;
+}
+
+.hb-case-toc__link:hover {
+  color: var(--home-ink);
+}
+
+/* Weight and the bar both mark the current section, never colour alone. */
+.hb-case-toc__link.is-active {
+  border-left: 2px solid var(--home-ink);
+  margin-left: -1.5px;
+  color: var(--home-ink);
+  font-weight: 500;
+}
+
+.hb-case-toc__link:focus-visible,
+.hb-case-toc__copy:focus-visible {
+  outline: 2px solid var(--home-focus);
+  outline-offset: 2px;
+}
+
+.hb-case-toc__share {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 18px;
+  border: 1px solid var(--home-line);
+  background: #262625;
+}
+
+/* Without the clipboard API the copy button could not do anything. */
+hb-case-toc.can-copy .hb-case-toc__copy {
+  display: flex;
+}
+
+/* The family's button: square, Geist Mono capitals. */
+.hb-case-toc__copy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  padding: 0 14px;
+  border: 1px solid transparent;
+  border-radius: 0;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition:
+    background 0.2s,
+    border-color 0.2s;
+}
+
+.hb-case-toc__copy {
+  display: none;
+  width: 100%;
+  color: var(--home-ink);
+  background: transparent;
+  border-color: var(--home-button-line);
+  cursor: pointer;
+}
+
+.hb-case-toc__copy:hover {
+  background: var(--home-button-hover);
+  border-color: var(--home-focus);
+}
+
+/* Read out by screen readers; sighted visitors see the button's own text
+ * change, so it takes no space in the box. */
+.hb-case-toc__status {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+hb-case-video {
+  display: contents;
+}
+
+/* Square, in the family's ivory, centred in the open photo above the copy:
+   the copy (logo to subheader, with the space under it for the figure tiles)
+   takes about 360px at the hero's foot, so the button sits halfway down what
+   is left, however tall the window makes the hero. */
+.hb-case-video__play {
+  position: absolute;
+  top: calc(50% - 180px);
+  left: 50%;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border: 1px solid var(--home-button);
+  background: var(--home-button);
+  color: var(--home-paper);
+  transform: translate(-50%, -50%);
+  transition:
+    background 0.2s,
+    border-color 0.2s;
+}
+
+.hb-case-video__play svg {
+  width: 16px;
+  height: 16px;
+  margin-left: 2px;
+}
+
+.hb-case-video__play:hover {
+  background: var(--white);
+  border-color: var(--white);
+}
+
+/* Narrower, the copy rises toward the middle; the button rises with it. */
+@media (max-width: 991px) {
+  .hb-case-video__play {
+    top: 30%;
+  }
+}
+
+/* On a phone the headline fills the photo's middle; the button moves to its
+   top corner, clear of the copy. */
+@media (max-width: 767px) {
+  .hb-case-video__play {
+    top: 20px;
+    right: 16px;
+    left: auto;
+    width: 46px;
+    height: 46px;
+    transform: none;
+  }
+}
+
+.hb-case-video__play:focus-visible,
+.hb-case-video__close:focus-visible {
+  outline: 2px solid var(--home-focus);
+  outline-offset: 4px;
+}
+
+.hb-case-video__label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.hb-case-video__dialog {
+  width: 100vw;
+  max-width: none;
+  height: 100dvh;
+  max-height: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+
+.hb-case-video__dialog[open] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hb-case-video__dialog::backdrop {
+  background: rgba(10, 12, 9, 0.86);
+}
+
+.hb-case-video__frame {
+  width: min(92vw, calc((100dvh - 120px) * 16 / 9));
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border: 1px solid var(--home-line);
+  background: #000;
+}
+
+.hb-case-video__frame iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.hb-case-video__close {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 1px solid var(--home-button-line);
+  border-radius: 0;
+  background: transparent;
+  color: var(--home-ink);
+  cursor: pointer;
+}
+
+.hb-case-video__close svg {
+  width: 22px;
+  height: 22px;
+}
+
+.hb-case-video__close:hover {
+  background: var(--home-button-hover);
+}
+
+@media (forced-colors: active) {
+  .hb-case-video__play:focus-visible,
+  .hb-case-video__close:focus-visible {
+    outline-color: Highlight;
+  }
+}
+
+.hb-counter__number {
+  font-family: 'Source Serif 4', serif;
+  font-weight: 500;
+  font-size: clamp(48px, 6vw, 96px);
+  line-height: 1;
+  letter-spacing: -2px;
+  color: var(--text-dark);
+}
+
+.hb-counter__unit {
+  font-family: 'Source Serif 4', serif;
+  font-weight: 300;
+  font-size: clamp(16px, 2vw, 28px);
+  color: #71717a;
+  margin-left: 4px;
+  vertical-align: top;
+  line-height: 1.3;
+}
+
+@media (max-width: 479px) {
+  .hb-counter__number {
+    font-size: 48px;
+  }
+}
+
+/* The dark look (`variant="dark"`, Counter.astro): the number and its unit
+   take the type of the figure they sit in. Keep after the base rules. */
+hb-counter[variant='dark'],
+.hb-counter__unit--dark {
+  margin: 0;
+  color: inherit;
+  font: inherit;
+  letter-spacing: inherit;
+  vertical-align: baseline;
+}
+
+/* The finished figure for a screen reader (Counter.astro), out of sight;
+   not copied with the text, nor indexed (`data-pagefind-ignore`), where the
+   visible figure already is. */
+.hb-counter__spoken {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+  user-select: none;
+}
+
+hb-nav {
+  display: contents;
+}
+
+hb-rail {
+  display: contents;
+}
+
+.hb-rail__bar {
+  display: flex;
+  align-items: center;
+  gap: clamp(4px, 0.6vw, 8px);
+  background: #f5f5f5;
+  border-radius: 8px;
+  padding: 3px;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.hb-rail__btn {
+  font-family: 'Geist Sans', sans-serif;
+  font-weight: 600;
+  font-size: clamp(11px, 1.3vw, 15px);
+  line-height: 1.6;
+  color: #5d6168;
+  padding: clamp(4px, 0.7vw, 8px) clamp(8px, 1.3vw, 16px);
+  border-radius: 8px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  white-space: nowrap;
+  transition:
+    background 0.2s,
+    color 0.2s,
+    box-shadow 0.2s;
+}
+
+.hb-rail__content {
+  margin-top: clamp(24px, 3.2vw, 44px);
+  position: relative;
+  overflow: visible;
+}
+
+.hb-rail__slider {
+  display: flex;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+}
+
+.hb-rail__panel {
+  flex: 0 0 76%;
+  min-width: 0;
+  padding: 0 12px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+@media (max-width: 991px) {
+  .hb-rail__bar {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    max-width: calc(100% - 80px);
+    scrollbar-width: none;
+  }
+
+  .hb-rail__bar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .hb-rail__panel {
+    flex: 0 0 88%;
+  }
+}
+
+@media (max-width: 767px) {
+  .hb-rail__bar {
+    max-width: calc(100% - 48px);
+  }
+
+  .hb-rail__panel {
+    flex: 0 0 92%;
+  }
+}
+
+@media (max-width: 479px) {
+  .hb-rail__bar {
+    max-width: calc(100% - 32px);
+  }
+
+  .hb-rail__panel {
+    flex: 0 0 96%;
+  }
+}
+
+.hb-rail__btn.active {
+  background: #fff;
+  color: #181d27;
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.07);
+}
+
+.hb-rail__btn:hover:not(.active) {
+  color: #181d27;
+}
+
+/* ---- The dark look (`variant="dark"`, Rail.astro) ---- */
+
+/* One panel at a time: the copy on the page's ground beside the artwork's
+   right half, the product screenshot, on a light panel. The bar is the dark
+   family's chips. */
+hb-rail[variant='dark'] .hb-rail__bar {
+  flex-wrap: wrap;
+  gap: 8px;
+  width: auto;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  overflow: visible;
+  border-radius: 0;
+  background: none;
+}
+
+hb-rail[variant='dark'] .hb-rail__btn {
+  padding: 9px 14px;
+  border: 1px solid var(--home-line);
+  border-radius: 0;
+  color: var(--home-body);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  box-shadow: none;
+  transition:
+    background-color 0.2s,
+    border-color 0.2s,
+    color 0.2s;
+}
+
+hb-rail[variant='dark'] .hb-rail__btn:hover:not(.active) {
+  border-color: var(--home-ink);
+  color: var(--home-ink);
+}
+
+hb-rail[variant='dark'] .hb-rail__btn.active {
+  border-color: var(--home-button);
+  background: var(--home-button);
+  color: var(--home-paper);
+  box-shadow: none;
+}
+
+hb-rail[variant='dark'] .hb-rail__btn:focus-visible {
+  outline: 2px solid var(--home-focus);
+  outline-offset: 3px;
+}
+
+/* Clipped, not hidden: a box with `overflow: hidden` can still be scrolled
+   by find-in-page or a link to a text fragment, which would slide the panels
+   out of step with the pressed button. Hidden first, for the browsers
+   without `clip` (Safari before 16), where the panels would otherwise widen
+   the page. */
+hb-rail[variant='dark'] .hb-rail__content {
+  margin-top: 40px;
+  overflow: hidden;
+  overflow: clip;
+}
+
+hb-rail[variant='dark'] .hb-rail__panel {
+  display: grid;
+  flex: 0 0 100%;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 7%;
+  align-items: center;
+  padding: 0;
+}
+
+hb-rail[variant='dark'] .hb-rail__copy > p {
+  max-width: 44ch;
+  margin-top: 18px;
+  color: var(--home-body);
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+/* The artwork is a 1079 x 565 card whose left half was left clear for copy;
+   the panel shows its right half. */
+hb-rail[variant='dark'] .hb-rail__figure {
+  justify-self: end;
+  width: 100%;
+  max-width: 560px;
+  aspect-ratio: 559 / 565;
+}
+
+hb-rail[variant='dark'] .hb-rail__figure > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 100% 50%;
+}
+
+/* Stacked, each panel starts under the chips, whatever its copy's length. */
+@media (max-width: 800px) {
+  hb-rail[variant='dark'] .hb-rail__panel {
+    grid-template-columns: minmax(0, 1fr);
+    align-content: start;
+    gap: 28px;
+  }
+
+  hb-rail[variant='dark'] .hb-rail__figure {
+    justify-self: stretch;
+    max-width: none;
+  }
+}
+
+@media (max-width: 520px) {
+  hb-rail[variant='dark'] .hb-rail__copy > p {
+    font-size: 16px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  hb-rail[variant='dark'] .hb-rail__slider {
+    transition: none;
+  }
+}
+
+/* Without JavaScript the rail cannot move: the panels stack, all in view,
+   and the bar, which would do nothing, is hidden. (A `:not(:defined)` rule
+   would also stack them for a moment before the script runs.) */
+@media (scripting: none) {
+  hb-rail[variant='dark'] .hb-rail__bar {
+    display: none;
+  }
+
+  hb-rail[variant='dark'] .hb-rail__content {
+    margin-top: 0;
+  }
+
+  hb-rail[variant='dark'] .hb-rail__slider {
+    flex-direction: column;
+    gap: 72px;
+  }
+}
+
+/* A high-contrast theme would paint the selected chip like the others; it
+   takes the theme's selection colours, as the /integrations chips do. */
+@media (forced-colors: active) {
+  hb-rail[variant='dark'] .hb-rail__btn.active {
+    forced-color-adjust: none;
+    border-color: Highlight;
+    background: Highlight;
+    color: HighlightText;
+  }
+
+  hb-rail[variant='dark'] .hb-rail__btn:focus-visible {
+    outline-color: Highlight;
+  }
+}
+
+hb-tabs {
+  display: contents;
+}
+
+.hb-tabs__list-wrapper {
+  position: relative;
+}
+
+.hb-tabs__line {
+  height: 2px;
+  background: #f1f1f1;
+  position: relative;
+}
+
+.hb-tabs__highlight {
+  position: absolute;
+  height: 2px;
+  background: var(--green);
+  top: 0;
+  transition:
+    left 0.35s ease,
+    width 0.35s ease;
+}
+
+.hb-tabs__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(48px, 7vw, 120px);
+  padding: 16px 0 40px;
+}
+
+.hb-tabs__tab {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.hb-tabs__tab img {
+  height: 28px;
+  width: auto;
+  opacity: 0.55;
+  filter: grayscale(100%);
+  transition:
+    opacity 0.3s,
+    filter 0.3s;
+}
+
+.hb-tabs__tab:hover img {
+  opacity: 0.6;
+}
+
+.hb-tabs__panels {
+  text-align: center;
+  padding: 40px 0 40px;
+  display: grid;
+}
+
+.hb-tabs__panel {
+  grid-area: 1 / 1;
+  transition: opacity 0.35s ease;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.hb-tabs__quote {
+  font-family: 'Source Serif 4', serif;
+  font-weight: 400;
+  font-size: clamp(24px, 3vw, 42px);
+  line-height: 1.35;
+  letter-spacing: -0.5px;
+  color: var(--text-body);
+  max-width: 860px;
+  margin: 0 auto 32px;
+}
+
+.hb-tabs__avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 40%;
+  object-fit: cover;
+  margin: 0 auto 12px;
+  display: block;
+}
+
+.hb-tabs__name {
+  font-family: 'Geist Sans', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--text-dark);
+}
+
+.hb-tabs__title {
+  font-family: 'Geist Sans', sans-serif;
+  font-size: 14px;
+  color: var(--text-body);
+  margin-top: 2px;
+}
+
+@media (max-width: 991px) {
+  .hb-tabs__list {
+    gap: 48px;
+  }
+}
+
+@media (max-width: 767px) {
+  .hb-tabs__list {
+    gap: 32px;
+    flex-wrap: nowrap;
+  }
+
+  .hb-tabs__tab img {
+    height: clamp(18px, 5vw, 28px);
+  }
+
+  .hb-tabs__quote {
+    padding: 0 24px;
+  }
+
+  .hb-tabs__panels {
+    padding: 40px 0 60px;
+  }
+
+  hb-tabs[compact] .hb-tabs__panels {
+    padding-bottom: 48px;
+  }
+}
+
+@media (max-width: 479px) {
+  .hb-tabs__list {
+    gap: clamp(12px, 4vw, 24px);
+  }
+
+  .hb-tabs__tab img {
+    height: clamp(14px, 4.5vw, 22px);
+  }
+
+  .hb-tabs__quote {
+    font-size: 20px;
+  }
+}
+
+.hb-tabs__tab img.hb-tabs__logo--tall {
+  height: 32px;
+  margin-top: 14px;
+}
+
+.hb-tabs__tab.active img {
+  opacity: 1;
+  filter: grayscale(0%);
+}
+
+.hb-tabs__panel.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+@media (max-width: 767px) {
+  .hb-tabs__tab img.hb-tabs__logo--tall {
+    height: clamp(20px, 5.5vw, 32px);
+  }
+}
+
+@media (max-width: 479px) {
+  .hb-tabs__tab img.hb-tabs__logo--tall {
+    height: clamp(16px, 5vw, 26px);
+    margin-top: 6px;
+  }
+}
+
+.hb-tabs__tab img.hb-tabs__logo--sendoso {
+  height: 58px;
+}
+
+@media (max-width: 767px) {
+  .hb-tabs__tab img.hb-tabs__logo--sendoso {
+    height: clamp(36px, 9vw, 58px);
+  }
+}
+
+@media (max-width: 479px) {
+  .hb-tabs__tab img.hb-tabs__logo--sendoso {
+    height: clamp(28px, 8vw, 44px);
+  }
+}
+
+/* ---- The dark look (`variant="dark"`, Tabs.astro) ---- */
+
+/* The logos as light silhouettes over a hairline with the family's ink for
+   the selected one; the quote and its author as the dark family's customer
+   stories set theirs. */
+hb-tabs[variant='dark'] .hb-tabs__line {
+  background: var(--home-line);
+}
+
+hb-tabs[variant='dark'] .hb-tabs__highlight {
+  background: var(--home-ink);
+}
+
+hb-tabs[variant='dark'] .hb-tabs__tab img {
+  filter: grayscale(1) invert(1);
+  mix-blend-mode: screen;
+}
+
+hb-tabs[variant='dark'] .hb-tabs__tab:focus-visible {
+  outline: 2px solid var(--home-focus);
+  outline-offset: 6px;
+}
+
+hb-tabs[variant='dark'] .hb-tabs__quote {
+  color: var(--home-ink);
+  font-family: var(--font-body);
+  font-size: clamp(22px, 2.4vw, 32px);
+  line-height: 1.4;
+  letter-spacing: -0.025em;
+}
+
+hb-tabs[variant='dark'] .hb-tabs__avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 0;
+  object-position: 50% 24%;
+  filter: grayscale(1);
+}
+
+hb-tabs[variant='dark'] .hb-tabs__name {
+  color: var(--home-ink);
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 550;
+}
+
+hb-tabs[variant='dark'] .hb-tabs__title {
+  color: var(--home-body);
+  font-family: var(--font-body);
+  font-size: 12px;
+}
+
+@media (max-width: 520px) {
+  hb-tabs[variant='dark'] .hb-tabs__quote {
+    font-size: 20px;
+  }
+}
+
+/* A high-contrast theme paints the ground the silhouettes were inverted for;
+   there each logo shows as drawn on a white tile, as the dark family's story
+   logos do. */
+@media (forced-colors: active) {
+  hb-tabs[variant='dark'] .hb-tabs__tab img {
+    forced-color-adjust: none;
+    background: var(--white);
+    filter: none;
+    mix-blend-mode: normal;
+  }
+
+  hb-tabs[variant='dark'] .hb-tabs__highlight {
+    background: Highlight;
+  }
+}
+</style>
+
+<link href="/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+<link href="/images/apple-touch-icon.png" rel="apple-touch-icon">
+    <style>/*
+ * The `dark` family: pages set in the homepage's look. Charcoal ground, ivory
+ * ink, Geist for running text, Geist Mono for titles, labels and buttons, and
+ * hairline rules between sections. The palette is the --home-* tokens in
+ * src/styles/tokens.css.
+ *
+ * A page joins by using src/layouts/DarkShell.astro, which loads this file,
+ * puts `dk-page` on <html>, renders the skip link, the dark nav and footer and
+ * the closing band, and wraps the page in `<main id="main" class="dk">`. Every
+ * class is `dk-` prefixed; the element rules are wrapped in `:where(.dk)`, so
+ * they weigh what a bare element weighs and lose to every class rule, while
+ * still beating the base stylesheets' element rules that load before this
+ * file. The page-wide rules weigh no more than the base stylesheets' bare
+ * `html` and `body` rules, so a page's own head block can still override them.
+ *
+ * The patterns, values and breakpoints are copied from the homepage
+ * (src/styles/pages/home.css), which does not load this file yet: a change to
+ * one of them there belongs here too, until the homepage joins the family
+ * (TODOs.md). Where a value differs on purpose, the rule says why.
+ */
+
+/* Anchor jumps land below the sticky nav (80px, or 64px below 768px), with
+   the same breathing room as the homepage's. */
+:where(html.dk-page) {
+  scroll-padding-top: 99px;
+}
+
+@media (max-width: 767px) {
+  :where(html.dk-page) {
+    scroll-padding-top: 85px;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  :where(html.dk-page) {
+    scroll-behavior: smooth;
+  }
+}
+
+:where(html.dk-page),
+:where(html.dk-page) body {
+  overflow-x: clip;
+}
+
+:where(html.dk-page) body {
+  background-color: var(--home-paper);
+  font-family: var(--font-body);
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+.dk {
+  color: var(--home-ink);
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* The family's box reset. A page still on the older markup (DarkShell's
+   `dk-legacy`, the long reads) keeps the base stylesheet's spacing in its own
+   sections, which its layout is built on; the reset reaches only its closing
+   band there. */
+:where(.dk:not(.dk-legacy), .dk-legacy > .dk-closing)
+  :is(p, h1, h2, h3, figure, blockquote, ul, ol, li) {
+  margin: 0;
+}
+
+:where(.dk:not(.dk-legacy), .dk-legacy > .dk-closing) :is(ul, ol, li) {
+  padding: 0;
+}
+
+:where(.dk:not(.dk-legacy), .dk-legacy > .dk-closing) p {
+  color: inherit;
+  line-height: 1.6;
+}
+
+:where(.dk) a {
+  color: inherit;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+:where(.dk) button,
+:where(.dk) img,
+:where(.dk) svg {
+  flex-shrink: 0;
+}
+
+/* Not on the older markup's own pictures: the long reads' round author
+   photos fill their circle. */
+:where(.dk:not(.dk-legacy), .dk-legacy > .dk-closing) img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
+:where(.dk) a:focus-visible,
+:where(.dk) button:focus-visible {
+  outline: 2px solid var(--home-focus);
+  outline-offset: 5px;
+}
+
+/* A link inside running text keeps an underline, so it reads as a link
+   without relying on colour. */
+:where(.dk) p a {
+  text-decoration: underline;
+  text-decoration-color: var(--home-link-line);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.22em;
+  transition:
+    color 0.2s,
+    text-decoration-color 0.2s;
+}
+
+:where(.dk) p a:hover {
+  color: var(--white);
+  text-decoration-color: var(--white);
+}
+
+:where(.dk) p a:focus-visible {
+  outline-offset: 3px;
+}
+
+.dk ::selection {
+  background: var(--home-button);
+  color: var(--home-paper);
+}
+
+.dk-wrap {
+  width: min(1380px, calc(100% - 88px));
+  margin-inline: auto;
+}
+
+.dk-visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+.dk-icon {
+  width: 19px;
+  height: 19px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.65;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* ---- Skip link ---- */
+
+/* Above the site nav (z-index 1000), which holds the top of the window. Its
+   own line height: on the long reads, the base layer sets one on every child
+   of <body>. */
+.dk-skip-link {
+  position: fixed;
+  top: -70px;
+  left: 16px;
+  z-index: 1001;
+  padding: 12px;
+  color: var(--home-paper);
+  background: var(--home-button);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+.dk-skip-link:focus {
+  top: 12px;
+}
+
+.dk-skip-link:focus-visible {
+  outline: 2px solid var(--home-focus);
+  outline-offset: 5px;
+}
+
+/* A fixed element prints on the page; there is nothing to skip on paper. */
+@media print {
+  .dk-skip-link {
+    display: none;
+  }
+}
+
+/* ---- Labels and section openers ---- */
+
+.dk-eyebrow {
+  color: var(--home-body);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.dk-section {
+  margin-top: 94px;
+}
+
+.dk-eyebrow-ruled {
+  padding-top: 26px;
+  border-top: 1px solid var(--home-line);
+}
+
+.dk-section-intro {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 50px;
+  margin-top: 27px;
+}
+
+.dk-section-title {
+  margin: 0;
+  color: inherit;
+  font-family: var(--font-mono);
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1.18;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+  /* As the hero's title: a word too long for a phone's line breaks. */
+  overflow-wrap: anywhere;
+}
+
+/* The family's small title, one size under every pattern that sets one: a
+   feature's, a link card's and a prose subhead (18px on phones, in the 520px
+   block). */
+.dk-feature-title,
+.dk-card-title,
+.dk-prose :is(h2, h3, h4),
+.dk-prose-title {
+  font-family: var(--font-mono);
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.45;
+  letter-spacing: -0.035em;
+  text-transform: uppercase;
+}
+
+/* Wider than the homepage's 310px (270px and 210px at its 1100px and 800px
+   steps): the content pages' intros run three to five times longer. */
+.dk-section-intro > p {
+  max-width: 420px;
+  color: var(--home-body);
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+/* ---- Buttons and links ---- */
+
+.dk-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.dk-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  min-height: 45px;
+  padding: 0 18px;
+  border: 1px solid transparent;
+  border-radius: 0;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 450;
+  line-height: 1.3;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  transition:
+    background 0.2s,
+    border-color 0.2s,
+    box-shadow 0.2s;
+}
+
+.dk-button-primary {
+  color: var(--home-paper);
+  background: var(--home-button);
+  border-color: var(--home-button);
+}
+
+.dk-button-primary:hover {
+  color: var(--dark-background);
+  background: var(--white);
+  border-color: var(--white);
+}
+
+.dk-button-secondary {
+  color: var(--home-ink);
+  background: transparent;
+  border-color: var(--home-button-line);
+}
+
+.dk-button-secondary:hover {
+  background: var(--home-button-hover);
+  border-color: var(--home-focus);
+}
+
+.dk-button .dk-icon,
+.dk-text-link .dk-icon {
+  transition: transform 0.2s;
+}
+
+.dk-text-link .dk-icon {
+  width: 15px;
+  height: 15px;
+}
+
+.dk-button:hover .dk-icon,
+.dk-text-link:hover .dk-icon {
+  transform: translateX(3px);
+}
+
+.dk-text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 19px;
+  width: fit-content;
+  min-height: 41px;
+  border-bottom: 1px solid var(--home-link-line);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.dk-text-link:hover {
+  color: var(--white);
+  border-color: var(--white);
+}
+
+/* ---- Page hero ---- */
+
+/* The page's opening: its title (and anything under it) on the left, and an
+   aside on the right: a form, a figure, or with `dk-hero-end` the lead
+   itself. The copy column is 1.25 of 2.25 parts; `dk-hero-solo` is a hero
+   with no aside. */
+.dk-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+  gap: 48px 7%;
+  align-items: start;
+  padding-block: 67px 48px;
+}
+
+/* A hero whose aside is a line of text: it sits on the title's last line, as
+   the homepage's description does. The title keeps the top of the row when
+   the lead runs longer. */
+.dk-hero-end {
+  align-items: end;
+}
+
+.dk-hero-end > .dk-hero-copy {
+  align-self: start;
+}
+
+.dk-hero-copy {
+  display: grid;
+  align-content: start;
+  gap: 24px;
+}
+
+.dk-hero-title {
+  margin: 0;
+  color: inherit;
+  font-family: var(--font-mono);
+  font-size: clamp(39px, 4.5vw, 68px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.13;
+  /* The homepage's -2.5px at 1440, in em so it tracks every size alike
+     (brand.md: never track in pixels). */
+  letter-spacing: -0.0386em;
+  text-transform: uppercase;
+  /* At this size a 16-letter word is wider than a 320px screen; it breaks
+     rather than widen the column under it. */
+  overflow-wrap: anywhere;
+}
+
+/* A word that keeps its own case in a capitalised title: a plural acronym
+   such as "AEs", which capitals would turn into another word ("AES"). */
+.dk-keep-case {
+  text-transform: none;
+}
+
+.dk-hero-lead {
+  max-width: 46ch;
+  color: var(--home-body);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* A hero with no aside: the copy alone. */
+.dk-hero-solo {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+/* A hero whose title runs long, as a product page's: the title takes the
+   full width, and the lead and buttons follow it on the left. */
+.dk-hero-stack {
+  grid-template-columns: minmax(0, 1fr);
+  row-gap: 32px;
+}
+
+/* A hero whose copy runs long (a webinar's description): a smaller title, at
+   every width (the phone step is in the 520px block). */
+.dk-hero-compact .dk-hero-title {
+  font-size: clamp(32px, 3.4vw, 48px);
+}
+
+/* Its form stays in view below the sticky nav while the description scrolls
+   past, where the form sits beside the copy and the window is tall enough to
+   show all of it. */
+@media (min-width: 801px) and (min-height: 860px) {
+  .dk-hero-compact > .dk-hero-aside {
+    position: sticky;
+    top: 99px;
+  }
+}
+
+/* A page without the closing band (DarkShell's `closing={false}`) leaves the
+   same room before the footer whatever it ends on; a hero that ends it gives
+   up its own bottom padding to that room. */
+.dk-ends {
+  padding-bottom: 120px;
+}
+
+.dk-ends > .dk-hero:last-child {
+  padding-bottom: 0;
+}
+
+/* A hero's aside that holds more than its lead: the lead, the buttons and a
+   note under them, as the homepage's (DarkHero), or a form under its heading
+   (the webinar sign-ups). */
+.dk-hero-aside {
+  display: grid;
+  gap: 23px;
+}
+
+.dk-hero-note {
+  color: var(--home-body);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* Buttons in the hero are a step smaller than the closing band's, as the
+   homepage's. */
+.dk-hero .dk-actions {
+  gap: 9px;
+}
+
+.dk-hero .dk-button {
+  gap: 9px;
+  min-height: 40px;
+  padding-inline: 12px;
+  font-size: 9px;
+}
+
+.dk-hero .dk-icon {
+  width: 14px;
+  height: 14px;
+}
+
+/* ---- Panels ---- */
+
+/* A light surface for what arrives light and cannot be redrawn: a third-party
+   form, a product screenshot, a ratings badge. Framed by a hairline rather
+   than filtered, so it shows as the thing it is. */
+.dk-panel {
+  overflow: hidden;
+  border: 1px solid var(--home-line);
+  background: var(--white);
+}
+
+.dk-panel > img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.dk-panel > iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* A high-contrast theme would paint the panel its own ground, losing what was
+   drawn for white; the panel keeps its white there, and a panel that is a link
+   takes the theme's focus colour. */
+@media (forced-colors: active) {
+  .dk-panel {
+    forced-color-adjust: none;
+  }
+
+  .dk-panel:focus-visible {
+    outline-color: Highlight;
+  }
+}
+
+/* ---- Logo wall ---- */
+
+/* The homepage's wall of the deck's customer logos (src/lib/customer-logos-
+   on-dark.ts): eight to a row in a hairline grid, four on narrow screens. At
+   rest each logo is a grey silhouette; with a mouse over its cell it takes
+   its own colours. The widest deck file (3.42 times as wide as it is tall)
+   still fits its cell, so the balance between logos holds as the grid
+   narrows; a wider one (Anaconda's) is held to its cell by `max-width`. A
+   page's own customers fill one row (`.dk-logo-row-*`, DarkLogoWall's
+   `logos`), and the logos size to that row's cells. A page whose wall sits in
+   a narrow column sets `--dk-logo-cols` (and `--dk-logo-h`, the logos'
+   height) on it at its own breakpoints, as /book-a-demo does beside its
+   form. */
+.dk-trust {
+  padding-top: 28px;
+}
+
+/* The line over the wall, a step larger than other eyebrows, as the
+   homepage's. */
+.dk-trust .dk-eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.08em;
+}
+
+.dk-logo-wall {
+  --dk-logo-h: 40px;
+  --dk-logo-pad: 18px;
+  --dk-logo-cols: 8;
+
+  container-type: inline-size;
+  display: grid;
+  grid-template-columns: repeat(var(--dk-logo-cols), minmax(0, 1fr));
+  gap: 1px;
+  margin: 30px 0 0;
+  padding: 0;
+  border: 1px solid var(--home-grid-line);
+  background: var(--home-grid-line);
+  list-style: none;
+}
+
+.dk-logo-wall li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  padding: 26px var(--dk-logo-pad);
+  background: var(--home-paper);
+}
+
+.dk-logo {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: min(
+    var(--dk-logo-h),
+    calc(
+      (
+          (100cqi - (var(--dk-logo-cols) - 1) * 1px) / var(--dk-logo-cols) - 2 *
+            var(--dk-logo-pad)
+        ) /
+        3.42
+    )
+  );
+  object-fit: contain;
+  filter: contrast(0) brightness(2);
+  opacity: 0.75;
+  transition:
+    filter 240ms ease,
+    opacity 240ms ease;
+}
+
+.dk-logo-row-5 {
+  --dk-logo-cols: 5;
+}
+
+.dk-logo-row-6 {
+  --dk-logo-cols: 6;
+}
+
+.dk-logo-row-7 {
+  --dk-logo-cols: 7;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .dk-logo-wall li:hover .dk-logo {
+    filter: none;
+    opacity: 1;
+  }
+}
+
+/* A light high-contrast theme would paint the cells white under white
+   silhouettes; the wall keeps its own colours there. */
+@media (forced-colors: active) {
+  .dk-logo-wall,
+  .dk-logo-wall li {
+    forced-color-adjust: none;
+  }
+}
+
+/* ---- Feature grid ---- */
+
+.dk-features {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 43px;
+  margin-top: 56px;
+  list-style: none;
+}
+
+.dk-feature {
+  padding-top: 24px;
+  border-top: 1px solid var(--home-line);
+}
+
+/* A feature's mark, drawn light on the dark ground: the light-ground source
+   art inverted to a grey silhouette, its white box screened away. */
+.dk-feature-mark {
+  display: block;
+  width: auto;
+  height: 28px;
+  max-width: 140px;
+  object-fit: contain;
+  object-position: left center;
+  filter: grayscale(1) invert(1);
+  mix-blend-mode: screen;
+}
+
+/* A mark that is a photograph or a set of coloured badges is shown in grey
+   rather than inverted, which would print it as a negative. */
+.dk-feature-mark-photo {
+  filter: grayscale(1);
+  mix-blend-mode: normal;
+}
+
+.dk-feature-title {
+  max-width: 26ch;
+  margin: 22px 0 0;
+  color: inherit;
+}
+
+.dk-feature p {
+  max-width: 38ch;
+  margin-top: 10px;
+  color: var(--home-body);
+  font-size: 13px;
+  line-height: 1.75;
+}
+
+/* ---- Figures ---- */
+
+/* Figures and what each measures, under rules as the feature grid's items
+   are: the number in the family's mono, its label in small capitals. A number
+   that counts up is a `<Counter variant="dark">`, which takes the figure's
+   type. */
+.dk-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 43px;
+  list-style: none;
+}
+
+.dk-stat {
+  padding-top: 24px;
+  border-top: 1px solid var(--home-line);
+}
+
+/* The figures, then what follows them in the section (the customers'
+   words). */
+.dk-stats:not(:last-child) {
+  margin-bottom: 72px;
+}
+
+.dk-stat-value {
+  color: var(--home-ink);
+  font-family: var(--font-mono);
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 1.05;
+  letter-spacing: -0.05em;
+}
+
+.dk-stat-label {
+  margin-top: 12px;
+  color: var(--home-body);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  line-height: 1.6;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* ---- Split rows ---- */
+
+/* Copy beside a figure, the figure on the right; `dk-row-flip` puts it on the
+   left. The copy column is a third of the row. */
+.dk-rows {
+  display: grid;
+  gap: 94px;
+}
+
+.dk-row {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  grid-template-areas: 'copy figure';
+  gap: 7%;
+  align-items: center;
+  padding-top: 38px;
+  border-top: 1px solid var(--home-line);
+}
+
+.dk-row-flip {
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+  grid-template-areas: 'figure copy';
+}
+
+.dk-row-copy {
+  grid-area: copy;
+}
+
+.dk-row-figure {
+  grid-area: figure;
+}
+
+.dk-row-title {
+  margin: 0;
+  color: inherit;
+  font-family: var(--font-mono);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.25;
+  letter-spacing: -0.045em;
+  text-transform: uppercase;
+  overflow-wrap: anywhere;
+}
+
+.dk-row-copy > :is(p, ul) {
+  max-width: 44ch;
+  margin-top: 18px;
+  color: var(--home-body);
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+/* A row's labelled points (`DarkRows`' `points`): one to a line, the label
+   in the title's ink so the eye can run down the labels. */
+.dk-row-points {
+  list-style: none;
+}
+
+.dk-row-points strong {
+  color: var(--home-ink);
+  font-weight: 500;
+}
+
+.dk-row-points li + li {
+  margin-top: 6px;
+}
+
+/* ---- Stories ---- */
+
+/* Customers in their own words, as the homepage's stories: under a rule, the
+   company's mark, the quote, then who said it. A story that is a link (a case
+   study, a post) brightens its rule under a mouse. Mark the list
+   `role="list"`. */
+.dk-stories {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+  list-style: none;
+}
+
+.dk-stories > li {
+  display: flex;
+}
+
+.dk-story {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 27px;
+  border-top: 1px solid var(--home-line);
+  transition: border-color 0.2s;
+}
+
+a.dk-story:hover {
+  border-color: var(--home-ink);
+}
+
+/* The mark is the light-ground file inverted to a grey silhouette, as a
+   feature's is. */
+.dk-story-logo {
+  height: 28px;
+  max-width: 110px;
+  object-fit: contain;
+  object-position: left center;
+  filter: grayscale(1) invert(1);
+  mix-blend-mode: screen;
+}
+
+/* The opening quotation mark hangs in the margin, so the words line up with
+   the lines below. */
+.dk-story-quote {
+  margin-block: 30px;
+  padding: 0;
+  border: 0;
+  font-family: var(--font-body);
+  font-size: 21px;
+  line-height: 1.45;
+  letter-spacing: -0.025em;
+  text-indent: -0.35em;
+}
+
+@supports (hanging-punctuation: first) {
+  .dk-story-quote {
+    text-indent: 0;
+    hanging-punctuation: first;
+  }
+}
+
+.dk-story-author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: auto;
+}
+
+.dk-story-author > img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  object-position: 50% 24%;
+  filter: grayscale(1);
+}
+
+.dk-story-author p {
+  font-size: 11px;
+  line-height: 1.55;
+}
+
+.dk-story-author strong {
+  display: block;
+  font-size: 11px;
+  font-weight: 550;
+}
+
+.dk-story-author span {
+  display: block;
+  max-width: 200px;
+  color: var(--home-body);
+}
+
+/* A high-contrast theme paints the ground its own colour, which a light
+   silhouette would vanish into or screen into; there each mark, a feature's
+   or a story's, is shown as drawn, on a white tile, as a light panel is. (A
+   dark tile would not do: the mark's own filter would invert it.) This
+   follows both marks' base rules so it wins. */
+@media (forced-colors: active) {
+  .dk-feature-mark,
+  .dk-story-logo {
+    forced-color-adjust: none;
+    background: var(--white);
+    filter: none;
+    mix-blend-mode: normal;
+  }
+}
+
+/* ---- Card grid ---- */
+
+/* A hairline grid of cards, as the homepage's integrations. Each card draws
+   its whole frame and overlaps its neighbours' by a pixel, so neighbours share
+   one line and a filtered grid frames only the cards it shows. It is three to
+   a row, one on narrow screens, unless the page sets `--dk-grid-columns` at
+   its own breakpoints. Mark the list `role="list"`: without bullets, Safari
+   would not announce it as one. */
+.dk-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    var(--dk-grid-columns, var(--dk-grid-auto, 3)),
+    minmax(0, 1fr)
+  );
+  padding: 0 1px 1px 0;
+  list-style: none;
+}
+
+.dk-grid > li {
+  min-width: 0;
+  margin: 0 -1px -1px 0;
+  border: 1px solid var(--home-line);
+}
+
+/* ---- Prose ---- */
+
+/* Running text from a rich-text block: paragraphs, subheads and lists, set as
+   the family sets body copy, the subheads in its mono. */
+.dk-prose {
+  max-width: 64ch;
+  color: var(--home-body);
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.dk-prose > * + * {
+  margin-top: 16px;
+}
+
+.dk-prose :is(h2, h3, h4),
+.dk-prose-title {
+  color: var(--home-ink);
+}
+
+.dk-prose > :is(h2, h3, h4) {
+  margin-top: 40px;
+}
+
+.dk-prose strong {
+  color: var(--home-ink);
+  font-weight: 500;
+}
+
+/* The CMS's editor bolds some subheads and not others; they all read alike. */
+.dk-prose :is(h2, h3, h4) strong {
+  font-weight: inherit;
+}
+
+.dk-prose :is(ul, ol) {
+  padding-left: 1.25em;
+}
+
+.dk-prose ul {
+  list-style: disc;
+}
+
+.dk-prose ol {
+  list-style: decimal;
+}
+
+.dk-prose li + li {
+  margin-top: 8px;
+}
+
+/* A label over a subhead in running text ("Why join"), as a section's
+   eyebrow over its title. */
+.dk-prose > .dk-eyebrow {
+  margin-top: 40px;
+}
+
+.dk-prose > .dk-eyebrow + :is(h2, h3, h4) {
+  margin-top: 8px;
+}
+
+/* Whatever opens the text sits at its top, a subhead included. */
+.dk-prose > :first-child {
+  margin-top: 0;
+}
+
+/* A table in running text (an event's agenda): rows under hairlines, the
+   header row in the family's small capitals, each row's own label (a time
+   slot) kept on one line. */
+.dk-prose table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.dk-prose :is(th, td) {
+  padding: 12px 16px 12px 0;
+  border-bottom: 1px solid var(--home-line);
+  text-align: left;
+  vertical-align: top;
+}
+
+.dk-prose thead th {
+  color: var(--home-body);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.dk-prose tbody th {
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.dk-prose :is(th, td):last-child {
+  padding-right: 0;
+}
+
+.dk-prose img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* ---- People ---- */
+
+/* Who is speaking: a round photo beside a name and a role. */
+.dk-people {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px 48px;
+  margin-top: 24px;
+  list-style: none;
+}
+
+.dk-person {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.dk-person > img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.dk-person strong {
+  display: block;
+  color: var(--home-ink);
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.dk-person span {
+  display: block;
+  margin-top: 2px;
+  color: var(--home-body);
+  font-size: 13px;
+}
+
+/* ---- Forms ---- */
+
+/* A third-party form (HubSpot) on a light panel, held open while it loads. */
+.dk-form-panel {
+  min-height: 420px;
+  padding: 24px;
+}
+
+/* The lines between a form's heading and the form: an event's date and
+   place. */
+.dk-form-note {
+  color: var(--home-body);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* ---- Video ---- */
+
+/* An embedded player in a panel's frame (`dk-panel dk-video`), 16:9 unless
+   the page says otherwise. The frame rings when the player itself takes
+   focus; a browser does not report focus inside a cross-origin player to
+   CSS, so tabbing into its controls shows only the player's own rings
+   (TODOs.md). */
+.dk-video {
+  aspect-ratio: 16 / 9;
+}
+
+.dk-video:focus-within {
+  outline: 2px solid var(--home-focus);
+  outline-offset: 5px;
+}
+
+@media (forced-colors: active) {
+  .dk-video:focus-within {
+    outline-color: Highlight;
+  }
+}
+
+/* ---- Link cards ---- */
+
+/* A card that is one link, in a cell of the hairline grid: its picture over a
+   title and a line; its ground lifts under a mouse, as /partners' cards do. */
+.dk-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 100%;
+  padding: 20px;
+  transition: background 0.2s;
+}
+
+a.dk-card:hover {
+  background: var(--home-button-hover);
+}
+
+.dk-card:focus-visible {
+  outline-offset: -2px;
+}
+
+.dk-card > img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.dk-card-title + p {
+  margin-top: 8px;
+  color: var(--home-body);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* What the card's link does ("Read Blog"), at its foot. */
+.dk-card-action {
+  margin-top: auto;
+  color: var(--home-ink);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* A product page's resources (DarkResources.astro). Two cards share the
+   row rather than leave a third of it empty. */
+.dk-resources .dk-grid {
+  margin-top: 56px;
+}
+
+@media (min-width: 801px) {
+  .dk-grid-pair {
+    --dk-grid-auto: 2;
+  }
+}
+
+/* ---- FAQ ---- */
+
+.dk-faq {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 10%;
+  padding-top: 38px;
+  border-top: 1px solid var(--home-line);
+}
+
+.dk-faq .dk-section-title {
+  margin-top: 18px;
+  line-height: 1.17;
+  letter-spacing: -0.055em;
+}
+
+/* ---- Closing ---- */
+
+.dk-closing {
+  position: relative;
+  margin-top: 90px;
+  padding-block: 92px 100px;
+  overflow: hidden;
+  border-top: 1px solid var(--home-line);
+}
+
+/* The homepage hero's fibres, faint on the right, with the left fade and the
+   seam between the illustration's panels masked out. Wider than 1440 it stays
+   in a centred 1440 frame. */
+.dk-closing-image {
+  position: absolute;
+  top: 50%;
+  right: max(0px, calc((100% - 1440px) / 2));
+  width: min(100.4%, 1446px);
+  max-width: none;
+  height: auto;
+  filter: contrast(1.9) brightness(1.05);
+  mix-blend-mode: lighten;
+  opacity: 0.8;
+  pointer-events: none;
+  transform: translateY(-50%);
+  -webkit-mask-image:
+    linear-gradient(90deg, transparent 46.2%, var(--white) 62.4%),
+    linear-gradient(
+      90deg,
+      var(--white) 64%,
+      transparent 66.5%,
+      var(--white) 69%
+    );
+  -webkit-mask-composite: source-in;
+  mask-image:
+    linear-gradient(90deg, transparent 46.2%, var(--white) 62.4%),
+    linear-gradient(
+      90deg,
+      var(--white) 64%,
+      transparent 66.5%,
+      var(--white) 69%
+    );
+  mask-composite: intersect;
+}
+
+.dk-closing-layout {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, max(44%, 520px));
+  row-gap: 26px;
+  align-items: center;
+}
+
+.dk-closing .dk-section-title {
+  font-size: 39px;
+  line-height: 1.14;
+  letter-spacing: -0.055em;
+}
+
+.dk-closing a:focus-visible {
+  outline-color: var(--home-ink);
+}
+
+/* ---- Breakpoints ---- */
+
+@media (max-width: 1100px) {
+  .dk-logo-wall {
+    --dk-logo-pad: 8px;
+  }
+
+  .dk-logo-wall li {
+    padding-block: 22px;
+  }
+
+  .dk-section-intro > p {
+    max-width: 320px;
+  }
+
+  .dk-faq {
+    gap: 6%;
+  }
+
+  .dk-closing .dk-button {
+    gap: 14px;
+    padding-inline: 16px;
+  }
+}
+
+@media (min-width: 801px) and (max-width: 1000px) {
+  .dk-wrap {
+    width: calc(100% - 64px);
+  }
+
+  .dk-hero {
+    column-gap: 5%;
+  }
+
+  .dk-hero-title {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 800px) {
+  .dk-wrap {
+    width: calc(100% - 44px);
+  }
+
+  .dk-hero {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 36px;
+    padding-block: 43px 33px;
+  }
+
+  /* Stacked, the lead sits as close under the title as a lead inside the
+     copy column does. */
+  .dk-hero-end {
+    row-gap: 24px;
+  }
+
+  .dk-hero .dk-button {
+    gap: 14px;
+    min-height: 44px;
+    padding-inline: 16px;
+    font-size: 10px;
+  }
+
+  .dk-hero-title {
+    font-size: 48px;
+  }
+
+  .dk-hero-lead {
+    max-width: 60ch;
+  }
+
+  .dk-trust {
+    padding-top: 26px;
+  }
+
+  /* Four to a row: the logos keep one size, and the few widest scale down
+     inside their cells on phones. */
+  .dk-logo-wall {
+    --dk-logo-h: 32px;
+    --dk-logo-cols: 4;
+  }
+
+  /* A page's row of five or six goes three to a row, of seven four; the
+     last cell closes its row. */
+  :is(.dk-logo-row-5, .dk-logo-row-6) {
+    --dk-logo-cols: 3;
+  }
+
+  :is(.dk-logo-row-5, .dk-logo-row-7) > li:last-child {
+    grid-column: span 2;
+  }
+
+  .dk-logo {
+    height: var(--dk-logo-h);
+  }
+
+  /* The logo that opens the wall's last row at eight to a row (Workday) opens
+     it at four to a row too: eight rows of four. */
+  .dk-logo-wall .dk-logo-last-row {
+    grid-row: 8;
+    grid-column: 1;
+  }
+
+  .dk-section {
+    margin-top: 73px;
+  }
+
+  .dk-section-intro {
+    gap: 32px;
+  }
+
+  .dk-section-title {
+    font-size: 29px;
+  }
+
+  .dk-section-intro > p {
+    max-width: 260px;
+  }
+
+  /* Two to a row, where the homepage keeps three until 520px: these grids
+     carry six features with longer titles. */
+  .dk-features {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 36px 29px;
+    margin-top: 36px;
+  }
+
+  .dk-rows {
+    gap: 73px;
+  }
+
+  .dk-stat-value {
+    font-size: 40px;
+  }
+
+  .dk-row {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas:
+      'copy'
+      'figure';
+    gap: 28px;
+  }
+
+  .dk-row-copy > :is(p, ul) {
+    max-width: 60ch;
+  }
+
+  .dk-faq {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .dk-closing {
+    margin-top: 74px;
+    padding-block: 64px 70px;
+  }
+
+  .dk-closing-image {
+    display: none;
+  }
+
+  .dk-closing-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .dk-closing .dk-section-title {
+    font-size: 34px;
+  }
+
+  .dk-closing .dk-button {
+    gap: 23px;
+    padding-inline: 20px;
+  }
+
+  .dk-stories {
+    gap: 25px;
+  }
+
+  .dk-story-author {
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .dk-story-author > img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .dk-grid {
+    --dk-grid-auto: 1;
+  }
+}
+
+/* Phones. Running text is lifted to 16px; labels and eyebrows stay small. */
+@media (max-width: 520px) {
+  .dk-wrap {
+    width: calc(100% - 36px);
+  }
+
+  .dk-hero {
+    gap: 30px;
+    padding-block: 34px 29px;
+  }
+
+  .dk-hero-end {
+    row-gap: 22px;
+  }
+
+  .dk-hero-copy {
+    gap: 22px;
+  }
+
+  .dk-hero-title {
+    font-size: clamp(29px, 8.9vw, 42px);
+    line-height: 1.17;
+  }
+
+  .dk-hero-compact .dk-hero-title {
+    font-size: clamp(26px, 7.5vw, 32px);
+  }
+
+  .dk-logo-wall {
+    --dk-logo-h: 30px;
+
+    margin-top: 24px;
+  }
+
+  .dk-logo-wall li {
+    padding: 18px 10px;
+  }
+
+  .dk-section-intro {
+    display: block;
+  }
+
+  .dk-section-intro > p {
+    max-width: 40ch;
+    margin-top: 23px;
+    font-size: 16px;
+  }
+
+  .dk-features {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 32px;
+    margin-top: 34px;
+  }
+
+  .dk-feature-title,
+  .dk-card-title,
+  .dk-prose :is(h2, h3, h4),
+  .dk-prose-title {
+    font-size: 18px;
+  }
+
+  /* An agenda's three columns fit a 320px screen. */
+  .dk-prose :is(th, td) {
+    padding-right: 12px;
+  }
+
+  .dk-card-title + p {
+    font-size: 16px;
+  }
+
+  .dk-stats {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 28px;
+  }
+
+  .dk-stat-value {
+    font-size: 44px;
+  }
+
+  .dk-feature-title {
+    max-width: 25ch;
+  }
+
+  .dk-feature p {
+    margin-top: 7px;
+    font-size: 16px;
+  }
+
+  .dk-row-title {
+    font-size: 22px;
+  }
+
+  .dk-row-copy > :is(p, ul) {
+    font-size: 16px;
+  }
+
+  .dk-faq {
+    gap: 27px;
+  }
+
+  .dk-closing .dk-section-title {
+    font-size: 30px;
+  }
+
+  .dk-closing .dk-section-title br {
+    display: none;
+  }
+
+  .dk-closing .dk-button {
+    gap: 12px;
+    min-height: 44px;
+    padding-inline: 14px;
+  }
+
+  .dk-stories {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .dk-story {
+    padding-block: 28px;
+  }
+
+  .dk-stories > li:last-child .dk-story {
+    border-bottom: 1px solid var(--home-line);
+  }
+
+  .dk-story-logo {
+    height: 26px;
+  }
+
+  .dk-story-quote {
+    margin-block: 26px;
+    font-size: 23px;
+  }
+
+  .dk-story-author {
+    align-items: center;
+    gap: 11px;
+  }
+
+  .dk-story-author > img {
+    width: 38px;
+    height: 38px;
+  }
+
+  .dk-story-author p,
+  .dk-story-author strong {
+    font-size: 12px;
+  }
+
+  .dk-story-author span {
+    max-width: none;
+  }
+
+  .dk-hero-note {
+    font-size: 16px;
+  }
+}
+</style>
+    
+    
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/GeistMono-Variable.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/Geist-Variable.woff2" crossorigin>
+    
+    <style>
+      /* ---- Ask anything: the intro, then the feature rail ---- */
+      .kota-rail {
+        margin-top: 56px;
+      }
+
+      /* ---- Automations: the examples as the family's chips over the
+              flowchart, the product's own drawing on a light panel ---- */
+      hb-automations {
+        display: block;
+      }
+
+      .kota-examples {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 56px;
+      }
+
+      .kota-examples button {
+        padding: 9px 14px;
+        border: 1px solid var(--home-line);
+        background: none;
+        color: var(--home-body);
+        font: inherit;
+        font-family: var(--font-mono);
+        font-size: 11px;
+        line-height: 1.6;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition:
+          background-color 0.2s,
+          border-color 0.2s,
+          color 0.2s;
+      }
+
+      .kota-examples button:hover:not([aria-pressed='true']) {
+        border-color: var(--home-ink);
+        color: var(--home-ink);
+      }
+
+      .kota-examples [aria-pressed='true'] {
+        border-color: var(--home-button);
+        background: var(--home-button);
+        color: var(--home-paper);
+      }
+
+      .kota-examples button:focus-visible {
+        outline: 2px solid var(--home-focus);
+        outline-offset: 3px;
+      }
+
+      /* The drawing's own canvas colour fills the panel round the narrow
+         drawing too. */
+      .kota-flow-panel {
+        margin-top: 40px;
+        background: #f7f8fa;
+      }
+
+      .kota-flow {
+        display: block;
+        width: 100%;
+      }
+
+      .kota-flow-narrow {
+        display: none;
+        max-width: 280px;
+        margin-inline: auto;
+      }
+
+      /* The steps come in one after another the first time the flowchart is
+         in view and again when another example is picked; without the
+         script, or with reduced motion, they simply show. */
+      @media (prefers-reduced-motion: no-preference) {
+        .kota-flow.is-waiting :is(.node, .arrow) {
+          opacity: 0;
+        }
+
+        .kota-flow.is-playing .node {
+          animation: kota-step-in 0.5s cubic-bezier(0.23, 1, 0.32, 1) both;
+        }
+
+        .kota-flow.is-playing .arrow {
+          animation: kota-fade-in 0.3s cubic-bezier(0.23, 1, 0.32, 1) both;
+        }
+
+        .kota-flow.is-playing .node1 {
+          animation-delay: 0.1s;
+        }
+
+        .kota-flow.is-playing .arrow1 {
+          animation-delay: 0.5s;
+        }
+
+        .kota-flow.is-playing .node2 {
+          animation-delay: 0.6s;
+        }
+
+        .kota-flow.is-playing .arrow2 {
+          animation-delay: 1s;
+        }
+
+        .kota-flow.is-playing .node3 {
+          animation-delay: 1.1s;
+        }
+
+        .kota-flow.is-playing .arrow3 {
+          animation-delay: 1.5s;
+        }
+
+        .kota-flow.is-playing .node4 {
+          animation-delay: 1.6s;
+        }
+      }
+
+      @keyframes kota-step-in {
+        from {
+          opacity: 0;
+          transform: translateY(12px);
+        }
+      }
+
+      @keyframes kota-fade-in {
+        from {
+          opacity: 0;
+        }
+      }
+
+      @media (max-width: 800px) {
+        .kota-flow-panel {
+          padding: 16px;
+        }
+
+        .kota-flow-wide {
+          display: none;
+        }
+
+        .kota-flow-narrow {
+          display: block;
+        }
+      }
+
+      /* Without the script the examples cannot switch: the first one shows,
+         and its buttons, which would do nothing, are hidden. */
+      @media (scripting: none) {
+        .kota-examples {
+          display: none;
+        }
+      }
+
+      /* A high-contrast theme would paint the picked example like the
+         others. */
+      @media (forced-colors: active) {
+        .kota-examples [aria-pressed='true'] {
+          forced-color-adjust: none;
+          border-color: Highlight;
+          background: Highlight;
+          color: HighlightText;
+        }
+
+        .kota-examples button:focus-visible {
+          outline-color: Highlight;
+        }
+      }
+    </style>
+  
+  
+    <!--
+  Termly itself is the consent gate, so it is the one tag that loads first and
+  unconditionally. `autoBlock=off` is deliberate: every tag on this page
+  declares its own category above, which is stable, rather than relying on
+  Termly's scanner to recognise vendors it has never seen.
+
+  `onTermlyLoaded` is Termly's documented readiness hook. It is promoted to a
+  promise so src/scripts/modules/consent.js can subscribe to consent changes
+  without polling for `window.Termly`.
+-->
+<script>
+  window.__termlyReady = new Promise(function (resolve) {
+    window.onTermlyLoaded = resolve;
+  });
+</script>
+<script id="termly" type="text/javascript" src="https://app.termly.io/resource-blocker/2bbd0187-9a75-47a3-b993-644b016f88c0?autoBlock=off" onload="onTermlyLoaded()"></script>
+
+<!--
+  Upvert: an opaque `loader.js` behind a site key. Nothing in the code says
+  what it collects, so it takes the most restrictive category rather than a
+  guess in our own favour.
+-->
+<script type="text/plain" data-categories="advertising" src="https://cdn.upvertcdn.io/Jm7fXRpyAFAT2Au6G4i73VJOpHX/loader.js"></script>
+
+<!--
+  Google Tag Manager: a container, not a tag. It can deliver anything the
+  container is configured with, Google Ads conversion and remarketing tags
+  included, so it is gated at the widest thing it can load. Nothing is lost by
+  being strict here — GTM is the only route Google Analytics and Google Ads
+  take on this site.
+-->
+<script type="text/plain" data-categories="advertising">
+  (function (w, d, s, l, i) {
+    w[l] = w[l] || [];
+    w[l].push({
+      'gtm.start': new Date().getTime(),
+      event: 'gtm.js',
+    });
+    var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s),
+      dl = l != 'dataLayer' ? '&l=' + l : '';
+    j.async = true;
+    j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+    f.parentNode.insertBefore(j, f);
+  })(window, document, 'script', 'dataLayer', 'GTM-5MZ37TXD');
+</script>
+
+<!--
+  Warmly: de-anonymises visitors and routes them to sales outreach. That is
+  identification for marketing, not aggregate measurement, so it is
+  advertising rather than analytics.
+-->
+<script type="text/plain" data-categories="advertising" id="warmly-script-loader" src="https://opps-widget.getwarmly.com/warmly.js?clientId=7ea033c96d53285138a25c853a33e1a5" defer></script>
+
+<!--
+  Vector: a visitor-identification pixel. Vector's own Termly integration note
+  gates the pixel on `consentState.advertising`, which is the category used
+  here.
+-->
+<script type="text/plain" data-categories="advertising" id="vector-script">
+  !(function (e, r) {
+    try {
+      if (e.vector)
+        return void console.log('Vector snippet included more than once.');
+      var t = {};
+      t.q = t.q || [];
+      for (
+        var o = ['load', 'identify', 'on'],
+          n = function (e) {
+            return function () {
+              var r = Array.prototype.slice.call(arguments);
+              t.q.push([e, r]);
+            };
+          },
+          c = 0;
+        c < o.length;
+        c++
+      ) {
+        var a = o[c];
+        t[a] = n(a);
+      }
+      if (((e.vector = t), !t.loaded)) {
+        var i = r.createElement('script');
+        ((i.type = 'text/javascript'),
+          (i.async = !0),
+          (i.src = 'https://cdn.vector.co/pixel.js'));
+        var l = r.getElementsByTagName('script')[0];
+        (l.parentNode.insertBefore(i, l), (t.loaded = !0));
+      }
+    } catch (e) {
+      console.error('Error loading Vector:', e);
+    }
+  })(window, document);
+  vector.load('622de4ac-953d-4b74-9c3f-07996281fa84');
+</script>
+
+<!--
+  Default: an inbound lead-routing pixel that identifies the visitor for
+  outbound follow-up. Same reasoning as Warmly.
+-->
+<script type="text/plain" data-categories="advertising" async src="https://pixel-cdn.default.com"></script>
+
+<!--
+  Common Room: relays the session to sales outreach off visitor identity, same
+  as Warmly. The loader builds its own script element at runtime, which manual
+  blocking cannot reach, so the loader itself is what carries the gate.
+-->
+<script type="text/plain" data-categories="advertising">
+  (function () {
+    if (typeof window === 'undefined') return;
+    if (typeof window.signals !== 'undefined') return;
+    var script = document.createElement('script');
+    script.src =
+      'https://cdn.cr-relay.com/v1/site/ebf89ee8-5376-46fa-903f-50f7f182f8c3/signals.js';
+    script.async = true;
+    window.signals = Object.assign(
+      [],
+      ['page', 'identify', 'form'].reduce(function (acc, method) {
+        acc[method] = function () {
+          signals.push([method, arguments]);
+          return signals;
+        };
+        return acc;
+      }, {}),
+    );
+    document.head.appendChild(script);
+  })();
+</script>
+
+<!--
+  PostHog: product analytics — how the site is used, in aggregate and per
+  session. That is exactly what /cookie-policy describes under "Analytics and
+  customization cookies", so it takes `analytics` and is not held to
+  advertising consent.
+-->
+<script type="text/plain" data-categories="analytics">
+  !(function (t, e) {
+    var o, n, p, r;
+    e.__SV ||
+      (window.posthog && window.posthog.__loaded) ||
+      ((window.posthog = e),
+      (e._i = []),
+      (e.init = function (i, s, a) {
+        function g(t, e) {
+          var o = e.split('.');
+          (2 == o.length && ((t = t[o[0]]), (e = o[1])),
+            (t[e] = function () {
+              t.push([e].concat(Array.prototype.slice.call(arguments, 0)));
+            }));
+        }
+        (((p = t.createElement('script')).type = 'text/javascript'),
+          (p.crossOrigin = 'anonymous'),
+          (p.async = !0),
+          (p.src =
+            s.api_host.replace('.i.posthog.com', '-assets.i.posthog.com') +
+            '/static/array.js'),
+          (r = t.getElementsByTagName('script')[0]).parentNode.insertBefore(
+            p,
+            r,
+          ));
+        var u = e;
+        for (
+          void 0 !== a ? (u = e[a] = []) : (a = 'posthog'),
+            u.people = u.people || [],
+            u.toString = function (t) {
+              var e = 'posthog';
+              return (
+                'posthog' !== a && (e += '.' + a),
+                t || (e += ' (stub)'),
+                e
+              );
+            },
+            u.people.toString = function () {
+              return u.toString(1) + '.people (stub)';
+            },
+            o =
+              'init Rr Mr fi Cr Ar ci Tr Fr capture Mi calculateEventProperties Lr register register_once register_for_session unregister unregister_for_session Hr getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey displaySurvey canRenderSurvey canRenderSurveyAsync identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty Ur jr createPersonProfile zr kr Br opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing get_explicit_consent_status is_capturing clear_opt_in_out_capturing Dr debug M Nr getPageViewId captureTraceFeedback captureTraceMetric $r'.split(
+                ' ',
+              ),
+            n = 0;
+          n < o.length;
+          n++
+        )
+          g(u, o[n]);
+        e._i.push([i, s, a]);
+      }),
+      (e.__SV = 1));
+  })(document, window.posthog || []);
+  posthog.init('phc_PeZGIJbiAD3ahNAsxMuSirqHwrXgGs2ZRGdpuGgwO0k', {
+    api_host: 'https://us.i.posthog.com',
+    defaults: '2025-11-30',
+    person_profiles: 'always',
+    /* Keeps one distinct and session id across www and app.hyperbound.ai:
+       the shared cookie outranks each host's own stale localStorage. */
+    cookieWinsOnConflict: true,
+    /* Consent often lands a page or two after the campaign URL, and same-host
+       links do not carry utm_* (utm.js). Hand PostHog the landing campaign
+       that utm.js kept for this tab, before its first event: as session props
+       for channel attribution, and as $set_once for $initial_utm_*. Runs once;
+       a page whose own URL has a campaign is left to PostHog. */
+    loaded: function (ph) {
+      var campaign;
+      try {
+        campaign = JSON.parse(sessionStorage.getItem('hb_landing_campaign'));
+        sessionStorage.removeItem('hb_landing_campaign');
+      } catch (e) {
+        return;
+      }
+      if (!campaign || /[?&]utm_/.test(window.location.search)) return;
+      var initial = {};
+      for (var key in campaign) initial['$initial_' + key] = campaign[key];
+      ph.register_for_session(campaign);
+      ph.setPersonProperties({}, initial);
+    },
+  });
+</script>
+  <style>.footer a{text-decoration:none}hb-nav{font-family:Geist Sans,sans-serif}@media screen and (width>=992px){.navbar2_container{grid-template-columns:auto 1fr .5fr}}.navbar2_link{border-radius:8px!important}hb-nav .w-dropdown-list a{text-decoration:none}.navbar2_logo-link:hover,.navbar2_logo-link.w--current:hover{opacity:1}.navbar2_link:hover,.link-block-2:hover,.link-block-6:hover{background-color:#f5ffe6}@font-face{font-family:Geist Sans;src:url(/fonts/Geist-Variable.woff2)format("woff2");font-weight:100 900;font-style:normal;font-display:swap}@font-face{font-family:Geist Mono;src:url(/fonts/GeistMono-Variable.woff2)format("woff2");font-weight:100 900;font-style:normal;font-display:swap}
+</style></head>
+
+  <body data-pagefind-body="true">
+    
+
+    
+
+    
+
+    
+  
+
+  <a class="dk-skip-link" href="#main" data-pagefind-ignore>
+        Skip to content
+      </a><!--
+  Astro hoists a component's `<style is:global>` into the bundled stylesheet at
+  the END of <head>, after every page-level block. These rules are therefore the
+  last non-`!important` word in the cascade, so only rules no page contests may
+  live here — anything single-page stays on its page.
+-->
+
+
+<style>/*
+ * The nav's dark variant, `<Nav variant="dark" />` (the dark pages). Nav.astro
+ * inlines it only where the variant is used, so the other pages neither
+ * download it nor match it. The palette is the dark homepage's --home-*
+ * tokens, declared in src/styles/tokens.css.
+ *
+ * Every selector is scoped to `.navbar.navbar--dark`, which out-ranks the nav
+ * rules in hyperbound.css and Nav.astro's hoisted block without `!important`
+ * (the inherit resets alone keep a base weight, under `:where`). None names
+ * `hb-nav`: those may only live in the element's own files.
+ */
+.navbar.navbar--dark {
+  --nav-ground: var(--home-paper);
+  /* Opaque ground where color-mix() is not supported (below), so the bar and
+     the panels never go transparent over the page. */
+  --nav-bar: var(--home-paper);
+  --nav-raised: var(--home-paper);
+  --nav-card: var(--home-paper);
+  --nav-hover: var(--home-button-hover);
+  --nav-line: var(--home-line);
+  --nav-ink: var(--home-ink);
+  --nav-ink-hover: var(--white);
+  --nav-body: var(--home-body);
+  --nav-primary: var(--home-button);
+  --nav-primary-hover: var(--white);
+  --nav-secondary-edge: var(--home-button-line);
+  --nav-secondary-edge-hover: var(--home-focus);
+  /* How far below the top of the screen the bar sits while the mobile menu is
+     open; hb-nav.js writes the measured value on the bar as the menu opens. */
+  --nav-top: 0px;
+
+  /* In the page's flow, under the announcement bar, and held at the top once
+     the bar scrolls away; on the light pages the bar is fixed. */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+@supports (color: color-mix(in srgb, red, blue)) {
+  .navbar.navbar--dark {
+    --nav-bar: color-mix(in srgb, var(--home-paper) 96%, transparent);
+    --nav-raised: color-mix(in srgb, var(--home-ink) 3%, var(--home-paper));
+    --nav-card: color-mix(in srgb, var(--home-ink) 5%, var(--home-paper));
+  }
+}
+
+/* hb-nav.js writes the bar's border colour inline as the page scrolls, so the
+   hairline is drawn as a shadow instead, and shows from the top of the page. */
+.navbar.navbar--dark .navbar2_component {
+  position: relative;
+  border-bottom-width: 0;
+  background-color: var(--nav-bar);
+  box-shadow: inset 0 -1px 0 var(--nav-line);
+  color: var(--nav-ink);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* The light pages render StyleOverrides, whose inherit resets the nav's
+   markup relies on; the homepage does not, so the variant repeats them for
+   the nav alone, at the same weight (the `:where` adds nothing). */
+:where(.navbar.navbar--dark) a {
+  color: inherit;
+  text-decoration: inherit;
+  font-size: inherit;
+}
+
+:where(.navbar.navbar--dark)
+  :is(
+    .w-nav-link,
+    .w-nav-brand,
+    .w-dropdown-btn,
+    .w-dropdown-toggle,
+    .w-dropdown-link
+  ) {
+  color: inherit;
+  text-decoration: inherit;
+  font-size: inherit;
+}
+
+.navbar.navbar--dark .navbar2_logo {
+  filter: brightness(0) invert(1);
+}
+
+.navbar.navbar--dark .navbar2_link {
+  color: var(--nav-ink);
+}
+
+.navbar.navbar--dark .navbar2_link:hover {
+  background-color: transparent;
+  color: var(--nav-ink-hover);
+}
+
+/* The light chrome gives each dropdown a 2px bottom border that turns lime on
+   hover. The dark bar has no such line, so its dropdowns drop the border and
+   sit and hover like the other items. */
+.navbar.navbar--dark .navbar-dropdown2_component {
+  border-bottom: 0;
+}
+
+@media screen and (min-width: 992px) {
+  /* The bar's top-level items are set like the dark homepage's labels. */
+  .navbar.navbar--dark .navbar2_link {
+    font-family: var(--font-mono);
+    font-size: 0.625rem;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  .navbar.navbar--dark .navbar2_link:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.25em;
+  }
+
+  .navbar.navbar--dark .navbar2_link .dropdown-chevron {
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+}
+
+.navbar.navbar--dark .div-block-3 .button,
+.navbar.navbar--dark .div-block-129 .button {
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  font-weight: 450;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  box-shadow: none;
+  /* Square, like the homepage's own buttons. */
+  border-radius: 0;
+}
+
+/* Login, the secondary button. */
+.navbar.navbar--dark .div-block-3 .button:not(.is-green) {
+  border: 1px solid var(--nav-secondary-edge);
+  background-color: transparent;
+  color: var(--nav-ink);
+}
+
+.navbar.navbar--dark .div-block-3 .button:not(.is-green):hover {
+  border-color: var(--nav-secondary-edge-hover);
+  background-color: var(--nav-hover);
+}
+
+/* Book a demo, the primary button. */
+.navbar.navbar--dark .div-block-3 .button.is-green,
+.navbar.navbar--dark .div-block-129 .button.is-green {
+  border: 1px solid var(--nav-primary);
+  background-color: var(--nav-primary);
+  color: var(--nav-ground);
+}
+
+.navbar.navbar--dark .div-block-3 .button.is-green:hover,
+.navbar.navbar--dark .div-block-129 .button.is-green:hover {
+  border-color: var(--nav-primary-hover);
+  background-color: var(--nav-primary-hover);
+}
+
+/* Dropdown panels. The bar's hairline already runs along the panel's top. */
+.navbar.navbar--dark .navbar-dropdown2_dropdown-list {
+  border-color: transparent transparent var(--nav-line);
+  background-color: var(--nav-raised);
+}
+
+.navbar.navbar--dark .div-block-97 p,
+.navbar.navbar--dark .link-block-2 .text-color-black,
+.navbar.navbar--dark .link-block-6 .text-color-dark {
+  color: var(--nav-ink);
+}
+
+.navbar.navbar--dark .link-block-2 p,
+.navbar.navbar--dark .link-block-6 p {
+  color: var(--nav-body);
+}
+
+.navbar.navbar--dark .link-block-6 {
+  background-color: var(--nav-card);
+}
+
+.navbar.navbar--dark .link-block-2:hover,
+.navbar.navbar--dark .link-block-6:hover {
+  background-color: var(--nav-hover);
+}
+
+/* The Resources cards' drawings are pale grey on white; inverted, their white
+   faces sink into the card and their lines stay just lighter than it. The
+   hue-rotate puts the partner logos' colours back. The two promo cards beside
+   Solutions keep their own artwork and grounds. */
+.navbar.navbar--dark .image-34 {
+  filter: invert(0.84) hue-rotate(180deg);
+}
+
+/* The menu button's three lines; the box around them shows below 768px. */
+.navbar.navbar--dark .menu-icon2_line-top,
+.navbar.navbar--dark .menu-icon2_line-middle,
+.navbar.navbar--dark .menu-icon2_line-bottom {
+  background-color: var(--nav-ink);
+}
+
+.navbar.navbar--dark .menu-icon2 {
+  border-color: var(--nav-line);
+  background-color: transparent;
+  box-shadow: none;
+}
+
+/* The open mobile menu: a raised panel of sans rows split by hairlines, as on
+   the dark homepage. It is a screen tall from the bar's bottom edge, with
+   Login pinned to its foot; under the announcement bar it gives up the bar's
+   height, so Login stays where it is on every other page. */
+@media screen and (max-width: 991px) {
+  .navbar.navbar--dark .navbar2_menu {
+    min-height: calc(100svh - var(--nav-top));
+    max-height: calc(100svh - var(--nav-top));
+  }
+
+  .navbar.navbar--dark .navbar2_menu,
+  .navbar.navbar--dark .div-block-3,
+  .navbar.navbar--dark .div-block-4 {
+    background-color: var(--nav-raised);
+  }
+
+  .navbar.navbar--dark .navbar2_menu {
+    color-scheme: dark;
+  }
+
+  .navbar.navbar--dark .div-block-3 {
+    border-top-color: var(--nav-line);
+  }
+
+  /* A pseudo-element rather than a border: the rows keep the 8px radius the
+     bar's links have, which would curl a border's ends. The bar's own hairline
+     sits above the first row. */
+  .navbar.navbar--dark .div-block-4 > .navbar2_link:not(:first-child)::before,
+  .navbar.navbar--dark
+    .div-block-4
+    > .navbar-dropdown2_component:not(:first-child)::before {
+    content: '';
+    position: absolute;
+    inset: 0 0 auto;
+    border-top: 1px solid var(--nav-line);
+  }
+}
+
+/* base.css zeroes the outline on the dropdown toggles and the menu button. */
+.navbar.navbar--dark a:focus-visible,
+.navbar.navbar--dark [tabindex]:focus-visible {
+  outline: 2px solid var(--nav-ink);
+  outline-offset: 2px;
+}
+</style>
+<hb-nav data-pagefind-ignore="true">
+  
+
+  
+  <div class="navbar navbar--dark">
+    <div class="trigger"></div>
+    <div data-animation="default" class="navbar2_component w-nav" data-easing2="ease" fs-scrolldisable-element="smart-nav" data-easing="ease" data-collapse="medium" role="banner" data-duration="400">
+      <div class="navbar2_container">
+        <a href="/" id="w-node-d5120b36-3406-7e1f-a591-7fd0acdf725c-acdf7258" class="navbar2_logo-link w-nav-brand"><img loading="lazy" src="/images/Vector.svg" alt="" class="navbar2_logo"></a>
+        <nav role="navigation" id="w-node-d5120b36-3406-7e1f-a591-7fd0acdf725e-acdf7258" class="navbar2_menu w-nav-menu">
+          <div class="div-block-5">
+            <div class="div-block-4">
+              <div data-delay="300" data-hover="true" class="navbar-dropdown2_component w-dropdown">
+                <div class="navbar2_link w-dropdown-toggle">
+                  <div>Solutions</div>
+                  <div class="dropdown-chevron w-embed">
+                    <svg width="100%" height="100%" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M4 6.00003L8 10L12 6.00003" stroke="currentcolor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                  </div>
+                </div>
+                <nav class="navbar-dropdown2_dropdown-list w-dropdown-list">
+                  <div class="navbar-dropdown2_container">
+                    <div class="navbar-dropdown2_dropdown-content">
+                      <div class="div-block-97">
+                        <p class="font-source_serif_4 heading-style-h5 text-color-dark">
+                          Product
+                        </p>
+                      </div>
+                      <div class="div-block-94">
+                        <a href="/product/hyperbound-practice" class="link-block-2 w-inline-block">
+                          <p class="text-weight-semibold text-color-black">
+                            Hyperbound Practice
+                          </p>
+                          <p>
+                            Train with realistic roleplays and instant feedback.
+                          </p>
+                        </a>
+                        <a href="/product/hyperbound-perform" class="link-block-2 w-inline-block">
+                          <p class="text-weight-semibold text-color-black">
+                            Hyperbound Perform
+                          </p>
+                          <p>Turn call insights into better deal execution.</p>
+                        </a>
+                        <a href="/product/kota-activate" class="link-block-2 w-inline-block">
+                          <p class="text-weight-semibold text-color-black">
+                            Kota Activate
+                          </p>
+                          <p>
+                            Surface what matters and drive what happens next.
+                          </p>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="navbar-dropdown2_dropdown-content">
+                      <div class="div-block-97">
+                        <p class="font-source_serif_4 heading-style-h5 text-color-dark">
+                          Use Cases
+                        </p>
+                      </div>
+                      <div class="div-block-94">
+                        <a href="/use-cases/pre-call-prep" class="link-block-2 w-inline-block">
+                          <p class="text-weight-semibold text-color-black">
+                            Pre-Call Prep
+                          </p>
+                          <p>Enhance strategy and boost call effectiveness.</p>
+                        </a>
+                        <a href="/use-cases/change-management" class="link-block-2 w-inline-block">
+                          <p class="text-weight-semibold text-color-black">
+                            Everboarding &amp; Change Management
+                          </p>
+                          <p>
+                            Support continuous learning and seamless
+                            transitions.
+                          </p>
+                        </a>
+                        <a href="/use-cases/hiring" class="link-block-2 w-inline-block">
+                          <p class="text-weight-semibold text-color-black">
+                            Hiring
+                          </p>
+                          <p>
+                            Hiring solutions to attract, evaluate, and select
+                            top talent.
+                          </p>
+                        </a>
+                        <a href="/use-cases/onboarding-and-certifications" class="link-block-2 w-inline-block">
+                          <p class="text-weight-semibold text-color-black">
+                            Onboarding &amp; Certifications
+                          </p>
+                          <p>Streamline training and validate expertise.</p>
+                        </a>
+                        <a href="/use-cases/qa-deal-assessment" class="link-block-2 w-inline-block">
+                          <p class="text-weight-semibold text-color-black">
+                            QA &amp; Deal Assessment
+                          </p>
+                          <p>Optimize performance and close rates.</p>
+                        </a>
+                      </div>
+                    </div>
+                    <div id="w-node-d5120b36-3406-7e1f-a591-7fd0acdf729f-acdf7258" class="navbar-dropdown2_dropdown-content">
+                      <div class="div-block-97">
+                        <p class="font-source_serif_4 heading-style-h5 text-color-dark">
+                          Industries
+                        </p>
+                      </div>
+                      <div class="div-block-94">
+                        <a href="/industries/b2b-saas-software" class="link-block-2 w-inline-block">
+                          <p class="text-weight-semibold text-color-black">
+                            B2B SaaS Software
+                          </p>
+                          <p>
+                            Streamline operations, enhance productivity, and
+                            drive growth.
+                          </p>
+                        </a>
+                        <a href="/industries/transportation-logistics" class="link-block-2 w-inline-block">
+                          <p class="text-weight-semibold text-color-black">
+                            Transportation and Logistics
+                          </p>
+                          <p>
+                            Optimize operations, improve efficiency, and drive
+                            growth.
+                          </p>
+                        </a>
+                        <a href="/industries/b2b-sales-trainers-agencies" class="link-block-2 w-inline-block">
+                          <p class="text-weight-semibold text-color-black">
+                            Sales Training Agencies
+                          </p>
+                          <p>
+                            Empower teams with effective strategies to boost
+                            performance and drive success.
+                          </p>
+                        </a>
+                        <a href="/industries/banking-financial-advisors" class="link-block-2 w-inline-block">
+                          <p class="text-weight-semibold text-color-black">
+                            Banking &amp; Financial Advisors
+                          </p>
+                          <p>
+                            Enhance customer service, streamline processes, and
+                            drive growth.
+                          </p>
+                        </a>
+                      </div>
+                    </div>
+                    <div id="w-node-d5120b36-3406-7e1f-a591-7fd0acdf72bd-acdf7258" class="div-block-95">
+                      <div class="div-block-96">
+                        <div class="div-block-98">
+                          <p class="text-weight-semibold text-color-dark">
+                            Practice Recommendations
+                          </p>
+                          <p>With state-of the art AI Sales roleplays</p>
+                        </div>
+                        <a href="https://app.hyperbound.ai/buyers?invite=hyperbound-website" class="button is-green is-small w-button">Try Now</a>
+                      </div>
+                      <div class="div-block-99">
+                        <div class="div-block-98">
+                          <p class="text-weight-semibold text-color-white">
+                            Subscribe to our YouTube Channel for the best Sales
+                            Tips!
+                          </p>
+                          <p class="text-color-dark_grey">
+                            youtube.com/@HyperboundAI
+                          </p>
+                        </div>
+                        <div class="div-block-100">
+                          <a href="https://www.youtube.com/@HyperboundAI" class="button is-on_dark-bg is-small w-button">Check it out</a><img loading="lazy" src="/images/Group_1.svg" alt="" class="image-26">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </nav>
+              </div>
+              <a href="/pricing" class="navbar2_link w-nav-link">Pricing</a>
+              <div data-delay="300" data-hover="true" class="navbar-dropdown2_component w-dropdown">
+                <div class="navbar2_link w-dropdown-toggle">
+                  <div>Resources</div>
+                  <div class="dropdown-chevron w-embed">
+                    <svg width="100%" height="100%" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M4 6.00003L8 10L12 6.00003" stroke="currentcolor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                  </div>
+                </div>
+                <nav class="navbar-dropdown2_dropdown-list w-dropdown-list">
+                  <div class="navbar-dropdown2_container _2">
+                    <a href="/case-studies" class="link-block-6 w-inline-block">
+                      <div class="div-block-127">
+                        <p class="text-weight-semibold text-color-dark">
+                          Case Studies
+                        </p>
+                        <p>See how top sales teams win with Hyperbound.</p>
+                      </div>
+                      <img src="/images/nav-case-studies-story-cards-heart.svg" loading="lazy" alt="" class="image-34">
+                    </a>
+                    <a href="/blog?category_equal=Featured" class="link-block-6 w-inline-block">
+                      <div class="div-block-127">
+                        <p class="text-weight-semibold text-color-dark">Blog</p>
+                        <p>
+                          Stay up to date with the latest in AI for coaching.
+                        </p>
+                      </div>
+                      <img src="/images/Frame-1321316790-1.svg" loading="lazy" alt="" class="image-34">
+                    </a>
+                    <a href="/blog/category/comparisons" class="link-block-6 w-inline-block">
+                      <div class="div-block-127">
+                        <p class="text-weight-semibold text-color-dark">
+                          Comparisons
+                        </p>
+                        <p>See how Hyperbound stacks up against other tools.</p>
+                      </div>
+                      <img src="/images/nav-comparisons-two-cards-vs.svg" loading="lazy" alt="" class="image-34">
+                    </a>
+                    <a href="/partners" class="link-block-6 w-inline-block">
+                      <div class="div-block-127">
+                        <p class="text-weight-semibold text-color-dark">
+                          Partners
+                        </p>
+                        <p>
+                          Want to become a partner? Learn how we work with
+                          others and join us!
+                        </p>
+                      </div>
+                      <img src="/images/Frame-1321316790-2.svg" loading="lazy" alt="" class="image-34">
+                    </a>
+                  </div>
+                </nav>
+              </div>
+              <a href="/enterprise" class="navbar2_link w-nav-link">Enterprise</a>
+            </div>
+            <div id="w-node-d5120b36-3406-7e1f-a591-7fd0acdf7345-acdf7258" class="div-block-3">
+              <a target="_blank" rel="noopener noreferrer" href="https://auth.hyperbound.ai/en/login" class="button is-small w-button">Login</a>
+              <a target="_blank" rel="noopener noreferrer" href="/book-a-demo" id="w-node-d5120b36-3406-7e1f-a591-7fd0acdf7346-acdf7258" class="button is-green is-small text-weight-semibold hide-mobile-landscape w-button">Book a demo</a>
+            </div>
+          </div>
+        </nav>
+        <div class="navbar2_button-wrapper">
+          <div class="navbar2_menu-button w-nav-button">
+            <div class="div-block-129">
+              <a target="_blank" rel="noopener noreferrer" href="/book-a-demo" class="button is-green is-small text-weight-semibold w-button">Book a demo</a>
+              <div class="menu-icon2">
+                <div class="menu-icon2_line-top"></div>
+                <div class="menu-icon2_line-middle">
+                  <div class="menu-icon2_line-middle-inner"></div>
+                </div>
+                <div class="menu-icon2_line-bottom"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="blur"></div>
+  </div>
+</hb-nav><main id="main" class="dk">
+    
+  
+  <section class="dk-wrap dk-hero dk-hero-stack">
+    <div class="dk-hero-copy">
+      <p class="dk-eyebrow">Kota Activate</p>
+      <h1 class="dk-hero-title">Ask anything. Automate everything.</h1>
+    </div>
+    <div class="dk-hero-aside">
+      <p class="dk-hero-lead">
+        Connect everything across your revenue team and turn it into action. Ask
+        anything for instant answers or let Kota automate workflows for you so
+        nothing ever slips.
+      </p>
+      <div class="dk-actions">
+        <a class="dk-button dk-button-primary" href="https://app.hyperbound.ai/buyers?invite=hyperbound-website">
+          Try Now
+          <svg class="dk-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M5 12h14m-6-6 6 6-6 6"></path>
+          </svg>
+        </a>
+        <a class="dk-button dk-button-secondary" href="/book-a-demo">
+          Book a Demo
+          <svg class="dk-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M5 12h14m-6-6 6 6-6 6"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+  <section class="dk-wrap dk-trust">
+    <ul class="dk-logo-wall dk-logo-row-6" role="list" aria-label="Customers">
+  <li>
+        <img class="dk-logo" src="/assets/customer-logo-linkedin-on-dark.png" alt="LinkedIn" width="188" height="80" loading="lazy" decoding="async">
+      </li><li>
+        <img class="dk-logo" src="/assets/customer-logo-autodesk-on-dark.png" alt="Autodesk" width="273" height="80" loading="lazy" decoding="async">
+      </li><li>
+        <img class="dk-logo" src="/assets/customer-logo-anaconda-on-dark.png" alt="Anaconda" width="281" height="80" loading="lazy" decoding="async">
+      </li><li>
+        <img class="dk-logo" src="/assets/customer-logo-guesty-on-dark.svg" alt="Guesty" width="221" height="80" loading="lazy" decoding="async">
+      </li><li>
+        <img class="dk-logo" src="/assets/customer-logo-supabase-on-dark.png" alt="Supabase" width="238" height="80" loading="lazy" decoding="async">
+      </li><li>
+        <img class="dk-logo" src="/assets/customer-logo-outbuild-on-dark.svg" alt="Outbuild" width="246" height="80" loading="lazy" decoding="async">
+      </li>
+</ul>
+  </section>
+  <section class="dk-wrap dk-section" aria-labelledby="kota-ask-title">
+    <p class="dk-eyebrow dk-eyebrow-ruled">Kota Ask Anything</p>
+    <div class="dk-section-intro">
+      <h2 id="kota-ask-title" class="dk-section-title">
+        Your pipeline, in plain English.
+      </h2>
+      <p>
+        Kota reads every call, every email, every CRM signal across your team.
+        Ask in Slack, on your phone, or in Hyperbound.
+      </p>
+    </div>
+    <div class="kota-rail">
+      <hb-rail interval="3000" label="Features" variant="dark">
+  <div class="hb-rail__bar">
+    <button type="button" class="hb-rail__btn active" data-tab="roleplay">
+          Build Bots + Scorecards
+        </button><button type="button" class="hb-rail__btn" data-tab="scorecards">
+          Coaching Opportunities
+        </button><button type="button" class="hb-rail__btn" data-tab="lms">
+          Analyze Deal Risk
+        </button><button type="button" class="hb-rail__btn" data-tab="specialty">
+          Identify Winning Behaviors
+        </button><button type="button" class="hb-rail__btn" data-tab="analytics">
+          Trend Analysis
+        </button>
+  </div>
+
+  <div class="hb-rail__content">
+    <div class="hb-rail__slider">
+      <div class="hb-rail__panel">
+            <div class="hb-rail__copy">
+              <h3 class="dk-row-title">
+                Build Bots + Scorecards
+              </h3>
+              <p>Build realistic roleplay bots and customizable scorecards so teams can standardize messaging, simulate real scenarios, and reinforce best practices across the organization.</p>
+            </div>
+            <div class="hb-rail__figure dk-panel">
+              <img src="/assets/Kota-BuildingBots.png" alt="Kota building a roleplay bot from a manager's request, with the buyer it plays and the weaknesses it will test." loading="eager">
+            </div>
+          </div><div class="hb-rail__panel">
+            <div class="hb-rail__copy">
+              <h3 class="dk-row-title">
+                Coaching Opportunities
+              </h3>
+              <p>Surface coaching opportunities directly within active deals so reps can refine their approach, strengthen key moments in the sales process, and improve execution before their next customer conversation.</p>
+            </div>
+            <div class="hb-rail__figure dk-panel">
+              <img src="/assets/Kota-Coaching.png" alt="Kota answering a manager's question about a rep's biggest gaps, with an action for each." loading="lazy">
+            </div>
+          </div><div class="hb-rail__panel">
+            <div class="hb-rail__copy">
+              <h3 class="dk-row-title">
+                Analyze Deal Risk
+              </h3>
+              <p>Analyze signals across sales conversations to identify which deals are at risk, where momentum is slowing, and what needs to change to move them forward.</p>
+            </div>
+            <div class="hb-rail__figure dk-panel">
+              <img src="/assets/Kota-DealReview.png" alt="Kota's review of an at-risk deal: what happened, why it stalled and what to do next." loading="lazy">
+            </div>
+          </div><div class="hb-rail__panel">
+            <div class="hb-rail__copy">
+              <h3 class="dk-row-title">
+                Identify Winning Behaviors
+              </h3>
+              <p>Analyze messaging patterns, objections, and buyer signals across sales conversations to understand what&#39;s helping deals progress, where conversations stall, and how teams can improve execution over time.</p>
+            </div>
+            <div class="hb-rail__figure dk-panel">
+              <img src="/assets/Kota-WinningBehaviors.png" alt="Kota comparing what top reps do differently to win deals, with a chart of the results." loading="lazy">
+            </div>
+          </div><div class="hb-rail__panel">
+            <div class="hb-rail__copy">
+              <h3 class="dk-row-title">
+                Trend Analysis
+              </h3>
+              <p>Analyze trends across conversations to identify recurring objections, messaging gaps, and patterns that impact deal progression.</p>
+            </div>
+            <div class="hb-rail__figure dk-panel">
+              <img src="/assets/Kota-Trends.png" alt="Kota ranking the objections reps hear most often across real calls." loading="lazy">
+            </div>
+          </div>
+    </div>
+  </div>
+</hb-rail>
+    </div>
+  </section>
+  <section class="dk-wrap dk-section" aria-labelledby="kota-automations-title">
+    <p class="dk-eyebrow dk-eyebrow-ruled">Kota Automations</p>
+    <div class="dk-section-intro">
+      <h2 id="kota-automations-title" class="dk-section-title">
+        Set workflows once. Kota runs them every time.
+      </h2>
+      <p>
+        Choose a trigger. Define what Kota does with the signal. Pick where it
+        goes. Or start with 40+ prebuilt automations. Kota takes it from there —
+        updating CRM, flagging risk, assigning coaching, and keeping deals
+        moving.
+      </p>
+    </div>
+    <hb-automations>
+      <div class="kota-examples" role="group" aria-label="Example automations">
+        <button type="button" data-flow="rescue" aria-pressed="true">
+          Rescue deals
+        </button>
+        <button type="button" data-flow="crm" aria-pressed="false">
+          Fill the CRM
+        </button>
+        <button type="button" data-flow="practice" aria-pressed="false">
+          Targeted practice
+        </button>
+      </div>
+      <div class="dk-panel kota-flow-panel hb-automations__panel">
+        <!-- The flowchart drawn wide, then narrow for phones -->
+        <svg class="kota-flow kota-flow-wide hb-automations__drawing" role="img" aria-label="Trigger: Deal stuck in stage. Condition: Analyze deal + recommend. Condition: Score urgency high / med / low. Action: Slack ping to rep + manager." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 160" fill="none">
+          <rect width="960" height="160" fill="#F7F8FA"></rect>
+          <g class="header-bar">
+            <rect x="860" y="12" width="80" height="30" rx="15" fill="#d7ff87"></rect>
+            <text x="900" y="32" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#181d27" text-anchor="middle">
+              Publish
+            </text>
+          </g>
+          <g class="node node1">
+            <rect x="16" y="56" width="210" height="88" rx="12" fill="#fff" stroke="#E0E0E0" stroke-width="1.5"></rect>
+            <text x="32" y="78" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#2E7D32" letter-spacing="0.08em">
+              TRIGGER
+            </text>
+            <rect x="28" y="88" width="186" height="44" rx="8" fill="#fff" stroke="#EEEEEE" stroke-width="1"></rect>
+            <circle cx="52" cy="110" r="14" fill="#E8F5E9"></circle>
+            <path d="M48 110l2.5-5h2.5l-1.2 3.5h4l-5 7 1.2-5.5h-4z" fill="#43A047"></path>
+            <text data-line="start" x="72" y="114" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#1a1a2e">
+              Deal stuck in stage
+            </text>
+          </g>
+          <g class="arrow arrow1">
+            <line x1="226" y1="100" x2="248" y2="100" stroke="#D0D0D0" stroke-width="1.5"></line>
+            <polygon points="245,96 252,100 245,104" fill="#D0D0D0"></polygon>
+          </g>
+          <g class="node node2">
+            <rect x="254" y="56" width="210" height="88" rx="12" fill="#fff" stroke="#E0E0E0" stroke-width="1.5"></rect>
+            <text x="270" y="78" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#5E35B1" letter-spacing="0.08em">
+              CONDITION
+            </text>
+            <rect x="266" y="88" width="186" height="44" rx="8" fill="#fff" stroke="#EEEEEE" stroke-width="1"></rect>
+            <circle cx="290" cy="110" r="14" fill="#EDE7F6"></circle>
+            <image href="data:image/png;base64,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" x="283" y="103" width="14" height="14"></image>
+            <text data-line="cond1.0" x="310" y="107" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#1a1a2e">
+              Analyze deal +
+            </text>
+            <text data-line="cond1.1" x="310" y="121" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#1a1a2e">
+              recommend
+            </text>
+          </g>
+          <g class="arrow arrow2">
+            <line x1="464" y1="100" x2="486" y2="100" stroke="#D0D0D0" stroke-width="1.5"></line>
+            <polygon points="483,96 490,100 483,104" fill="#D0D0D0"></polygon>
+          </g>
+          <g class="node node3">
+            <rect x="492" y="56" width="210" height="88" rx="12" fill="#fff" stroke="#E0E0E0" stroke-width="1.5"></rect>
+            <text x="508" y="78" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#5E35B1" letter-spacing="0.08em">
+              CONDITION
+            </text>
+            <rect x="504" y="88" width="186" height="44" rx="8" fill="#fff" stroke="#EEEEEE" stroke-width="1"></rect>
+            <circle cx="528" cy="110" r="14" fill="#EDE7F6"></circle>
+            <image href="data:image/png;base64,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" x="521" y="103" width="14" height="14"></image>
+            <text data-line="cond2.0" x="548" y="107" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#1a1a2e">
+              Score urgency
+            </text>
+            <text data-line="cond2.1" x="548" y="121" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#1a1a2e">
+              high / med / low
+            </text>
+          </g>
+          <g class="arrow arrow3">
+            <line x1="702" y1="100" x2="724" y2="100" stroke="#D0D0D0" stroke-width="1.5"></line>
+            <polygon points="721,96 728,100 721,104" fill="#D0D0D0"></polygon>
+          </g>
+          <g class="node node4">
+            <rect x="730" y="56" width="210" height="88" rx="12" fill="#fff" stroke="#E0E0E0" stroke-width="1.5"></rect>
+            <text x="746" y="78" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#1565C0" letter-spacing="0.08em">
+              ACTION
+            </text>
+            <rect x="742" y="88" width="186" height="44" rx="8" fill="#fff" stroke="#EEEEEE" stroke-width="1"></rect>
+            <circle cx="766" cy="110" r="14" fill="#E3F2FD"></circle>
+            <path d="M760 110h10m0 0l-3.5-3.5m3.5 3.5l-3.5 3.5" fill="none" stroke="#1E88E5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            <text data-line="action.0" x="786" y="107" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#1a1a2e">
+              Slack ping to
+            </text>
+            <text data-line="action.1" x="786" y="121" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#1a1a2e">
+              rep + manager
+            </text>
+          </g>
+        </svg>
+        <svg class="kota-flow kota-flow-narrow hb-automations__drawing" role="img" aria-label="Trigger: Deal stuck in stage. Condition: Analyze deal + recommend. Condition: Score urgency high / med / low. Action: Slack ping to rep + manager." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 520" preserveAspectRatio="xMidYMid meet" fill="none">
+          <rect width="280" height="520" fill="#F7F8FA"></rect>
+          <g class="header-bar">
+            <rect x="180" y="12" width="80" height="30" rx="15" fill="#d7ff87"></rect>
+            <text x="220" y="32" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#181d27" text-anchor="middle">
+              Publish
+            </text>
+          </g>
+          <g class="node node1">
+            <rect x="20" y="56" width="240" height="88" rx="12" fill="#fff" stroke="#E0E0E0" stroke-width="1.5"></rect>
+            <text x="36" y="78" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#2E7D32" letter-spacing="0.08em">
+              TRIGGER
+            </text>
+            <rect x="32" y="88" width="216" height="44" rx="8" fill="#fff" stroke="#EEEEEE" stroke-width="1"></rect>
+            <circle cx="56" cy="110" r="14" fill="#E8F5E9"></circle>
+            <path d="M52 110l2.5-5h2.5l-1.2 3.5h4l-5 7 1.2-5.5h-4z" fill="#43A047"></path>
+            <text data-line="start" x="76" y="114" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#1a1a2e">
+              Deal stuck in stage
+            </text>
+          </g>
+          <g class="arrow arrow1">
+            <line x1="140" y1="144" x2="140" y2="166" stroke="#D0D0D0" stroke-width="1.5"></line>
+            <polygon points="136,163 140,170 144,163" fill="#D0D0D0"></polygon>
+          </g>
+          <g class="node node2">
+            <rect x="20" y="172" width="240" height="88" rx="12" fill="#fff" stroke="#E0E0E0" stroke-width="1.5"></rect>
+            <text x="36" y="194" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#5E35B1" letter-spacing="0.08em">
+              CONDITION
+            </text>
+            <rect x="32" y="204" width="216" height="44" rx="8" fill="#fff" stroke="#EEEEEE" stroke-width="1"></rect>
+            <circle cx="56" cy="226" r="14" fill="#EDE7F6"></circle>
+            <image href="data:image/png;base64,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" x="49" y="219" width="14" height="14"></image>
+            <text data-line="cond1.0" x="76" y="223" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#1a1a2e">
+              Analyze deal +
+            </text>
+            <text data-line="cond1.1" x="76" y="237" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#1a1a2e">
+              recommend
+            </text>
+          </g>
+          <g class="arrow arrow2">
+            <line x1="140" y1="260" x2="140" y2="282" stroke="#D0D0D0" stroke-width="1.5"></line>
+            <polygon points="136,279 140,286 144,279" fill="#D0D0D0"></polygon>
+          </g>
+          <g class="node node3">
+            <rect x="20" y="288" width="240" height="88" rx="12" fill="#fff" stroke="#E0E0E0" stroke-width="1.5"></rect>
+            <text x="36" y="310" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#5E35B1" letter-spacing="0.08em">
+              CONDITION
+            </text>
+            <rect x="32" y="320" width="216" height="44" rx="8" fill="#fff" stroke="#EEEEEE" stroke-width="1"></rect>
+            <circle cx="56" cy="342" r="14" fill="#EDE7F6"></circle>
+            <image href="data:image/png;base64,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" x="49" y="335" width="14" height="14"></image>
+            <text data-line="cond2.0" x="76" y="339" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#1a1a2e">
+              Score urgency
+            </text>
+            <text data-line="cond2.1" x="76" y="353" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#1a1a2e">
+              high / med / low
+            </text>
+          </g>
+          <g class="arrow arrow3">
+            <line x1="140" y1="376" x2="140" y2="398" stroke="#D0D0D0" stroke-width="1.5"></line>
+            <polygon points="136,395 140,402 144,395" fill="#D0D0D0"></polygon>
+          </g>
+          <g class="node node4">
+            <rect x="20" y="404" width="240" height="88" rx="12" fill="#fff" stroke="#E0E0E0" stroke-width="1.5"></rect>
+            <text x="36" y="426" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#1565C0" letter-spacing="0.08em">
+              ACTION
+            </text>
+            <rect x="32" y="436" width="216" height="44" rx="8" fill="#fff" stroke="#EEEEEE" stroke-width="1"></rect>
+            <circle cx="56" cy="458" r="14" fill="#E3F2FD"></circle>
+            <path d="M50 458h10m0 0l-3.5-3.5m3.5 3.5l-3.5 3.5" fill="none" stroke="#1E88E5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            <text data-line="action.0" x="76" y="455" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#1a1a2e">
+              Slack ping to
+            </text>
+            <text data-line="action.1" x="76" y="469" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#1a1a2e">
+              rep + manager
+            </text>
+          </g>
+        </svg>
+      </div>
+    </hb-automations>
+  </section>
+  <section class="dk-wrap dk-section" aria-label="Results">
+    <ul class="dk-stats" role="list">
+      <li class="dk-stat">
+            <p class="dk-stat-value">
+              <span class="hb-counter__spoken" data-pagefind-ignore>150%</span><hb-counter class="hb-counter__number" variant="dark" aria-hidden="true">150</hb-counter><span class="hb-counter__unit hb-counter__unit--dark" aria-hidden="true">%</span>
+            </p>
+            <p class="dk-stat-label">Increase in demo conversion rate.</p>
+          </li><li class="dk-stat">
+            <p class="dk-stat-value">
+              <span class="hb-counter__spoken" data-pagefind-ignore>2x</span><hb-counter class="hb-counter__number" variant="dark" aria-hidden="true">2</hb-counter><span class="hb-counter__unit hb-counter__unit--dark" aria-hidden="true">x</span>
+            </p>
+            <p class="dk-stat-label">Faster time to first closed deal.</p>
+          </li><li class="dk-stat">
+            <p class="dk-stat-value">
+              <span class="hb-counter__spoken" data-pagefind-ignore>50%</span><hb-counter class="hb-counter__number" variant="dark" aria-hidden="true">50</hb-counter><span class="hb-counter__unit hb-counter__unit--dark" aria-hidden="true">%</span>
+            </p>
+            <p class="dk-stat-label">Decrease in ramp time.</p>
+          </li>
+    </ul>
+    <hb-tabs interval="3000" label="Customer testimonials" variant="dark">
+  <div class="hb-tabs__list-wrapper">
+    <div class="hb-tabs__line">
+      <div class="hb-tabs__highlight"></div>
+    </div>
+    <div class="hb-tabs__list">
+      <button type="button" class="hb-tabs__tab active" data-testimonial="sendoso">
+            <img src="/assets/sendoso-logo.png" alt="Sendoso" class="hb-tabs__logo--sendoso">
+          </button><button type="button" class="hb-tabs__tab" data-testimonial="partsbase">
+            <img src="/assets/PB-logo-light.e388ae64b735c07202b41e86e3bb1c0f.svg" alt="PartsBase" class="hb-tabs__logo--tall">
+          </button><button type="button" class="hb-tabs__tab" data-testimonial="avalara">
+            <img src="/assets/logo-18.png" alt="Avalara">
+          </button>
+    </div>
+  </div>
+
+  <div class="hb-tabs__panels">
+    <div class="hb-tabs__panel active" data-slide="sendoso">
+          <p class="hb-tabs__quote">Kota is one of the best AI agents I&#39;ve used. I can create one bot and instantly generate variations for different teams and scorecards—saving hours of manual work.</p>
+          <img class="hb-tabs__avatar" src="/assets/Hannah-Udell.jpg" alt="Hannah Udell">
+          <p class="hb-tabs__name">Hannah Udell</p>
+          <p class="hb-tabs__title">GTM Enablement Manager</p>
+        </div><div class="hb-tabs__panel" data-slide="partsbase">
+          <p class="hb-tabs__quote">Kota helps me quickly pull exact quotes and examples from calls to explain feedback—making coaching more objective, saving time, and giving reps clear direction on how to improve.</p>
+          <img class="hb-tabs__avatar" src="/assets/Brandon-Buntine.jpg" alt="Brandon Buntine">
+          <p class="hb-tabs__name">Brandon Buntine</p>
+          <p class="hb-tabs__title">Sales Enablement Manager</p>
+        </div><div class="hb-tabs__panel" data-slide="avalara">
+          <p class="hb-tabs__quote">Kota is the best AI I&#39;ve seen for understanding queries and delivering structured insights. I know if I need something from Hyperbound, Kota has me covered—it&#39;s a game changer.</p>
+          <img class="hb-tabs__avatar" src="/assets/mike-marek.png" alt="Mike Marek">
+          <p class="hb-tabs__name">Mike Marek</p>
+          <p class="hb-tabs__title">Sr. Director, GTM Strategy, AI, &amp; Automation</p>
+        </div>
+  </div>
+</hb-tabs>
+  </section>
+  <section class="dk-wrap dk-section dk-resources" aria-labelledby="resources-title">
+  <div class="dk-eyebrow-ruled dk-section-intro">
+    <h2 id="resources-title" class="dk-section-title">Resources</h2>
+    <p>Explore articles, videos, and customer stories about Kota Activate.</p>
+  </div>
+  <ul class="dk-grid dk-grid-pair" role="list">
+    <li>
+          <a class="dk-card" href="/webinars/how-aes-actually-win-with-hyperbound">
+            <img src="/assets/AEsWebinar.png" alt="" width="2400" height="1350" loading="lazy">
+            <div>
+              <h3 class="dk-card-title">
+                Watch On Demand
+              </h3>
+              <p>See how our own AEs utilize Kota to help them close more deals.</p>
+            </div>
+            <span class="dk-card-action">Watch Now</span>
+          </a>
+        </li><li>
+          <a class="dk-card" href="/blog/kota-a-way-out-of-static-dashboards-and-into-actionable-insights">
+            <img src="/assets/KotaBlog.png" alt="" width="2600" height="1463" loading="lazy">
+            <div>
+              <h3 class="dk-card-title">
+                Feature Highlight
+              </h3>
+              <p>Read more about how Kota can turn scattered insights into clear answers and better execution.</p>
+            </div>
+            <span class="dk-card-action">Read Blog</span>
+          </a>
+        </li>
+  </ul>
+</section>
+  <section class="dk-wrap dk-section" aria-labelledby="dk-faq-title">
+  <div class="dk-faq">
+    <div>
+      <p class="dk-eyebrow">Questions</p>
+      <h2 id="dk-faq-title" class="dk-section-title">
+        Frequently Asked Questions
+      </h2>
+    </div>
+    <hb-accordion variant="dark">
+  <div class="hb-accordion__card is-first">
+        <h3 class="hb-accordion__heading">
+          <button type="button" class="hb-accordion__question" aria-expanded="false">
+            <span class="hb-accordion__question-text">
+              
+              How is this different from using ChatGPT or Claude with my transcripts?
+            </span>
+            <span class="hb-accordion__card-icon" aria-hidden="true" data-pagefind-ignore>
+                +
+              </span>
+          </button>
+        </h3>
+        <div class="hb-accordion__card-content">
+          <p>
+            Unlike generic AI tools, Kota is grounded in your actual sales data—so it can analyze performance, trends, and deals in context, not just summarize conversations.
+          </p>
+        </div>
+      </div><div class="hb-accordion__card">
+        <h3 class="hb-accordion__heading">
+          <button type="button" class="hb-accordion__question" aria-expanded="false">
+            <span class="hb-accordion__question-text">
+              
+              Can I trust the insights and analysis Kota provides?
+            </span>
+            <span class="hb-accordion__card-icon" aria-hidden="true" data-pagefind-ignore>
+                +
+              </span>
+          </button>
+        </h3>
+        <div class="hb-accordion__card-content">
+          <p>
+            Kota is built on your real call data, scorecards, and CRM inputs—so every insight is tied back to actual activity, not generated guesses.
+          </p>
+        </div>
+      </div><div class="hb-accordion__card">
+        <h3 class="hb-accordion__heading">
+          <button type="button" class="hb-accordion__question" aria-expanded="false">
+            <span class="hb-accordion__question-text">
+              
+              Is Kota just for analytics, or can it actually take action?
+            </span>
+            <span class="hb-accordion__card-icon" aria-hidden="true" data-pagefind-ignore>
+                +
+              </span>
+          </button>
+        </h3>
+        <div class="hb-accordion__card-content">
+          <p>
+            Kota doesn&#39;t just answer questions—it can identify gaps, generate reports, and create targeted coaching and roleplay scenarios automatically.
+          </p>
+        </div>
+      </div><div class="hb-accordion__card">
+        <h3 class="hb-accordion__heading">
+          <button type="button" class="hb-accordion__question" aria-expanded="false">
+            <span class="hb-accordion__question-text">
+              
+              Who is Kota designed for?
+            </span>
+            <span class="hb-accordion__card-icon" aria-hidden="true" data-pagefind-ignore>
+                +
+              </span>
+          </button>
+        </h3>
+        <div class="hb-accordion__card-content">
+          <p>
+            Kota supports reps, managers, enablement, and RevOps by delivering role-specific insights and actions tailored to how each team improves performance.
+          </p>
+        </div>
+      </div><div class="hb-accordion__card">
+        <h3 class="hb-accordion__heading">
+          <button type="button" class="hb-accordion__question" aria-expanded="false">
+            <span class="hb-accordion__question-text">
+              
+              We already have analytics in Gong—why do we need this?
+            </span>
+            <span class="hb-accordion__card-icon" aria-hidden="true" data-pagefind-ignore>
+                +
+              </span>
+          </button>
+        </h3>
+        <div class="hb-accordion__card-content">
+          <p>
+            Traditional analytics show what&#39;s happening in deals, while Kota explains why it&#39;s happening and what to do next to improve outcomes.
+          </p>
+        </div>
+      </div>
+</hb-accordion>
+  </div>
+</section>
+  
+
+
+    <section class="dk-closing" aria-labelledby="dk-closing-title" data-pagefind-ignore>
+          <img class="dk-closing-image" src="/assets/hyperbound-signal-study-threads-to-network.webp" alt="" width="1852" height="849" loading="lazy">
+          <div class="dk-wrap dk-closing-layout">
+            <h2 id="dk-closing-title" class="dk-section-title">
+                Ready to try our
+                <br>
+                AI roleplay?
+              </h2>
+            <div class="dk-actions">
+              <a class="dk-button dk-button-primary" href="/book-a-demo">
+                Book a Demo
+                <svg class="dk-icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M5 12h14m-6-6 6 6-6 6"></path>
+                </svg>
+              </a>
+              <a class="dk-button dk-button-secondary" href="https://app.hyperbound.ai/buyers?invite=hyperbound-website" target="_blank" rel="noopener noreferrer">
+                Try Free Demo
+                
+                <svg class="dk-icon" viewBox="0 0 24 24" role="img" aria-label="(opens in a new tab)">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </section>
+  </main>
+
+  <!--
+  Hoisted by Astro to the end of <head>, after every page-level block — see the
+  note in Nav.astro. The footer font-size quartet (`.footer .div-block-124`,
+  `.footer .link-block-4`, `.footer .text-size-tiny`, `.footer
+  .text-weight-medium`) deliberately does NOT live here: only the dark variant
+  sets it (footer-dark.css, for every dark page), and the light pages keep the
+  Webflow sizes, which hoisting it here would shrink.
+-->
+
+
+<!-- ===== FOOTER ===== -->
+<style>/*
+ * The footer's dark variant, `<Footer variant="dark" />` (the dark pages). It is
+ * inlined by Footer.astro only where the variant is used, rather than living
+ * in its hoisted `<style is:global>`, so the other pages do not download it.
+ * The palette is the dark --home-* tokens in src/styles/tokens.css.
+ */
+.footer.footer--dark {
+  --footer-ground: var(--home-paper);
+  --footer-hover: var(--home-button-hover);
+  --footer-line: var(--home-line);
+  --footer-ink: var(--home-ink);
+  --footer-ink-hover: var(--white);
+  --footer-body: var(--home-body);
+  --footer-muted: var(--home-muted);
+
+  background-color: var(--footer-ground);
+  color: var(--footer-body);
+}
+
+.footer--dark .image-32 {
+  filter: brightness(0) invert(1);
+}
+
+.footer--dark .text-weight-medium {
+  color: var(--footer-ink);
+}
+
+.footer--dark .link-block-4 {
+  color: var(--footer-body);
+}
+
+.footer--dark .link-block-4:hover {
+  color: var(--footer-ink-hover);
+}
+
+.footer--dark .text-size-tiny {
+  color: var(--footer-muted);
+}
+
+/* The certifications wrap rather than run into the links beside them. */
+.footer--dark .div-block-123 {
+  flex-wrap: wrap;
+}
+
+/* The logo and certifications stay on the left and every link group sits to
+   their right, in the markup's order: three columns of two rows. Webflow's
+   own grid (hyperbound.css) is four columns that put Legal under the logo.
+   Below 768px its rules stack the logo above the groups again. */
+@media screen and (min-width: 768px) {
+  .footer--dark .div-block-121 {
+    grid-template-columns: minmax(0, 1.3fr) repeat(3, minmax(0, 1fr));
+    column-gap: 2rem;
+    row-gap: 3rem;
+    padding-right: 0;
+  }
+
+  .footer--dark .div-block-122 {
+    grid-row: span 2;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .footer--dark .div-block-121 {
+    grid-template-columns: minmax(0, 1fr) repeat(2, minmax(0, 1fr));
+  }
+
+  .footer--dark .div-block-122 {
+    grid-row: span 3;
+  }
+}
+
+/* The dark footer's type sits a size down from the light footer's, and the
+   logo and certifications stack to the left on small phones: the adjustments
+   the homepage carried in its own head, kept here so every dark page sets its
+   footer the same way. */
+.footer--dark .div-block-124,
+.footer--dark .link-block-4,
+.footer--dark .text-weight-medium {
+  font-size: 0.75rem;
+}
+
+.footer--dark .text-size-tiny {
+  font-size: 0.625rem;
+}
+
+@media screen and (max-width: 479px) {
+  .footer--dark .div-block-124,
+  .footer--dark .link-block-4 {
+    font-size: 0.7rem;
+  }
+
+  .footer--dark .text-size-tiny {
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .footer--dark .div-block-122 {
+    align-items: flex-start;
+    gap: 2.25rem;
+  }
+
+  .footer--dark .div-block-123 {
+    justify-content: flex-start;
+  }
+
+  .footer--dark .image-33 {
+    height: 2.25rem;
+  }
+}
+
+/* The links are that small, so each gets an invisible hit area at least 24px
+   tall. */
+.footer--dark .link-block-4 {
+  position: relative;
+}
+
+.footer--dark .link-block-4::after {
+  content: '';
+  position: absolute;
+  inset: -4px -2px;
+}
+
+/* The dark homepage closes on a hairline above the copyright row. */
+.footer--dark .div-block-125 {
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--footer-line);
+}
+
+.footer--dark .link-block-5 {
+  color: var(--footer-ink);
+}
+
+.footer--dark .link-block-5:hover {
+  background-color: var(--footer-hover);
+}
+
+/* Three of the icons spell the light ink as a fill attribute, which any CSS
+   `fill` outranks. The Y Combinator mark's "Y" is white on that ink, so it
+   takes the ground. It is picked by its link because the other icons' white
+   paths are luminance masks, which must stay white. */
+.footer--dark .link-block-5 [fill='#181D27'] {
+  fill: currentColor;
+}
+
+.footer--dark a[href*='ycombinator'] path[fill='white'] {
+  fill: var(--footer-ground);
+}
+
+.footer--dark a:focus-visible {
+  outline: 2px solid var(--footer-ink);
+  outline-offset: 2px;
+}
+</style>
+<div class="footer footer--dark" data-pagefind-ignore>
+  <div class="padding-global">
+    <div class="container-large">
+      <div class="div-block-120">
+        <div class="div-block-121">
+          <div id="w-node-_900a563d-8b74-da0e-5810-eb057c27b405-d4e67315" class="div-block-122">
+            <a href="/" class="link-block-3 w-inline-block"><img src="/images/Vector.svg" loading="lazy" alt="Hyperbound" class="image-32"></a>
+            <div class="div-block-123">
+              <img src="/images/SOC-Logo.png" loading="lazy" alt="SOC 2" class="image-33"><img src="/images/Vanta_Compliance_GDPR-2x-2.png" loading="lazy" alt="GDPR" class="image-33"><img src="/images/Frame-1073713859-new.png" loading="lazy" alt="G2 Leader" class="image-33"><img src="/images/Frame-1073713867-new.png" loading="lazy" alt="G2 Champion" class="image-33">
+            </div>
+          </div>
+          <div class="div-block-124">
+            <p class="text-weight-medium">Company</p>
+            <a href="/pricing" class="link-block-4 w-inline-block">
+              <div>Pricing</div>
+            </a>
+            <a href="https://support.hyperbound.ai/" class="link-block-4 w-inline-block">
+              <div>Help Center</div>
+            </a>
+            <a href="/careers" class="link-block-4 w-inline-block">
+              <div>Careers</div>
+            </a>
+            <a href="/about-us" class="link-block-4 w-inline-block">
+              <div>About Us</div>
+            </a>
+            <a href="/enterprise" class="link-block-4 w-inline-block">
+              <div>Enterprise</div>
+            </a>
+          </div>
+          <div class="div-block-124">
+            <p class="text-weight-medium">Product</p>
+            <a href="/product/hyperbound-practice" class="link-block-4 w-inline-block">
+              <div>Hyperbound Practice</div>
+            </a>
+            <a href="/product/hyperbound-perform" class="link-block-4 w-inline-block">
+              <div>Hyperbound Perform</div>
+            </a>
+            <a href="/product/kota-activate" class="link-block-4 w-inline-block">
+              <div>Kota Activate</div>
+            </a>
+          </div>
+          <div class="div-block-124">
+            <a href="/uses" class="link-block-4 w-inline-block">
+              <p class="text-weight-medium">Use Cases</p>
+            </a>
+            <a href="/use-cases/onboarding-and-certifications" class="link-block-4 w-inline-block">
+              <div>Onboarding &amp; Certifications</div>
+            </a>
+            <a href="/use-cases/change-management" class="link-block-4 w-inline-block">
+              <div>Everboarding &amp; Change Management</div>
+            </a>
+            <a href="/use-cases/qa-deal-assessment" class="link-block-4 w-inline-block">
+              <div>QA &amp; Deal Assessment</div>
+            </a>
+            <a href="/use-cases/pre-call-prep" class="link-block-4 w-inline-block">
+              <div>Pre-Call Prep</div>
+            </a>
+            <a href="/use-cases/hiring" class="link-block-4 w-inline-block">
+              <div>Hiring</div>
+            </a>
+          </div>
+          <div class="div-block-124">
+            <p class="text-weight-medium">Legal</p>
+            <a href="https://security.hyperbound.ai/" class="link-block-4 w-inline-block">
+              <div>Security</div>
+            </a>
+            <a href="/privacy-policy" class="link-block-4 w-inline-block">
+              <div>Privacy Policy</div>
+            </a>
+            <a href="/dsar-form" class="link-block-4 w-inline-block">
+              <div>Data Subject Access Request Form</div>
+            </a>
+            <a href="/dsar-form" class="link-block-4 w-inline-block">
+              <div>Do not sell or share my personal information</div>
+            </a>
+            <a href="/dsar-form" class="link-block-4 w-inline-block">
+              <div>Limit the use of my sensitive personal information</div>
+            </a>
+          </div>
+          <div class="div-block-124">
+            <p class="text-weight-medium">Resources</p>
+            <a href="/demos" class="link-block-4 w-inline-block">
+              <div>Demos</div>
+            </a>
+            <a href="/blog" class="link-block-4 w-inline-block">
+              <div>Blog</div>
+            </a>
+            <a href="/change-log" class="link-block-4 w-inline-block">
+              <div>Change Log</div>
+            </a>
+            <a href="/competitions" class="link-block-4 w-inline-block">
+              <div>Competitions</div>
+            </a>
+            <a href="/case-studies" class="link-block-4 w-inline-block">
+              <div>Customer Case Studies</div>
+            </a>
+            <a href="/integrations" class="link-block-4 w-inline-block">
+              <div>Integrations</div>
+            </a>
+            <a href="/partners" class="link-block-4 w-inline-block">
+              <div>Partners</div>
+            </a>
+            <a href="/wall-of-love" class="link-block-4 w-inline-block">
+              <div>Wall of Love</div>
+            </a>
+          </div>
+          <div class="div-block-124">
+            <p class="text-weight-medium">Industries</p>
+            <a href="/industries/b2b-saas-software" class="link-block-4 w-inline-block">
+              <div>B2B SaaS Software</div>
+            </a>
+            <a href="/industries/b2b-sales-trainers-agencies" class="link-block-4 w-inline-block">
+              <div>B2B Sales Trainers &amp; Agencies</div>
+            </a>
+            <a href="/industries/b2b-call-centers-outsourced-agencies" class="link-block-4 w-inline-block">
+              <div>B2B Call Centers &amp; Outsourced Agencies</div>
+            </a>
+            <a href="/industries/banking-financial-advisors" class="link-block-4 w-inline-block">
+              <div>Banking &amp; Financial Advisors</div>
+            </a>
+          </div>
+        </div>
+        <div class="div-block-125">
+          <p class="text-size-tiny">
+            &copy; 2026 IntelligentSystems Corp. All rights reserved.
+          </p>
+          <div class="div-block-126">
+            <a href="https://www.linkedin.com/company/hyperbound-ai" aria-label="Hyperbound on LinkedIn" target="_blank" rel="noopener noreferrer" class="link-block-5 w-inline-block">
+              <div class="code-embed-5 w-embed">
+                <svg width="100%" height="100%" viewbox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g opacity="0.85">
+                    <mask id="mask0_431_24229" style="mask-type: luminance" maskunits="userSpaceOnUse" x="10" y="10" width="16" height="15">
+                      <path d="M26 10H10V25H26V10Z" fill="white"></path>
+                    </mask>
+                    <g mask="url(#mask0_431_24229)">
+                      <path d="M10 11.7424C10 11.2374 10.1802 10.8207 10.5405 10.4924C10.9009 10.1641 11.3694 10 11.9459 10C12.5122 10 12.9704 10.1616 13.3205 10.4848C13.6808 10.8182 13.861 11.2525 13.861 11.7879C13.861 12.2727 13.686 12.6768 13.3359 13C12.9756 13.3333 12.5019 13.5 11.9151 13.5H11.8996C11.3333 13.5 10.8752 13.3333 10.5251 13C10.175 12.6667 10 12.2475 10 11.7424ZM10.2008 25V14.8788H13.6293V25H10.2008ZM15.529 25H18.9575V19.3485C18.9575 18.9949 18.9987 18.7222 19.0811 18.5303C19.2252 18.1869 19.444 17.8964 19.7375 17.6591C20.0309 17.4217 20.399 17.303 20.8417 17.303C21.9949 17.303 22.5714 18.0656 22.5714 19.5909V25H26V19.197C26 17.702 25.6396 16.5682 24.9189 15.7954C24.1982 15.0227 23.2458 14.6364 22.0618 14.6364C20.7336 14.6364 19.6988 15.197 18.9575 16.3182V16.3485H18.9421L18.9575 16.3182V14.8788H15.529C15.5495 15.202 15.5598 16.2071 15.5598 17.8939C15.5598 19.5808 15.5495 21.9495 15.529 25Z" fill="currentcolor"></path>
+                    </g>
+                  </g>
+                </svg>
+              </div>
+            </a>
+            <a href="/cdn-cgi/l/email-protection#aec8c1dbc0cacbdcddeec6d7decbdcccc1dbc0ca80cfc7" aria-label="Email the founders" class="link-block-5 w-inline-block">
+              <div class="code-embed-5 w-embed">
+                <svg width="100%" height="100%" viewbox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g opacity="0.85">
+                    <mask id="mask0_431_24238" style="mask-type: luminance" maskunits="userSpaceOnUse" x="8" y="7" width="21" height="21">
+                      <path d="M28.1094 7.96875H8.10938V27.9688H28.1094V7.96875Z" fill="white"></path>
+                    </mask>
+                    <g mask="url(#mask0_431_24238)">
+                      <path d="M11.4401 11.3008H24.7734C25.6901 11.3008 26.4401 12.0508 26.4401 12.9674V22.9674C26.4401 23.8841 25.6901 24.6341 24.7734 24.6341H11.4401C10.5234 24.6341 9.77344 23.8841 9.77344 22.9674V12.9674C9.77344 12.0508 10.5234 11.3008 11.4401 11.3008Z" stroke="currentcolor" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M26.4401 12.9688L18.1068 18.802L9.77344 12.9688" stroke="currentcolor" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </g>
+                  </g>
+                </svg>
+              </div>
+            </a>
+            <a href="https://x.com/HyperboundAI" aria-label="Hyperbound on X" target="_blank" rel="noopener noreferrer" class="link-block-5 w-inline-block">
+              <div class="code-embed-5 w-embed">
+                <svg width="100%" height="100%" viewbox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g opacity="0.85">
+                    <path d="M9.04389 9.74219L15.9935 19.0345L9 26.5895H10.574L16.6967 19.9749L21.6438 26.5895H27L19.6594 16.7745L26.1689 9.74219H24.5949L18.9561 15.834L14.4001 9.74219H9.04389ZM11.3585 10.9016H13.8192L24.685 25.4299H22.2244L11.3585 10.9016Z" fill="#181D27"></path>
+                  </g>
+                </svg>
+              </div>
+            </a>
+            <a href="https://www.ycombinator.com/companies/hyperbound" aria-label="Hyperbound on Y Combinator" target="_blank" rel="noopener noreferrer" class="link-block-5 w-inline-block">
+              <div class="code-embed-5 w-embed">
+                <svg width="100%" height="100%" viewbox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g opacity="0.85">
+                    <path d="M9 13C9 10.7909 10.7909 9 13 9H22.7129C24.922 9 26.7129 10.7909 26.7129 13V22.8454C26.7129 25.0545 24.922 26.8454 22.7129 26.8454H13C10.7909 26.8454 9 25.0545 9 22.8454V13Z" fill="#181D27"></path>
+                    <path d="M14.2578 13.4466C14.3314 13.4319 14.4198 13.4025 14.4934 13.4025C14.8762 13.3877 15.259 13.4172 15.6419 13.4319C15.7008 13.4172 15.7302 13.4761 15.7449 13.5202C16.3192 14.7129 16.8934 15.9202 17.4824 17.1129C17.6149 17.3632 17.7179 17.6135 17.8652 17.8491C17.983 17.6577 18.086 17.4515 18.1891 17.2454C18.8517 15.9644 19.4701 14.6834 20.1179 13.4025C20.5449 13.4172 20.9719 13.373 21.3989 13.4466C21.3253 13.6969 21.1781 13.9031 21.075 14.1386C20.221 15.773 19.3523 17.4074 18.4983 19.0417C18.4689 19.1006 18.4541 19.1742 18.4541 19.2478C18.4541 20.411 18.4541 21.589 18.4541 22.7521C18.0419 22.7521 17.6296 22.7521 17.2173 22.7521C17.2173 21.6184 17.2173 20.4699 17.2173 19.3362C17.2173 19.2184 17.232 19.0859 17.1584 18.9681C16.3633 17.481 15.583 15.9939 14.7879 14.492C14.6112 14.1386 14.4198 13.8 14.2578 13.4466Z" fill="white"></path>
+                  </g>
+                </svg>
+              </div>
+            </a>
+            <a href="https://www.instagram.com/hyperbound.ai/" aria-label="Hyperbound on Instagram" target="_blank" rel="noopener noreferrer" class="link-block-5 w-inline-block">
+              <div class="code-embed-5 w-embed">
+                <svg width="100%" height="100%" viewbox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g opacity="0.85">
+                    <mask id="mask0_431_24259" style="mask-type: luminance" maskunits="userSpaceOnUse" x="9" y="9" width="19" height="19">
+                      <path d="M27.7904 9H9V27.7904H27.7904V9Z" fill="white"></path>
+                    </mask>
+                    <g mask="url(#mask0_431_24259)">
+                      <path d="M18.3952 10.6929C20.9038 10.6929 21.201 10.7024 22.1916 10.7476C23.1077 10.7894 23.6051 10.9425 23.9362 11.0711C24.3747 11.2415 24.6878 11.4452 25.0165 11.7739C25.3453 12.1027 25.5489 12.4157 25.7193 12.8542C25.848 13.1853 26.001 13.6828 26.0428 14.5987C26.088 15.5895 26.0976 15.8866 26.0976 18.3952C26.0976 20.9039 26.088 21.201 26.0428 22.1917C26.001 23.1077 25.848 23.6052 25.7193 23.9363C25.5489 24.3748 25.3453 24.6878 25.0165 25.0165C24.6878 25.3453 24.3747 25.5489 23.9362 25.7193C23.6051 25.848 23.1077 26.001 22.1916 26.0429C21.2011 26.0881 20.904 26.0976 18.3952 26.0976C15.8864 26.0976 15.5893 26.0881 14.5987 26.0429C13.6827 26.001 13.1852 25.848 12.8542 25.7193C12.4156 25.5489 12.1026 25.3453 11.7739 25.0165C11.4451 24.6878 11.2415 24.3748 11.0711 23.9363C10.9424 23.6052 10.7894 23.1077 10.7476 22.1917C10.7024 21.201 10.6928 20.9039 10.6928 18.3952C10.6928 15.8866 10.7024 15.5895 10.7476 14.5988C10.7894 13.6828 10.9424 13.1853 11.0711 12.8542C11.2415 12.4157 11.4451 12.1027 11.7739 11.7739C12.1026 11.4452 12.4156 11.2415 12.8542 11.0711C13.1852 10.9425 13.6827 10.7894 14.5987 10.7476C15.5894 10.7024 15.8866 10.6929 18.3952 10.6929ZM18.3952 9C15.8436 9 15.5237 9.01082 14.5216 9.05654C13.5215 9.10219 12.8386 9.26099 12.241 9.49326C11.6231 9.73336 11.0992 10.0546 10.5769 10.5769C10.0546 11.0992 9.73332 11.6232 9.49322 12.241C9.26095 12.8386 9.10215 13.5216 9.0565 14.5216C9.01078 15.5237 9 15.8436 9 18.3952C9 20.9468 9.01078 21.2668 9.0565 22.2688C9.10215 23.2689 9.26095 23.9518 9.49322 24.5495C9.73332 25.1673 10.0546 25.6912 10.5769 26.2135C11.0992 26.7359 11.6231 27.0571 12.241 27.2972C12.8386 27.5295 13.5215 27.6883 14.5216 27.7339C15.5237 27.7797 15.8436 27.7904 18.3952 27.7904C20.9468 27.7904 21.2667 27.7797 22.2688 27.7339C23.2689 27.6883 23.9518 27.5295 24.5494 27.2972C25.1673 27.0571 25.6912 26.7359 26.2135 26.2135C26.7358 25.6912 27.0571 25.1673 27.2972 24.5495C27.5294 23.9518 27.6882 23.2689 27.7339 22.2688C27.7796 21.2668 27.7904 20.9468 27.7904 18.3952C27.7904 15.8436 27.7796 15.5237 27.7339 14.5216C27.6882 13.5216 27.5294 12.8386 27.2972 12.241C27.0571 11.6232 26.7358 11.0992 26.2135 10.5769C25.6912 10.0546 25.1673 9.73336 24.5494 9.49326C23.9518 9.26099 23.2689 9.10219 22.2688 9.05654C21.2667 9.01082 20.9468 9 18.3952 9ZM18.3952 13.5706C15.7307 13.5706 13.5706 15.7307 13.5706 18.3952C13.5706 21.0598 15.7307 23.2198 18.3952 23.2198C21.0597 23.2198 23.2198 21.0598 23.2198 18.3952C23.2198 15.7307 21.0597 13.5706 18.3952 13.5706ZM18.3952 21.527C16.6656 21.527 15.2634 20.1248 15.2634 18.3952C15.2634 16.6656 16.6656 15.2635 18.3952 15.2635C20.1248 15.2635 21.527 16.6656 21.527 18.3952C21.527 20.1248 20.1248 21.527 18.3952 21.527ZM24.5378 13.38C24.5378 14.0027 24.0331 14.5075 23.4104 14.5075C22.7877 14.5075 22.2829 14.0027 22.2829 13.38C22.2829 12.7574 22.7877 12.2526 23.4104 12.2526C24.0331 12.2526 24.5378 12.7574 24.5378 13.38Z" fill="#181D27"></path>
+                    </g>
+                  </g>
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    
+
+    
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="module" src="/_astro/SiteScript.astro_astro_type_script_index_0_lang.C-n3oMY4.js"></script>
+
+    
+    
+    <script type="module">var e={rescue:{start:`Deal stuck in stage`,cond1:[`Analyze deal +`,`recommend`],cond2:[`Score urgency`,`high / med / low`],action:[`Slack ping to`,`rep + manager`]},crm:{start:`Real call ends`,cond1:[`Extract MEDDPICC`,`fields`],cond2:[`Match to CRM`,`opportunity`],action:[`Auto-fill`,`Salesforce`]},practice:{start:`Low objection scores`,cond1:[`Identify skill`,`gap pattern`],cond2:[`Select roleplay`,`module`],action:[`Assign to rep +`,`Slack nudge`]}},t=e=>`Trigger: ${e.start}. Condition: ${e.cond1.join(` `)}. Condition: ${e.cond2.join(` `)}. Action: ${e.action.join(` `)}.`,n=class extends HTMLElement{connectedCallback(){if(!this.initialised){this.initialised=!0,this.buttons=Array.from(this.querySelectorAll(`[data-flow]`)),this.drawings=Array.from(this.querySelectorAll(`.hb-automations__drawing`));for(let e of this.buttons)e.addEventListener(`click`,()=>this.show(e));if(`IntersectionObserver`in window){for(let e of this.drawings)e.classList.add(`is-waiting`);this.observer=new IntersectionObserver(e=>{e.some(e=>e.isIntersecting)&&this.play()},{rootMargin:`0px 0px -25% 0px`}),this.observer.observe(this.querySelector(`.hb-automations__panel`))}}}show(n){let r=e[n.dataset.flow];if(!(!r||n.getAttribute(`aria-pressed`)===`true`)){for(let e of this.buttons)e.setAttribute(`aria-pressed`,String(e===n));for(let e of this.querySelectorAll(`[data-line]`)){let[t,n]=e.dataset.line.split(`.`);e.textContent=n?r[t][Number(n)]:r[t]}for(let e of this.drawings)e.setAttribute(`aria-label`,t(r));this.play()}}play(){this.observer?.disconnect();for(let e of this.drawings)e.classList.remove(`is-waiting`,`is-playing`),e.getBoundingClientRect(),e.classList.add(`is-playing`)}};customElements.define(`hb-automations`,n);</script>
+  
+
+    <!--
+      HubSpot: the embed's `hubspotutk` token ties the visit to a HubSpot
+      contact record for sales follow-up, so it takes `advertising` on the same
+      identification-not-measurement reasoning as Warmly and Vector. Gated with
+      the same manual-blocking contract as every tag in Analytics.astro. The
+      chat widget rides on this loader, so chat does not appear until the
+      visitor accepts advertising.
+    -->
+    <script type="text/plain" data-categories="advertising" id="hs-script-loader" async defer src="https://js-na1.hs-scripts.com/41794903.js"></script></body>
+</html>
