@@ -1,0 +1,60 @@
+Company,CTA Location,Exact CTA,Destination,Conversion Type,Source URL,Verification
+Attention,Navigation,Get Started,https://www.attention.com/book,"Booking page — intent unverified (page captured: title 'Get started with Attention', form + testimonial; post-submit journey not verified)",https://www.attention.com/,Verified from HTML link; rendered in browser capture; /book page captured without submitting
+Attention,Hero,Get started,(form submit),Email lead capture — post-submit journey unverified,https://www.attention.com/,Form (placeholder 'What's your work email?' + button) verified visually in rendered capture; form submit
+Attention,Mid-page (AI Sales Agents module),Discover AI Sales Agents,https://www.attention.com/product/agents-directory,Content (product page),https://www.attention.com/,Verified from HTML link; rendered in browser capture
+Attention,Mid-page (MCP Server module),Discover MCP Server,https://docs.attention.com/mcp/overview,Content (docs),https://www.attention.com/,Verified from HTML link
+Attention,Mid-page (Botless Recording module),Discover Botless Recording,https://www.attention.com/product/call-recordings-and-transcription,Content (product page),https://www.attention.com/,Verified from HTML link
+Attention,Mid-page (Forecasting module),Discover Forecasting,https://www.attention.com/product/reporting-and-forecasting,Content (product page),https://www.attention.com/,Verified from HTML link; rendered in browser capture
+Attention,Mid-page (Coaching module),Discover AI Scorecards,https://www.attention.com/product/ai-coaching-scorecards,Content (product page),https://www.attention.com/,Verified from HTML link; rendered in browser capture
+Attention,Persona tabs (use-case section),Attention for Revenue Teams,https://www.attention.com/solutions/revenue-teams,Content (solution page),https://www.attention.com/,Verified via rendered accessibility tree
+Attention,Persona tabs (use-case section),Attention for Sales Leaders,https://www.attention.com/solutions/sales-leaders,Content (solution page),https://www.attention.com/,Verified via rendered accessibility tree
+Attention,Persona tabs (use-case section),Attention for Sales Reps,https://www.attention.com/solutions/sales-reps,Content (solution page),https://www.attention.com/,Verified via rendered accessibility tree
+Attention,End of differentiation section (after comparison table),Get started,(form submit),Email lead capture — post-submit journey unverified,https://www.attention.com/,"Form button verified from HTML (2nd of 3 form buttons); supporting text 'Connect your stack in minutes. No implementation project. Test Attention, upgrade when it's working.' verified from HTML"
+Attention,Integrations section,Request it.,https://www.attention.com/product/book-a-demo,Sales-assist (demo),https://www.attention.com/,Verified from HTML link
+Attention,Final CTA section,Get started,(form submit),Email lead capture — post-submit journey unverified,https://www.attention.com/,"Form (placeholder + button) verified visually in rendered capture (Oct 19, 2026); form submit"
+Attention,Sales-leaders page (hero),Get started,https://www.attention.com/book,Email lead capture — post-submit journey unverified,https://www.attention.com/solutions/sales-leaders,Verified from sales-leaders page HTML link
+Attention,Sales-leaders page (mid-page),Book a call,https://www.attention.com/product/book-a-demo,Sales-assist,https://www.attention.com/solutions/sales-leaders,Verified from sales-leaders page HTML link
+Backstory,Navigation,Guide me,https://www.backstory.ai/ask-now,AI-guided entry (destination page not captured),https://www.backstory.ai/,Verified from HTML link
+Backstory,Navigation,Book a demo,https://www.backstory.ai/get-demo,Sales-assist (demo),https://www.backstory.ai/,Verified from HTML link; rendered in browser capture
+Backstory,Navigation,Sign in,https://app.people.ai/login/,App login (People.ai domain),https://www.backstory.ai/,Verified from HTML link
+Backstory,Announcement banner,Take our quiz,https://www.backstory.ai/revenue-assessment,Self-serve assessment,https://www.backstory.ai/,Verified from HTML link
+Backstory,Hero primary,See how it works,# (page anchor),On-page anchor (beyond-anchor destination not verified),https://www.backstory.ai/,Verified from HTML link (href '#')
+Backstory,Hero secondary,Schedule a demo,https://www.backstory.ai/get-demo,Sales-assist (demo),https://www.backstory.ai/,Verified from HTML link; rendered in browser capture
+Backstory,Results section,Explore all case studies,https://www.backstory.ai/customers,Content (case studies),https://www.backstory.ai/,Verified from HTML link
+Backstory,AVEVA feature,Read More,https://www.backstory.ai/newsroom/how-aveva-uses-backstory-to-optimize-its-sales-cycle,Content (case study),https://www.backstory.ai/,Verified from HTML link
+Backstory,After FAQ,Have more questions? Book a demo,https://www.backstory.ai/get-demo,Sales-assist (demo),https://www.backstory.ai/,Verified from HTML link
+Backstory,Final CTA section,Read AI Buying Guide,https://www.backstory.ai/resource/ai-revenue-intelligence-buyers-guide,Content (guide),https://www.backstory.ai/,Verified from HTML link; rendered in browser capture
+Backstory,CRO page (hero),Schedule a demo,https://www.backstory.ai/get-demo,Sales-assist (demo),https://www.backstory.ai/role/executives,Verified from CRO-page HTML link
+Outreach,Navigation,Get a demo,https://www.outreach.ai/request-demo,Sales-assist (demo),https://www.outreach.ai/,Verified from HTML link; rendered in browser capture
+Outreach,Navigation,Sign in,https://accounts.outreach.io/users/sign_in,App login (outreach.io domain),https://www.outreach.ai/,Verified from HTML link
+Outreach,Navigation,Pricing,https://www.outreach.ai/pricing,Pricing transparency,https://www.outreach.ai/,Verified from HTML link
+Outreach,Hero primary,Request a demo,https://www.outreach.ai/request-demo,Sales-assist (demo),https://www.outreach.ai/,Verified from HTML link; rendered in accessibility tree
+Outreach,Hero secondary,Explore AI Agents,https://www.outreach.ai/ai-agents,Content (AI agents page),https://www.outreach.ai/,Verified from HTML link; rendered in accessibility tree
+Outreach,Hero video play button,(play icon; no text label),https://www.outreach.ai/# (page anchor),Video (behavior not verified),https://www.outreach.ai/,Play button verified visually in browser capture; link href is a page anchor; video destination not verified
+Outreach,Case-study block,See the full Agentic AI platform,https://www.outreach.ai/platform,Content (platform),https://www.outreach.ai/,Verified from HTML link
+Outreach,Case-study block,Read Customer Stories,https://www.outreach.ai/resources/stories,Content (stories library),https://www.outreach.ai/,Verified from HTML link
+Outreach,Capabilities section,Learn more about AI Powered workflows,https://www.outreach.ai/platform/sales-ai,Content (sales AI),https://www.outreach.ai/,Verified from HTML link
+Outreach,Final CTA section,Request a demo,https://www.outreach.ai/request-demo,Sales-assist (demo),https://www.outreach.ai/,Verified from HTML link
+Outreach,Final CTA section,View pricing info,https://www.outreach.ai/pricing,Pricing transparency,https://www.outreach.ai/,Verified from HTML link
+Outreach,Forecast-plan page (hero),Get a demo,https://www.outreach.ai/request-demo,Sales-assist (demo),https://www.outreach.ai/solutions/forecast-plan,Verified from forecast-plan HTML link
+Outreach,Forecast-plan page (hero),Self-guided tour,#tour (on-page anchor),Self-serve tour,https://www.outreach.ai/solutions/forecast-plan,Verified from forecast-plan HTML link (href #tour)
+Backstory,Solutions card: Revenue Decisions,Learn More,https://www.backstory.ai/solutions/revenue-decisions,Content (solution page),https://www.backstory.ai/,Verified from HTML link (same anchor as label)
+Backstory,Solutions card: Pipeline Health,Learn More,https://www.backstory.ai/solutions/pipeline-health,Content (solution page),https://www.backstory.ai/,Verified from HTML link
+Backstory,Solutions card: Account Strategy,Learn More,https://www.backstory.ai/solutions/account-strategy,Content (solution page),https://www.backstory.ai/,Verified from HTML link
+Backstory,Solutions card: Opportunity Qualification,Learn More,https://www.backstory.ai/solutions/opportunity-qualification,Content (solution page),https://www.backstory.ai/,Verified from HTML link
+Backstory,Persona card: Revenue Operations,Explore More,https://www.backstory.ai/role/revenue-operations,Content (role page),https://www.backstory.ai/,Verified from HTML link
+Backstory,Persona card: Sales Leader,Explore More,https://www.backstory.ai/role/sales-leader,Content (role page),https://www.backstory.ai/,Verified from HTML link
+Backstory,Persona card: Chief Revenue Officer,Explore More,https://www.backstory.ai/role/executives,Content (role page),https://www.backstory.ai/,Verified from HTML link
+Backstory,Final CTA section,Watch Instant Demo,https://www.backstory.ai/newsroom/backstory-uses-ai-to-bring-greater-accuracy-to-sales-forecasting,Content (demo video/article),https://www.backstory.ai/,Verified from HTML link (full URL); rendered in browser capture
+Backstory,CRO page (hero),Take The Tour,#Storylane (on-page anchor to embedded demo),Self-serve interactive demo,https://www.backstory.ai/role/executives,Verified from page HTML (href '#Storylane')
+Outreach,Innovation card: Outreach MCP,More about this capability,https://www.outreach.ai/ai-agents/mcp,Content (product page),https://www.outreach.ai/,Verified from HTML link
+Outreach,Innovation card: Outreach Omni,Learn more,https://www.outreach.ai/ai-agents/omni,Content (product page),https://www.outreach.ai/,Verified from HTML link
+Outreach,Innovation card: Agent Studio,Learn more,https://www.outreach.ai/ai-agents/agent-studio,Content (product page),https://www.outreach.ai/,Verified from HTML link
+Outreach,Innovation card: Knowledge,Learn more,https://www.outreach.ai/ai-agents,Content (product page),https://www.outreach.ai/,Verified from HTML link
+Outreach,Innovation card: Meeting Prep Agent,Learn more,https://www.outreach.ai/ai-agents/meeting-prep-agent,Content (product page),https://www.outreach.ai/,Verified from HTML link
+Outreach,Innovation card: AI Topics Explorer,Learn more,https://www.outreach.ai/ai-agents,Content (product page),https://www.outreach.ai/,Verified from HTML link
+Outreach,Case-study card: Omniplex,Read the story,https://www.outreach.ai/resources/stories/omniplex-learning-scaling-sales,Content (case study),https://www.outreach.ai/,Verified from HTML link
+Outreach,Case-study card: Siemens,Read the story,https://www.outreach.ai/resources/stories/siemens-seller-action-hub,Content (case study),https://www.outreach.ai/,Verified from HTML link
+Outreach,Trust section: Security,View security,https://www.outreach.ai/platform/security,Content (trust page),https://www.outreach.ai/,Verified from HTML link
+Outreach,Trust section: Privacy,View privacy,https://www.outreach.ai/platform/privacy,Content (trust page),https://www.outreach.ai/,Verified from HTML link
+Outreach,Trust section: Governance,View governance,https://www.outreach.ai/platform/governance,Content (trust page),https://www.outreach.ai/,Verified from HTML link
