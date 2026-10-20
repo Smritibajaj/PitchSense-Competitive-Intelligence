@@ -16,7 +16,7 @@ for _d in sorted(os.listdir(os.path.join(WS, B))):
     if _m and int(_m.group(1)) >= 4:
         LIGHT[int(_m.group(1))] = f'{B}{_d}/website_messaging_batch{int(_m.group(1))}.csv'
 # Full-format tables A–F: batches 1–3 natively, plus every light batch that carries its own table_*.csv set.
-# All 50 rows of the combined table still come from the light CSVs (4–11) or are derived from batches 1–3.
+# All 50 rows of the combined table still come from the light CSVs (4–13) or are derived from batches 1–3.
 DEEP = FULL + [(b, os.path.dirname(f)) for b, f in LIGHT.items()
                if os.path.exists(os.path.join(WS, os.path.dirname(f), 'table_A_hero_comparison.csv'))]
 
@@ -91,7 +91,7 @@ def derive_full_rows():
     out = []
     for b, d in FULL:
         # Positioning is exact homepage text from homepage_fields.csv (which also records verbatim ICP/Pain quotes);
-        # ICP and Pain Point are analyst summaries from Tables A and C, the same kind as batches 4–11's analyst_fields.csv
+        # ICP and Pain Point are analyst summaries from Tables A and C, the same kind as batches 4–13's analyst_fields.csv
         hf = {r['Company']: r for r in rd(f'{d}/homepage_fields.csv')}
         A = [r for r in fullA if r['Batch'] == b]
         Bt = [r for r in fullB if r['Batch'] == b]
@@ -111,7 +111,7 @@ def derive_full_rows():
                         'Verification': f'Derived from Phase 2 batch {b}: H1/H2/hero/CTAs/section headings verbatim from full-format Tables A/B; Positioning verbatim from homepage_fields.csv; ICP and Pain Point are analyst summaries (Table A Target Buyer, Table C Problem Framing). ' + hf[n]['Verification'] + f' See batch {b} report for verification detail.'})
     return out
 
-# Batches 4–11: the combined table takes ICP and Pain Point from analyst_fields.csv (analyst summaries, like batches 1–3);
+# Batches 4–13: the combined table takes ICP and Pain Point from analyst_fields.csv (analyst summaries, like batches 1–3);
 # the light CSV keeps the verbatim homepage ICP/Pain Point as the capture record.
 af = {}
 for b, f in LIGHT.items():
@@ -132,7 +132,7 @@ p1keys = {k for k, v in p1.items() if 'num' in v}
 gates.append(('Combined table has 50 rows and 50 distinct companies', len(all50) == 50 and len(set(names50)) == 50, f'{len(all50)} rows, {len(set(names50))} distinct'))
 gates.append(('Company set identical to Phase 1 master Table A', {key(n) for n in names50} == p1keys, f'{len({key(n) for n in names50} & p1keys)}/50 matched'))
 bad = [f for b, f in LIGHT.items() if next(csv.reader(open(os.path.join(WS, f), encoding='utf-8'))) != light_hdr]
-gates.append(('Light-format batch CSVs (4–11) share the identical 16-column header', not bad, 'all identical' if not bad else ', '.join(bad)))
+gates.append(('Light-format batch CSVs (4–13) share the identical 16-column header', not bad, 'all identical' if not bad else ', '.join(bad)))
 cols = [r['Company'] for r in light if len([k for k in r if k != 'Batch']) != 16]
 gates.append(('Every light-format row has 16 cells', not cols, f'{len(light)} rows checked'))
 nourl = [r['Company'] for r in all50 if not r['Source URL'].startswith('http')]
@@ -142,7 +142,7 @@ gates.append(('Full-format Tables A/B/C/D/E contain identical company sets, cove
 la = {r['Company']: r for r in light}
 drift = [r['Company'] for r in fullA if r['Batch'] >= 4 and any(r[a] != la.get(r['Company'], {}).get(c) for a, c in
          [('H1', 'H1'), ('H2', 'H2'), ('Hero Supporting Copy', 'Hero Description'), ('Primary CTA', 'Primary CTA'), ('Secondary CTA', 'Secondary CTA')])]
-gates.append(('Batches 4–11: Table A hero fields equal the light-format row', not drift, f'{sum(r["Batch"] >= 4 for r in fullA)} rows checked' if not drift else ', '.join(drift)))
+gates.append(('Batches 4–13: Table A hero fields equal the light-format row', not drift, f'{sum(r["Batch"] >= 4 for r in fullA)} rows checked' if not drift else ', '.join(drift)))
 f_ref = [r[0] + '\x00' + r[-2] for r in fullF[0][2]]
 f_bad = [str(b) for b, h, rows in fullF if [r[0] + '\x00' + r[-2] for r in rows] != f_ref or len(h) != len(rows[0])]
 gates.append(('Table F: every batch has the same 7 dimensions and verbatim PitchSense status column', not f_bad and len(f_ref) == 7, f'{len(fullF)} batches checked' if not f_bad else 'differs: ' + ', '.join(f_bad)))
@@ -153,7 +153,7 @@ gates.append(('Every Table E claim (excluding "Not observed" rows) carries an ev
 an = [r['Company'] for r in all50 if 'ANALYST' in r['Positioning'] or not (r['ICP'].startswith('ANALYST SUMMARY: ') and r['Pain Point'].startswith('ANALYST SUMMARY: '))
       or len(r['ICP']) <= 18 or len(r['Pain Point']) <= 18]
 gates.append(('All 50 rows: ICP and Pain Point are labelled analyst summaries; Positioning is verbatim', not an, 'consistent' if not an else ', '.join(an)))
-ver = [r['Company'] for r in light if 'Homepage researched October 19, 2026' not in r['Verification'] and 'October 19, 2026' not in r['Verification']]
+ver = [r['Company'] for r in light if not re.search(r'(January|February|March|April|May|June|July|August|September|October|November|December) \d{1,2}, 20\d\d', r['Verification'])]
 gates.append(('Every light-format Verification cell carries the research date', not ver, 'all dated' if not ver else ', '.join(ver)))
 
 # ---- not-verified tallies ----
@@ -168,17 +168,18 @@ for r in light:
 D = []
 w = D.append
 w('# PitchSense AI — Phase 2 Master Report: Competitor Website Messaging & Landing-Page Analysis (50 Companies)\n')
-w('**Research dates:** October 19, 2026 (Europe/Berlin), all 11 batches. **Consolidated:** October 19, 2026. '
+w('**Research dates:** October 19, 2026 (Europe/Berlin), batches 1–11; October 20, 2026, batches 12–14 (scope swaps). **Consolidated:** October 20, 2026. '
   '**Scope:** the same 50 companies as the Phase 1 master report (`phase1/pitchsense_competitor_research_master.md`). Phase 1 discovery, classification and capability scoring are not repeated here.\n')
 w('**Source of truth.** This report consolidates Phase 2. Canonical data stays in the batch CSVs it is generated from. When evidence changes, update the batch CSV, regenerate this file, and re-run the verification gates below.\n')
 w('**Research depth.** All 50 companies now have the full format: homepage plus one CRO-relevant page each, analysed into Tables A (hero), B (landing-page structure), C (messaging and positioning), D (CTA strategy), E (CRO messaging) and F (PitchSense comparison).')
 w('- **Batches 1–3 (10 companies):** Sybill, Aida, Gong; Attention, Backstory, Outreach; Salesloft + Clari, Showpad, Mindtickle, Allego. Rendered-browser checks were done in addition to HTML capture.')
-w('- **Batches 4–11 (40 companies):** first captured in the light format (one 16-field row per company: H1, H2, hero description, two CTAs, three section headings, positioning, ICP, pain point, source and verification notes), then upgraded to Tables A–F on Oct 19, 2026 from HTML captures only; no rendered-browser check. The light row stays the source of their Part B row.\n')
+w('- **Batches 4–13 (40 companies):** first captured in the light format (one 16-field row per company: H1, H2, hero description, two CTAs, three section headings, positioning, ICP, pain point, source and verification notes), then upgraded to Tables A–F on Oct 19, 2026 from HTML captures only; no rendered-browser check. The light row stays the source of their Part B row.\n')
 w('**Method rules (all batches).** Heading levels verified against HTML tags. Nav, mega-menu, footer, tab and responsive duplicates are excluded and the exclusions noted. Copy is quoted verbatim. Anything not found or not verifiable is written "Not verified" with the reason. Vendor metrics and analyst badges are recorded as vendor claims, not verified facts. CTA frequency is observed page structure, not evidence of conversion effectiveness. Messaging emphasis is not evidence that a product capability is missing.\n')
 w('**Change log.**')
 w('- Oct 19, 2026: batches 1–3 (full format) and 4–5 (light format).')
 w('- Oct 19, 2026: batches 6–11 (light format, 30 companies) completed the 50-company scope, and this master report was consolidated.')
 w('- Product Narrative v1 (Sep 30, 2026) was located after batches 1–3. Table F was reconciled against it on Oct 19, 2026: its PitchSense column gives Appendix status, and each interpretation ends with a reconciliation note. Phase 3 (`phase3/pitchsense_phase3_cro_positioning.md`) uses it.')
+w('- Oct 20, 2026: scope swap. Uniphore, Level AI (batch 10), Observe.AI (batch 5), Reprise, Consensus and Dropbox DocSend (batch 11) removed from the 50; Granola, Read AI, Day AI (batch 12) and Oliv.ai, Glean, Spekit (batch 13) added, captured in light and full format the same day. The batch 5, 10 and 11 reports keep the removed companies as their dated record. Second swap the same day: Balto (batch 10) and PathFactory (batch 9) removed; Revenue Grid and Weflow added (batch 14).')
 w('- Oct 19, 2026: batches 4–11 upgraded to full format (Tables A–F, CRO page captured per company), and Not-verified light-format fields re-checked against the captures (each filled field is noted in its Verification cell as "Gap-fill"). Their Table F was written directly against Narrative v1.\n')
 w('---\n')
 
@@ -237,7 +238,7 @@ w(table(['Company', 'CRO pain point', 'Exact supporting claim', 'Location on pag
           link(r['Evidence URL']) if r['Evidence URL'].startswith('http') else esc(r['Evidence URL'])] for r in fullE]) + '\n')
 
 w('### Table F — PitchSense narrative comparison (reconciled with Narrative v1)\n')
-w('Batches 1–3 were written before PitchSense Product Narrative v1 was located, using the positioning in the research brief. On Oct 19, 2026 they were reconciled with Narrative v1: the PitchSense column now gives Appendix status (Built / In build / Planned), and each interpretation ends with a reconciliation note. Batches 4–11 were written directly against Narrative v1 and carry the same PitchSense column verbatim. The last column is analyst interpretation, not a capability claim.\n')
+w('Batches 1–3 were written before PitchSense Product Narrative v1 was located, using the positioning in the research brief. On Oct 19, 2026 they were reconciled with Narrative v1: the PitchSense column now gives Appendix status (Built / In build / Planned), and each interpretation ends with a reconciliation note. Batches 4–13 were written directly against Narrative v1 and carry the same PitchSense column verbatim. The last column is analyst interpretation, not a capability claim.\n')
 for b, hdr, rows in fullF:
     comp = [h for h in hdr[1:-2]]
     w(f'**Batch {b}** ({", ".join(h.replace(" Evidence", "") for h in comp)})\n')
@@ -246,7 +247,7 @@ w('---\n')
 
 # Part B
 w('## Part B — Website messaging, all 50 companies\n')
-w('One row per company. H1, H2, hero copy, CTAs, section headings and Positioning are verbatim website text (or "Not verified" with the reason): batches 4–11 from the light-format CSVs, batches 1–3 from the full-format tables and `homepage_fields.csv`. **ICP and Pain Point are analyst summaries for all 50** (labelled), written from each company\'s full-format research: Tables A and C for batches 1–3, `analyst_fields.csv` for batches 4–11. Verification notes for every row follow in Part B2.\n')
+w('One row per company. H1, H2, hero copy, CTAs, section headings and Positioning are verbatim website text (or "Not verified" with the reason): batches 4–13 from the light-format CSVs, batches 1–3 from the full-format tables and `homepage_fields.csv`. **ICP and Pain Point are analyst summaries for all 50** (labelled), written from each company\'s full-format research: Tables A and C for batches 1–3, `analyst_fields.csv` for batches 4–13. Verification notes for every row follow in Part B2.\n')
 cols = ['H1', 'H2', 'Hero Description', 'Primary CTA', 'Secondary CTA', 'Section Heading 1', 'Section Heading 2', 'Section Heading 3', 'Positioning', 'ICP', 'Pain Point']
 w(table(['Batch', 'Company', 'Category (P1)'] + ['Hero description' if c == 'Hero Description' else c for c in cols] + ['Source'],
         [[r['Batch'], esc(r['Company']), esc(r['Category'])] + [esc(r[c]) for c in cols] + [link(r['Source URL'])] for r in all50]) + '\n')
@@ -264,24 +265,20 @@ w('---\n')
 
 # Part D flags
 w('## Part D — Flags carried forward\n')
-w('### D1 — Fields not verified (light-format batches 4–11, 40 companies)\n')
+w('### D1 — Fields not verified (light-format batches 4–13, 40 companies)\n')
 w(table(['Field', 'Companies marked Not verified'], [[k, str(nv.get(k, 0))] for k in NVF]) + '\n')
 w(table(['Company', 'Not-verified fields'], [[esc(c), esc(', '.join(m))] for c, m in nv_by.items() if m]) + '\n')
 w('### D2 — Fetch substitutions, ownership changes and wording drift (Oct 19, 2026 captures)\n')
 w('These are observations from the captured pages. Verify before changing the Phase 1 master report; they are also listed in `ROADMAP.md`.\n')
 for s in [
     '**Microsoft (Copilot for Sales):** the microsoft.com marketing page served a bot-block page. The official adoption page was used instead. The H1 now reads "Sales solution in Microsoft Copilot".',
-    '**Dropbox (DocSend):** docsend.com returned a Cloudflare 403. The official dropbox.com/docsend page was used instead; docsend.com messaging may differ.',
-    '**PathFactory:** a homepage banner states the company has been acquired by Kaltura.',
     '**Fathom:** a site-wide banner reads "FATHOM IS NOW PART OF SUPERHUMAN".',
     '**Wonderway:** the page references "Verity by BTS" (possible rebrand, relationship not stated). The AI Coach section is still labelled beta. Most CTAs are hidden by the site\'s own CSS.',
     '**Hyperbound:** the "AI-Powered Roleplay Platform" framing has been replaced by Practice / Perform / Kota Activate.',
     '**Regie.ai:** the product is now "RegieGO", an "agentic sales workspace".',
     '**Salesforce (Agentforce):** the landing-page hero is about customer service, not sales. The large headline renders client-side, so only the "Agentforce" H1 label was recorded.',
-    '**Uniphore:** there is no `<h1>` on the page. The hero is a rotating carousel led by a report promotion.',
-    '**Rotating or client-side H1s:** Gong, Otter.ai, Aviso, Balto and Yoodli. Consensus\'s H1 carries a `data-lp-replace` attribute, so some visitors may see different text.',
+    '**Rotating or client-side H1s:** Gong, Otter.ai, Aviso and Yoodli.',
     '**Momentum:** a homepage banner reads "Momentum is now part of Salesforce!" and links to a Salesforce news story about a definitive agreement to acquire it (full-format upgrade capture).',
-    '**Observe.AI:** the navigation names a platform layer "Shared memory and connective tissue" (full-format upgrade capture).',
     '**Wording changed since Phase 1 quotes:** Circleback ("Company Brain" is now only in the page title), Quantified ("one audit trail"), PitchMonster ("300K+ reps" vs. 30,000+), HubSpot Breeze, Humantic AI ("Miia, Pi & Signals"), Zoom Revenue Accelerator.',
 ]:
     w(f'- {s}')

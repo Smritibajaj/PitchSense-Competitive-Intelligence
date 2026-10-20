@@ -1,4 +1,8 @@
 # PitchSense AI — Competitive Landscape Research
+
+> **Scope change, October 20, 2026 (second swap):** Balto, PathFactory removed from the 50 (see `pitchsense_competitor_research_batch6.md`).
+
+> **Scope change, October 20, 2026:** Uniphore, Level AI, Observe.AI, Consensus, DocSend were removed from the 50-company scope (see the master change log and `pitchsense_competitor_research_batch5.md`). This file is kept as the dated batch record.
 ## Batch 2 of 4: Conversation Intelligence — 9 companies (cumulative: 23 of 50)
 
 **Research date:** October 18, 2026 (batch 1: October 17, 2026)

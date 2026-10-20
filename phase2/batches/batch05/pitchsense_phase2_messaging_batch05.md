@@ -1,5 +1,7 @@
 # PitchSense AI — Phase 2: Competitor Website Messaging and Landing Page Analysis (Batch 5)
 
+> **Scope change, Oct 20, 2026:** Observe.AI was removed from the 50-company scope (swapped for Granola, Read AI, Day.ai, Oliv.ai, Glean and Spekit, which fit the Product Narrative better). This report is kept as the dated Oct 19 record and still covers them; the batch CSVs no longer include them.
+
 **Research date:** October 19, 2026 (Europe/Berlin). Homepages were captured as HTML for the light-format pass; the batch was upgraded to the full format the same day, adding one CRO-relevant supporting page per company.
 
 **Scope:** ZoomInfo (Chorus) (https://www.zoominfo.com/; CRO page: https://www.zoominfo.com/products/chorus); Jiminny (https://jiminny.com/; CRO page: https://jiminny.com/team/execs); Fireflies.ai (https://fireflies.ai/; CRO page: https://fireflies.ai/use-cases/sales); Observe.AI (https://www.observe.ai/; CRO page: https://www.observe.ai/ai-agents/ai-agents-for-operations); Noota (https://www.noota.io/; CRO page: https://www.noota.io/features/sales-agent). Phase 1 discovery, classification and capability scoring are not repeated here.

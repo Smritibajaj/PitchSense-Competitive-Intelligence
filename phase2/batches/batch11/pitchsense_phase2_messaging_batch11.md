@@ -1,5 +1,7 @@
 # PitchSense AI — Phase 2: Competitor Website Messaging and Landing Page Analysis (Batch 11)
 
+> **Scope change, Oct 20, 2026:** Reprise, Consensus, Dropbox (DocSend) were removed from the 50-company scope (swapped for Granola, Read AI, Day.ai, Oliv.ai, Glean and Spekit, which fit the Product Narrative better). This report is kept as the dated Oct 19 record and still covers them; the batch CSVs no longer include them.
+
 **Research date:** October 19, 2026 (Europe/Berlin). Homepages were captured as HTML for the light-format pass; the batch was upgraded to the full format the same day, adding one CRO-relevant supporting page per company.
 
 **Scope:** Yoodli (https://yoodli.ai/; CRO page: https://yoodli.ai/for-business/revenue-teams); Accent Technologies (https://accent-technologies.com/; CRO page: https://accent-technologies.com/sales-management/); Consensus (https://goconsensus.com/; CRO page: https://goconsensus.com/solutions/sales); Reprise (https://www.reprise.com/; CRO page: https://www.reprise.com/solutions/sales-leaders); Dropbox (DocSend) (https://www.dropbox.com/docsend; CRO page: https://www.dropbox.com/business/solutions/sales). Phase 1 discovery, classification and capability scoring are not repeated here.

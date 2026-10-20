@@ -244,6 +244,25 @@ Tables A–E above use the 10 full-format competitors. This section tests each f
 
 **[Finding] Phase 2 Table F reconciliation.** Table F (batches 1–3) was reconciled with Narrative v1 on Oct 19, 2026. Its statuses match this report's section 0 and Table D. It also adds one point this report did not make: the "approved-content governance" nuance in Table F batches 2–3 is **Not in Narrative** (the Appendix lists "One home for approved content" but no approval or compliance workflow), so it is not used as a differentiator here.
 
+### Scope swap of Oct 20, 2026: effect on Table F
+
+**[Finding]** Six weak-fit companies left the 50 (Uniphore, Level AI, Observe.AI, Reprise, Consensus, Dropbox DocSend) and six joined (Granola, Read AI, Day AI, Oliv.ai, Glean, Spekit; Phase 1 Batch 5, Phase 2 batches 12–13). Rows 2 and 6 above cite Level AI and Consensus, which are now out of scope; the rows are kept as the Oct 19 record. Effect on each row:
+
+| # | Effect of the six additions | Result now |
+|---|---|---|
+| 1 | Read AI's homepage offers answers "with citations" ("Ask what was decided, who owns it, and what's still open — with citations"). Adds to the counterexamples in Phase 2 synthesis C7 and the ROADMAP review of Direction A. | **Weakened further** |
+| 2 | Two H1s now lead with memory or context: Day AI ("scale your company brain") and Glean ("Complete context that makes AI work at enterprise scale."). "No H1 among the 50 leads with memory" is no longer true. | **Holds as advice, stronger reason:** the memory headline is now occupied, so memory stays the mechanism |
+| 3 | Spekit launched AI Role Play on Oct 20 alongside governed content and deal context, but has no native call capture (Phase 1 CI 0). | **Holds** |
+| 4 | No new company scores 2 on both Content and Deal (Oliv.ai 1/2, Glean 2/1*, Spekit 2/1). | **Holds** |
+| 5 | The six address "revenue teams", enterprises or cross-functional users; none targets CROs by title on the inspected pages. | **Holds** |
+| 6 | Oliv.ai's pain statement is the closest yet to PitchSense's problem framing: "Every tool holds a piece of context: meetings in Gong, usage in Pendo, Tickets in Zendesk. This scatter creates complete confusion for humans and AI agents." It frames scattered context, not forgotten knowledge. | **Holds, narrowed:** keep the "already knew" and forgetting angle; "scattered" alone is now claimed |
+| 7 | No surveillance, rep-privacy or fairness wording in the 12 new captures (homepage and CRO page each). | **Holds** |
+| 8 | None of the six uses "Try a roleplay". | **No change** |
+
+**[Finding] Second swap, same day.** Balto and PathFactory left; Revenue Grid (6) and Weflow (5 +2 unverified) joined, both deal and RevOps tools inside Salesforce. Effect on rows 1–8 (checked against their batch 14 captures): row 5 narrows, because Weflow names CROs ("Trusted by RevOps & CROs in 300+ fast-growing companies") and has an executives page focused on forecast accuracy; Revenue Grid addresses "revenue leaders" on its forecasting page. Row 7 holds (no rep-fairness wording in either), and row 4 holds (no Content 2 + Deal 2 combination). Rows 1–3, 6 and 8 are unchanged.
+
+**[Finding] Phase 1 shortlists after the swap.** Oliv.ai (8), Day AI (7) and Read AI (7) enter the top 10; Day AI and Oliv.ai join the shared-memory five. Tables A–E of this report still use the 10 batch 1–3 competitors and are unchanged; *recommendation:* when Phase 3 is next revised, add Oliv.ai and Day AI to the head-to-head set, since both make memory the product.
+
 ## 7. Claim check of this report's copy
 
 **[Finding]** Every PitchSense claim in this report's draft copy (sections 5.2, 5.7, Table E and the positioning statement), mapped to the Narrative Appendix ("What's built, in build and planned"). "Public" means the landing page; "proposal" means dated proposal or roadmap material.

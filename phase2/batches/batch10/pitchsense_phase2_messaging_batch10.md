@@ -1,5 +1,9 @@
 # PitchSense AI — Phase 2: Competitor Website Messaging and Landing Page Analysis (Batch 10)
 
+> **Scope change, Oct 20, 2026 (second swap):** Balto was removed from the 50-company scope (replaced by Revenue Grid and Weflow, batch 14). This report is kept as the dated Oct 19 record and still covers it; the batch CSVs no longer include it.
+
+> **Scope change, Oct 20, 2026:** Uniphore, Level AI were removed from the 50-company scope (swapped for Granola, Read AI, Day.ai, Oliv.ai, Glean and Spekit, which fit the Product Narrative better). This report is kept as the dated Oct 19 record and still covers them; the batch CSVs no longer include them.
+
 **Research date:** October 19, 2026 (Europe/Berlin). Homepages were captured as HTML for the light-format pass; the batch was upgraded to the full format the same day, adding one CRO-relevant supporting page per company.
 
 **Scope:** Uniphore (https://www.uniphore.com/; CRO page: https://www.uniphore.com/use-cases/front-office/revenue-operations/); Level AI (https://thelevel.ai/; CRO page: https://thelevel.ai/solutions/sales-performance); Balto (https://www.balto.ai/; CRO page: https://www.balto.ai/contact-center-insights/); Mediafly (https://www.mediafly.com/; CRO page: https://www.mediafly.com/solutions/revenueleaders/); SalesHood (https://saleshood.com/; CRO page: https://saleshood.com/sales-enablement-platform/impact-insights/). Phase 1 discovery, classification and capability scoring are not repeated here.

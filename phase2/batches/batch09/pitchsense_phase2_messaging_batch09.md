@@ -1,5 +1,7 @@
 # PitchSense AI — Phase 2: Competitor Website Messaging and Landing Page Analysis (Batch 9)
 
+> **Scope change, Oct 20, 2026 (second swap):** PathFactory was removed from the 50-company scope (replaced by Revenue Grid and Weflow, batch 14). This report is kept as the dated Oct 19 record and still covers it; the batch CSVs no longer include it.
+
 **Research date:** October 19, 2026 (Europe/Berlin). Homepages were captured as HTML for the light-format pass; the batch was upgraded to the full format the same day, adding one CRO-relevant supporting page per company.
 
 **Scope:** Regie.ai (https://regie.ai/; CRO page: https://regie.ai/why-regie); Quantified (https://www.quantified.ai/; CRO page: https://www.quantified.ai/platform/ai-insights-agent); PitchMonster (https://www.pitchmonster.io/; CRO page: https://www.pitchmonster.io/solutions/sales-leaders); Wonderway (https://www.wonderway.io/; CRO page: https://www.wonderway.io/sales-intelligence-software); PathFactory (https://www.pathfactory.com/; CRO page: https://www.pathfactory.com/platform/intelligence/). Phase 1 discovery, classification and capability scoring are not repeated here.

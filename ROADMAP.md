@@ -36,7 +36,7 @@ All checked against primary sources; changes logged in the Phase 1 master header
 - Quantified Field AI: beta, release scheduled Q4 2026; at GA it would document real-visit analysis (CI 0 → 1 candidate).
 - Hyperbound private-preview agents (Deal Strategist, Live Call Coaching, Agentic Enablement): at GA, re-check DI (structured CRM writes) and CoI (live battlecards); SM 2 candidate from Kota.
 - Fathom: whether it stays standalone or folds into Superhuman.
-- PathFactory: Kaltura/eSelf integration GA.
+- ~~PathFactory: Kaltura/eSelf integration GA.~~ **Closed Oct 20, 2026:** removed from scope in the second swap.
 - Wonderway: brand direction under BTS (Wonderway vs. Verity); Phase 2 homepage may need re-capture under Verity.
 - Circleback DI 1: HubSpot integration describes activity logging on deals; review whether this exceeds CRM sync.
 
@@ -45,12 +45,26 @@ All checked against primary sources; changes logged in the Phase 1 master header
 Observations from the captured pages, not score changes. Verify against primary sources before touching the Phase 1 master.
 
 - Momentum: homepage banner "Momentum is now part of Salesforce!" links to a Salesforce news story about a definitive agreement to acquire it. Re-check entity resolution (RESEARCH_RULES §2) and close date.
-- Observe.AI: navigation names a platform layer "Shared memory and connective tissue"; FAQ says its agents "share the same data, context". Review SM evidence in docs.
+- ~~Observe.AI: review SM evidence for its "Shared memory and connective tissue" layer.~~ **Closed Oct 20, 2026:** removed from scope in the swap (contact-centre tool outside the Narrative's buyer).
 - Hyperbound: "Calls, roleplays, email, CRM, and Slack — connected through your buyers, deals, and reps" (screen-reader-only text). Adds to the existing SM 2 watch item.
 - Salesforce (Agentforce): FAQ describes Sales Coach role-play tailored to specific deals; check whether it is GA and in scope for CoI.
 - Wonderway: the AI coach is marketed as "Verity by BTS"; its sales-intelligence page carries an old template (lorem ipsum, /old-home link).
 - Microsoft (Copilot for Sales): the linked /sales-solution/ page returns "Page not found"; still no usable CRO page.
-- Data quality notes for anyone quoting metrics: conflicting figures on Quantified (80%/48 hours vs. 100%/five days), Consensus (30% vs. 68% faster) and Jiminny (37% vs. 62%).
+- Data quality notes for anyone quoting metrics: conflicting figures on Quantified (80%/48 hours vs. 100%/five days) and Jiminny (37% vs. 62%). (Consensus, also flagged, left the scope on Oct 20, 2026.)
+
+## Scope swap of Oct 20, 2026, and watch items for the new companies
+
+Removed (all P4 weak fits): Uniphore, Level AI, Observe.AI, Reprise, Consensus, Dropbox DocSend. Added (Phase 1 Batch 5, Phase 2 batches 12–13): Granola, Read AI, Day AI, Oliv.ai, Glean, Spekit. Their earlier records stay in git history and in the dated batch reports.
+
+- Granola: DI 1* and ChI 1* unverified (deal sync is note logging; coaching is prompt-based). Re-check DI when the native Salesforce connector (early access) is GA. Also a Built transcript source for PitchSense: watch for partnership vs. competition.
+- Read AI: DI 2 depth partly rests on a vendor article on its own site; confirm CRM Copilot deal predictions and field writes in product docs.
+- Glean: DI 1* rests on agent-library templates only; Meeting Coach is in beta. Re-check DI and ChI at GA.
+- Spekit: ChI 2 rests on AI Role Play launched on Oct 20, 2026; confirm availability by plan. SM 2 candidate (governed knowledge reused across features).
+- Second swap (Oct 20, 2026), from a screen of seven user-named candidates (record: `phase1/batches/pitchsense_competitor_research_batch6.md`): Balto and PathFactory out; Revenue Grid and Weflow in (Phase 2 batch 14). Weflow CoI 1* and SM 1* unverified; re-check when its content features or a persistence layer beyond Salesforce objects are documented.
+- **Watch, not in scope:** MaxIQ (getmaxiq.com; 5 +2 unverified; "AI Coach" and "Context Graph" not yet documented as GA; site says some features are still being built; re-screen when they are). 6sense (2 +1 unverified; marketing intent data; its "context for your team and agents" messaging echoes PitchSense; re-screen if it adds conversation capture, deal risk or team memory).
+- **Open decisions (screened Oct 20, 2026; record in `phase1/batches/pitchsense_competitor_research_batch6.md`):** add Tribble (8 +1 unverified, P1; AI RFP/sales agent with call recorder, CRM write-back and one knowledge layer; evidence from marketing pages only), Attio (7, P2; AI-native CRM with call recording and shared context) and Nooks (6 +1 unverified, P2; AI dialer with roleplays from real calls and call scoring)? Suggested replacements: Salesforce (Agentforce) (0 +1 unverified), Humantic AI (2), Regie.ai (2). Scratchpad (2; partial pivot to Clearskies, a "context layer for revenue AI") to watch. Guru (3) excluded: general knowledge base, slot covered by Glean.
+- **Excluded after screening (Oct 20, 2026):** Forecastio (HubSpot-only forecasting, 2), DealHub AI / DealHub.io (quote-to-revenue, 2), MarketBetter (pre-conversation ABM/SDR playbooks, 2 +1 unverified).
+- Day AI and Oliv.ai: both P1 and in the shared-memory five; add to the quarterly top-10 re-verification and to the next Phase 3 head-to-head set.
 
 ## Expansion candidates (next batch, when growing beyond 50)
 
@@ -69,6 +83,6 @@ Observations from the captured pages, not score changes. Verify against primary 
 
 - The three gap hypotheses remain testable, not verified absences; validate each against its named partial counterexamples before using in positioning work.
 - Phase 3 CRO positioning is complete (`phase3/`; all-50 check and claim check added Oct 19, 2026). Revisit its hero direction when deal risks, commitments, or real-call scoring ship (Narrative v1 status), or if a coaching-led vendor (Hyperbound) adds source evidence and a CRO frame.
-- Review Phase 3 Direction A (source-backed answers) against the counterexamples in Phase 2 synthesis C7: Noota, Balto, Siro, Humantic AI, Quantified and Hyperbound now make source- or evidence-link claims, in addition to Backstory and Attention.
+- Review Phase 3 Direction A (source-backed answers) against the counterexamples in Phase 2 synthesis C7: Noota, Read AI, Siro, Humantic AI, Quantified and Hyperbound (plus Balto, removed Oct 20) make source- or evidence-link claims, in addition to Backstory and Attention.
 - Before public use of the Phase 3 page: confirm "Admins see adoption, never scores" and "company-owned data" with the product owner (Narrative-stated, not on the status list).
 - ~~Reconcile Phase 2 Table F (batches 1–3) with Narrative v1 and review its PROVISIONAL label.~~ Done Oct 19, 2026: PitchSense column now gives Appendix status; reconciliation notes added; the "approved-content governance" nuance is Not in Narrative.
