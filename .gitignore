@@ -3,3 +3,6 @@ exports/
 __pycache__/
 .DS_Store
 .claude/settings.local.json
+
+# PitchSense Product Narrative: confidential, kept local only
+source/

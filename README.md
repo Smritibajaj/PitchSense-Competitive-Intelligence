@@ -8,7 +8,7 @@ Competitive research for PitchSense AI, a sales AI covering calls, deals, conten
 RESEARCH_RULES.md        how research is done: rubric, entity rules, evidence rules, claim rules, gates
 ROADMAP.md               what's left: verification backlog, triggered checks, expansion, cadence
 CLAUDE.md                instructions Claude Code loads automatically
-source/                  PitchSense Product Narrative v1 (PDF + text): read-only source of truth
+source/                  PitchSense Product Narrative v1 (PDF + text): read-only source of truth; local only, gitignored
 phase1/                  capability research: master report (50 companies, scores) + batch details
 phase2/                  website messaging: master report + all-50 CSV (both generated), synthesis.md
   batches/batch01…11/    canonical batch CSVs/reports; batches 06–11 keep their HTML captures

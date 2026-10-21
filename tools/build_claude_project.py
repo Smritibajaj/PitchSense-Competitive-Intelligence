@@ -27,6 +27,10 @@ for script in ('tools/verify_phase1.py', 'tools/gen_phase2_master.py'):
     if r.returncode != 0:
         sys.exit(f'\nABORTED: {script} reported a failing gate. Fix it before exporting.')
 
+missing = [src for _, src, _ in LEAN if not os.path.exists(os.path.join(WS, src))]
+if missing:
+    sys.exit(f'\nABORTED: missing {missing}. source/ is gitignored; copy the Product Narrative there first.')
+
 shutil.rmtree(OUT, ignore_errors=True)
 os.makedirs(KN)
 files = list(LEAN)

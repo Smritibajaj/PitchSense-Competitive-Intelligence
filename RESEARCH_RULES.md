@@ -41,7 +41,7 @@ Re-check mergers, acquisitions, rebrands and shutdowns on every update. Examples
 
 ## 4. PitchSense claims
 
-- `source/PitchSense_Product_Narrative_v1.pdf` (Sep 30, 2026) is the only source for what PitchSense does. Its Appendix, "What's built, in build and planned", gives each capability's status.
+- `source/PitchSense_Product_Narrative_v1.pdf` (Sep 30, 2026) is the only source for what PitchSense does. It is confidential: `source/` is gitignored and must never be committed. Its Appendix, "What's built, in build and planned", gives each capability's status.
 - **Public copy claims Built items only.** In-build and planned items may appear in proposals, with a date. The Narrative's own list of claims that "rest on in-build or planned items" is a hard check.
 - **Recommendation ≠ finding.** Label positioning or messaging advice *recommendation*. Gap hypotheses stay *testable*, never *verified absences*, until they are validated against their named counterexamples.
 

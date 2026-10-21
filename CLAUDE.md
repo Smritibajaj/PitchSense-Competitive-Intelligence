@@ -6,7 +6,7 @@ Ongoing competitive-intelligence research for PitchSense AI: 50 competitors, thr
 
 | What | File | Edited how |
 |---|---|---|
-| PitchSense capabilities and status | `source/PitchSense_Product_Narrative_v1.pdf` (text: `…_text.md`) | Read-only |
+| PitchSense capabilities and status | `source/PitchSense_Product_Narrative_v1.pdf` (text: `…_text.md`); local only, gitignored, never commit | Read-only |
 | Phase 1 scores and synthesis | `phase1/pitchsense_competitor_research_master.md` | By hand, together with the matching `phase1/batches/` file |
 | Phase 2 website messaging | `phase2/batches/*/` CSVs + `phase2/synthesis.md` | By hand; the master and `all50.csv` are **generated** |
 | Phase 3 CRO positioning | `phase3/pitchsense_phase3_cro_positioning.md` | By hand; recommendations stay labelled as recommendations |
